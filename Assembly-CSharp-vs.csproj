@@ -46,8 +46,14 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\CharacterController.cs" />
-     <Compile Include="Assets\Scripts\NPC_INTERACTION.cs" />
+     <Compile Include="Assets\Scripts\INACIA_NPC.cs" />
+     <Compile Include="Assets\Scripts\InventoryController.cs" />
+     <Compile Include="Assets\Scripts\Item.cs" />
+     <Compile Include="Assets\Scripts\PC.cs" />
+     <Compile Include="Assets\Scripts\Quest.cs" />
+     <Compile Include="Assets\Scripts\QuestController.cs" />
+     <Compile Include="Assets\Scripts\QuestsDatabase.cs" />
+     <Compile Include="Assets\Scripts\Task.cs" />
      <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\SortingLayerExposed.cs" />
      <None Include="Assets\Tiled2Unity\Imported\MagmaManLair-WithCollision.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Imported\DiveMan-water.tiled2unity.xml" />
