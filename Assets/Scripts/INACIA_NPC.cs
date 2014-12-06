@@ -65,6 +65,8 @@ public class INACIA_NPC : MonoBehaviour {
 			this.lineCounter = -1;
 			this.talking = false;
 			talkingTo.GetComponent<PC>().setTalking(this.talking);
+			talkingTo.GetComponent<PC>().mover.addPoint( new Point(talkingTo.transform.position.x + 100, talkingTo.transform.position.y),true);
+			talkingTo.GetComponent<PC>().mover.moveToPoints();
 		}
 		if (talking && Input.GetButtonDown ("Fire1")) {
 			talkingTo.GetComponent<PC>().setTalking(this.talking);
