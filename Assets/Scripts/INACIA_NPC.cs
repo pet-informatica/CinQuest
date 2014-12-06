@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
 public class INACIA_NPC : MonoBehaviour {
 	public string [] falas;
 	public GUISkin skin;
@@ -10,18 +11,49 @@ public class INACIA_NPC : MonoBehaviour {
 	private GameObject talkingTo;
 	private bool answer;
 	private bool complete;
-	// Use this for initialization
+
+
+	private PathPlanner pathPlanner;
+
 	void Start () {
 		this.complete = false;
 		this.answer = true;
 		this.talking = false;
 		this.lineCounter = -1;
+
+		this.pathPlanner = new PathPlanner ();
+
 	}
 
+
+
 	void FixedUpdate(){
+
+
+		//Example for following someone
+		if(talking)
+		{
+			if( Vector3.Distance(this.talkingTo.transform.position, this.transform.position) > 100 )
+			{
+
+				float moveHorizontal = 0, moveVertical = 0;
+				this.transform.position = this.pathPlanner.followTarget(this.transform.position,this.talkingTo.transform.position, out moveHorizontal, out moveVertical);
+			}
+
+
+			Debug.Log(this.pathPlanner.getState() + " D: " + Vector3.Distance(this.talkingTo.transform.position, this.transform.position));
+
+
+		}
+
 	}
 
 	void Update(){
+
+		
+
+
+		//this.agent.SetDestination(new Vector3(10,10,0));
 		if(this.lineCounter == 0 && talking){
 			if(Input.GetAxis("Horizontal") < 0){
 				this.answer = true;
@@ -88,5 +120,7 @@ public class INACIA_NPC : MonoBehaviour {
 
 	void OnCollisionStay2D(Collision2D objeto){
 		this.talking = true;
+
+
 	}
 }
