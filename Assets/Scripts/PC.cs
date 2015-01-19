@@ -14,7 +14,7 @@ public class PC : MonoBehaviour {
 
 		print ("Mover speed: " + this.mover.maxMove_speed);
 
-		this.mover.addPoint (new Point(this.transform.position.x + 100, transform.position.y),true);
+		//this.mover.addPoint (new Point(this.transform.position.x + 100, transform.position.y),true);
 		//this.mover.moveToPoints ();
 		this.mover.maxMove_speed = this.maxMove_speed;
 		//this.mover.setGameObject (this.gameObject, this.anim, this.maxMove_speed);

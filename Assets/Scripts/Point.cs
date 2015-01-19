@@ -10,6 +10,6 @@ public class Point{
 		this.y = y;
 		this.horizontalFirst = false;
 	}
-	
+
 	public Point(){}
 }

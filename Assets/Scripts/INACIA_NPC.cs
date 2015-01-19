@@ -12,7 +12,7 @@ public class INACIA_NPC : MonoBehaviour {
 	private bool answer;
 	private bool complete;
 	public Mover mover = new Mover();
-	
+
 
 	void Start () {
 		this.complete = false;
@@ -20,7 +20,7 @@ public class INACIA_NPC : MonoBehaviour {
 		this.talking = false;
 		this.lineCounter = -1;
 		this.mover.addPoint (new Point(this.transform.position.x + 200, transform.position.y + 120),true);
-		this.mover.moveToPoints ();
+		//this.mover.moveToPoints ();
 	}
 
 

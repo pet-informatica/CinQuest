@@ -243,9 +243,17 @@ public class Mover : MonoBehaviour {
 				this.anim.SetFloat ("VerticalSpeed",moveVertical);
 				this.anim.SetFloat ("HorizontalSpeed", moveHorizontal);
 			}
-			this.gameObject.rigidbody2D.velocity = new Vector2 (rigidbody2D.velocity.x, moveVertical * this.maxMove_speed);
-			this.gameObject.rigidbody2D.velocity = new Vector2 (moveHorizontal * this.maxMove_speed, rigidbody2D.velocity.y);
-		
+
+			if(this.gameObject.rigidbody2D != null ){
+				this.gameObject.rigidbody2D.velocity = new Vector2 (rigidbody2D.velocity.x, moveVertical * this.maxMove_speed);
+				this.gameObject.rigidbody2D.velocity = new Vector2 (moveHorizontal * this.maxMove_speed, rigidbody2D.velocity.y);
+			}
+			else{
+				Vector3 velo = new Vector3( moveHorizontal * this.maxMove_speed, moveVertical * this.maxMove_speed, 0 );
+				this.gameObject.transform.position += velo * Time.deltaTime;
+				
+			}
+
 		}	
 	}
 }
