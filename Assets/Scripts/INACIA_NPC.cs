@@ -11,18 +11,16 @@ public class INACIA_NPC : MonoBehaviour {
 	private GameObject talkingTo;
 	private bool answer;
 	private bool complete;
-
-
-	private PathPlanner pathPlanner;
+	public Mover mover = new Mover();
+	
 
 	void Start () {
 		this.complete = false;
 		this.answer = true;
 		this.talking = false;
 		this.lineCounter = -1;
-
-		this.pathPlanner = new PathPlanner ();
-
+		this.mover.addPoint (new Point(this.transform.position.x + 200, transform.position.y + 120),true);
+		this.mover.moveToPoints ();
 	}
 
 
@@ -37,11 +35,9 @@ public class INACIA_NPC : MonoBehaviour {
 			{
 
 				float moveHorizontal = 0, moveVertical = 0;
-				this.transform.position = this.pathPlanner.followTarget(this.transform.position,this.talkingTo.transform.position, out moveHorizontal, out moveVertical);
+
 			}
 
-
-			Debug.Log(this.pathPlanner.getState() + " D: " + Vector3.Distance(this.talkingTo.transform.position, this.transform.position));
 
 
 		}

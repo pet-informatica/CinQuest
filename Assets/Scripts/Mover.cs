@@ -1,7 +1,8 @@
-﻿//#define DBG
+﻿#define DBG
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+
 
 
 /*
@@ -70,8 +71,8 @@ public class Mover : MonoBehaviour {
 	float EPS = 5f;
 
 	void Start () {
-	//	this.addPoint ( new Point(30,30,true));
-		//this.MoveToPoints ();
+		//this.addPoint ( new Point(100, 100), true ) ;
+		//this.moveToPoints ();
 		hasPointToGo = false;
 	}
 
@@ -128,9 +129,7 @@ public class Mover : MonoBehaviour {
 		if (this.gameObject == null) {
 			throw new UnityException("Rigidbody2D parameter is not set");
 		}
-		if (this.anim == null) {
-			throw new UnityException("Animator parameter is not set");	
-		}
+
 		this.finished = false;
 		this.start = true;
 		hasPointToGo=true;
@@ -240,8 +239,10 @@ public class Mover : MonoBehaviour {
 				moveVertical = 0;
 				moveHorizontal = 0;
 			}
-			this.anim.SetFloat ("VerticalSpeed",moveVertical);
-			this.anim.SetFloat ("HorizontalSpeed", moveHorizontal);
+			if(this.anim != null ) {
+				this.anim.SetFloat ("VerticalSpeed",moveVertical);
+				this.anim.SetFloat ("HorizontalSpeed", moveHorizontal);
+			}
 			this.gameObject.rigidbody2D.velocity = new Vector2 (rigidbody2D.velocity.x, moveVertical * this.maxMove_speed);
 			this.gameObject.rigidbody2D.velocity = new Vector2 (moveHorizontal * this.maxMove_speed, rigidbody2D.velocity.y);
 		

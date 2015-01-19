@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PC : MonoBehaviour {
 	public float maxMove_speed = 10f;
-	public Mover mover;
+	public Mover mover = new Mover();
 	private Animator anim;
 	private bool talking;
 
@@ -11,9 +11,12 @@ public class PC : MonoBehaviour {
 	void Start () {
 		this.anim = GetComponent<Animator> ();
 		this.talking = false;
-		this.mover.setGameObject (this.gameObject, this.anim, this.maxMove_speed);
+
+		print ("Mover speed: " + this.mover.maxMove_speed);
+
 		this.mover.addPoint (new Point(this.transform.position.x + 100, transform.position.y),true);
-		this.mover.moveToPoints ();
+		//this.mover.moveToPoints ();
+		this.mover.maxMove_speed = this.maxMove_speed;
 		//this.mover.setGameObject (this.gameObject, this.anim, this.maxMove_speed);
 		//this.agent = GetComponent<NavMeshAgent>();
 		//target = GameObject.FindWithTag("Player").transform; 
