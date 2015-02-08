@@ -1,6 +1,11 @@
 fileFormatVersion: 2
 guid: a1daa7ca163903c4aae96ceeb576963b
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: char_side.fw_0
+    21300002: char_side.fw_1
+    21300004: char_side.fw_2
+    21300006: char_side.fw_3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
