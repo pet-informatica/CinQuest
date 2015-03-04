@@ -34,6 +34,21 @@ ModelImporter:
     100056: Salas_00+tile1
     100058: Vidro_08+tile1
     100060: Vidro_08+vidro
+    100062: Jardins_00+tile1
+    100064: Objetos_04+aquario1
+    100066: Objetos_04+cavalete
+    100068: Objetos_04+com_banco
+    100070: Objetos_04+com_banheiro
+    100072: Objetos_04+copa
+    100074: Objetos_04+hospital
+    100076: Objetos_04+porta_de metal
+    100078: Objetos_04+ticket_gate
+    100080: Objetos_2_05+copa
+    100082: Objetos_2_05+mesa_redonda
+    100084: Objetos_2_05+teste
+    100086: Paredes_03+objetos
+    100088: Salas_01+escada
+    100090: Salas_01+tile1
     400000: //RootNode
     400002: Escadas_02+escada
     400004: Escadas_02+tile1
@@ -65,6 +80,21 @@ ModelImporter:
     400056: Salas_00+tile1
     400058: Vidro_08+tile1
     400060: Vidro_08+vidro
+    400062: Jardins_00+tile1
+    400064: Objetos_04+aquario1
+    400066: Objetos_04+cavalete
+    400068: Objetos_04+com_banco
+    400070: Objetos_04+com_banheiro
+    400072: Objetos_04+copa
+    400074: Objetos_04+hospital
+    400076: Objetos_04+porta_de metal
+    400078: Objetos_04+ticket_gate
+    400080: Objetos_2_05+copa
+    400082: Objetos_2_05+mesa_redonda
+    400084: Objetos_2_05+teste
+    400086: Paredes_03+objetos
+    400088: Salas_01+escada
+    400090: Salas_01+tile1
     2300000: Escadas_02+escada
     2300002: Escadas_02+tile1
     2300004: Jardins_01+tile1
@@ -95,6 +125,21 @@ ModelImporter:
     2300054: Salas_00+tile1
     2300056: Vidro_08+tile1
     2300058: Vidro_08+vidro
+    2300060: Jardins_00+tile1
+    2300062: Objetos_04+aquario1
+    2300064: Objetos_04+cavalete
+    2300066: Objetos_04+com_banco
+    2300068: Objetos_04+com_banheiro
+    2300070: Objetos_04+copa
+    2300072: Objetos_04+hospital
+    2300074: Objetos_04+porta_de metal
+    2300076: Objetos_04+ticket_gate
+    2300078: Objetos_2_05+copa
+    2300080: Objetos_2_05+mesa_redonda
+    2300082: Objetos_2_05+teste
+    2300084: Paredes_03+objetos
+    2300086: Salas_01+escada
+    2300088: Salas_01+tile1
     3300000: Escadas_02+escada
     3300002: Escadas_02+tile1
     3300004: Jardins_01+tile1
@@ -125,6 +170,21 @@ ModelImporter:
     3300054: Salas_00+tile1
     3300056: Vidro_08+tile1
     3300058: Vidro_08+vidro
+    3300060: Jardins_00+tile1
+    3300062: Objetos_04+aquario1
+    3300064: Objetos_04+cavalete
+    3300066: Objetos_04+com_banco
+    3300068: Objetos_04+com_banheiro
+    3300070: Objetos_04+copa
+    3300072: Objetos_04+hospital
+    3300074: Objetos_04+porta_de metal
+    3300076: Objetos_04+ticket_gate
+    3300078: Objetos_2_05+copa
+    3300080: Objetos_2_05+mesa_redonda
+    3300082: Objetos_2_05+teste
+    3300084: Paredes_03+objetos
+    3300086: Salas_01+escada
+    3300088: Salas_01+tile1
     4300000: Escadas_02+escada
     4300002: Escadas_02+tile1
     4300004: Jardins_01+tile1
@@ -155,6 +215,21 @@ ModelImporter:
     4300054: Salas_00+tile1
     4300056: Vidro_08+tile1
     4300058: Vidro_08+vidro
+    4300060: Jardins_00+tile1
+    4300062: Objetos_04+aquario1
+    4300064: Objetos_04+cavalete
+    4300066: Objetos_04+com_banco
+    4300068: Objetos_04+com_banheiro
+    4300070: Objetos_04+copa
+    4300072: Objetos_04+hospital
+    4300074: Objetos_04+porta_de metal
+    4300076: Objetos_04+ticket_gate
+    4300078: Objetos_2_05+copa
+    4300080: Objetos_2_05+mesa_redonda
+    4300082: Objetos_2_05+teste
+    4300084: Paredes_03+objetos
+    4300086: Salas_01+escada
+    4300088: Salas_01+tile1
     11400000: Escadas_02+escada
     11400002: Escadas_02+tile1
     11400004: Jardins_01+tile1
@@ -185,6 +260,21 @@ ModelImporter:
     11400054: Salas_00+tile1
     11400056: Vidro_08+tile1
     11400058: Vidro_08+vidro
+    11400060: Jardins_00+tile1
+    11400062: Objetos_04+aquario1
+    11400064: Objetos_04+cavalete
+    11400066: Objetos_04+com_banco
+    11400068: Objetos_04+com_banheiro
+    11400070: Objetos_04+copa
+    11400072: Objetos_04+hospital
+    11400074: Objetos_04+porta_de metal
+    11400076: Objetos_04+ticket_gate
+    11400078: Objetos_2_05+copa
+    11400080: Objetos_2_05+mesa_redonda
+    11400082: Objetos_2_05+teste
+    11400084: Paredes_03+objetos
+    11400086: Salas_01+escada
+    11400088: Salas_01+tile1
   materials:
     importMaterials: 0
     materialName: 0
