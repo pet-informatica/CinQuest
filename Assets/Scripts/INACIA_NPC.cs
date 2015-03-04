@@ -11,7 +11,6 @@ public class INACIA_NPC : MonoBehaviour {
 	private GameObject talkingTo;
 	private bool answer;
 	private bool complete;
-	public Mover mover = new Mover();
 
 
 	void Start () {
@@ -19,8 +18,6 @@ public class INACIA_NPC : MonoBehaviour {
 		this.answer = true;
 		this.talking = false;
 		this.lineCounter = -1;
-		this.mover.addPoint (new Point(this.transform.position.x + 200, transform.position.y + 120),true);
-		//this.mover.moveToPoints ();
 	}
 
 
@@ -61,8 +58,6 @@ public class INACIA_NPC : MonoBehaviour {
 			this.lineCounter = -1;
 			this.talking = false;
 			talkingTo.GetComponent<PC>().setTalking(this.talking);
-			talkingTo.GetComponent<PC>().mover.addPoint( new Point(talkingTo.transform.position.x + 100, talkingTo.transform.position.y),true);
-			talkingTo.GetComponent<PC>().mover.moveToPoints();
 		}
 		if (talking && Input.GetButtonDown ("Fire1")) {
 			talkingTo.GetComponent<PC>().setTalking(this.talking);
