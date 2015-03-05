@@ -91,8 +91,4 @@ public class PC : MonoBehaviour {
 		this.talking = talking;
 	}
 
-	void OnGUI(){
-		GUI.DrawTexture(new Rect(0,0,Screen.width,Screen.height),Resources.Load<Texture>("resultado.mov"));
-	}
-
 }
