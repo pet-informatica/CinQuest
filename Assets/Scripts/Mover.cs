@@ -1,4 +1,4 @@
-﻿#define DBG
+﻿#define DBG 
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
@@ -56,7 +56,6 @@ public class CharacterController : MonoBehaviour {
 EPS para comparacao de float de 5f.
  */
 public class Mover : MonoBehaviour {
-
 	public float maxMove_speed = 10f;
 	public Animator anim;
 	public float autoX=0, autoY=0;
@@ -137,24 +136,15 @@ public class Mover : MonoBehaviour {
 		completeX=false;
 		completeY=false;
 		this.stopInput = true;
-#if DBG
-		print ("move to points");
-#endif
 	}
 	
 
 	// Update is called once per frame
 	void Update () {
-#if DBG
-		print ("start-> " + start);
-#endif
 
 	//	if (!start) return;
 
 		if (hasPointToGo) {
-#if DBG
-			print ("has point to go");
-#endif
 			if(hasCompleted ) {
 				
 				if ( pointsToMove.Count > 0 ) {
@@ -162,9 +152,6 @@ public class Mover : MonoBehaviour {
 
 					pointToGo = pointsToMove.Dequeue();
 					this.finished = true;
-#if DBG
-					print ("dequeued");
-#endif
 				}
 				else {
 					this.autoX=this.autoY=0;
@@ -188,13 +175,7 @@ public class Mover : MonoBehaviour {
 				if(!hasCompleted) {
 					this.autoControl = true;
 					if(horizontalFirst) {
-#if DBG
-						print ("horizontal first");
-#endif
 						if(!completeX) {
-#if DBG
-							print ("setting auto x");
-#endif
 							this.autoX = (x > actualX )? 1 : -1;
 						}
 						else{ // move Y now

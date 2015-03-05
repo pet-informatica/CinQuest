@@ -12,8 +12,6 @@ public class PC : MonoBehaviour {
 		this.anim = GetComponent<Animator> ();
 		this.talking = false;
 
-		print ("Mover speed: " + this.mover.maxMove_speed);
-
 		//this.mover.addPoint (new Point(this.transform.position.x + 100, transform.position.y),true);
 		//this.mover.moveToPoints ();
 		this.mover.maxMove_speed = this.maxMove_speed;
@@ -91,6 +89,10 @@ public class PC : MonoBehaviour {
 
 	public void setTalking(bool talking){
 		this.talking = talking;
+	}
+
+	void OnGUI(){
+		GUI.DrawTexture(new Rect(0,0,Screen.width,Screen.height),Resources.Load<Texture>("resultado.mov"));
 	}
 
 }
