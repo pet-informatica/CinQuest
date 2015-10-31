@@ -12,8 +12,6 @@ public class PC : MonoBehaviour {
 		this.anim = GetComponent<Animator> ();
 		this.talking = false;
 
-		print ("Mover speed: " + this.mover.maxMove_speed);
-
 		//this.mover.addPoint (new Point(this.transform.position.x + 100, transform.position.y),true);
 		//this.mover.moveToPoints ();
 		this.mover.maxMove_speed = this.maxMove_speed;
