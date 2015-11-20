@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: ec3e3411a491eb9408cd647bc4a7cb45
 ModelImporter:
-  serializedVersion: 16
+  serializedVersion: 18
   fileIDToRecycleName:
     100000: //RootNode
     100002: Escadas_02+escada
@@ -49,6 +49,7 @@ ModelImporter:
     100086: Paredes_03+objetos
     100088: Salas_01+escada
     100090: Salas_01+tile1
+    100092: Objetos_04+porta_de_metal
     400000: //RootNode
     400002: Escadas_02+escada
     400004: Escadas_02+tile1
@@ -95,6 +96,7 @@ ModelImporter:
     400086: Paredes_03+objetos
     400088: Salas_01+escada
     400090: Salas_01+tile1
+    400092: Objetos_04+porta_de_metal
     2300000: Escadas_02+escada
     2300002: Escadas_02+tile1
     2300004: Jardins_01+tile1
@@ -140,6 +142,7 @@ ModelImporter:
     2300084: Paredes_03+objetos
     2300086: Salas_01+escada
     2300088: Salas_01+tile1
+    2300090: Objetos_04+porta_de_metal
     3300000: Escadas_02+escada
     3300002: Escadas_02+tile1
     3300004: Jardins_01+tile1
@@ -185,6 +188,7 @@ ModelImporter:
     3300084: Paredes_03+objetos
     3300086: Salas_01+escada
     3300088: Salas_01+tile1
+    3300090: Objetos_04+porta_de_metal
     4300000: Escadas_02+escada
     4300002: Escadas_02+tile1
     4300004: Jardins_01+tile1
@@ -230,6 +234,7 @@ ModelImporter:
     4300084: Paredes_03+objetos
     4300086: Salas_01+escada
     4300088: Salas_01+tile1
+    4300090: Objetos_04+porta_de_metal
     11400000: Escadas_02+escada
     11400002: Escadas_02+tile1
     11400004: Jardins_01+tile1
@@ -275,6 +280,7 @@ ModelImporter:
     11400084: Paredes_03+objetos
     11400086: Salas_01+escada
     11400088: Salas_01+tile1
+    11400090: Objetos_04+porta_de_metal
   materials:
     importMaterials: 0
     materialName: 0
@@ -284,6 +290,10 @@ ModelImporter:
     bakeSimulation: 0
     optimizeGameObjects: 0
     motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
     animationCompression: 1
     animationRotationError: .5
     animationPositionError: .5
@@ -302,11 +312,13 @@ ModelImporter:
     generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
+    keepQuads: 0
     weldVertices: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
+    useFileScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     splitTangentsAcrossUV: 1
@@ -329,3 +341,5 @@ ModelImporter:
   animationType: 0
   additionalBone: 0
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 

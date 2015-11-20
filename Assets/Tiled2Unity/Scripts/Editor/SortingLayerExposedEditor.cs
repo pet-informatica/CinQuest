@@ -15,7 +15,7 @@ public class SortingLayerExposedEditor : Editor
     public override void OnInspectorGUI()
     {
         // Get the renderer from the target object
-        var renderer = (target as SortingLayerExposed).gameObject.renderer;
+        var renderer = (target as SortingLayerExposed).gameObject.GetComponent<Renderer>();
 
         // If there is no renderer, we can't do anything
         if (!renderer)

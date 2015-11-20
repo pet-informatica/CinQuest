@@ -18,7 +18,7 @@ public class PC : MonoBehaviour {
 		//this.mover.setGameObject (this.gameObject, this.anim, this.maxMove_speed);
 		//this.agent = GetComponent<NavMeshAgent>();
 		//target = GameObject.FindWithTag("Player").transform; 
-		this.pcCamera = GameObject.FindWithTag("MainCamera").camera;
+		this.pcCamera = GameObject.FindWithTag("MainCamera").GetComponent<Camera>();
 	}
 
 
@@ -46,8 +46,8 @@ public class PC : MonoBehaviour {
 			//this.anim.Play("IdleDown",-1,Time.deltaTime);
 		}
 
-		rigidbody2D.velocity = new Vector2 (rigidbody2D.velocity.x, moveVertical * this.maxMove_speed);
-		rigidbody2D.velocity = new Vector2 (moveHorizontal * this.maxMove_speed, rigidbody2D.velocity.y);
+		GetComponent<Rigidbody2D>().velocity = new Vector2 (GetComponent<Rigidbody2D>().velocity.x, moveVertical * this.maxMove_speed);
+		GetComponent<Rigidbody2D>().velocity = new Vector2 (moveHorizontal * this.maxMove_speed, GetComponent<Rigidbody2D>().velocity.y);
 	}
 
 
@@ -75,12 +75,12 @@ public class PC : MonoBehaviour {
 				}
 				this.anim.SetFloat ("VerticalSpeed",moveVertical);
 				this.anim.SetFloat ("HorizontalSpeed", moveHorizontal);
-				rigidbody2D.velocity = new Vector2 (rigidbody2D.velocity.x, moveVertical * this.maxMove_speed);
-				rigidbody2D.velocity = new Vector2 (moveHorizontal * this.maxMove_speed, rigidbody2D.velocity.y);
+				GetComponent<Rigidbody2D>().velocity = new Vector2 (GetComponent<Rigidbody2D>().velocity.x, moveVertical * this.maxMove_speed);
+				GetComponent<Rigidbody2D>().velocity = new Vector2 (moveHorizontal * this.maxMove_speed, GetComponent<Rigidbody2D>().velocity.y);
 			
 
 			}else{
-				rigidbody2D.velocity = new Vector2(0,0);
+				GetComponent<Rigidbody2D>().velocity = new Vector2(0,0);
 				this.anim.SetFloat ("VerticalSpeed",0);
 				this.anim.SetFloat ("HorizontalSpeed", 0);
 			}
