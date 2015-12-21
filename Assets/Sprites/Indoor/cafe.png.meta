@@ -1,0 +1,915 @@
+fileFormatVersion: 2
+guid: d2ae0381b6d494c49a93f47b1bd3a0a5
+timeCreated: 1450715880
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: table_rectangle_1
+    21300002: table_rectangle_2
+    21300004: table_chair_1
+    21300006: table_chair_2
+    21300008: table_chair_3
+    21300010: table_chair_4
+    21300012: table_round_1
+    21300014: chair_right_1
+    21300016: chair_left_1
+    21300018: table_square_1
+    21300020: chair_front_1
+    21300022: chair_back_1
+    21300024: table_chair_5
+    21300026: chair_right_2
+    21300028: chair_left_2
+    21300030: table_square_2
+    21300032: chair_front_2
+    21300034: chair_back_2
+    21300036: microwave_1
+    21300038: microwave_2
+    21300040: table_chair_6
+    21300042: table_chair_7
+    21300044: table_chair_8
+    21300046: tv_1
+    21300048: tv_2
+    21300050: table_chair_9
+    21300052: table_chair_10
+    21300054: pot_1
+    21300056: liquefier_1
+    21300058: cafe_1
+    21300060: food_3
+    21300062: food_2
+    21300064: food_1
+    21300066: table_round_2
+    21300068: table_round_3
+    21300070: kitchen_tools_1
+    21300072: beer_1
+    21300074: beer_2
+    21300076: food_4
+    21300078: food_5
+    21300080: beer_3
+    21300082: beer_4
+    21300084: beer_5
+    21300086: coffe_2
+    21300088: coffe_3
+    21300090: plate_wardrobe_1
+    21300092: plate_wardrobe_2
+    21300094: plate_wardrobe_3
+    21300096: plate_wardrobe_4
+    21300098: plate_wardrobe_5
+    21300100: plate_shelf_1
+    21300102: pot_2
+    21300104: plate_shelf_2
+    21300106: palte_shelf_3
+    21300108: complete_sink_1
+    21300110: knife_1
+    21300112: knife_2
+    21300114: knife_3
+    21300116: cup_1
+    21300118: freezer_1
+    21300120: cooker_1
+    21300122: sink_1
+    21300124: sink_2
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: table_rectangle_1
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 354
+        width: 46
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: table_rectangle_2
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 354
+        width: 46
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: table_chair_1
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 293
+        width: 57
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -28.5, y: 25.5}
+        - {x: -28.5, y: -29.5}
+        - {x: 23.5, y: -29.5}
+        - {x: 23.5, y: 17.5}
+        - {x: 19.5, y: 25.5}
+    - name: table_chair_2
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 293
+        width: 50
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25, y: 26.5}
+        - {x: -25, y: -26.5}
+        - {x: 25, y: -26.5}
+        - {x: 25, y: 20.5}
+        - {x: 24, y: 26.5}
+    - name: table_chair_3
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 293
+        width: 50
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25, y: 26.5}
+        - {x: -25, y: -26.5}
+        - {x: 25, y: -26.5}
+        - {x: 25, y: 20.5}
+        - {x: 24, y: 26.5}
+    - name: table_chair_4
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 293
+        width: 50
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25, y: 26.5}
+        - {x: -25, y: -26.5}
+        - {x: 25, y: -26.5}
+        - {x: 25, y: 25.5}
+        - {x: 23, y: 26.5}
+    - name: table_round_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 16}
+        - {x: -16, y: 13}
+        - {x: -16, y: -12}
+        - {x: -11, y: -16}
+        - {x: 15, y: -16}
+        - {x: 16, y: -14}
+        - {x: 16, y: 13}
+        - {x: 14, y: 16}
+    - name: chair_right_1
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 256
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chair_left_1
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 257
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: table_square_1
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 257
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chair_front_1
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 257
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chair_back_1
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 257
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: table_chair_5
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 229
+        width: 50
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25, y: 26.5}
+        - {x: -25, y: -26.5}
+        - {x: 25, y: -26.5}
+        - {x: 25, y: 25.5}
+        - {x: 23, y: 26.5}
+    - name: chair_right_2
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 224
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chair_left_2
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 225
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: table_square_2
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 225
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chair_front_2
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 225
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chair_back_2
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 225
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: microwave_1
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 166
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: microwave_2
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 164
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: table_chair_6
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 165
+        width: 50
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25, y: 26.5}
+        - {x: -25, y: -26.5}
+        - {x: 25, y: -26.5}
+        - {x: 25, y: 25.5}
+        - {x: 23, y: 26.5}
+    - name: table_chair_7
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 165
+        width: 50
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25, y: 26.5}
+        - {x: -25, y: -26.5}
+        - {x: 25, y: -26.5}
+        - {x: 25, y: 20.5}
+        - {x: 24, y: 26.5}
+    - name: table_chair_8
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 164
+        width: 49
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 24.5, y: 27}
+        - {x: -24.5, y: 27}
+        - {x: -24.5, y: -27}
+        - {x: -5.5, y: -27}
+        - {x: -1.5, y: -23}
+        - {x: 1.5, y: -27}
+        - {x: 24.5, y: -27}
+    - name: tv_1
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 132
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: tv_2
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 131
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: table_chair_9
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 101
+        width: 50
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25, y: 26.5}
+        - {x: -25, y: -26.5}
+        - {x: 25, y: -26.5}
+        - {x: 25, y: 25.5}
+        - {x: 23, y: 26.5}
+    - name: table_chair_10
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 101
+        width: 50
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25, y: 26.5}
+        - {x: -25, y: -26.5}
+        - {x: 25, y: -26.5}
+        - {x: 25, y: 20.5}
+        - {x: 24, y: 26.5}
+    - name: pot_1
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 98
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: liquefier_1
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 99
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: cafe_1
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 71
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: food_3
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 6
+        width: 32
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: food_2
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 11
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: food_1
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 9
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: table_round_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
+    - name: table_round_3
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
+    - name: kitchen_tools_1
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 356
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: beer_1
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 70
+        width: 10
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: beer_2
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 35
+        width: 11
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: food_4
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 43
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: food_5
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 43
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: beer_3
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 68
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: beer_4
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 70
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: beer_5
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 80
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: coffe_2
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 106
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: coffe_3
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 101
+        width: 25
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: plate_wardrobe_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 32}
+        - {x: -16, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 32}
+    - name: plate_wardrobe_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 32}
+        - {x: -16, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 32}
+    - name: plate_wardrobe_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 32}
+        - {x: -16, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 32}
+    - name: plate_wardrobe_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 32}
+        - {x: -16, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 32}
+    - name: plate_wardrobe_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 314
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 19}
+        - {x: -16, y: -19}
+        - {x: 16, y: -19}
+        - {x: 16, y: 19}
+    - name: plate_shelf_1
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 202
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: pot_2
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 231
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: plate_shelf_2
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 199
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: palte_shelf_3
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 201
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: complete_sink_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 128
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -28, y: 19.5}
+        - {x: -64, y: 14.5}
+        - {x: -64, y: -19.5}
+        - {x: 64, y: -19.5}
+        - {x: 64, y: 14.5}
+        - {x: -3, y: 19.5}
+    - name: knife_1
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 230
+        width: 12
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: knife_2
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 234
+        width: 24
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: knife_3
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 265
+        width: 23
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: cup_1
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 164
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: freezer_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 256
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 32}
+        - {x: -16, y: -32}
+        - {x: 16, y: -32}
+        - {x: 16, y: 32}
+    - name: cooker_1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
+    - name: sink_1
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 50
+        width: 25
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: sink_2
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 50
+        width: 25
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
