@@ -1,0 +1,620 @@
+fileFormatVersion: 2
+guid: 0ae0277b0686e474da1aa19cdaa9d46f
+timeCreated: 1450876811
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: wall_1
+    21300002: wall_2
+    21300004: notice_board_1
+    21300006: toilet_box_1
+    21300008: notice_board_2
+    21300010: door_closed_1
+    21300012: door_open_1
+    21300014: paper_1
+    21300016: card_1
+    21300018: card_2
+    21300020: stuff_1
+    21300022: blackboard_1
+    21300024: pot_1
+    21300026: atlas_1
+    21300028: pencil_case_1
+    21300030: lockers_1
+    21300032: plant_3
+    21300034: blackboard_2
+    21300036: big_desk_1
+    21300038: plant_1
+    21300040: plant_2
+    21300042: blackboard_3
+    21300044: bathroom_wall_1
+    21300046: medium_desk_1
+    21300048: small_desk_1
+    21300050: small_desk_2
+    21300052: blackboard_4
+    21300054: toilet_box_2
+    21300056: desk_2
+    21300058: desk_1
+    21300060: chair_1
+    21300062: window_1
+    21300064: window_2
+    21300066: bookcase_1
+    21300068: bookcase_2
+    21300070: bookcase_3
+    21300072: bookcase_4
+    21300074: toilet_1
+    21300076: pencil_1
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: wall_1
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 356
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
+    - name: wall_2
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 356
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
+    - name: notice_board_1
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 392
+        width: 61
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: toilet_box_1
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 292
+        width: 48
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24, y: 64}
+        - {x: -24, y: -64}
+        - {x: 24, y: -64}
+        - {x: 24, y: 64}
+    - name: notice_board_2
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 358
+        width: 61
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: door_closed_1
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 293
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 25}
+        - {x: -16, y: -25}
+        - {x: 16, y: -25}
+        - {x: 16, y: 25}
+    - name: door_open_1
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 293
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 25}
+        - {x: -16, y: -25}
+        - {x: 16, y: -25}
+        - {x: 16, y: 25}
+    - name: paper_1
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 328
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: card_1
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 340
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: card_2
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 340
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: stuff_1
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 338
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: blackboard_1
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 319
+        width: 61
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -30.5, y: 16.5}
+        - {x: -30.5, y: -16.5}
+        - {x: 30.5, y: -16.5}
+        - {x: 30.5, y: 16.5}
+    - name: pot_1
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 287
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: atlas_1
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 310
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: pencil_case_1
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 313
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: lockers_1
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 231
+        width: 32
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 26.5}
+        - {x: -16, y: -26.5}
+        - {x: 16, y: -26.5}
+        - {x: 16, y: 26.5}
+    - name: plant_3
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 232
+        width: 25
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: blackboard_2
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 281
+        width: 61
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -30.5, y: 16.5}
+        - {x: -30.5, y: -16.5}
+        - {x: 30.5, y: -16.5}
+        - {x: 30.5, y: 16.5}
+    - name: big_desk_1
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 146
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
+    - name: plant_1
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 235
+        width: 42
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 19}
+        - {x: -21, y: 10}
+        - {x: -21, y: -11}
+        - {x: -14, y: -19}
+        - {x: 21, y: -19}
+        - {x: 21, y: 14}
+        - {x: 11, y: 19}
+    - name: plant_2
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 233
+        width: 29
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: blackboard_3
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 240
+        width: 61
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -30.5, y: 16.5}
+        - {x: -30.5, y: -16.5}
+        - {x: 30.5, y: -16.5}
+        - {x: 30.5, y: 16.5}
+    - name: bathroom_wall_1
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 222
+        width: 48
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24, y: 28.5}
+        - {x: -24, y: -28.5}
+        - {x: 24, y: -28.5}
+        - {x: 24, y: 28.5}
+    - name: medium_desk_1
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 198
+        width: 64
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: small_desk_1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 198
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: small_desk_2
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 198
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: blackboard_4
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 202
+        width: 61
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -30.5, y: 16.5}
+        - {x: -30.5, y: -16.5}
+        - {x: 30.5, y: -16.5}
+        - {x: 30.5, y: 16.5}
+    - name: toilet_box_2
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 102
+        width: 48
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24, y: 56}
+        - {x: -24, y: -56}
+        - {x: 24, y: -56}
+        - {x: 24, y: 56}
+    - name: desk_2
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 146
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 24}
+        - {x: -32, y: 19}
+        - {x: -32, y: -24}
+        - {x: 32, y: -24}
+        - {x: 32, y: 15}
+        - {x: 23, y: 24}
+    - name: desk_1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 133
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 21}
+        - {x: -16, y: -11}
+        - {x: -10, y: -21}
+        - {x: 14, y: -21}
+        - {x: 16, y: -13}
+        - {x: 16, y: 21}
+    - name: chair_1
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 174
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: window_1
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 132
+        width: 48
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24, y: 18}
+        - {x: -24, y: -18}
+        - {x: 24, y: -18}
+        - {x: 24, y: 18}
+    - name: window_2
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 132
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bookcase_1
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 60
+        width: 41
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20.5, y: 32}
+        - {x: -20.5, y: -32}
+        - {x: 20.5, y: -32}
+        - {x: 20.5, y: -10}
+        - {x: 13.5, y: 32}
+    - name: bookcase_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 60
+        width: 73
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -36.5, y: 32}
+        - {x: -36.5, y: -32}
+        - {x: 36.5, y: -32}
+        - {x: 36.5, y: -10}
+        - {x: 29.5, y: 32}
+    - name: bookcase_3
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 60
+        width: 41
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20.5, y: 32}
+        - {x: -20.5, y: -32}
+        - {x: 20.5, y: -32}
+        - {x: 20.5, y: -10}
+        - {x: 13.5, y: 32}
+    - name: bookcase_4
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 60
+        width: 73
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -36.5, y: 32}
+        - {x: -36.5, y: -32}
+        - {x: 36.5, y: -32}
+        - {x: 36.5, y: -10}
+        - {x: 29.5, y: 32}
+    - name: toilet_1
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 59
+        width: 29
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: pencil_1
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 317
+        width: 5
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
