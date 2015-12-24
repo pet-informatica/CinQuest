@@ -1,0 +1,454 @@
+fileFormatVersion: 2
+guid: 96530de61af1498408b7533bd1c88b29
+timeCreated: 1450909405
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: large_horizontal_box_1
+    21300002: large_horizontal_table_1
+    21300004: small_horizontal_table_1
+    21300006: large_upright_table_1
+    21300008: drawers_2
+    21300010: closed_window_1
+    21300012: closed_window_2
+    21300014: single_board_1
+    21300016: stone_brick_wall_1
+    21300018: small_upright_table_1
+    21300020: medium_box_1
+    21300022: small_table_1
+    21300024: padded_seat_1
+    21300026: small_brown_box_1
+    21300028: drawers_1
+    21300030: small_grey_box_1
+    21300032: table_with_cups_1
+    21300034: box_with_bottles_1
+    21300036: gift_box_1
+    21300038: well_1
+    21300040: stuff_1
+    21300042: medium_upright_box_1
+    21300044: cup_1
+    21300046: large_upright_box_1
+    21300048: cabinet_1
+    21300050: double_board_1
+    21300052: blue_roof_1
+    21300054: medium_horizontal_box_1
+    21300056: cross_carpet_1
+    21300058: small_persian_carpet_1
+    21300060: big_persian_carpet_1
+    21300062: stairs_carpet_1
+    21300064: shelf_1
+    21300066: small_table_2
+    21300068: tables_n_boxes_1_34
+    21300070: tables_n_boxes_1_35
+    21300072: right_half_table_1
+    21300074: left_half_table_1
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: large_horizontal_box_1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 224
+        width: 96
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: large_horizontal_table_1
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 165
+        width: 83
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: small_horizontal_table_1
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 165
+        width: 29
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: large_upright_table_1
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 98
+        width: 21
+        height: 87
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: drawers_2
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 136
+        width: 72
+        height: 35
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: closed_window_1
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 148
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: closed_window_2
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 141
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: single_board_1
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: stone_brick_wall_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: small_upright_table_1
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 130
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: medium_box_1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 98
+        width: 62
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: small_table_1
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 107
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: padded_seat_1
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 100
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: small_brown_box_1
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 105
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: drawers_1
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 79
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: small_grey_box_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: table_with_cups_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 69
+        width: 32
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: box_with_bottles_1
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 73
+        width: 29
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gift_box_1
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 74
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: well_1
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 77
+        width: 23
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: stuff_1
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 76
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: medium_upright_box_1
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 256
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cup_1
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 41
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: large_upright_box_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 224
+        width: 32
+        height: 96
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cabinet_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: double_board_1
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 288
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blue_roof_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: medium_horizontal_box_1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 256
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cross_carpet_1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: small_persian_carpet_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: big_persian_carpet_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: stairs_carpet_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 96
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: shelf_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 96
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: small_table_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: right_half_table_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 134
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: left_half_table_1
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 130
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

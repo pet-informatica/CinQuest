@@ -1,0 +1,2491 @@
+fileFormatVersion: 2
+guid: aa09e09a5be5d604097e992e00ce9a65
+timeCreated: 1450930852
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: square_table_1
+    21300002: chair_frontside_1
+    21300004: chair_backside_1
+    21300006: chair_right_1
+    21300008: chair_left_1
+    21300010: wall_1
+    21300012: wall_2
+    21300014: floor_1
+    21300016: floor_2
+    21300018: floor_3
+    21300020: floor_4
+    21300022: bigsize_bed_1
+    21300024: chair_frontside_2
+    21300026: chair_backside_2
+    21300028: chair_right_2
+    21300030: chair_left_2
+    21300032: table_&_chairs_1
+    21300034: retangle_table_1
+    21300036: retangle_table_2
+    21300038: wall_3
+    21300040: floor_5
+    21300042: floor_6
+    21300044: floor_7
+    21300046: floor_8
+    21300048: chair_frontside_3
+    21300050: chair_backside_3
+    21300052: chair_right_3
+    21300054: chair_left_3
+    21300056: floor_9
+    21300058: floor_10
+    21300060: floor_11
+    21300062: smallsize_bed_1
+    21300064: chair_frontside_4
+    21300066: chair_backside_4
+    21300068: chair_right_4
+    21300070: chair_left_4
+    21300072: small_carpet_1
+    21300074: small_carpet_2
+    21300076: small_carpet_3
+    21300078: retangle_table_7
+    21300080: chair_frontside_5
+    21300082: chair_backside_5
+    21300084: chair_right_5
+    21300086: chair_left_5
+    21300088: small_carpet_4
+    21300090: small_carpet_5
+    21300092: small_carpet_6
+    21300094: small_square_table_1
+    21300096: retangle_table_3
+    21300098: retangle_table_5
+    21300100: retangle_table_8
+    21300102: retangle_table_10
+    21300104: chair_frontside_6
+    21300106: chair_backside_6
+    21300108: chair_right_6
+    21300110: chair_left_6
+    21300112: retangle_table_4
+    21300114: retangle_table_6
+    21300116: retangle_table_9
+    21300118: chair_frontside_7
+    21300120: chair_backside_7
+    21300122: chair_right_7
+    21300124: chair_left_7
+    21300126: balcony_1
+    21300128: balcony_2
+    21300130: balcony_3
+    21300132: balcony_4
+    21300134: sink_1
+    21300136: indoor_2_68
+    21300138: indoor_2_69
+    21300140: indoor_2_70
+    21300142: chair_backside_8
+    21300144: chair_frontside_8
+    21300146: chair_right_8
+    21300148: chair_left_8
+    21300150: balcony_5
+    21300152: sink_2
+    21300154: sink_3
+    21300156: stove_2
+    21300158: stove_1
+    21300160: microwave_1
+    21300162: microwave_2
+    21300164: balcony_6
+    21300166: balcony_7
+    21300168: balcony_8
+    21300170: balcony_9
+    21300172: refrigerator_3
+    21300174: refrigerator_2
+    21300176: refrigerator_1
+    21300178: washing_machine_1
+    21300180: washing_machine_2
+    21300182: smallsize_bed_2
+    21300184: bigsize_bed_2
+    21300186: balcony_10
+    21300188: shelf_1
+    21300190: shelf_2
+    21300192: shelf_3
+    21300194: shelf_4
+    21300196: shelf_lateral_1
+    21300198: refrigerator_5
+    21300200: refrigerator_4
+    21300202: indoor_2_101
+    21300204: smallsize_bed_3
+    21300206: bigsize_bed_3
+    21300208: shelf_5
+    21300210: shelf_6
+    21300212: shelf_lateral_3
+    21300214: shelf_lateral_2
+    21300216: balcony_11
+    21300218: tree_vase_1
+    21300220: tree_vase_2
+    21300222: flower_vase_5
+    21300224: flower_vase_6
+    21300226: smallsize_bed_4
+    21300228: bigsize_bed_4
+    21300230: tv_1
+    21300232: vase_1
+    21300234: vase_2
+    21300236: flower_vase_1
+    21300238: flower_vase_2
+    21300240: flower_vase_3
+    21300242: flower_vase_4
+    21300244: smallsize_bed_5
+    21300246: bigsize_bed_5
+    21300248: television_lateral_1
+    21300250: tv_2
+    21300252: tv_3
+    21300254: tv_4
+    21300256: large_lampshade_1
+    21300258: small_lampshade_1
+    21300260: large_lampshade_2
+    21300262: small_lampshade_2
+    21300264: large_lampshade_3
+    21300266: small_lampshade_3
+    21300268: large_lampshade_4
+    21300270: small_lampshade_4
+    21300272: small_lampshade_5
+    21300274: small_lampshade_6
+    21300276: bathtub_1
+    21300278: bathtub_3
+    21300280: bathtub_4
+    21300282: toilet_frontside_1
+    21300284: toilet_frontside_2
+    21300286: window_1
+    21300288: window_2
+    21300290: window_3
+    21300292: window_4
+    21300294: window_5
+    21300296: window_6
+    21300298: window_7
+    21300300: window_8
+    21300302: bathtub_2
+    21300304: window_9
+    21300306: window_10
+    21300308: window_11
+    21300310: window_12
+    21300312: window_13
+    21300314: toilet_right_1
+    21300316: toilet_left_1
+    21300318: toilet_right_2
+    21300320: toilet_left_2
+    21300322: window_14
+    21300324: window_15
+    21300326: window_16
+    21300328: window_17
+    21300330: curtain_1
+    21300332: curtain_2
+    21300334: curtain_3
+    21300336: curtain_4
+    21300338: curtain_5
+    21300340: curtain_6
+    21300342: curtain_7
+    21300344: curtain_8
+    21300346: sink_4
+    21300348: mirror_1
+    21300350: mirror_2
+    21300352: window_18
+    21300354: window_19
+    21300356: curtain_9
+    21300358: curtain_10
+    21300360: curtain_11
+    21300362: curtain_12
+    21300364: curtain_13
+    21300366: curtain_14
+    21300368: curtain_15
+    21300370: curtain_16
+    21300372: bathtub_5
+    21300374: sink_5
+    21300376: window_20
+    21300378: door_1
+    21300380: door_2
+    21300382: door_3
+    21300384: door_4
+    21300386: door_6
+    21300388: door_7
+    21300390: door_8
+    21300392: door_9
+    21300394: door_10
+    21300396: curtain_17
+    21300398: curtain_18
+    21300400: curtain_19
+    21300402: curtain_20
+    21300404: curtain_21
+    21300406: curtain_22
+    21300408: curtain_23
+    21300410: curtain_24
+    21300412: thin_retangle_carpet_1
+    21300414: square_carpet_1
+    21300416: retangle_carpet_1
+    21300418: retangle_carpet_2
+    21300420: retangle_carpet_3
+    21300422: retangle_carpet_4
+    21300424: retangle_carpet_5
+    21300426: thin_retangle_carpet_2
+    21300428: square_carpet_2
+    21300430: retangle_carpet_6
+    21300432: retangle_carpet_7
+    21300434: retangle_carpet_8
+    21300436: retangle_carpet_9
+    21300438: retangle_carpet_10
+    21300440: retangle_carpet_11
+    21300442: retangle_carpet_12
+    21300444: retangle_carpet_13
+    21300446: retangle_carpet_14
+    21300448: retangle_carpet_15
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: square_table_1
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1153
+        width: 57
+        height: 52
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chair_frontside_1
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 1158
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chair_backside_1
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 1158
+        width: 20
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chair_right_1
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 1158
+        width: 20
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chair_left_1
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 1158
+        width: 20
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wall_1
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1150
+        width: 96
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wall_2
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 1150
+        width: 96
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: floor_1
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 1177
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: floor_2
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 1177
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: floor_3
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 1177
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: floor_4
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1177
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bigsize_bed_1
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 1135
+        width: 74
+        height: 77
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chair_frontside_2
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 1173
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chair_backside_2
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 1173
+        width: 20
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chair_right_2
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 1173
+        width: 20
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chair_left_2
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 1173
+        width: 20
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: table_&_chairs_1
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1085
+        width: 73
+        height: 60
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: retangle_table_1
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 1080
+        width: 37
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: retangle_table_2
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 1107
+        width: 69
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wall_3
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 1080
+        width: 96
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: floor_5
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 1138
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: floor_6
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 1138
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: floor_7
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 1138
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: floor_8
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 1138
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chair_frontside_3
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 1129
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chair_backside_3
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 1129
+        width: 20
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chair_right_3
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 1129
+        width: 20
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chair_left_3
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 1129
+        width: 20
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: floor_9
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 1096
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: floor_10
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 1096
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: floor_11
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 1096
+        width: 62
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smallsize_bed_1
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 1050
+        width: 42
+        height: 77
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chair_frontside_4
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 1086
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chair_backside_4
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 1086
+        width: 20
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chair_right_4
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 1086
+        width: 20
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chair_left_4
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 1086
+        width: 20
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: small_carpet_1
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 1025
+        width: 59
+        height: 42
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: small_carpet_2
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 1025
+        width: 59
+        height: 42
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: small_carpet_3
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 1025
+        width: 59
+        height: 42
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: retangle_table_7
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 954
+        width: 36
+        height: 96
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chair_frontside_5
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 1043
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chair_backside_5
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 1043
+        width: 20
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chair_right_5
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 1043
+        width: 20
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chair_left_5
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 1043
+        width: 20
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: small_carpet_4
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 978
+        width: 55
+        height: 43
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: small_carpet_5
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 979
+        width: 57
+        height: 42
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: small_carpet_6
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 980
+        width: 57
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: small_square_table_1
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 1007
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: retangle_table_3
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 1007
+        width: 70
+        height: 36
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: retangle_table_5
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 1007
+        width: 70
+        height: 36
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: retangle_table_8
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 954
+        width: 36
+        height: 68
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: retangle_table_10
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 961
+        width: 34
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chair_frontside_6
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 998
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chair_backside_6
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 998
+        width: 20
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chair_right_6
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 998
+        width: 20
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chair_left_6
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 998
+        width: 20
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: retangle_table_4
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 961
+        width: 102
+        height: 36
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: retangle_table_6
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 961
+        width: 70
+        height: 36
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: retangle_table_9
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 967
+        width: 70
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chair_frontside_7
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 953
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chair_backside_7
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 953
+        width: 20
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chair_right_7
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 953
+        width: 20
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chair_left_7
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 953
+        width: 20
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: balcony_1
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 862
+        width: 73
+        height: 66
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: balcony_2
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 862
+        width: 73
+        height: 66
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: balcony_3
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 862
+        width: 35
+        height: 66
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: balcony_4
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 894
+        width: 73
+        height: 34
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sink_1
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 922
+        width: 45
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chair_backside_8
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 903
+        width: 21
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chair_frontside_8
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 903
+        width: 21
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chair_right_8
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 903
+        width: 21
+        height: 42
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chair_left_8
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 903
+        width: 21
+        height: 42
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: balcony_5
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 862
+        width: 33
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sink_2
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 873
+        width: 25
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sink_3
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 873
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: stove_2
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 873
+        width: 41
+        height: 34
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: stove_1
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 873
+        width: 41
+        height: 34
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: microwave_1
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 873
+        width: 31
+        height: 22
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: microwave_2
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 873
+        width: 27
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: balcony_6
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 781
+        width: 73
+        height: 66
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: balcony_7
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 781
+        width: 73
+        height: 66
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: balcony_8
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 781
+        width: 35
+        height: 66
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: balcony_9
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 813
+        width: 73
+        height: 34
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: refrigerator_3
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 798
+        width: 41
+        height: 56
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: refrigerator_2
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 798
+        width: 41
+        height: 56
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: refrigerator_1
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 788
+        width: 41
+        height: 66
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: washing_machine_1
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 788
+        width: 41
+        height: 42
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: washing_machine_2
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 788
+        width: 41
+        height: 42
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smallsize_bed_2
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 794
+        width: 42
+        height: 77
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bigsize_bed_2
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 794
+        width: 74
+        height: 77
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: balcony_10
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 784
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: shelf_1
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 698
+        width: 41
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: shelf_2
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 698
+        width: 41
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: shelf_3
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 698
+        width: 73
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: shelf_4
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 698
+        width: 73
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: shelf_lateral_1
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 684
+        width: 37
+        height: 96
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: refrigerator_5
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 724
+        width: 41
+        height: 56
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: refrigerator_4
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 724
+        width: 41
+        height: 56
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smallsize_bed_3
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 701
+        width: 42
+        height: 77
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bigsize_bed_3
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 701
+        width: 74
+        height: 77
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: shelf_5
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 624
+        width: 73
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: shelf_6
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 624
+        width: 73
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: shelf_lateral_3
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 595
+        width: 37
+        height: 96
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: shelf_lateral_2
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 610
+        width: 37
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: balcony_11
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 653
+        width: 73
+        height: 34
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tree_vase_1
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 635
+        width: 31
+        height: 54
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tree_vase_2
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 635
+        width: 41
+        height: 54
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flower_vase_5
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 635
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flower_vase_6
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 635
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smallsize_bed_4
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 614
+        width: 42
+        height: 77
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bigsize_bed_4
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 614
+        width: 74
+        height: 77
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tv_1
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 539
+        width: 73
+        height: 66
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vase_1
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 603
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: vase_2
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 603
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flower_vase_1
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 603
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flower_vase_2
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 603
+        width: 21
+        height: 25
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flower_vase_3
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 603
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: flower_vase_4
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 603
+        width: 31
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smallsize_bed_5
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 527
+        width: 42
+        height: 77
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bigsize_bed_5
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 527
+        width: 74
+        height: 77
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: television_lateral_1
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 536
+        width: 16
+        height: 61
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tv_2
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 539
+        width: 46
+        height: 52
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tv_3
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 538
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tv_4
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 539
+        width: 37
+        height: 42
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: large_lampshade_1
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 534
+        width: 18
+        height: 48
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: small_lampshade_1
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 534
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: large_lampshade_2
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 534
+        width: 23
+        height: 48
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: small_lampshade_2
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 534
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: large_lampshade_3
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 534
+        width: 18
+        height: 48
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: small_lampshade_3
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 534
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: large_lampshade_4
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 534
+        width: 23
+        height: 48
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: small_lampshade_4
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 534
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: small_lampshade_5
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 533
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: small_lampshade_6
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 532
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bathtub_1
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 429
+        width: 78
+        height: 91
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bathtub_3
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 429
+        width: 48
+        height: 91
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bathtub_4
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 429
+        width: 48
+        height: 91
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: toilet_frontside_1
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 428
+        width: 29
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: toilet_frontside_2
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 428
+        width: 29
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: window_1
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 461
+        width: 32
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: window_2
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 461
+        width: 32
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: window_3
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 463
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: window_4
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 463
+        width: 33
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: window_5
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 461
+        width: 32
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: window_6
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 461
+        width: 32
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: window_7
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 463
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: window_8
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 463
+        width: 33
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bathtub_2
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 333
+        width: 78
+        height: 91
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: window_9
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 411
+        width: 60
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: window_10
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 410
+        width: 61
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: window_11
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 411
+        width: 60
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: window_12
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 410
+        width: 61
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: window_13
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 413
+        width: 54
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: toilet_right_1
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 368
+        width: 34
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: toilet_left_1
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 368
+        width: 35
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: toilet_right_2
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 368
+        width: 34
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: toilet_left_2
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 368
+        width: 35
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: window_14
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 359
+        width: 32
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: window_15
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 359
+        width: 32
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: window_16
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 361
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: window_17
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 361
+        width: 33
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: curtain_1
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 348
+        width: 11
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: curtain_2
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 348
+        width: 11
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: curtain_3
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 356
+        width: 11
+        height: 36
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: curtain_4
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 356
+        width: 11
+        height: 36
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: curtain_5
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 349
+        width: 11
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: curtain_6
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 349
+        width: 11
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: curtain_7
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 357
+        width: 11
+        height: 36
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: curtain_8
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 357
+        width: 11
+        height: 36
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sink_4
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 340
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mirror_1
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 321
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mirror_2
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 321
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: window_18
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 309
+        width: 60
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: window_19
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 308
+        width: 61
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: curtain_9
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 300
+        width: 11
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: curtain_10
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 300
+        width: 11
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: curtain_11
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 308
+        width: 11
+        height: 36
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: curtain_12
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 308
+        width: 11
+        height: 36
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: curtain_13
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 300
+        width: 11
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: curtain_14
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 300
+        width: 11
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: curtain_15
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 308
+        width: 11
+        height: 36
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: curtain_16
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 308
+        width: 11
+        height: 36
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bathtub_5
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 266
+        width: 39
+        height: 61
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sink_5
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 296
+        width: 73
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: window_20
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 312
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: door_1
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 229
+        width: 35
+        height: 50
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: door_2
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 229
+        width: 35
+        height: 50
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: door_3
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 229
+        width: 35
+        height: 50
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: door_4
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 229
+        width: 35
+        height: 50
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: door_6
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 229
+        width: 35
+        height: 50
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: door_7
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 229
+        width: 35
+        height: 50
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: door_8
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 229
+        width: 35
+        height: 50
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: door_9
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 229
+        width: 35
+        height: 50
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: door_10
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 229
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: curtain_17
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 247
+        width: 11
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: curtain_18
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 247
+        width: 11
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: curtain_19
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 255
+        width: 11
+        height: 36
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: curtain_20
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 255
+        width: 11
+        height: 36
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: curtain_21
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 247
+        width: 11
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: curtain_22
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 247
+        width: 11
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: curtain_23
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 255
+        width: 11
+        height: 36
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: curtain_24
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 255
+        width: 11
+        height: 36
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thin_retangle_carpet_1
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 121
+        width: 41
+        height: 96
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: square_carpet_1
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 121
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: retangle_carpet_1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 153
+        width: 96
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: retangle_carpet_2
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 153
+        width: 96
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: retangle_carpet_3
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 153
+        width: 96
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: retangle_carpet_4
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 153
+        width: 96
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: retangle_carpet_5
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 153
+        width: 96
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: thin_retangle_carpet_2
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 20
+        width: 41
+        height: 96
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: square_carpet_2
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 20
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: retangle_carpet_6
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 84
+        width: 128
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: retangle_carpet_7
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 85
+        width: 96
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: retangle_carpet_8
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 85
+        width: 96
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: retangle_carpet_9
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 85
+        width: 49
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: retangle_carpet_10
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 85
+        width: 96
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: retangle_carpet_11
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 11
+        width: 96
+        height: 72
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: retangle_carpet_12
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 10
+        width: 96
+        height: 72
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: retangle_carpet_13
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 13
+        width: 96
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: retangle_carpet_14
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 14
+        width: 49
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: retangle_carpet_15
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 14
+        width: 96
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
