@@ -1,0 +1,1618 @@
+fileFormatVersion: 2
+guid: 24c7f7b40883af748812842666d6d3b6
+timeCreated: 1451106587
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: wardrobe_right_1
+    21300002: wardrobe_left_1
+    21300004: desk_1
+    21300006: seat_1
+    21300008: seat_2
+    21300010: seat_3
+    21300012: seat_4
+    21300014: seat_5
+    21300016: chair_1
+    21300018: bench_2
+    21300020: seat_6
+    21300022: seat_7
+    21300024: seat_8
+    21300026: seat_9
+    21300028: bench_1
+    21300030: armchair_front_1
+    21300032: armchair_back_1
+    21300034: armchair_front_2
+    21300036: armchair_back_2
+    21300038: armchair_front_3
+    21300040: armchair_back_3
+    21300042: armchair_front_4
+    21300044: armchair_back_4
+    21300046: desk_8
+    21300048: desk_2
+    21300050: armchair_front_5
+    21300052: armchair_front_6
+    21300054: desk_3
+    21300056: desk_4
+    21300058: desk_5
+    21300060: chair_2
+    21300062: table_round_1
+    21300064: table_round_2
+    21300066: table_round_4
+    21300068: table_round_5
+    21300070: table_round_6
+    21300072: wardrobe_right_2
+    21300074: wardrobe_left_2
+    21300076: armchair_right_1
+    21300078: armchair_left_1
+    21300080: armchair_right_2
+    21300082: armchair_left_2
+    21300084: armchair_right_3
+    21300086: armchair_left_3
+    21300088: armchair_right_4
+    21300090: armchair_left_4
+    21300092: armchair_back_5
+    21300094: armchair_right_5
+    21300096: armchair_left_5
+    21300098: armchair_back_6
+    21300100: armchair_right_6
+    21300102: armchair_left_6
+    21300104: big_bench_1
+    21300106: sofa_right_1
+    21300108: sofa_left_1
+    21300110: sofa_right_2
+    21300112: sofa_left_2
+    21300114: sofa_right_3
+    21300116: sofa_left_3
+    21300118: sofa_right_4
+    21300120: sofa_left_4
+    21300122: sofa_right_5
+    21300124: sofa_left_5
+    21300126: sofa_right_6
+    21300128: sofa_left_6
+    21300130: table_1
+    21300132: table_2
+    21300134: table_3
+    21300136: table_4
+    21300138: table_5
+    21300140: table_6
+    21300142: table_7
+    21300144: table_8
+    21300146: desk_6
+    21300148: desk_7
+    21300150: desk_9
+    21300152: desk_10
+    21300154: desk_11
+    21300156: stand_1
+    21300158: stand_2
+    21300160: stand_3
+    21300162: stand_4
+    21300164: stand_5
+    21300166: stand_6
+    21300168: stand_7
+    21300170: stand_8
+    21300172: stand_9
+    21300174: stand_10
+    21300176: stand_11
+    21300178: stand_12
+    21300180: stand_13
+    21300182: stand_14
+    21300184: stand_15
+    21300186: stand_16
+    21300188: stand_17
+    21300190: stand_18
+    21300192: stand_19
+    21300194: stand_20
+    21300196: stand_21
+    21300198: stand_22
+    21300200: stand_23
+    21300202: stand_24
+    21300204: stand_25
+    21300206: stand_26
+    21300208: stand_27
+    21300210: stand_28
+    21300212: stand_29
+    21300214: stand_30
+    21300216: stand_31
+    21300218: stand_32
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: wardrobe_right_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 400
+        width: 24
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wardrobe_left_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 400
+        width: 24
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: desk_1
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 469
+        width: 22
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: seat_1
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 451
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: seat_2
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 451
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: seat_3
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 451
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: seat_4
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 451
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: seat_5
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 453
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chair_1
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 480
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bench_2
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 420
+        width: 22
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: seat_6
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 421
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: seat_7
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 421
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: seat_8
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 421
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: seat_9
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 421
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bench_1
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 420
+        width: 90
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: armchair_front_1
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 385
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: armchair_back_1
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 385
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: armchair_front_2
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 385
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: armchair_back_2
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 385
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: armchair_front_3
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 385
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: armchair_back_3
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 385
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: armchair_front_4
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 385
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: armchair_back_4
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 385
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: desk_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 340
+        width: 22
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: desk_2
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 340
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22, y: 22}
+        - {x: -22, y: -22}
+        - {x: 22, y: -22}
+        - {x: 22, y: 22}
+    - name: armchair_front_5
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 321
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: armchair_front_6
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 321
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: desk_3
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 260
+        width: 44
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 26}
+        - {x: -22, y: 21}
+        - {x: -22, y: -26}
+        - {x: 22, y: -26}
+        - {x: 22, y: 24}
+        - {x: 15, y: 26}
+    - name: desk_4
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 260
+        width: 44
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22, y: 26}
+        - {x: -22, y: -26}
+        - {x: 22, y: -26}
+        - {x: 22, y: 21}
+        - {x: 18, y: 26}
+    - name: desk_5
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 260
+        width: 44
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 26}
+        - {x: -22, y: 20}
+        - {x: -22, y: -26}
+        - {x: 22, y: -26}
+        - {x: 22, y: 20}
+        - {x: -2, y: 26}
+    - name: chair_2
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 449
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: table_round_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -13}
+        - {x: -14, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
+        - {x: -12, y: 16}
+        - {x: -16, y: 13}
+    - name: table_round_2
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -13}
+        - {x: -14, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
+        - {x: -12, y: 16}
+        - {x: -16, y: 13}
+    - name: table_round_4
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -13}
+        - {x: -14, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
+        - {x: -12, y: 16}
+        - {x: -16, y: 13}
+    - name: table_round_5
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -13}
+        - {x: -14, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
+        - {x: -12, y: 16}
+        - {x: -16, y: 13}
+    - name: table_round_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 13}
+        - {x: 13, y: 16}
+    - name: wardrobe_right_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 400
+        width: 24
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: wardrobe_left_2
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 400
+        width: 24
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: armchair_right_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 353
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: armchair_left_1
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 353
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3.5, y: 16}
+        - {x: -13.5, y: 14}
+        - {x: -14.5, y: 10}
+        - {x: -14.5, y: -16}
+        - {x: 16.5, y: -16}
+        - {x: 16.5, y: 16}
+    - name: armchair_right_2
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 353
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: armchair_left_2
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 353
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: armchair_right_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 353
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: armchair_left_3
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 353
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3.5, y: 16}
+        - {x: -13.5, y: 14}
+        - {x: -14.5, y: 10}
+        - {x: -14.5, y: -16}
+        - {x: 16.5, y: -16}
+        - {x: 16.5, y: 16}
+    - name: armchair_right_4
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 353
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: armchair_left_4
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 353
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3.5, y: 16}
+        - {x: -13.5, y: 14}
+        - {x: -14.5, y: 10}
+        - {x: -14.5, y: -16}
+        - {x: 16.5, y: -16}
+        - {x: 16.5, y: 16}
+    - name: armchair_back_5
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 321
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: armchair_right_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 321
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: armchair_left_5
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 321
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: armchair_back_6
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 321
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: armchair_right_6
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 321
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: armchair_left_6
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 321
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: big_bench_1
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 454
+        width: 32
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 29}
+        - {x: -16, y: -29}
+        - {x: 16, y: -29}
+        - {x: 16, y: 29}
+    - name: sofa_right_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 217
+        width: 32
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 46}
+        - {x: -16, y: -42}
+        - {x: -15, y: -45}
+        - {x: -14, y: -46}
+        - {x: 16, y: -46}
+        - {x: 16, y: 40}
+        - {x: -1, y: 46}
+    - name: sofa_left_1
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 218
+        width: 32
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3, y: 45.5}
+        - {x: -16, y: 37.5}
+        - {x: -16, y: -45.5}
+        - {x: 15, y: -45.5}
+        - {x: 16, y: -41.5}
+        - {x: 16, y: 45.5}
+    - name: sofa_right_2
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 218
+        width: 31
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: sofa_left_2
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 218
+        width: 33
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.5, y: -45.5}
+        - {x: 15.5, y: -45.5}
+        - {x: 16.5, y: -41.5}
+        - {x: 16.5, y: 45.5}
+        - {x: -2.5, y: 45.5}
+        - {x: -16.5, y: 42.5}
+    - name: sofa_right_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 218
+        width: 32
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 45.5}
+        - {x: -16, y: -38.5}
+        - {x: -15, y: -44.5}
+        - {x: -14, y: -45.5}
+        - {x: 16, y: -45.5}
+        - {x: 16, y: 39.5}
+        - {x: -1, y: 45.5}
+    - name: sofa_left_3
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 218
+        width: 32
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3, y: 45.5}
+        - {x: -16, y: 37.5}
+        - {x: -16, y: -45.5}
+        - {x: 15, y: -45.5}
+        - {x: 16, y: -41.5}
+        - {x: 16, y: 45.5}
+    - name: sofa_right_4
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 218
+        width: 32
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 45.5}
+        - {x: -16, y: -38.5}
+        - {x: -15, y: -44.5}
+        - {x: -14, y: -45.5}
+        - {x: 16, y: -45.5}
+        - {x: 16, y: 39.5}
+        - {x: -1, y: 45.5}
+    - name: sofa_left_4
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 218
+        width: 32
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3, y: 45.5}
+        - {x: -16, y: 37.5}
+        - {x: -16, y: -45.5}
+        - {x: 15, y: -45.5}
+        - {x: 16, y: -41.5}
+        - {x: 16, y: 45.5}
+    - name: sofa_right_5
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 90
+        width: 32
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 45}
+        - {x: -16, y: -38}
+        - {x: -15, y: -44}
+        - {x: -14, y: -45}
+        - {x: 16, y: -45}
+        - {x: 16, y: 39}
+        - {x: 2, y: 45}
+    - name: sofa_left_5
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 90
+        width: 32
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 1, y: 45}
+        - {x: -16, y: 38}
+        - {x: -16, y: -45}
+        - {x: 15, y: -45}
+        - {x: 16, y: -41}
+        - {x: 16, y: 45}
+    - name: sofa_right_6
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 90
+        width: 32
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 45}
+        - {x: -16, y: -38}
+        - {x: -15, y: -44}
+        - {x: -14, y: -45}
+        - {x: 16, y: -45}
+        - {x: 16, y: 39}
+        - {x: 2, y: 45}
+    - name: sofa_left_6
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 90
+        width: 32
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3, y: 45.5}
+        - {x: -16, y: 37.5}
+        - {x: -16, y: -45.5}
+        - {x: 15, y: -45.5}
+        - {x: 16, y: -41.5}
+        - {x: 16, y: 45.5}
+    - name: table_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
+    - name: table_2
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
+    - name: table_3
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
+    - name: table_4
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
+    - name: table_5
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 63
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31.5, y: 32}
+        - {x: -31.5, y: -32}
+        - {x: 31.5, y: -32}
+        - {x: 31.5, y: 32}
+    - name: table_6
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
+    - name: table_7
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 32}
+    - name: table_8
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 0
+        width: 65
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32.5, y: 32}
+        - {x: -32.5, y: -32}
+        - {x: 32.5, y: -32}
+        - {x: 32.5, y: 32}
+    - name: desk_6
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 341
+        width: 44
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22, y: 21.5}
+        - {x: -22, y: -21.5}
+        - {x: 22, y: -21.5}
+        - {x: 22, y: 21.5}
+    - name: desk_7
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 341
+        width: 44
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22, y: 21.5}
+        - {x: -22, y: -21.5}
+        - {x: 22, y: -21.5}
+        - {x: 22, y: 21.5}
+    - name: desk_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 261
+        width: 22
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: desk_10
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 341
+        width: 22
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: desk_11
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 261
+        width: 22
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: stand_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 208
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: stand_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 208
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: stand_3
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 208
+        width: 31
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: stand_4
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 208
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 19}
+        - {x: -16, y: 15}
+        - {x: -16, y: -19}
+        - {x: 16, y: -19}
+        - {x: 16, y: 18}
+        - {x: 13, y: 19}
+    - name: stand_5
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 208
+        width: 33
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8.5, y: 19}
+        - {x: -11.5, y: 18}
+        - {x: -16.5, y: 12}
+        - {x: -16.5, y: -19}
+        - {x: 16.5, y: -19}
+        - {x: 16.5, y: 16}
+        - {x: 11.5, y: 19}
+    - name: stand_6
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 208
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 19}
+        - {x: -16, y: 17}
+        - {x: -16, y: -19}
+        - {x: 16, y: -19}
+        - {x: 16, y: 16}
+        - {x: 14, y: 19}
+    - name: stand_7
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 208
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 19}
+        - {x: -16, y: 17}
+        - {x: -16, y: -19}
+        - {x: 16, y: -19}
+        - {x: 16, y: 16}
+        - {x: 14, y: 19}
+    - name: stand_8
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 208
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 19}
+        - {x: -16, y: 17}
+        - {x: -16, y: -19}
+        - {x: 16, y: -19}
+        - {x: 16, y: 16}
+        - {x: 14, y: 19}
+    - name: stand_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: stand_10
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 144
+        width: 33
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: stand_11
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 144
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: stand_12
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 144
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: stand_13
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 144
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: stand_14
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 144
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: stand_15
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 144
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: stand_16
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 144
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: stand_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: stand_18
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 80
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: stand_19
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 80
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 16}
+        - {x: -16, y: 14}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 14}
+        - {x: 2, y: 16}
+    - name: stand_20
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 80
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 1, y: 20}
+        - {x: -16, y: 10}
+        - {x: -16, y: -20}
+        - {x: 16, y: -20}
+        - {x: 16, y: 11}
+        - {x: 10, y: 20}
+    - name: stand_21
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 80
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 19}
+        - {x: -16, y: 12}
+        - {x: -16, y: -19}
+        - {x: 16, y: -19}
+        - {x: 16, y: 19}
+    - name: stand_22
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 80
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: stand_23
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 80
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16.5}
+        - {x: -16, y: -16.5}
+        - {x: 16, y: -16.5}
+        - {x: 16, y: 13.5}
+        - {x: 8, y: 16.5}
+    - name: stand_24
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 80
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 16}
+        - {x: -16, y: 14}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
+    - name: stand_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: stand_26
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: stand_27
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 16
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: stand_28
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 16
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: stand_29
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 16
+        width: 33
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: stand_30
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 16
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: stand_31
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 16
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: stand_32
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 16
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

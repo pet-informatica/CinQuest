@@ -1,0 +1,380 @@
+fileFormatVersion: 2
+guid: fcd8ccc5a98fdd244829e2be8b262c49
+timeCreated: 1451103587
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: car_front_1
+    21300002: car_front_2
+    21300004: car_front_3
+    21300006: car_front_4
+    21300008: car_left_1
+    21300010: car_right_1
+    21300012: car_back_1
+    21300014: car_back_2
+    21300016: car_back_3
+    21300018: car_back_4
+    21300020: car_left_2
+    21300022: car_left_3
+    21300024: car_left_4
+    21300026: car_right_2
+    21300028: car_right_3
+    21300030: car_right_4
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: car_front_1
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 287
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24, y: 48}
+        - {x: -32, y: 40}
+        - {x: -32, y: -47}
+        - {x: -30, y: -48}
+        - {x: 32, y: -48}
+        - {x: 32, y: 28}
+        - {x: 26, y: 48}
+    - name: car_front_2
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 287
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -30, y: 48}
+        - {x: -32, y: 45}
+        - {x: -32, y: -46}
+        - {x: -26, y: -48}
+        - {x: 27, y: -48}
+        - {x: 32, y: -43}
+        - {x: 32, y: 42}
+        - {x: 19, y: 48}
+    - name: car_front_3
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 287
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24, y: 48}
+        - {x: -32, y: 40}
+        - {x: -32, y: -47}
+        - {x: -30, y: -48}
+        - {x: 32, y: -48}
+        - {x: 32, y: 28}
+        - {x: 26, y: 48}
+    - name: car_front_4
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 287
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24, y: 48}
+        - {x: -32, y: 40}
+        - {x: -32, y: -47}
+        - {x: -30, y: -48}
+        - {x: 32, y: -48}
+        - {x: 32, y: 28}
+        - {x: 26, y: 48}
+    - name: car_left_1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 189
+        width: 127
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.5, y: 33.5}
+        - {x: -63.5, y: 23.5}
+        - {x: -63.5, y: -32.5}
+        - {x: 63.5, y: -32.5}
+        - {x: 63.5, y: 24.5}
+        - {x: 46.5, y: 33.5}
+    - name: car_right_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 97
+        width: 129
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13.5, y: 31.5}
+        - {x: -32.5, y: 31.5}
+        - {x: -50.5, y: 26.5}
+        - {x: -64.5, y: 18.5}
+        - {x: -64.5, y: -21.5}
+        - {x: -57.5, y: -31.5}
+        - {x: 57.5, y: -31.5}
+        - {x: 64.5, y: -26.5}
+        - {x: 64.5, y: 15.5}
+        - {x: 48.5, y: 24.5}
+    - name: car_back_1
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 0
+        width: 64
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 47.5}
+        - {x: -32, y: 33.5}
+        - {x: -32, y: -45.5}
+        - {x: -30, y: -47.5}
+        - {x: 32, y: -47.5}
+        - {x: 32, y: 37.5}
+        - {x: 24, y: 47.5}
+    - name: car_back_2
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 0
+        width: 64
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 47.5}
+        - {x: -32, y: 33.5}
+        - {x: -32, y: -45.5}
+        - {x: -30, y: -47.5}
+        - {x: 30, y: -47.5}
+        - {x: 32, y: -42.5}
+        - {x: 32, y: 45.5}
+        - {x: 31, y: 47.5}
+    - name: car_back_3
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 0
+        width: 64
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 47.5}
+        - {x: -32, y: 33.5}
+        - {x: -32, y: -45.5}
+        - {x: -30, y: -47.5}
+        - {x: 32, y: -47.5}
+        - {x: 32, y: 37.5}
+        - {x: 24, y: 47.5}
+    - name: car_back_4
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 0
+        width: 63
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 24.5, y: 47.5}
+        - {x: -18.5, y: 47.5}
+        - {x: -31.5, y: 33.5}
+        - {x: -31.5, y: -45.5}
+        - {x: -29.5, y: -47.5}
+        - {x: 30.5, y: -47.5}
+        - {x: 31.5, y: -43.5}
+        - {x: 31.5, y: 37.5}
+    - name: car_left_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 189
+        width: 128
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 46, y: 33.5}
+        - {x: -12, y: 33.5}
+        - {x: -41, y: 27.5}
+        - {x: -64, y: 17.5}
+        - {x: -64, y: -29.5}
+        - {x: -49, y: -32.5}
+        - {x: 55, y: -32.5}
+        - {x: 60, y: -31.5}
+        - {x: 64, y: -20.5}
+        - {x: 64, y: 24.5}
+    - name: car_left_3
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 189
+        width: 128
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 46, y: 33.5}
+        - {x: -12, y: 33.5}
+        - {x: -41, y: 27.5}
+        - {x: -64, y: 17.5}
+        - {x: -64, y: -29.5}
+        - {x: -49, y: -32.5}
+        - {x: 55, y: -32.5}
+        - {x: 60, y: -31.5}
+        - {x: 64, y: -20.5}
+        - {x: 64, y: 24.5}
+    - name: car_left_4
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 189
+        width: 128
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 46, y: 33.5}
+        - {x: -12, y: 33.5}
+        - {x: -41, y: 27.5}
+        - {x: -64, y: 17.5}
+        - {x: -64, y: -29.5}
+        - {x: -49, y: -32.5}
+        - {x: 55, y: -32.5}
+        - {x: 60, y: -31.5}
+        - {x: 64, y: -20.5}
+        - {x: 64, y: 24.5}
+    - name: car_right_2
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 97
+        width: 128
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -49, y: 31.5}
+        - {x: -64, y: 25.5}
+        - {x: -64, y: -21.5}
+        - {x: -56, y: -30.5}
+        - {x: -55, y: -31.5}
+        - {x: 60, y: -31.5}
+        - {x: 64, y: -24.5}
+        - {x: 64, y: 19.5}
+        - {x: 40, y: 31.5}
+    - name: car_right_3
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 97
+        width: 128
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -49, y: 31.5}
+        - {x: -64, y: 25.5}
+        - {x: -64, y: -21.5}
+        - {x: -56, y: -30.5}
+        - {x: -55, y: -31.5}
+        - {x: 60, y: -31.5}
+        - {x: 64, y: -24.5}
+        - {x: 64, y: 19.5}
+        - {x: 40, y: 31.5}
+    - name: car_right_4
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 97
+        width: 127
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -57.5, y: 31.5}
+        - {x: -63.5, y: 19.5}
+        - {x: -63.5, y: -24.5}
+        - {x: -54.5, y: -31.5}
+        - {x: 56.5, y: -31.5}
+        - {x: 63.5, y: -25.5}
+        - {x: 63.5, y: 15.5}
+        - {x: 55.5, y: 31.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
