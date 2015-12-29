@@ -1,0 +1,373 @@
+fileFormatVersion: 2
+guid: 78d6735fee97b4d4786bee9153a23212
+timeCreated: 1451361011
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: police_car_front_1
+    21300002: police_car_front_2
+    21300004: police_car_front_3
+    21300006: police_car_front_4
+    21300008: police_car_left_1
+    21300010: police_car_left_2
+    21300012: police_car_left_3
+    21300014: police_car_left_4
+    21300016: police_car_right_1
+    21300018: police_car_right_2
+    21300020: police_car_right_3
+    21300022: police_car_right_4
+    21300024: police_car_back_1
+    21300026: police_car_back_2
+    21300028: police_car_back_3
+    21300030: police_car_back_4
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: police_car_front_1
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 310
+        width: 59
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20.5, y: 30.5}
+        - {x: -28.5, y: 29.5}
+        - {x: -29.5, y: 27.5}
+        - {x: -29.5, y: -13.5}
+        - {x: -25.5, y: -30.5}
+        - {x: 29.5, y: -30.5}
+        - {x: 29.5, y: 22.5}
+        - {x: 23.5, y: 30.5}
+    - name: police_car_front_2
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 310
+        width: 59
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20.5, y: 30.5}
+        - {x: -28.5, y: 29.5}
+        - {x: -29.5, y: 27.5}
+        - {x: -29.5, y: -13.5}
+        - {x: -25.5, y: -30.5}
+        - {x: 29.5, y: -30.5}
+        - {x: 29.5, y: 22.5}
+        - {x: 23.5, y: 30.5}
+    - name: police_car_front_3
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 310
+        width: 59
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20.5, y: 30.5}
+        - {x: -28.5, y: 29.5}
+        - {x: -29.5, y: 27.5}
+        - {x: -29.5, y: -13.5}
+        - {x: -25.5, y: -30.5}
+        - {x: 29.5, y: -30.5}
+        - {x: 29.5, y: 22.5}
+        - {x: 23.5, y: 30.5}
+    - name: police_car_front_4
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 310
+        width: 59
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20.5, y: 30.5}
+        - {x: -28.5, y: 29.5}
+        - {x: -29.5, y: 27.5}
+        - {x: -29.5, y: -13.5}
+        - {x: -25.5, y: -30.5}
+        - {x: 29.5, y: -30.5}
+        - {x: 29.5, y: 22.5}
+        - {x: 23.5, y: 30.5}
+    - name: police_car_left_1
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 207
+        width: 93
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -46.5, y: -24}
+        - {x: -44.5, y: -26}
+        - {x: 46.5, y: -26}
+        - {x: 46.5, y: 14}
+        - {x: 41.5, y: 24}
+        - {x: 29.5, y: 26}
+        - {x: -11.5, y: 26}
+        - {x: -46.5, y: 9}
+    - name: police_car_left_2
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 207
+        width: 93
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -46.5, y: -24}
+        - {x: -44.5, y: -26}
+        - {x: 46.5, y: -26}
+        - {x: 46.5, y: 14}
+        - {x: 41.5, y: 24}
+        - {x: 29.5, y: 26}
+        - {x: -11.5, y: 26}
+        - {x: -46.5, y: 9}
+    - name: police_car_left_3
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 207
+        width: 93
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -46.5, y: -24}
+        - {x: -44.5, y: -26}
+        - {x: 46.5, y: -26}
+        - {x: 46.5, y: 14}
+        - {x: 41.5, y: 24}
+        - {x: 29.5, y: 26}
+        - {x: -11.5, y: 26}
+        - {x: -46.5, y: 9}
+    - name: police_car_left_4
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 207
+        width: 93
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -46.5, y: -24}
+        - {x: -44.5, y: -26}
+        - {x: 46.5, y: -26}
+        - {x: 46.5, y: 14}
+        - {x: 41.5, y: 24}
+        - {x: 29.5, y: 26}
+        - {x: -11.5, y: 26}
+        - {x: -46.5, y: 9}
+    - name: police_car_right_1
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 110
+        width: 92
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23, y: 26}
+        - {x: -46, y: 21}
+        - {x: -46, y: -18}
+        - {x: -43, y: -26}
+        - {x: 45, y: -26}
+        - {x: 46, y: -25}
+        - {x: 46, y: 9}
+        - {x: 20, y: 26}
+    - name: police_car_right_2
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 110
+        width: 92
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23, y: 26}
+        - {x: -46, y: 21}
+        - {x: -46, y: -18}
+        - {x: -43, y: -26}
+        - {x: 45, y: -26}
+        - {x: 46, y: -25}
+        - {x: 46, y: 9}
+        - {x: 20, y: 26}
+    - name: police_car_right_3
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 110
+        width: 92
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23, y: 26}
+        - {x: -46, y: 21}
+        - {x: -46, y: -18}
+        - {x: -43, y: -26}
+        - {x: 45, y: -26}
+        - {x: 46, y: -25}
+        - {x: 46, y: 9}
+        - {x: 20, y: 26}
+    - name: police_car_right_4
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 110
+        width: 92
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23, y: 26}
+        - {x: -46, y: 21}
+        - {x: -46, y: -18}
+        - {x: -43, y: -26}
+        - {x: 45, y: -26}
+        - {x: 46, y: -25}
+        - {x: 46, y: 9}
+        - {x: 20, y: 26}
+    - name: police_car_back_1
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 18
+        width: 59
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22.5, y: 30.5}
+        - {x: -29.5, y: 28.5}
+        - {x: -29.5, y: -22.5}
+        - {x: -21.5, y: -30.5}
+        - {x: 29.5, y: -30.5}
+        - {x: 29.5, y: 28.5}
+        - {x: 28.5, y: 30.5}
+    - name: police_car_back_2
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 18
+        width: 59
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22.5, y: 30.5}
+        - {x: -29.5, y: 28.5}
+        - {x: -29.5, y: -22.5}
+        - {x: -21.5, y: -30.5}
+        - {x: 29.5, y: -30.5}
+        - {x: 29.5, y: 28.5}
+        - {x: 28.5, y: 30.5}
+    - name: police_car_back_3
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 18
+        width: 59
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22.5, y: 30.5}
+        - {x: -29.5, y: 28.5}
+        - {x: -29.5, y: -22.5}
+        - {x: -21.5, y: -30.5}
+        - {x: 29.5, y: -30.5}
+        - {x: 29.5, y: 28.5}
+        - {x: 28.5, y: 30.5}
+    - name: police_car_back_4
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 18
+        width: 59
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22.5, y: 30.5}
+        - {x: -29.5, y: 28.5}
+        - {x: -29.5, y: -22.5}
+        - {x: -21.5, y: -30.5}
+        - {x: 29.5, y: -30.5}
+        - {x: 29.5, y: 28.5}
+        - {x: 28.5, y: 30.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
