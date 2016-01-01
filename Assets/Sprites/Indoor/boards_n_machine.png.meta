@@ -1,0 +1,181 @@
+fileFormatVersion: 2
+guid: f5c36932f7b1cea4a8c3016799365d65
+timeCreated: 1451349577
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: fire_extinguisher_1
+    21300002: food_machine_1
+    21300004: large_board_1
+    21300006: stairs_up_1
+    21300008: stairs_down_1
+    21300010: stairs_down_2
+    21300012: stairs_down_3
+    21300014: stairs_down_4
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: fire_extinguisher_1
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 359
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: food_machine_1
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 363
+        width: 62
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31, y: 26.5}
+        - {x: -31, y: -26.5}
+        - {x: 31, y: -26.5}
+        - {x: 31, y: 26.5}
+    - name: large_board_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 231
+        width: 160
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -80, y: 21.5}
+        - {x: -80, y: -21.5}
+        - {x: 80, y: -21.5}
+        - {x: 80, y: 21.5}
+    - name: stairs_up_1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 433
+        width: 96
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -48, y: 39.5}
+        - {x: -48, y: -39.5}
+        - {x: 48, y: -39.5}
+        - {x: 48, y: 39.5}
+    - name: stairs_down_1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 369
+        width: 96
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -48, y: 23.5}
+        - {x: -48, y: -23.5}
+        - {x: 48, y: -23.5}
+        - {x: 48, y: 23.5}
+    - name: stairs_down_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 273
+        width: 96
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -48, y: 39.5}
+        - {x: -48, y: -39.5}
+        - {x: 48, y: -39.5}
+        - {x: 48, y: 39.5}
+    - name: stairs_down_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 177
+        width: 96
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -48, y: 39.5}
+        - {x: -48, y: -39.5}
+        - {x: 48, y: -39.5}
+        - {x: 48, y: 39.5}
+    - name: stairs_down_4
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 232
+        width: 43
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21.5, y: 39.5}
+        - {x: -21.5, y: -39.5}
+        - {x: 21.5, y: -39.5}
+        - {x: 21.5, y: 39.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

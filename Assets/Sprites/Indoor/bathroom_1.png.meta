@@ -1,0 +1,581 @@
+fileFormatVersion: 2
+guid: 0f379926cde1c28448a026be95ffb020
+timeCreated: 1450743124
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: acces_controller_1
+    21300002: window_2
+    21300004: table_1
+    21300006: bathroom_1_12
+    21300008: seat_1
+    21300010: box_1
+    21300012: bathroom_1_16
+    21300014: bathroom_1_17
+    21300016: clock_2
+    21300018: painting_1
+    21300020: tube_1
+    21300022: bathroom_1_22
+    21300024: bathroom_1_23
+    21300026: fan_1
+    21300028: computer_1
+    21300030: fan_2
+    21300032: clock_1
+    21300034: window_1
+    21300036: pinbal_3
+    21300038: toilet_box_1
+    21300040: paper_box_2
+    21300042: mirror_1
+    21300044: chair_2
+    21300046: target_1
+    21300048: paper_box_1
+    21300050: sink_1
+    21300052: sinuca_club_1
+    21300054: pinball_1
+    21300056: pinball_2
+    21300058: urinal_1
+    21300060: snooker_1
+    21300062: snooker_2
+    21300064: bathroom_1_49
+    21300066: food_1
+    21300068: toilet_box_2
+    21300070: coffe_machine_1
+    21300072: food_machine_1
+    21300074: desk_1
+    21300076: chair_1
+    21300078: toilet_1
+    21300080: toilet_2
+    21300082: computer_2
+    21300084: chair_4
+    21300086: chair_5
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: acces_controller_1
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 489
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: window_2
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 400
+        width: 51
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25.5, y: 18}
+        - {x: -25.5, y: -18}
+        - {x: 25.5, y: -18}
+        - {x: 25.5, y: 18}
+    - name: table_1
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 390
+        width: 57
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26.5, y: -23}
+        - {x: 22.5, y: -23}
+        - {x: 28.5, y: -21}
+        - {x: 28.5, y: 23}
+        - {x: -28.5, y: 23}
+        - {x: -28.5, y: -18}
+    - name: seat_1
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 390
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: box_1
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 384
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: clock_2
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 360
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: painting_1
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 355
+        width: 49
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: tube_1
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 322
+        width: 26
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: fan_1
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 331
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: computer_1
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 298
+        width: 47
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23.5, y: 24}
+        - {x: -23.5, y: -24}
+        - {x: 23.5, y: -24}
+        - {x: 23.5, y: 24}
+    - name: fan_2
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 299
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: clock_1
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 296
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: window_1
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 205
+        width: 51
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25.5, y: 18}
+        - {x: -25.5, y: -18}
+        - {x: 25.5, y: -18}
+        - {x: 25.5, y: 18}
+    - name: pinbal_3
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 160
+        width: 49
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24.5, y: 26.5}
+        - {x: -24.5, y: -26.5}
+        - {x: 20.5, y: -26.5}
+        - {x: 24.5, y: -23.5}
+        - {x: 24.5, y: 8.5}
+        - {x: 3.5, y: 26.5}
+    - name: toilet_box_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 111
+        width: 32
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 40.5}
+        - {x: -16, y: -40.5}
+        - {x: 16, y: -40.5}
+        - {x: 16, y: 40.5}
+    - name: paper_box_2
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 161
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: mirror_1
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 161
+        width: 21
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chair_2
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 160
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: target_1
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 168
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: paper_box_1
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 134
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: sink_1
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 117
+        width: 27
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: sinuca_club_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 30
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: pinball_1
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 102
+        width: 26
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: pinball_2
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 96
+        width: 49
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8.5, y: 26.5}
+        - {x: -24.5, y: 5.5}
+        - {x: -24.5, y: -23.5}
+        - {x: -22.5, y: -26.5}
+        - {x: 24.5, y: -26.5}
+        - {x: 24.5, y: 26.5}
+    - name: urinal_1
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 102
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: snooker_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 11
+        width: 119
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -59.5, y: 37}
+        - {x: -59.5, y: -37}
+        - {x: 59.5, y: -37}
+        - {x: 59.5, y: 37}
+    - name: snooker_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 11
+        width: 119
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -59.5, y: 37}
+        - {x: -59.5, y: -37}
+        - {x: 59.5, y: -37}
+        - {x: 59.5, y: 37}
+    - name: food_1
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 2
+        width: 31
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: toilet_box_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 107
+        width: 32
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 42.5}
+        - {x: -16, y: -42.5}
+        - {x: 9, y: -42.5}
+        - {x: 11, y: -41.5}
+        - {x: 16, y: -40.5}
+        - {x: 16, y: 42.5}
+    - name: coffe_machine_1
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 32
+        width: 32
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 32.5}
+        - {x: -16, y: -32.5}
+        - {x: 16, y: -32.5}
+        - {x: 16, y: 32.5}
+    - name: food_machine_1
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 32
+        width: 32
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 32.5}
+        - {x: -16, y: -32.5}
+        - {x: 16, y: -32.5}
+        - {x: 16, y: 32.5}
+    - name: desk_1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 339
+        width: 32
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 22.5}
+        - {x: -16, y: -14.5}
+        - {x: -11, y: -22.5}
+        - {x: 14, y: -22.5}
+        - {x: 16, y: -14.5}
+        - {x: 16, y: 22.5}
+    - name: chair_1
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 355
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: toilet_1
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 391
+        width: 26
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: toilet_2
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 391
+        width: 26
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: computer_2
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 353
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chair_4
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 225
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: chair_5
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 197
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
