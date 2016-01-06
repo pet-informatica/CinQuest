@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scene/cenaPrincipal.unity
+- path: Assets/scene/cenaVDDM.unity
   isLoaded: 1
   isActive: 1
