@@ -50,6 +50,7 @@
      <Compile Include="Assets\Scripts\Game Manager\CameraUnfollower.cs" />
      <Compile Include="Assets\Scripts\Game Manager\GameManager.cs" />
      <Compile Include="Assets\Scripts\Game Manager\Loader.cs" />
+     <Compile Include="Assets\Scripts\Game Manager\PlayerSpawn.cs" />
      <Compile Include="Assets\Scripts\Game Manager\SceneChanger.cs" />
      <Compile Include="Assets\Scripts\Game Manager\ScreenFader.cs" />
      <Compile Include="Assets\Scripts\GuiFalaController.cs" />

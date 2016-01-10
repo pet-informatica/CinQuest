@@ -11,11 +11,15 @@ public class SceneChanger : MonoBehaviour
 		in the process.
 
 		How to use it: Create a prefab with a single BoxCollider2D and attach the script to it. Fill the destinyScene variable
-		and that's it. When the player trigger it, it will change the scene.
+		and that's it. When the player trigger it, it will change the scene. The savePosition variable is important. If you,
+		for example, enter in a room, and then leave it, you will probably want your player to be next to the door when it leaves
+		the room. For this, we shall change it's position for in front of the door. So, if you want that to happen, savePosition must be true.
 		
 	 */
 
 	public string destinyScene = "";
+	public bool savePosition = false;
+	public bool locked = false;
 
 	IEnumerator ChangeScene()
 	{
@@ -25,11 +29,15 @@ public class SceneChanger : MonoBehaviour
 		//Then wait until the fade is over
 		yield return new WaitForSeconds (fadeTime);
 		//And finally change the scene
+		if(savePosition)
+			PlayerSpawn.SetTarget(this.transform.position, Application.loadedLevelName);
+
 		Application.LoadLevel (destinyScene);
 	}
 
 	void OnTriggerEnter2D(Collider2D collider)
 	{
-		StartCoroutine (ChangeScene());
+		if(!locked)
+			StartCoroutine (ChangeScene());
 	}
 }
