@@ -45,9 +45,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\CameraController.cs" />
-     <Compile Include="Assets\Scripts\CameraUnfollower.cs" />
      <Compile Include="Assets\Scripts\Follower.cs" />
+     <Compile Include="Assets\Scripts\Game Manager\CameraController.cs" />
+     <Compile Include="Assets\Scripts\Game Manager\CameraUnfollower.cs" />
+     <Compile Include="Assets\Scripts\Game Manager\GameManager.cs" />
+     <Compile Include="Assets\Scripts\Game Manager\Loader.cs" />
+     <Compile Include="Assets\Scripts\Game Manager\PlayerSpawn.cs" />
+     <Compile Include="Assets\Scripts\Game Manager\SceneChanger.cs" />
+     <Compile Include="Assets\Scripts\Game Manager\ScreenFader.cs" />
      <Compile Include="Assets\Scripts\GuiFalaController.cs" />
      <Compile Include="Assets\Scripts\INACIA_NPC.cs" />
      <Compile Include="Assets\Scripts\InterativeObject.cs" />
