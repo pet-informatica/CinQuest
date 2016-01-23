@@ -38,8 +38,10 @@ public class PlayerSpawn : MonoBehaviour
         {
             Transform spawn = target.GetChild(0).GetComponent<Transform>();
             Transform player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
-            Vector3 position = new Vector3(spawn.position.x, spawn.position.y, player.position.z);
-            player.position = position;
+            Vector3 playerPosition = new Vector3(spawn.position.x, spawn.position.y, player.position.z);
+            Vector3 cameraPosition = new Vector3(spawn.position.x, spawn.position.y, Camera.main.transform.position.z);
+            player.position = playerPosition;
+            Camera.main.transform.position = cameraPosition;
         }
 	}
 }
