@@ -61,8 +61,8 @@
      <Compile Include="Assets\Scripts\LookAtCharacter.cs" />
      <Compile Include="Assets\Scripts\Mover.cs" />
      <Compile Include="Assets\Scripts\NPCController.cs" />
-     <Compile Include="Assets\Scripts\PC.cs" />
      <Compile Include="Assets\Scripts\PathPlanner.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
      <Compile Include="Assets\Scripts\Point.cs" />
      <Compile Include="Assets\Scripts\Quest.cs" />
      <Compile Include="Assets\Scripts\QuestController.cs" />
