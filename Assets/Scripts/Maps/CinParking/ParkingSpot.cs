@@ -16,4 +16,10 @@ public class ParkingSpot : MonoBehaviour
 
     public bool avaiable = true;
     public GameObject previous;
+
+    void OnTriggerEnter2D(Collider2D collider)
+    {
+        if (collider.tag == "Car" && this.tag == "ParkingSpot")
+            collider.GetComponent<Car>().parked = true;
+    }
 }

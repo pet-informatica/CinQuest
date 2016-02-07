@@ -205,8 +205,8 @@ public class Move : MonoBehaviour
 
 		else if(!this.stopInput)
         {
-			moveVertical = Input.GetAxis("Vertical");
-			moveHorizontal = Input.GetAxis ("Horizontal");
+			//moveVertical = Input.GetAxis("Vertical");
+			//moveHorizontal = Input.GetAxis ("Horizontal");
 		}
 		
 		if(!this.stopInput || this.autoControl)

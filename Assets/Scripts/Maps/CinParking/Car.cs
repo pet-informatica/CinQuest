@@ -14,43 +14,23 @@ public class Car : MonoBehaviour
         How to use it: Attach it to a car prefab, along with a move script.
     */
 
-    public int parkingPercentage = 50;
-
-    [HideInInspector]
-    public Transform deadEnd;
     [HideInInspector]
     public CarSpawner spawner;
+  
+    public bool parked = false;
 
     Move move;
 	
 	void Start ()
     {
         move = GetComponent<Move>();
-
-        int rand = Random.Range(0, 100);
-        bool shouldPark = rand < parkingPercentage ? true : false;
-
-        if(shouldPark)
-        {
-            GoForDeadEnd();
-        }
-        else
-        {
-            GoForDeadEnd();
-        }
-        
 	}
 	
 	void Update ()
     {
-        if(move.hasCompleted)
+        if(move.hasCompleted && !parked)
             move.moveToPoints();
 	}
-
-    void GoForDeadEnd()
-    {
-        move.addPoint(new Point(deadEnd.position.x, deadEnd.position.y, false));
-    }
 
     void OnTriggerEnter2D(Collider2D col)
     {

@@ -3,6 +3,19 @@ using System.Collections;
 
 public class CarSensor : MonoBehaviour
 {
+    /*
+        Developed by: Higor
+
+        Description: This script is responsible for taking care about the cars movement. When they move,
+        this sensor check's if there is a player, or another car in front of it, and if true, it stops the car,
+        avoiding a collision.
+
+        How to use the script: Put it into a gameobject named sensor that is a child of the car. This gameobject
+        must have a collider2d attach to it, and it must be in the right position in front of it. When the car
+        change direction, the object is rotated, so the collider must be about 80 pixels away from the center pivot,
+        so it will rotate accordingly.
+    */
+
     public float breakTime = 5f;
     public float accelerationTime = 0.5f;
 
