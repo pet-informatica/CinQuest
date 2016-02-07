@@ -59,6 +59,9 @@
      <Compile Include="Assets\Scripts\InventoryController.cs" />
      <Compile Include="Assets\Scripts\Item.cs" />
      <Compile Include="Assets\Scripts\LookAtCharacter.cs" />
+     <Compile Include="Assets\Scripts\Maps\CinParking\Car.cs" />
+     <Compile Include="Assets\Scripts\Maps\CinParking\CarSpawner.cs" />
+     <Compile Include="Assets\Scripts\Maps\CinParking\ParkingSpot.cs" />
      <Compile Include="Assets\Scripts\Mover.cs" />
      <Compile Include="Assets\Scripts\NPCController.cs" />
      <Compile Include="Assets\Scripts\PathPlanner.cs" />
