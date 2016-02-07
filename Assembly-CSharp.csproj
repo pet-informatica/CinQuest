@@ -60,9 +60,10 @@
      <Compile Include="Assets\Scripts\Item.cs" />
      <Compile Include="Assets\Scripts\LookAtCharacter.cs" />
      <Compile Include="Assets\Scripts\Maps\CinParking\Car.cs" />
+     <Compile Include="Assets\Scripts\Maps\CinParking\CarSensor.cs" />
      <Compile Include="Assets\Scripts\Maps\CinParking\CarSpawner.cs" />
      <Compile Include="Assets\Scripts\Maps\CinParking\ParkingSpot.cs" />
-     <Compile Include="Assets\Scripts\Mover.cs" />
+     <Compile Include="Assets\Scripts\Move.cs" />
      <Compile Include="Assets\Scripts\NPCController.cs" />
      <Compile Include="Assets\Scripts\PathPlanner.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerController.cs" />

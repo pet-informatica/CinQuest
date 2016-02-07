@@ -14,11 +14,8 @@ using System.Collections.Generic;
 
 				@  Adicionando o mover a um gameobject  @ 
 -Coloque o script do Mover no gameobject desejado
--Arraste o gameobject alvo da Hiearchy para o atributo gameObject desse script ( arrasta do Hierachy para o inspector ) 
--No inspector, no gameobject alvo, arraste o animator para o atributo animator desse script.
 -Va no script de controler do seu gameObject alvo que tera acesso aos metodos do mover 
 -Crie um atributo do tipo Mover
--Va no hierarchy, arraste o script Mover para o atributo do tipo Mover no script de controle do gameobject alvo que tera acesso a essa instancia
 
    					@ Como configurar o mover @ 
 -no Start() do seu script, ou em alguma parte do codigo do seu script, antes de poder usar o Mover, voce pode setalo chamando o metodo: 
@@ -55,80 +52,69 @@ public class CharacterController : MonoBehaviour {
 				@ Observacao @
 EPS para comparacao de float de 5f.
  */
-public class Mover : MonoBehaviour {
-	public float maxMove_speed = 10f;
-	public Animator anim;
-	public float autoX=0, autoY=0;
+
+public class Move : MonoBehaviour
+{
+	public float moveSpeed = 100f;
+    public float autoX = 0;
+    public float autoY = 0;
 	public bool autoControl = false;
 	public bool start = false;
 	public Queue<Point> pointsToMove = new Queue<Point> ();
 	public bool stopInput = false;
-	public GameObject gameObject;
-	public bool hasPointToGo=false, hasCompleted=true, completeX=false, completeY=false;
-	Point pointToGo; 
+    public bool hasPointToGo = false;
+    public bool hasCompleted = true;
+    public bool completeX = false;
+    public bool completeY = false;
 	public bool finished = true ;
 	float EPS = 5f;
 
-	void Start () {
-		//this.addPoint ( new Point(100, 100), true ) ;
-		//this.moveToPoints ();
+    Animator anim;
+    Rigidbody2D rb;
+    Point pointToGo;
+
+    void Start ()
+    {
+        anim = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
 		hasPointToGo = false;
 	}
 
-
-	public bool isMoving(){
+	public bool isMoving()
+    {
 		return this.start && this.hasPointToGo;
-
 	}
 
-	public Mover(Animator anim, float maxMove_speed, GameObject gameObject){
-		this.maxMove_speed = maxMove_speed;
-		this.anim = anim;
-		this.gameObject = gameObject;
-	}
-	public Mover(Animator anim, float maxMove_speed){
-		this.maxMove_speed = maxMove_speed;
-		this.anim = anim;
-		this.gameObject = null;
-	}
-	public Mover(){
-		this.gameObject = null;
-		this.anim = null;
-	}
-
-	public void addPoint(Point point, bool horizontalFirst){
-		point.horizontalFirst = horizontalFirst;
+	public void addPoint(Point point)
+    {
 		this.pointsToMove.Enqueue (point);
 	}
 
-
-	public void setAutoControl(float autoX, float autoY){
+	public void setAutoControl(float autoX, float autoY)
+    {
 		this.autoX = autoX;
 		this.autoY = autoY;
 		this.autoControl = true;
 	}
-	public void setAutoControl(bool autoControl){
-		this.autoControl = false;
+
+	public void setAutoControl(bool autoControl)
+    {
+		this.autoControl = autoControl;
 	}
-	public void setGameObject(GameObject gameObject, Animator anim, float maxMove_speed){
-		this.gameObject = gameObject;
-		this.anim = anim;
-		this.maxMove_speed = maxMove_speed;
-	}
-	private float fabs(float a, float b){
+
+	private float fabs(float a, float b)
+    {
 		a -= b;
 		return (a < 0) ? -1 * a : a;
 	}
-	private bool isAt(Point p, float EPS){
+
+	private bool isAt(Point p, float EPS)
+    {
 		return (fabs ( p.x , transform.position.x  ) <= EPS ) && ( fabs (p.y , transform.position.y ) <= EPS ) ;
 	}
-	public void moveToPoints(){
-		//this.pointsToMove = pointse;
 
-		if (this.gameObject == null) {
-			throw new UnityException("Rigidbody2D parameter is not set");
-		}
-
+	public void moveToPoints()
+    {
 		this.finished = false;
 		this.start = true;
 		hasPointToGo=true;
@@ -138,29 +124,30 @@ public class Mover : MonoBehaviour {
 		this.stopInput = true;
 	}
 	
-
-	// Update is called once per frame
-	void Update () {
-
-	//	if (!start) return;
-
-		if (hasPointToGo) {
-			if(hasCompleted ) {
+	void Update ()
+    {
+		if (hasPointToGo)
+        {
+			if(hasCompleted)
+            {
 				
-				if ( pointsToMove.Count > 0 ) {
+				if ( pointsToMove.Count > 0 )
+                {
 					this.hasCompleted=false;
 
 					pointToGo = pointsToMove.Dequeue();
 					this.finished = true;
 				}
-				else {
+				else
+                {
 					this.autoX=this.autoY=0;
 					hasPointToGo=false;
 					this.stopInput=false;
 					this.start=false;
 				}
 			}		
-			else {
+			else
+            {
 				float x = pointToGo.x; 
 				float y = pointToGo.y;
 				
@@ -172,69 +159,84 @@ public class Mover : MonoBehaviour {
 				completeX = fabs(x, actualX) <= EPS;
 				completeY = fabs(y, actualY) <= EPS;
 				hasCompleted = completeX && completeY ;
-				if(!hasCompleted) {
+
+				if(!hasCompleted)
+                {
 					this.autoControl = true;
-					if(horizontalFirst) {
-						if(!completeX) {
+
+					if(horizontalFirst)
+                    {
+						if(!completeX)
+                        {
 							this.autoX = (x > actualX )? 1 : -1;
 						}
-						else{ // move Y now
-							this.autoX=0;
+						else
+                        { 
+							this.autoX = 0;
 							this.autoY = (y > actualY ) ? 1 : -1;
 						}
 					}
-					else {
-						if(!completeY) {
+					else
+                    {
+						if(!completeY)
+                        {
 							this.autoY = (y > actualY )? 1 : -1;
 						}
-						else{ // move Y now
+						else
+                        {
 							this.autoY=0;
 							this.autoX = (x > actualX ) ? 1 : -1;
 						}
 					}					
 				}
+
 				else this.autoControl=false;
 			}
 		}
 		
-		
-		
-		
 		float moveVertical=0;	
 		float moveHorizontal=0;
-		if (autoControl) {
+
+		if (autoControl)
+        {
 			moveVertical = this.autoY;
 			moveHorizontal = this.autoX;
 		}
-		else if(!this.stopInput){
+
+		else if(!this.stopInput)
+        {
 			moveVertical = Input.GetAxis("Vertical");
 			moveHorizontal = Input.GetAxis ("Horizontal");
 		}
 		
-		if(!this.stopInput || this.autoControl){
+		if(!this.stopInput || this.autoControl)
+        {
 			if (Mathf.Abs (moveVertical) > Mathf.Abs (moveHorizontal))
 				moveHorizontal = 0;
 			else if (Mathf.Abs (moveHorizontal) > Mathf.Abs (moveVertical))
 				moveVertical = 0;
-			else {
+			else
+            {
 				moveVertical = 0;
 				moveHorizontal = 0;
 			}
-			if(this.anim != null ) {
+
+			if(this.anim != null )
+            {
 				this.anim.SetFloat ("VerticalSpeed",moveVertical);
 				this.anim.SetFloat ("HorizontalSpeed", moveHorizontal);
 			}
 
-			if(this.gameObject.GetComponent<Rigidbody2D>() != null ){
-				this.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2 (GetComponent<Rigidbody2D>().velocity.x, moveVertical * this.maxMove_speed);
-				this.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2 (moveHorizontal * this.maxMove_speed, GetComponent<Rigidbody2D>().velocity.y);
+			if(rb != null )
+            {
+				rb.velocity = new Vector2 (GetComponent<Rigidbody2D>().velocity.x, moveVertical * this.moveSpeed);
+				rb.velocity = new Vector2 (moveHorizontal * this.moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
 			}
-			else{
-				Vector3 velo = new Vector3( moveHorizontal * this.maxMove_speed, moveVertical * this.maxMove_speed, 0 );
-				this.gameObject.transform.position += velo * Time.deltaTime;
-				
+			else
+            {
+				Vector3 velo = new Vector3( moveHorizontal * this.moveSpeed, moveVertical * this.moveSpeed, 0 );
+				transform.position += velo * Time.deltaTime;
 			}
-
 		}	
 	}
 }

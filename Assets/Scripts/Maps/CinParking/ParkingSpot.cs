@@ -1,15 +1,19 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ParkingSpot : MonoBehaviour {
+public class ParkingSpot : MonoBehaviour
+{
+    /*
+        Developed by: Higor
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+        Description: the ParkingSpots are present in CinParking scene and are used for controlling the
+        spots were the randomly generated cars can or cannot park.
+
+        How to use it: Attach it to a gameobject with a transform and sets it's previous spot, that is,
+        the waypoint from where the car is coming from before reaching this spot. Note that doing it for 
+        every waypoint, you will have a complete path for the car to travel and reach the spot.
+    */
+
+    public bool avaiable = true;
+    public GameObject previous;
 }

@@ -48,7 +48,7 @@ public class SceneChanger : MonoBehaviour
 
 	void OnTriggerEnter2D(Collider2D collider)
 	{
-		if(!locked)
+		if(!locked && collider.tag == "Player")
 			StartCoroutine (ChangeScene());
 	}
 }
