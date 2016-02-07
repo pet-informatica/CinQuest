@@ -39,7 +39,7 @@ public class CarSensor : MonoBehaviour
     {
         if(stop)
         {
-            move.moveSpeed = Mathf.Lerp(move.moveSpeed, 0, breakTime * Time.deltaTime);
+            move.moveSpeed = Mathf.Lerp(move.moveSpeed, -originalSpeed / 10f, breakTime * Time.deltaTime);
         }
         else
         {

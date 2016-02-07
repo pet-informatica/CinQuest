@@ -16,8 +16,12 @@ public class Car : MonoBehaviour
 
     [HideInInspector]
     public CarSpawner spawner;
+
+    [HideInInspector]
+    public GameObject parkedAt;
   
     public bool parked = false;
+    public bool unparking = false;
 
     Move move;
 	
@@ -28,7 +32,7 @@ public class Car : MonoBehaviour
 	
 	void Update ()
     {
-        if(move.hasCompleted && !parked)
+        if(move.hasCompleted)
             move.moveToPoints();
 	}
 
@@ -37,6 +41,10 @@ public class Car : MonoBehaviour
         if(col.tag == "CarDeadEnd")
         {
             spawner.spawnedAmount--;
+
+            if (unparking)
+                spawner.unparkingAmount--;
+
             Destroy(this.gameObject);
         }
     }
