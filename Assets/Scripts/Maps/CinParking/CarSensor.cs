@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class CarSensor : MonoBehaviour
 {
@@ -18,28 +19,36 @@ public class CarSensor : MonoBehaviour
 
     public float breakTime = 5f;
     public float accelerationTime = 0.5f;
+    public float hornsPerMinute = 10f;
+    public List<AudioClip> horns;
 
     Car car;
     Move move;
     Animator anim;
-    Transform parent;
+    AudioSource source;
     float originalSpeed;
+    float hornTime;
     bool stop;
 
 	void Start ()
     {
         move = GetComponentInParent<Move>();
         anim = GetComponentInParent<Animator>();
-        parent = GetComponentInParent<Transform>();
         car = GetComponentInParent<Car>();
+        source = GetComponent<AudioSource>();
         originalSpeed = move.moveSpeed;
 	}
 
     void Update()
     {
-        if(stop)
+        hornTime += Time.deltaTime;
+
+        if (stop)
         {
             move.moveSpeed = Mathf.Lerp(move.moveSpeed, -originalSpeed / 10f, breakTime * Time.deltaTime);
+
+            if (hornTime > 60f / hornsPerMinute)
+                PlayHorn();
         }
         else
         {
@@ -47,6 +56,13 @@ public class CarSensor : MonoBehaviour
         }
 
         UpdateSensorPosition();
+    }
+
+    void PlayHorn()
+    {
+        int r = Random.Range(0, horns.Count);
+        source.PlayOneShot(horns[r]);
+        hornTime = 0;
     }
 
     void UpdateSensorPosition()

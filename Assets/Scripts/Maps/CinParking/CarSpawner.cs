@@ -57,7 +57,7 @@ public class CarSpawner : MonoBehaviour
 
         unparkTime += Time.deltaTime;
 
-        if( ShouldUnpark() && parkingAmount <= 0 && carsCanPark)
+        if(ShouldUnpark() && parkingAmount <= 0 && carsCanPark)
             UnparkCar();
 	}
 
@@ -77,11 +77,14 @@ public class CarSpawner : MonoBehaviour
         int carToUnpark = -1;
         for(int i = 0; i < carScripts.Length; i++)
         {
-            if (carScripts[i].parked)
+            if(carScripts[i] != null)
             {
-                carToUnpark = i;
-                break;
-            }
+                if (carScripts[i].parked)
+                {
+                    carToUnpark = i;
+                    break;
+                }
+            } 
         }
 
         if(carToUnpark >= 0)
@@ -100,6 +103,7 @@ public class CarSpawner : MonoBehaviour
 
             carScripts[carToUnpark].unparking = true;
             carScripts[carToUnpark].parked = false;
+            cars[carToUnpark].GetComponent<AudioSource>().enabled = true;
             parkedAmount--;
             unparkingAmount++;
             unpark = carUnparkTimeInSeconds + Random.Range(-carUnparkTimeRandom, carUnparkTimeRandom);
@@ -172,6 +176,7 @@ public class CarSpawner : MonoBehaviour
                 move.addPoint(trip[i]);
             }
 
+            move.moveSpeed = move.moveSpeed * 3f / 4f;
             parkingAmount++;
         }
         else

@@ -24,6 +24,7 @@ public class ParkingSpot : MonoBehaviour
         {
             collider.GetComponent<Car>().parked = true;
             collider.GetComponent<Car>().parkedAt = this.gameObject;
+            collider.GetComponent<AudioSource>().enabled = false;
             carSpawner.parkingAmount--;
             carSpawner.parkedAmount++;
         }
