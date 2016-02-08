@@ -14,6 +14,7 @@ public class CarSpawner : MonoBehaviour
     */
 
     public int maxCars = 15;
+    public float carSpeed = 300f;
     public float spawnPerMinute = 10f;
     public float randomExtraSpawn = 5f;
     public float randomSpeedChanger = 50f;
@@ -97,6 +98,8 @@ public class CarSpawner : MonoBehaviour
 
             move.addPoint(new Point(deadEnd.position.x, deadEnd.position.y, true));
 
+            carScripts[carToUnpark].unparking = true;
+            carScripts[carToUnpark].parked = false;
             parkedAmount--;
             unparkingAmount++;
             unpark = carUnparkTimeInSeconds + Random.Range(-carUnparkTimeRandom, carUnparkTimeRandom);
@@ -108,11 +111,13 @@ public class CarSpawner : MonoBehaviour
     {
         int rand = Random.Range(0, cars.Count);
         GameObject car = Instantiate(cars[rand], transform.position, Quaternion.identity) as GameObject;
+        car.transform.parent = this.transform;
 
-        car.GetComponent<Car>().spawner = this;
-
+        Car c = car.GetComponent<Car>();
+        c.spawner = this;
+        
         Move move = car.GetComponent<Move>();
-        move.moveSpeed += Random.Range(-randomSpeedChanger, randomSpeedChanger);
+        move.moveSpeed = carSpeed + Random.Range(-randomSpeedChanger, randomSpeedChanger);
 
         rand = Random.Range(0, 100);
         bool shouldPark = rand < carsParkPercentage ? true : false;
