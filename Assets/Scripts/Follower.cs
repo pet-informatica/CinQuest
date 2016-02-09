@@ -3,18 +3,18 @@ using System.Collections;
 
 public class Follower : MonoBehaviour {
 
-	public Mover following = new Mover(), followed = new Mover();
+	public Move following = new Move(), followed = new Move();
 	private bool setted = false;
 
-	public void setStartEnd(Point followingStart, bool horizontalFirstFollwing, Point followedEnd, bool horizontalFirstFollowed){
-		following.addPoint (followingStart, horizontalFirstFollwing);
-		followed.addPoint (followedEnd, horizontalFirstFollowed);
+	public void setStartEnd(Point followingStart, Point followedEnd, bool horizontalFirstFollowed){
+		following.addPoint (followingStart);
+		followed.addPoint (followedEnd);
 		setted = true;
 	}
 
-	public void addPointPath(Point point, bool horizontalFirst){
-		following.addPoint (point, horizontalFirst);
-		followed.addPoint (point, horizontalFirst);
+	public void addPointPath(Point point){
+		following.addPoint (point);
+		followed.addPoint (point);
 	}
 
 	public void startPath(){

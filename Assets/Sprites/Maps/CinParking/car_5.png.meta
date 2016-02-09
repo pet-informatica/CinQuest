@@ -1,0 +1,285 @@
+fileFormatVersion: 2
+guid: 246c6a3a834c3f447820ae889eaacb7b
+timeCreated: 1454966952
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: wd1
+    21300002: wd2
+    21300004: wd3
+    21300006: wl1
+    21300008: wl2
+    21300010: wl3
+    21300012: wr1
+    21300014: wr2
+    21300016: wu1
+    21300018: wu2
+    21300020: wu3
+    21300022: wr3
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: wd1
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 290
+        width: 63
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24.5, y: 42}
+        - {x: -31.5, y: 28}
+        - {x: -31.5, y: -42}
+        - {x: 31.5, y: -42}
+        - {x: 31.5, y: 31}
+        - {x: 16.5, y: 42}
+    - name: wd2
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 290
+        width: 63
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24.5, y: 42}
+        - {x: -31.5, y: 28}
+        - {x: -31.5, y: -42}
+        - {x: 31.5, y: -42}
+        - {x: 31.5, y: 31}
+        - {x: 16.5, y: 42}
+    - name: wd3
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 290
+        width: 63
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24.5, y: 42}
+        - {x: -31.5, y: 28}
+        - {x: -31.5, y: -42}
+        - {x: 31.5, y: -42}
+        - {x: 31.5, y: 31}
+        - {x: 16.5, y: 42}
+    - name: wl1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 204
+        width: 127
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -34.5, y: 31.5}
+        - {x: -63.5, y: 27.5}
+        - {x: -63.5, y: -27.5}
+        - {x: -58.5, y: -31.5}
+        - {x: 62.5, y: -31.5}
+        - {x: 63.5, y: -27.5}
+        - {x: 63.5, y: 8.5}
+        - {x: 42.5, y: 31.5}
+    - name: wl2
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 204
+        width: 127
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -34.5, y: 31.5}
+        - {x: -63.5, y: 27.5}
+        - {x: -63.5, y: -27.5}
+        - {x: -58.5, y: -31.5}
+        - {x: 62.5, y: -31.5}
+        - {x: 63.5, y: -27.5}
+        - {x: 63.5, y: 8.5}
+        - {x: 42.5, y: 31.5}
+    - name: wl3
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 204
+        width: 126
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24, y: 31.5}
+        - {x: -58, y: 21.5}
+        - {x: -63, y: 6.5}
+        - {x: -63, y: -25.5}
+        - {x: -56, y: -31.5}
+        - {x: 53, y: -31.5}
+        - {x: 63, y: -22.5}
+        - {x: 63, y: 3.5}
+        - {x: 34, y: 31.5}
+    - name: wr1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 108
+        width: 127
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -63.5, y: -20.5}
+        - {x: -57.5, y: -31.5}
+        - {x: 63.5, y: -31.5}
+        - {x: 63.5, y: 26.5}
+        - {x: 62.5, y: 29.5}
+        - {x: 43.5, y: 31.5}
+        - {x: -44.5, y: 31.5}
+        - {x: -63.5, y: 4.5}
+    - name: wr2
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 108
+        width: 126
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 37, y: 31.5}
+        - {x: -41, y: 31.5}
+        - {x: -63, y: 26.5}
+        - {x: -63, y: -31.5}
+        - {x: 63, y: -31.5}
+        - {x: 63, y: 3.5}
+        - {x: 60, y: 15.5}
+    - name: wu1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 7
+        width: 60
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27, y: 40.5}
+        - {x: -30, y: 39.5}
+        - {x: -30, y: -40.5}
+        - {x: 30, y: -40.5}
+        - {x: 30, y: 30.5}
+        - {x: 22, y: 40.5}
+    - name: wu2
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 7
+        width: 60
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27, y: 40.5}
+        - {x: -30, y: 39.5}
+        - {x: -30, y: -40.5}
+        - {x: 30, y: -40.5}
+        - {x: 30, y: 30.5}
+        - {x: 22, y: 40.5}
+    - name: wu3
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 7
+        width: 60
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27, y: 40.5}
+        - {x: -30, y: 39.5}
+        - {x: -30, y: -40.5}
+        - {x: 30, y: -40.5}
+        - {x: 30, y: 30.5}
+        - {x: 22, y: 40.5}
+    - name: wr3
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 108
+        width: 127
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -63.5, y: -20.5}
+        - {x: -57.5, y: -31.5}
+        - {x: 63.5, y: -31.5}
+        - {x: 63.5, y: 26.5}
+        - {x: 62.5, y: 29.5}
+        - {x: 43.5, y: 31.5}
+        - {x: -44.5, y: 31.5}
+        - {x: -63.5, y: 4.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
