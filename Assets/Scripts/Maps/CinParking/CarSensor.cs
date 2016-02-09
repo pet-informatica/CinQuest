@@ -80,7 +80,7 @@ public class CarSensor : MonoBehaviour
 	
 	void OnTriggerStay2D (Collider2D col)
     {
-        if (col.tag == "Car" || col.tag == "Player")
+        if (col.tag == "Car" || col.tag == "Player" || col.tag == "People")
             stop = true;
         else
             stop = false;
@@ -88,7 +88,7 @@ public class CarSensor : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D col)
     {
-        if (col.tag == "Car" || col.tag == "Player")
+        if (col.tag == "Car" || col.tag == "Player" || col.tag == "People")
             stop = false;   
     }
 }

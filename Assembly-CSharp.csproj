@@ -62,7 +62,9 @@
      <Compile Include="Assets\Scripts\Maps\CinParking\Car.cs" />
      <Compile Include="Assets\Scripts\Maps\CinParking\CarSensor.cs" />
      <Compile Include="Assets\Scripts\Maps\CinParking\CarSpawner.cs" />
-     <Compile Include="Assets\Scripts\Maps\CinParking\ParkingSpot.cs" />
+     <Compile Include="Assets\Scripts\Maps\CinParking\Mover.cs" />
+     <Compile Include="Assets\Scripts\Maps\CinParking\MoverSpawner.cs" />
+     <Compile Include="Assets\Scripts\Maps\CinParking\Waypoint.cs" />
      <Compile Include="Assets\Scripts\Move.cs" />
      <Compile Include="Assets\Scripts\NPCController.cs" />
      <Compile Include="Assets\Scripts\PathPlanner.cs" />

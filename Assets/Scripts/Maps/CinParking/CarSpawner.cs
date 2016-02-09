@@ -2,36 +2,35 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class CarSpawner : MonoBehaviour
+public class CarSpawner : MoverSpawner
 {
     /*
         Developed by: Higor
 
-        Description: This scripts randomly generates cars and assing a path for it to move on.
+        Description: This scripts randomly generates cars and assing a path for it to move on. The newly generated car
+        can either choose to PARK, in this case, gowing for a waypoint tagged as parking spot and staying there until
+        the CarSpawner chooses to UNPARK it, or it can simply rush fowards to a waypoint tagged as deadend, where it will
+        be out of the screen and destroyed.
 
-        How to use it: Put it into a gameobject and place the gameobject where you want the cars to spawn.
+        How to use it: Put it into a gameobject and place the gameobject where you want the cars to spawn. In order for that
+        to work, you need to build a complete parking architecture, where you must have:
+
+        1. Waypoints tagged as ParkingSpot, those are the spots where car's can park.
+        2. Waypoints tagged as Waypoint, the points where the cars can travel before reaching a ParkingSpot.
+        3. At least one Waypoint tagged as DeadEnd, the one place the car will be destroyed, if it choses so.
+        4. You must connect every Previous variable from the waypoints in order to created a valid PATH for the
+        car to travel through.
 
     */
 
     public int maxCars = 15;
     public float carSpeed = 300f;
-    public float spawnPerMinute = 10f;
-    public float randomExtraSpawn = 5f;
-    public float randomSpeedChanger = 50f;
     public bool carsCanPark = false;
     public int carsParkPercentage = 50;
     public float carUnparkTimeInSeconds = 120;
-    public float carUnparkTimeRandom = 60;
 
-    public List<GameObject> cars;
-    public Transform deadEnd;
-    float spawnTime;
     float unparkTime;
-    float spawn;
     float unpark;
-
-    [HideInInspector]
-    public int spawnedAmount;
 
     [HideInInspector]
     public int parkedAmount;
@@ -42,18 +41,18 @@ public class CarSpawner : MonoBehaviour
     [HideInInspector]
     public int unparkingAmount;
     
-	void Start ()
+	protected override void Start ()
     {
-        spawn = spawnPerMinute + Random.Range(-randomExtraSpawn, randomExtraSpawn);
-        unpark = carUnparkTimeInSeconds + Random.Range(-carUnparkTimeRandom, carUnparkTimeRandom);
+        spawn = spawnEverySeconds + Random.Range(-spawnEverySeconds / 2f, spawnEverySeconds / 2f);
+        unpark = carUnparkTimeInSeconds + Random.Range(-carUnparkTimeInSeconds / 2f, carUnparkTimeInSeconds / 2f);
     }
-	
-	void Update ()
+
+    protected override void Update ()
     {
         spawnTime += Time.deltaTime;
 
         if(spawnTime >= 60f / spawn && spawnedAmount <= maxCars)
-            SpawnCar();
+            Spawn();
 
         unparkTime += Time.deltaTime;
 
@@ -91,37 +90,38 @@ public class CarSpawner : MonoBehaviour
         {
             Move move = cars[carToUnpark].GetComponent<Move>();
 
-            GameObject currentWaypoint = carScripts[carToUnpark].parkedAt.GetComponent<ParkingSpot>().previous;
+            GameObject currentWaypoint = carScripts[carToUnpark].parkedAt.GetComponent<Waypoint>().previous;
 
             while(currentWaypoint != null)
             {
                 move.addPoint(new Point(currentWaypoint.transform.position.x, currentWaypoint.transform.position.y, true));
-                currentWaypoint = currentWaypoint.GetComponent<ParkingSpot>().previous;
+                currentWaypoint = currentWaypoint.GetComponent<Waypoint>().previous;
             }
 
-            move.addPoint(new Point(deadEnd.position.x, deadEnd.position.y, true));
+            move.addPoint(new Point(targetWaypoint.transform.position.x, targetWaypoint.transform.position.y, true));
 
             carScripts[carToUnpark].unparking = true;
             carScripts[carToUnpark].parked = false;
             cars[carToUnpark].GetComponent<AudioSource>().enabled = true;
+            cars[carToUnpark].GetComponentInChildren<AudioSource>().enabled = true;
             parkedAmount--;
             unparkingAmount++;
-            unpark = carUnparkTimeInSeconds + Random.Range(-carUnparkTimeRandom, carUnparkTimeRandom);
+            unpark = carUnparkTimeInSeconds + Random.Range(-carUnparkTimeInSeconds / 2f, carUnparkTimeInSeconds / 2f);
             unparkTime = 0;
         }
     }
     
-    void SpawnCar()
+    protected override void Spawn()
     {
-        int rand = Random.Range(0, cars.Count);
-        GameObject car = Instantiate(cars[rand], transform.position, Quaternion.identity) as GameObject;
+        int rand = Random.Range(0, objects.Count);
+        GameObject car = Instantiate(objects[rand], transform.position, Quaternion.identity) as GameObject;
         car.transform.parent = this.transform;
 
         Car c = car.GetComponent<Car>();
         c.spawner = this;
         
         Move move = car.GetComponent<Move>();
-        move.moveSpeed = carSpeed + Random.Range(-randomSpeedChanger, randomSpeedChanger);
+        move.moveSpeed = carSpeed + Random.Range(-carSpeed / 2f, carSpeed / 2f);
 
         rand = Random.Range(0, 100);
         bool shouldPark = rand < carsParkPercentage ? true : false;
@@ -132,10 +132,10 @@ public class CarSpawner : MonoBehaviour
         }
         else
         {
-            GoForDeadEnd(move);
+            GoForTargetWaypoint(move);
         }
 
-        spawn = spawnPerMinute + Random.Range(-randomExtraSpawn, randomExtraSpawn);
+        spawn = spawnEverySeconds + Random.Range(-spawnEverySeconds / 2f, spawnEverySeconds / 2f);
         spawnedAmount++;
         spawnTime = 0;
     }
@@ -144,10 +144,10 @@ public class CarSpawner : MonoBehaviour
     {
         GameObject[] parkingSpots = GameObject.FindGameObjectsWithTag("ParkingSpot");
 
-        ParkingSpot[] spots = new ParkingSpot[parkingSpots.Length];
+        Waypoint[] spots = new Waypoint[parkingSpots.Length];
 
         for (int i = 0; i < parkingSpots.Length; i++)
-            spots[i] = parkingSpots[i].GetComponent<ParkingSpot>();
+            spots[i] = parkingSpots[i].GetComponent<Waypoint>();
 
         int foundAvaibleSpot = -1;
         for (int i = 0; i < spots.Length; i++)
@@ -168,7 +168,7 @@ public class CarSpawner : MonoBehaviour
             while (currentPoint != null)
             {
                 trip.Add(new Point(currentPoint.transform.position.x, currentPoint.transform.position.y, true));
-                currentPoint = currentPoint.GetComponent<ParkingSpot>().previous;
+                currentPoint = currentPoint.GetComponent<Waypoint>().previous;
             }
 
             for (int i = trip.Count - 1; i >= 0; i--)
@@ -181,12 +181,7 @@ public class CarSpawner : MonoBehaviour
         }
         else
         {
-            GoForDeadEnd(move);
+            GoForTargetWaypoint(move);
         }
-    }
-
-    void GoForDeadEnd(Move move)
-    {
-        move.addPoint(new Point(deadEnd.position.x, deadEnd.position.y, false));
     }
 }

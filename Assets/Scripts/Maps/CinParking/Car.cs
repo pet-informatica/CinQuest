@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Car : MonoBehaviour
+public class Car : Mover
 {
     /*
         Developed by: Higor
@@ -9,41 +9,31 @@ public class Car : MonoBehaviour
         Description: This is script is responsible for making cars move around in the CinParking scene.
         The car, once spawned by the CanSpawner class, can either keep going foward for it's deadEnd,
         were it's destroyed, or it can choose to park in the CinParking and stay there until it wants
-        to unpark.
+        to unpark. See CarSpawner class for more.
 
         How to use it: Attach it to a car prefab, along with a move script.
     */
 
     [HideInInspector]
-    public CarSpawner spawner;
-
-    [HideInInspector]
     public GameObject parkedAt;
   
+    [HideInInspector]
     public bool parked = false;
+
+    [HideInInspector]
     public bool unparking = false;
 
-    Move move;
-	
-	void Start ()
+    protected override void OnTriggerEnter2D(Collider2D col)
     {
-        move = GetComponent<Move>();
-	}
-	
-	void Update ()
-    {
-        if(move.hasCompleted)
-            move.moveToPoints();
-	}
-
-    void OnTriggerEnter2D(Collider2D col)
-    {
-        if(col.tag == "CarDeadEnd")
+        if(col.tag == "DeadEnd")
         {
             spawner.spawnedAmount--;
 
             if (unparking)
-                spawner.unparkingAmount--;
+            {
+                if(spawner is CarSpawner)
+                    ((CarSpawner)spawner).unparkingAmount--;
+            }
 
             Destroy(this.gameObject);
         }
