@@ -3,7 +3,8 @@ using System.Collections;
 
 public class BoardTextManager : MonoBehaviour {
 
-    public GUIContent content;
+    //public GUIContent content;
+    public Texture2D textBox;
     public GUIStyle style;
     private bool activated;
 
@@ -13,11 +14,15 @@ public class BoardTextManager : MonoBehaviour {
         
 	}
 	
-	// Update is called once per frame
+	//
 	void OnGUI () {
         if(activated)
         {
-            GUI.Box(new Rect(0, 0, Screen.width, Screen.height), content, style);
+            //AutoResize(1024, 768);
+
+            GUI.Box(new Rect(0.0f, 0.0f, Screen.width, Screen.height), textBox, style);
+            //GUI.DrawTexture(new Rect(0.0f, 0.0f, textBox.width, textBox.height), textBox);
+            GUI.skin.box.alignment = TextAnchor.LowerCenter;
         }
 	    
 	}
@@ -27,7 +32,6 @@ public class BoardTextManager : MonoBehaviour {
         if(other.name == "Player")
         {
             activated = true;
-            print("hellooo");
         }
     }
 
@@ -37,5 +41,16 @@ public class BoardTextManager : MonoBehaviour {
         {
             activated = false;
         }
+    }
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="authorWidth"></param>
+    /// <param name="authorHeight"></param>
+    public static void AutoResize(int authorWidth, int authorHeight)
+    {
+        Vector2 resizeVector = new Vector2 ((float)Screen.width / authorWidth, (float)Screen.height / authorHeight);
+
+        GUI.matrix = Matrix4x4.TRS(Vector3.zero, Quaternion.identity, new Vector3(resizeVector.x, resizeVector.y, 1.0f));
     }
 }

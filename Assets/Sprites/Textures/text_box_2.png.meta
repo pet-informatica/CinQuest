@@ -1,10 +1,9 @@
 fileFormatVersion: 2
-guid: 94150855cdb7dc04db1924f280c260b3
-timeCreated: 1454973670
+guid: 1dc216c0d3e1f924db6ca668b8d4bd5f
+timeCreated: 1455479036
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: textBox_1_0
+  fileIDToRecycleName: {}
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -44,32 +43,13 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 7, y: 7, z: 8, w: 7}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites:
-    - name: textBox_1_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -14, y: 16}
-        - {x: -16, y: 14}
-        - {x: -16, y: -14}
-        - {x: -14, y: -16}
-        - {x: 14, y: -16}
-        - {x: 16, y: -14}
-        - {x: 16, y: 14}
-        - {x: 14, y: 16}
+    sprites: []
     outline: []
   spritePackingTag: 
   userData: 
