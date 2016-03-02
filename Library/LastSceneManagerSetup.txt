@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scene/Cin/Cin.unity
+- path: Assets/Scene/CinParking/CinParking.unity
   isLoaded: 1
   isActive: 1

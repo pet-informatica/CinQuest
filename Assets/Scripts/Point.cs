@@ -1,15 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 
-public class Point{
+public class Point
+{
 	public float x, y;
 	public bool horizontalFirst;
 
-	public Point(float x, float y){
+	public Point(float x, float y, bool horizontalFirst)
+    {
 		this.x = x;
 		this.y = y;
-		this.horizontalFirst = false;
+		this.horizontalFirst = horizontalFirst;
 	}
-
-	public Point(){}
 }

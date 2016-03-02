@@ -1,0 +1,293 @@
+fileFormatVersion: 2
+guid: 1fc4fee82a7355344860a0b022d2b230
+timeCreated: 1454889825
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: wd1
+    21300002: wd2
+    21300004: wd3
+    21300006: wl1
+    21300008: wl2
+    21300010: wl3
+    21300012: wr1
+    21300014: wr2
+    21300016: wr3
+    21300018: wu1
+    21300020: wu2
+    21300022: wu3
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: wd1
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 377
+        width: 88
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -38, y: 60.5}
+        - {x: -44, y: 43.5}
+        - {x: -44, y: -43.5}
+        - {x: -40, y: -51.5}
+        - {x: -26, y: -60.5}
+        - {x: 32, y: -60.5}
+        - {x: 44, y: -41.5}
+        - {x: 44, y: 56.5}
+        - {x: 33, y: 60.5}
+    - name: wd2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 377
+        width: 88
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -38, y: 60.5}
+        - {x: -44, y: 43.5}
+        - {x: -44, y: -43.5}
+        - {x: -40, y: -51.5}
+        - {x: -26, y: -60.5}
+        - {x: 32, y: -60.5}
+        - {x: 44, y: -41.5}
+        - {x: 44, y: 56.5}
+        - {x: 33, y: 60.5}
+    - name: wd3
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 377
+        width: 88
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -38, y: 60.5}
+        - {x: -44, y: 43.5}
+        - {x: -44, y: -43.5}
+        - {x: -40, y: -51.5}
+        - {x: -26, y: -60.5}
+        - {x: 32, y: -60.5}
+        - {x: 44, y: -41.5}
+        - {x: 44, y: 56.5}
+        - {x: 33, y: 60.5}
+    - name: wl1
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 265
+        width: 144
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -44, y: 41.5}
+        - {x: -72, y: 22.5}
+        - {x: -72, y: -36.5}
+        - {x: -71, y: -40.5}
+        - {x: -67, y: -41.5}
+        - {x: 72, y: -41.5}
+        - {x: 72, y: 33.5}
+        - {x: 43, y: 41.5}
+    - name: wl2
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 265
+        width: 144
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -44, y: 41.5}
+        - {x: -72, y: 22.5}
+        - {x: -72, y: -36.5}
+        - {x: -71, y: -40.5}
+        - {x: -67, y: -41.5}
+        - {x: 72, y: -41.5}
+        - {x: 72, y: 33.5}
+        - {x: 43, y: 41.5}
+    - name: wl3
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 265
+        width: 144
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -44, y: 41.5}
+        - {x: -72, y: 22.5}
+        - {x: -72, y: -36.5}
+        - {x: -71, y: -40.5}
+        - {x: -67, y: -41.5}
+        - {x: 72, y: -41.5}
+        - {x: 72, y: 33.5}
+        - {x: 43, y: 41.5}
+    - name: wr1
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 141
+        width: 144
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 63, y: 41.5}
+        - {x: -67, y: 41.5}
+        - {x: -72, y: 31.5}
+        - {x: -72, y: -41.5}
+        - {x: 72, y: -41.5}
+        - {x: 72, y: 15.5}
+        - {x: 67, y: 39.5}
+    - name: wr2
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 141
+        width: 144
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 63, y: 41.5}
+        - {x: -67, y: 41.5}
+        - {x: -72, y: 31.5}
+        - {x: -72, y: -41.5}
+        - {x: 72, y: -41.5}
+        - {x: 72, y: 15.5}
+        - {x: 67, y: 39.5}
+    - name: wr3
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 141
+        width: 144
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 63, y: 41.5}
+        - {x: -67, y: 41.5}
+        - {x: -72, y: 31.5}
+        - {x: -72, y: -41.5}
+        - {x: 72, y: -41.5}
+        - {x: 72, y: 15.5}
+        - {x: 67, y: 39.5}
+    - name: wu1
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 0
+        width: 88
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -34, y: 61.5}
+        - {x: -44, y: 46.5}
+        - {x: -44, y: -59.5}
+        - {x: -35, y: -61.5}
+        - {x: 40, y: -61.5}
+        - {x: 44, y: -42.5}
+        - {x: 44, y: 55.5}
+        - {x: 25, y: 61.5}
+    - name: wu2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 88
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -44, y: 61.5}
+        - {x: -44, y: -61.5}
+        - {x: 38, y: -61.5}
+        - {x: 44, y: -60.5}
+        - {x: 44, y: 37.5}
+        - {x: 30, y: 61.5}
+    - name: wu3
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 0
+        width: 87
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -43.5, y: 61.5}
+        - {x: -43.5, y: -61.5}
+        - {x: 37.5, y: -61.5}
+        - {x: 43.5, y: -60.5}
+        - {x: 43.5, y: 56.5}
+        - {x: 25.5, y: 61.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
