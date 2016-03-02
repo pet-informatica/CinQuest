@@ -3,7 +3,11 @@ using System.Collections;
 using UnityEngine.UI;
 
 public class BoardTextManager : MonoBehaviour {
-
+    /*
+        Developed by: Lucas (lss5)
+        Description:
+        How to use it:
+        */
     public Texture2D textBox;
     public TextAsset theText;
     public int line1;
