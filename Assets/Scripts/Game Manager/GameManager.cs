@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
 	 */
 
 	public static GameManager instance = null;
+    private static Vector2 screenSize = new Vector2(1024.0f, 768.0f);
 
 	void Awake () 
 	{
@@ -33,4 +34,16 @@ public class GameManager : MonoBehaviour
 	{
 	
 	}
+
+    /// <summary>
+    /// Developed by: Lucas (lss5);
+    /// Adjusts width and height of a GUI for it stays in proportion with the user's screen dimensions, using as base the dimensions of the author's screen (Vector2 screenSize).
+    /// It's a VERY important method and MUST be used in every GUI component created in this project.
+    /// </summary>
+    public static void AutoResize()
+    {
+        Vector2 resizeVector = new Vector2((float)Screen.width / screenSize.x, (float)Screen.height / screenSize.y);
+
+        GUI.matrix = Matrix4x4.TRS(Vector3.zero, Quaternion.identity, new Vector3(resizeVector.x, resizeVector.y, 1.0f));
+    }
 }

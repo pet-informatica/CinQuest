@@ -1,0 +1,131 @@
+A001 - Silvio Melo
+sbm@cin.ufpe.br
+A002 - Simone Santos
+scsl@cin.ufpe.br
+A003 - Tsang Ing Ren
+tir@cin.ufpe.br
+A004 - ...
+Trancada
+A005 - Fred Freitas
+fred@cin.ufpe.br
+A007 - Henrique Rebelo
+hemr@cin.ufpe.br
+A009 - Sostenes Luiz Soares Lins
+sostenes@cin.ufpe.br
+A010 - Ricardo Massa
+rmfl@cin.ufpe.br
+A011 - Cristiano Araujo
+cca2@cin.ufpe.br
+A012 - Carina Frota Alves
+cfa@cin.ufpe.br
+A013 - Sergio Soares
+scbs@cin.ufpe.br
+A014 - Sala de Aula
+
+A015 - Fernando Castor
+fjclf@cin.ufpe.br
+Anfiteatro
+
+Sala de Conveniencia
+
+B001 - Renato Vimiiero
+rv2@cin.ufpe.br
+B002 - Voxar Lab
+Voce nao tem permissao de entrar.
+B003 - CITi
+Centro Integrado de Tecnologia da Infomacao
+B004 - Laboratorio de Pesquisa
+
+B005 - Sala da Aula
+
+B006 - XXXX
+
+B007 - Gerenciamento de Sistemas
+
+B008 - Projeto Fiat
+Voce nao tem permissao de entrar
+B009 - PET
+Programa de Educacao Tutorial
+B010 - Copa
+
+B011 - Administracao de Sistemas e Suporte
+
+B012 - XXXX
+
+B013 - XXXX
+
+B014 - XXXX
+
+B015 - Infraestrutura
+
+B016 - XXXX
+
+B017 - Infraestrutura
+
+B018 - Laboratorio de Graduacao 5
+
+B019 - DA
+Diretorio Academico
+B020 - Sala de Aula
+
+B021 - Gestao Predial
+
+B022 - Laboratorio de Graduacao 4
+
+B023 - Laboratorio de Graduacao 1
+
+B024 - Laboratorio de Graduacao 3
+
+B025 - Laboratorio de Graduacao 2
+
+C001 - Laboratorio de Hardware
+
+C002 - Laboratorio de Pesquisa
+
+C003 - XXXX
+
+C004 - Renato Mariz de Moraes
+renatomdm@cin.ufpe.br
+C005 -  XXXX
+
+C006 - Paulo Goncalves
+pasg@cin.ufpe.br
+C007 - Laboratorio de Hardware
+
+C008 - Adriano Sarmento
+aams@cin.ufpe.br
+C009 - Laboratorio de Pesquisa
+
+C010 - Paulo Adeodato
+pjla@cin.ufpe.br
+C011 - Laboratorio de Pos-Graduacao
+
+C012 - Leopoldo Motta Teixeira
+lmt@cin.ufpe.br
+C013 - Laboratorio de Pos-Graduacao
+
+C014 - Eduardo Tavares
+eagt@cin.ufpe.br
+C015 - Laboratorio de Pos-Graduacao
+
+C016 - Projeto Motorola
+Voce nao tem permissao de entrar.
+C017 - Central Telefonica
+
+C018 - Projeto Motorola
+Voce nao tem permissao de entrar.
+C019 - Laboratorio de Pesquisa
+
+C020 - XXXX
+
+C021 - Laboratorio de Pesquisa
+
+C022 - XXXX
+
+C023 - Laboratorio de Pesquisa
+
+C024 - XXXX
+
+C025 - Laboratorio de Pesquisa
+
+C026 - XXXX
