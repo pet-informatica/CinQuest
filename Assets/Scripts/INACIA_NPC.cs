@@ -57,10 +57,10 @@ public class INACIA_NPC : MonoBehaviour {
 		if (this.lineCounter >= this.falas.Length) {
 			this.lineCounter = -1;
 			this.talking = false;
-			talkingTo.GetComponent<PC>().setTalking(this.talking);
+            talkingTo.GetComponent<PlayerController>().CanMove = false;
 		}
 		if (talking && Input.GetButtonDown ("Fire1")) {
-			talkingTo.GetComponent<PC>().setTalking(this.talking);
+            talkingTo.GetComponent<PlayerController>().CanMove = false;
 			if (this.lineCounter == -1 && complete) {
 				this.lineCounter = 3;
 			}

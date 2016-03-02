@@ -1,0 +1,397 @@
+fileFormatVersion: 2
+guid: 0abc80110c63eb247b5932c02788703d
+timeCreated: 1454507485
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: walking_down_1
+    21300002: idle_down
+    21300004: walking_down_2
+    21300006: running_down_1
+    21300008: running_down_2
+    21300010: running_down_3
+    21300012: walking_left_1
+    21300014: idle_left
+    21300016: walking_left-2
+    21300018: running_left_1
+    21300020: running_left_2
+    21300022: running_left_3
+    21300024: walking_right_1
+    21300026: idle_right
+    21300028: walking_right_2
+    21300030: running_right_1
+    21300032: running_right_2
+    21300034: running_right_3
+    21300036: walking_up_1
+    21300038: idle_up
+    21300040: walking_up_2
+    21300042: running_up_1
+    21300044: running_up_2
+    21300046: running_up_3
+    21300048: player_sheet_24
+    21300050: player_sheet_25
+    21300052: player_sheet_26
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 0.8
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: walking_down_1
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 185
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: idle_down
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 187
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: walking_down_2
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 185
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: running_down_1
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 187
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: running_down_2
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 189
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: running_down_3
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 187
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: walking_left_1
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 155
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: idle_left
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 155
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: walking_left-2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 155
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: running_left_1
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 155
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: running_left_2
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 155
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: running_left_3
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 155
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: walking_right_1
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 124
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: idle_right
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 124
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: walking_right_2
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 124
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: running_right_1
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 125
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: running_right_2
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 125
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: running_right_3
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 125
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: walking_up_1
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 91
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: idle_up
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 93
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: walking_up_2
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 91
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: running_up_1
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 91
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: running_up_2
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 94
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: running_up_3
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 91
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: player_sheet_24
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 6
+        width: 50
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25, y: 34.5}
+        - {x: -25, y: -30.5}
+        - {x: -23, y: -34.5}
+        - {x: 25, y: -34.5}
+        - {x: 25, y: 32.5}
+        - {x: 22, y: 34.5}
+    - name: player_sheet_25
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 7
+        width: 41
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 20.5, y: -33}
+        - {x: 20.5, y: 31}
+        - {x: 16.5, y: 33}
+        - {x: -12.5, y: 33}
+        - {x: -20.5, y: 24}
+        - {x: -20.5, y: -33}
+        - {x: -0.5, y: -33}
+        - {x: 1.5, y: -31}
+        - {x: 3.5, y: -25}
+        - {x: 9.5, y: -33}
+    - name: player_sheet_26
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 24
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

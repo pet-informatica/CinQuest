@@ -28,7 +28,7 @@ public class NPCController : MonoBehaviour {
 			if (estado == 1 && Input.GetKeyDown (KeyCode.Space)) {
 					falaController.showDialog ("primeira mensagem!");
 					estado = 2;
-					this.talkingTo.GetComponent<PC> ().setTalking (true);
+                this.talkingTo.GetComponent<PlayerController>().CanMove = false;
 			} else if (estado == 2 && Input.GetKeyDown (KeyCode.Space)) {
 					falaController.stopDialog ();
 
@@ -56,21 +56,21 @@ public class NPCController : MonoBehaviour {
 			}  else if (estado == 3 && Input.GetKeyDown (KeyCode.Space)) {
 					falaController.stopDialog ();
 					estado = 1;
-					this.talkingTo.GetComponent<PC> ().setTalking (false);
+                this.talkingTo.GetComponent<PlayerController>().CanMove = true;
 			}
 		}
 	}
 
 
 	void OnCollisionEnter2D(Collision2D objeto){
-		if( objeto.gameObject.GetComponent<PC>() != null ){
+		if( objeto.gameObject.GetComponent<PlayerController>() != null ){
 			this.talkingTo = objeto.gameObject;
 			estado = 1;	
 		}
 	}
 
 	void OnCollisionExit2D(Collision2D objeto){
-		if( objeto.gameObject.GetComponent<PC>() != null ){
+		if( objeto.gameObject.GetComponent<PlayerController>() != null ){
 			estado = IDLE;
 		}
 	}

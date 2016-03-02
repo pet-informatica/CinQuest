@@ -16,6 +16,7 @@ public class CameraController : MonoBehaviour
     public bool followingPlayerY;
     public float followSpeed = 7.5f;
     Transform player;
+
 	void Start ()
     {
         followingPlayerX = true;
