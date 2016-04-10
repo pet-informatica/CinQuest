@@ -1,4 +1,0 @@
-sceneSetups:
-- path: Assets/Scene/Cin/Cin.unity
-  isLoaded: 1
-  isActive: 1
