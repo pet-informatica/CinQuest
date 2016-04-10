@@ -9,6 +9,7 @@
 [Oo]bj/
 [Bb]uild/
 [Bb]uilds/
+Library\
 Assets\AssetStoreTools*
 Assets/AssetStoreTools*
 *.stackdump
