@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     */
 
     [HideInInspector]
-    public bool CanMove { get; set; }
+    public bool InDialog { get; set; }
 
     public float runSpeed = 10000f;
     public float walkSpeed = 5000f;
@@ -27,12 +27,12 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        CanMove = true;
+        InDialog = false;
     }
 
 	void Update ()
     {
-        if (CanMove)
+        if (!InDialog)
         {
             float speed = walkSpeed;
             anim.SetBool("Running", false);

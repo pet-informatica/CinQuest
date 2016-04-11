@@ -12,29 +12,26 @@ public class LookAtCharacter : MonoBehaviour {
 	public Sprite lookingUp; 	//Sprite quando o NPC olha para cima
 	public Sprite lookingRight; //Sprite quando o NPC olha para direita
 	public Sprite lookingLeft;	//Sprite quando o NPC olha para esquerda
+    public Sprite origin;
+    bool backToOrigin = true;
 
 	private SpriteRenderer spriteRenderer; 
 
 	// quando inicia conversa 
-	void OnCollisionEnter2D(Collision2D objeto){
-		if( Input.GetButtonDown ("Fire1") ){
+	void OnTriggerStay2D(Collider2D objeto){
+		if( Input.GetKey (KeyCode.Z) ){
 			updateSprite(objeto);
 		}
 	}
 
-	// quando inicia conversa 
-	void OnCollisionStay2D(Collision2D objeto){
-		if( Input.GetButtonDown ("Fire1") ){
-			updateSprite(objeto);
-		}
-	}
+    void OnTriggerExit2D(Collider2D objeto)
+    {
+        spriteRenderer.sprite = origin;
+    }
 
-	
-	private void updateSprite(Collision2D objeto){
+	private void updateSprite(Collider2D objeto){
 		float deltaX = objeto.transform.position.x - transform.position.x;
 		float deltaY = objeto.transform.position.y - transform.position.y;
-		Debug.Log (deltaX);
-		Debug.Log (deltaY);
 
 		if ( Mathf.Abs(deltaX) > Mathf.Abs(deltaY)) { //character esta do lado 
 			if( deltaX > 0){
@@ -54,10 +51,6 @@ public class LookAtCharacter : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		spriteRenderer = GetComponent<SpriteRenderer>();
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+        origin = spriteRenderer.sprite;
 	}
 }
