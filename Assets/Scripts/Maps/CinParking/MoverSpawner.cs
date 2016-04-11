@@ -41,12 +41,12 @@ public class MoverSpawner : MonoBehaviour
 
     protected void GoForTargetWaypoint(Move move)
     {
-        List<Point> path = new List<Point>();
+        List<Vector2> path = new List<Vector2>();
         GameObject current = targetWaypoint;
 
         while(current != null)
         {
-            path.Add(new Point(current.transform.position.x, current.transform.position.y, true));
+            path.Add(new Vector2(current.transform.position.x, current.transform.position.y));
             current = current.GetComponent<Waypoint>().previous;
         }
 

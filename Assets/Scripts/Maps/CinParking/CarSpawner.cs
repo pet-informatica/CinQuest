@@ -94,11 +94,11 @@ public class CarSpawner : MoverSpawner
 
             while(currentWaypoint != null)
             {
-                move.addPoint(new Point(currentWaypoint.transform.position.x, currentWaypoint.transform.position.y, true));
+                move.addPoint(new Vector2(currentWaypoint.transform.position.x, currentWaypoint.transform.position.y));
                 currentWaypoint = currentWaypoint.GetComponent<Waypoint>().previous;
             }
 
-            move.addPoint(new Point(targetWaypoint.transform.position.x, targetWaypoint.transform.position.y, true));
+            move.addPoint(new Vector2(targetWaypoint.transform.position.x, targetWaypoint.transform.position.y));
 
             carScripts[carToUnpark].unparking = true;
             carScripts[carToUnpark].parked = false;
@@ -162,12 +162,12 @@ public class CarSpawner : MoverSpawner
 
         if (foundAvaibleSpot >= 0)
         {
-            List<Point> trip = new List<Point>();
+            List<Vector2> trip = new List<Vector2>();
 
             GameObject currentPoint = parkingSpots[foundAvaibleSpot];
             while (currentPoint != null)
             {
-                trip.Add(new Point(currentPoint.transform.position.x, currentPoint.transform.position.y, true));
+                trip.Add(new Vector2(currentPoint.transform.position.x, currentPoint.transform.position.y));
                 currentPoint = currentPoint.GetComponent<Waypoint>().previous;
             }
 
@@ -177,6 +177,7 @@ public class CarSpawner : MoverSpawner
             }
 
             move.moveSpeed = move.moveSpeed * 3f / 4f;
+          
             parkingAmount++;
         }
         else

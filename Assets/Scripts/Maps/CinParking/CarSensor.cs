@@ -22,7 +22,6 @@ public class CarSensor : MonoBehaviour
     public float hornsPerMinute = 10f;
     public List<AudioClip> horns;
 
-    Car car;
     Move move;
     Animator anim;
     AudioSource source;
@@ -30,14 +29,13 @@ public class CarSensor : MonoBehaviour
     float hornTime;
     bool stop;
 
-	void Start ()
+    void Awake()
     {
         move = GetComponentInParent<Move>();
         anim = GetComponentInParent<Animator>();
-        car = GetComponentInParent<Car>();
         source = GetComponent<AudioSource>();
         originalSpeed = move.moveSpeed;
-	}
+    }
 
     void Update()
     {

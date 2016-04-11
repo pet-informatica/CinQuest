@@ -31,7 +31,7 @@ public class INACIA_NPC : MonoBehaviour {
 			if( Vector3.Distance(this.talkingTo.transform.position, this.transform.position) > 100 )
 			{
 
-				float moveHorizontal = 0, moveVertical = 0;
+				//float moveHorizontal = 0, moveVertical = 0;
 
 			}
 
