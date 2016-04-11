@@ -28,7 +28,7 @@ public class NPCController : MonoBehaviour {
 			if (estado == 1 && Input.GetKeyDown (KeyCode.Space)) {
 					falaController.showDialog ("primeira mensagem!");
 					estado = 2;
-                this.talkingTo.GetComponent<PlayerController>().CanMove = false;
+                this.talkingTo.GetComponent<PlayerController>().InDialog = true;
 			} else if (estado == 2 && Input.GetKeyDown (KeyCode.Space)) {
 					falaController.stopDialog ();
 
@@ -56,7 +56,7 @@ public class NPCController : MonoBehaviour {
 			}  else if (estado == 3 && Input.GetKeyDown (KeyCode.Space)) {
 					falaController.stopDialog ();
 					estado = 1;
-                this.talkingTo.GetComponent<PlayerController>().CanMove = true;
+                this.talkingTo.GetComponent<PlayerController>().InDialog = false;
 			}
 		}
 	}
