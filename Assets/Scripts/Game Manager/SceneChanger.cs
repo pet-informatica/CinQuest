@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
 public class SceneChanger : MonoBehaviour 
 {
 
@@ -34,11 +35,13 @@ public class SceneChanger : MonoBehaviour
 	{
 		//To make the fade in, we simple call the ScreenFader script, present in the GameManager object, to start the fade.
 		//*See the ScreenFader script and the GameManger script for more information.
-		float fadeTime = GameObject.FindGameObjectWithTag ("GameManager").GetComponent<ScreenFader> ().BeginFade (1);
+		GameObject.FindGameObjectWithTag ("GameManager").GetComponent<ScreenFader> ().BeginFade (1);
 		//Then wait until the fade is over
 		yield return new WaitForSeconds (1);
         //And finally change the scene
         string sceneName = Application.loadedLevelName;
+       
+        
         if (specificName != "")
             sceneName = specificName;
 		PlayerSpawn.SetTarget(sceneName);

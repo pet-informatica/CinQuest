@@ -11,13 +11,8 @@ public class Mover : MonoBehaviour
 	protected virtual void Start ()
     {
         move = GetComponent<Move>();
+        move.StartMoving();
 	}
-	
-	protected virtual void Update ()
-    {
-        if (move.hasCompleted)
-            move.moveToPoints();
-    }
 
     protected virtual void OnTriggerEnter2D(Collider2D col)
     {
