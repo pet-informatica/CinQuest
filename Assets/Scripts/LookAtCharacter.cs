@@ -12,8 +12,8 @@ public class LookAtCharacter : MonoBehaviour {
 	public Sprite lookingUp; 	//Sprite quando o NPC olha para cima
 	public Sprite lookingRight; //Sprite quando o NPC olha para direita
 	public Sprite lookingLeft;	//Sprite quando o NPC olha para esquerda
-    public Sprite origin;
-    bool backToOrigin = true;
+    Sprite origin;
+    public bool backToOrigin = true;
 
 	private SpriteRenderer spriteRenderer; 
 

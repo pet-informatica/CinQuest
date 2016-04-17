@@ -52,7 +52,7 @@ public class Dialog : MonoBehaviour
     /// Returns false if it isn't safe to start another conversation
     /// </summary>
     public bool IsSpeaking {
-       get { return message.Count > 0 || show; }
+       get { return  show; }
     }
         
     /// <summary>

@@ -29,24 +29,18 @@ public class Speaker : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D collider)
     {
-        if (collider.tag == "Player")
+        if (collider.tag == "PlayerFront")
         {
             if (!dialog.IsSpeaking)
             {
-                player.InDialog = false;
                 if (Input.GetKeyDown(KeyCode.Z))
                 {
+                    dialog.Prepare();
                     foreach (string message in dialogs)
                         dialog.AddMessage(message);
                     dialog.StartConversation();
-                    player.InDialog = true;
                 }
             }
         }
-    }
-
-    void OnTriggerExit2D(Collider2D collider)
-    {
-        dialog.EndConversation();
     }
 }

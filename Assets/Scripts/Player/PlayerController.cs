@@ -18,46 +18,56 @@ public class PlayerController : MonoBehaviour
 
     Rigidbody2D rb;
     Animator anim;
+    Dialog dialog;
 
 	void Awake ()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        
 	}
+
 
     void Start()
     {
         InDialog = false;
+        dialog = GameObject.FindGameObjectWithTag("GameManager").GetComponent<Dialog>();
     }
 
 	void Update ()
     {
-        if (!InDialog)
+        if (dialog.IsSpeaking) InDialog = true;
+        else InDialog = false;
+
+        float speed = walkSpeed;
+        anim.SetBool("Running", false);
+
+        if (Input.GetKey(KeyCode.LeftShift))
         {
-            float speed = walkSpeed;
-            anim.SetBool("Running", false);
-
-            if (Input.GetKey(KeyCode.LeftShift))
-            {
-                speed = runSpeed;
-                anim.SetBool("Running", true);
-            }
-
-            Vector2 direction = Vector2.zero;
-
-            if (Input.GetKey(KeyCode.W))
-                direction.y = 1;
-            else if (Input.GetKey(KeyCode.S))
-                direction.y = -1;
-            else if (Input.GetKey(KeyCode.A))
-                direction.x = -1;
-            else if (Input.GetKey(KeyCode.D))
-                direction.x = 1;
-
-            rb.velocity = direction * speed * Time.deltaTime;
-
-            anim.SetFloat("VerticalSpeed", rb.velocity.y);
-            anim.SetFloat("HorizontalSpeed", rb.velocity.x);
+            speed = runSpeed;
+            anim.SetBool("Running", true);
         }
+
+        if (InDialog)
+        {
+            speed = 0;
+            anim.SetBool("Running", false);
+        }
+
+        Vector2 direction = Vector2.zero;
+
+        if (Input.GetKey(KeyCode.W))
+            direction.y = 1;
+        else if (Input.GetKey(KeyCode.S))
+            direction.y = -1;
+        else if (Input.GetKey(KeyCode.A))
+            direction.x = -1;
+        else if (Input.GetKey(KeyCode.D))
+            direction.x = 1;
+
+        rb.velocity = direction * speed * Time.deltaTime;
+
+        anim.SetFloat("VerticalSpeed", rb.velocity.y);
+        anim.SetFloat("HorizontalSpeed", rb.velocity.x);
 	}
 }
