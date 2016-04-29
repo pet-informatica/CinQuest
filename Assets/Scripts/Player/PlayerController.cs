@@ -16,6 +16,8 @@ public class PlayerController : MonoBehaviour
     public float runSpeed = 10000f;
     public float walkSpeed = 5000f;
 
+	private bool paused;
+
     Rigidbody2D rb;
     Animator anim;
     Dialog dialog;
@@ -54,6 +56,12 @@ public class PlayerController : MonoBehaviour
             anim.SetBool("Running", false);
         }
 
+		if (paused)
+		{
+			speed = 0;
+			anim.SetBool("Running", false);
+		}
+
         Vector2 direction = Vector2.zero;
 
         if (Input.GetKey(KeyCode.W))
@@ -69,5 +77,9 @@ public class PlayerController : MonoBehaviour
 
         anim.SetFloat("VerticalSpeed", rb.velocity.y);
         anim.SetFloat("HorizontalSpeed", rb.velocity.x);
+	}
+
+	public void OnPause(bool p) {
+		this.paused = p;
 	}
 }
