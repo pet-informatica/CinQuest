@@ -20,6 +20,8 @@ public class GameManager : MonoBehaviour
 
 	public static GameManager instance = null;
     private static Vector2 screenSize = new Vector2(1024.0f, 768.0f);
+	private QuestManager questManager; 
+	private GameConfiguration gameConfiguration;
 
 	void Awake () 
 	{
@@ -46,4 +48,33 @@ public class GameManager : MonoBehaviour
 
         GUI.matrix = Matrix4x4.TRS(Vector3.zero, Quaternion.identity, new Vector3(resizeVector.x, resizeVector.y, 1.0f));
     }
+
+	/// <summary>
+	/// Developed by: Peao (rngs)
+	/// Create the Configuration Class of Game. Should be called in the begining of the game.
+	/// </summary>
+	private void loadAppConfiguration(){
+		this.gameConfiguration = new GameConfiguration ();
+	}
+
+	/// <summary>
+	/// Developed by: Peao (rngs)
+	/// Method where we should initiate all the systems managers of the Game.
+	/// </summary>
+	private void startManagers(){
+		this.questManager = new QuestManager (this.createQuestRepository());
+	}
+
+	/// <summary>
+	/// Developed by: Peao (rngs)
+	/// Method to instantiate the QuestRepository based on DatabaseStorageType.
+	/// </summary>
+	private IQuestRepository createQuestRepository(){
+		switch (this.gameConfiguration.databaseType) {
+		case EDatabaseStorageType.XML:
+			return new RepositoryXMLFactory().createQuestRepository();
+		default:
+			return null;
+		}
+	}
 }

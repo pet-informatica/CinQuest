@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 
 [System.Serializable]
-public class Quest {
+public class OldQuest {
 	
 	public string questName;
 	
@@ -16,14 +16,14 @@ public class Quest {
 	
 	public List<Task> questTasks = new List<Task>();
 	
-	public Quest(){}
+	public OldQuest(){}
 	
-	public Quest(string name, string description){
+	public OldQuest(string name, string description){
 		this.questName = name;
 		this.questDescription = description;
 	}
 	
-	public Quest(string name, string description, List<Task> questTasks ){
+	public OldQuest(string name, string description, List<Task> questTasks ){
 		this.questName = name;
 		this.questDescription = description;
 		this.questTasks = questTasks;
@@ -40,7 +40,7 @@ public class Quest {
 	public override bool Equals (object obj)
 	{
 		if (obj == null) return false;
-		return this.questName.Equals ( ((Quest)obj).questName  );
+		return this.questName.Equals ( ((OldQuest)obj).questName  );
 	}
 	
 	public int getTaskID(){
