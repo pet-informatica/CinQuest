@@ -25,12 +25,7 @@ public class PauseMenu : MonoBehaviour {
 	private GameObject eventSystem;
 
 	void Start () {
-		pauseCanvas = Instantiate (pauseCanvasPrefab);
-		controlCanvas = Instantiate (controlCanvasPrefab);
-		eventSystem = Instantiate (eventSystemPrefab);
 
-		pauseCanvas.SetActive (false);
-		controlCanvas.SetActive (false);
 	}
 
 	void OnLevelWasLoaded(int level) {

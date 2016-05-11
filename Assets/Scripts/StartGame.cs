@@ -12,15 +12,15 @@ public class StartGame : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.anyKey) {
-			Application.LoadLevel(1);
-		}
+//		if(Input.anyKey) {
+//			Application.LoadLevel(1);
+//		}
 	}
 	
 	void Awake() {
-		cinquest = GameObject.Find ("cinquest");
-		
-		StartCoroutine (BlinkImage());
+//		cinquest = GameObject.Find ("cinquest");
+//		
+//		StartCoroutine (BlinkImage());
 	}
 	
 	IEnumerator BlinkImage() {
@@ -37,5 +37,9 @@ public class StartGame : MonoBehaviour {
 			print ("foi");
 			yield return new WaitForSeconds (0.5f);
 		}
+	}
+
+	public void startGame() {
+		Application.LoadLevel("CinParking");
 	}
 }
