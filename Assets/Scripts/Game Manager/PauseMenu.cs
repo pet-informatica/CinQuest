@@ -33,6 +33,15 @@ public class PauseMenu : MonoBehaviour {
 		controlCanvas.SetActive (false);
 	}
 
+	void OnLevelWasLoaded(int level) {
+		pauseCanvas = Instantiate (pauseCanvasPrefab);
+		controlCanvas = Instantiate (controlCanvasPrefab);
+		eventSystem = Instantiate (eventSystemPrefab);
+
+		pauseCanvas.SetActive (false);
+		controlCanvas.SetActive (false);
+	}
+
 	void Update () {
 		if (Input.GetButtonDown("Pause")) {
 			if (pauseCanvas.activeSelf) {
@@ -68,10 +77,6 @@ public class PauseMenu : MonoBehaviour {
 		Application.Quit ();
 	}
 
-	void OnDestroy() {
-		
-	}
-
 	string GetInputButtonName(string name) {
 		var inputManager = AssetDatabase.LoadAllAssetsAtPath("ProjectSettings/InputManager.asset")[0];
 		SerializedObject obj = new SerializedObject(inputManager);
@@ -85,12 +90,6 @@ public class PauseMenu : MonoBehaviour {
 				return positiveButton.ToUpper();
 			}
 		}
-
-//		if (positive) {
-//			positiveButton = axisArray.GetArrayElementAtIndex (pos).FindPropertyRelative ("positiveButton").stringValue;
-//		} else {
-//			positiveButton = axisArray.GetArrayElementAtIndex (pos).FindPropertyRelative ("negativeButton").stringValue;
-//		}
 
 		return positiveButton;
 	}
