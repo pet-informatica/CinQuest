@@ -23,7 +23,7 @@ public class Speaker : MonoBehaviour
 
     void Start()
     {
-        dialog = GameObject.FindGameObjectWithTag("GameManager").GetComponent<Dialog>();
+        dialog = GameObject.FindGameObjectWithTag("DialogBox").GetComponent<Dialog>();
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
     }
 
