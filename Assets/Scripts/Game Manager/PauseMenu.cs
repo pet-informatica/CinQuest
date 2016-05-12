@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using UnityEditor;
-using System.Collections;
 using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour {
@@ -24,17 +23,18 @@ public class PauseMenu : MonoBehaviour {
 	private GameObject controlCanvas;
 	private GameObject eventSystem;
 
-	void Start () {
-
-	}
-
-	void OnLevelWasLoaded(int level) {
-		pauseCanvas = Instantiate (pauseCanvasPrefab);
-		controlCanvas = Instantiate (controlCanvasPrefab);
-		eventSystem = Instantiate (eventSystemPrefab);
-
-		pauseCanvas.SetActive (false);
-		controlCanvas.SetActive (false);
+	void Start() {
+        if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex > 0)
+        {
+            pauseCanvas = Instantiate(pauseCanvasPrefab);
+            pauseCanvas.transform.parent = this.transform;
+            controlCanvas = Instantiate(controlCanvasPrefab);
+            controlCanvas.transform.parent = this.transform;
+            eventSystem = Instantiate(eventSystemPrefab);
+            eventSystem.transform.parent = this.transform;
+            pauseCanvas.SetActive(false);
+            controlCanvas.SetActive(false);
+        }
 	}
 
 	void Update () {
