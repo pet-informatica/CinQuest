@@ -15,4 +15,8 @@ public class StartGame : MonoBehaviour {
 	public void startGame() {
         sceneChanger.Change();
 	}
+
+	public void quitGame() {
+		Application.Quit ();
+	}
 }

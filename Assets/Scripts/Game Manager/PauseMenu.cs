@@ -15,30 +15,24 @@ public class PauseMenu : MonoBehaviour {
     * 					menu. In Unity, select the button and go to OnClick() and select the function you want.
     */
 
-	public GameObject pauseCanvasPrefab;
-	public GameObject controlCanvasPrefab;
-	public GameObject eventSystemPrefab;
-
 	private GameObject pauseCanvas;
 	private GameObject controlCanvas;
 	private GameObject eventSystem;
 
 	void Start() {
-        if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex > 0)
-        {
-            pauseCanvas = Instantiate(pauseCanvasPrefab);
-            pauseCanvas.transform.parent = this.transform;
-            controlCanvas = Instantiate(controlCanvasPrefab);
-            controlCanvas.transform.parent = this.transform;
-            eventSystem = Instantiate(eventSystemPrefab);
-            eventSystem.transform.parent = this.transform;
-            pauseCanvas.SetActive(false);
-            controlCanvas.SetActive(false);
-        }
+		pauseCanvas = GameObject.Find("Pause Canvas");
+		if(pauseCanvas != null)
+			pauseCanvas.SetActive (false);
+
+		controlCanvas = GameObject.Find("Control Canvas");
+		if(controlCanvas != null)
+			controlCanvas.SetActive (false);
+
+		eventSystem = GameObject.Find("EventSystem");
 	}
 
 	void Update () {
-		if (Input.GetButtonDown("Pause")) {
+		if (pauseCanvas != null && Input.GetButtonDown("Pause")) {
 			if (pauseCanvas.activeSelf) {
 				if (controlCanvas.activeSelf) {
 					controlCanvas.SetActive (false);
@@ -68,8 +62,15 @@ public class PauseMenu : MonoBehaviour {
 		GameObject.Find ("pauseButton").GetComponent<Text> ().text = GetInputButtonName("Pause");
 	}
 
-	public void quitGame() {
-		Application.Quit ();
+	public void quitGameOption() {
+		GameObject.FindGameObjectWithTag ("GameManager").GetComponent<PauseMenu> ().quitGame();
+	}
+
+	private void quitGame() {
+		gameObject.AddComponent<SceneChanger>();
+		SceneChanger sceneChanger = GetComponent<SceneChanger>();
+		sceneChanger.destinyScene = "GameOpening";
+		sceneChanger.Change();
 	}
 
 	string GetInputButtonName(string name) {
@@ -87,5 +88,17 @@ public class PauseMenu : MonoBehaviour {
 		}
 
 		return positiveButton;
+	}
+
+	void OnLevelWasLoaded(int level) {
+		pauseCanvas = GameObject.Find("Pause Canvas");
+		if(pauseCanvas != null)
+			pauseCanvas.SetActive (false);
+
+		controlCanvas = GameObject.Find("Control Canvas");
+		if(controlCanvas != null)
+			controlCanvas.SetActive (false);
+
+		eventSystem = GameObject.Find("EventSystem");
 	}
 }
