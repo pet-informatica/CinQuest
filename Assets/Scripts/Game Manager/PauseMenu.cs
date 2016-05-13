@@ -21,7 +21,7 @@ public class PauseMenu : MonoBehaviour {
 
 	void Start() {
 		pauseCanvas = GameObject.Find("Pause Canvas");
-		if(pauseCanvas != null)
+		if (pauseCanvas != null)
 			pauseCanvas.SetActive (false);
 
 		controlCanvas = GameObject.Find("Control Canvas");
@@ -48,7 +48,7 @@ public class PauseMenu : MonoBehaviour {
 	}
 
 	public void openControlOption() {
-		GameObject.FindGameObjectWithTag ("GameManager").GetComponent<PauseMenu> ().openControl();
+		GameObject.Find ("PauseManager").GetComponent<PauseMenu> ().openControl();
 	}
 
 	private void openControl() {
@@ -63,7 +63,7 @@ public class PauseMenu : MonoBehaviour {
 	}
 
 	public void quitGameOption() {
-		GameObject.FindGameObjectWithTag ("GameManager").GetComponent<PauseMenu> ().quitGame();
+		GameObject.Find ("PauseManager").GetComponent<PauseMenu> ().quitGame();
 	}
 
 	private void quitGame() {
@@ -88,17 +88,5 @@ public class PauseMenu : MonoBehaviour {
 		}
 
 		return positiveButton;
-	}
-
-	void OnLevelWasLoaded(int level) {
-		pauseCanvas = GameObject.Find("Pause Canvas");
-		if(pauseCanvas != null)
-			pauseCanvas.SetActive (false);
-
-		controlCanvas = GameObject.Find("Control Canvas");
-		if(controlCanvas != null)
-			controlCanvas.SetActive (false);
-
-		eventSystem = GameObject.Find("EventSystem");
 	}
 }
