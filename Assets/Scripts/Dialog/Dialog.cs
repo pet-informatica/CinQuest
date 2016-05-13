@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 //Developed by: Higor Cavalcanti
 /* 
@@ -16,7 +17,7 @@ using System.Collections.Generic;
     An example for this is:
     void Start()
     {
-        Dialog dialog = GameObject.FindGameObjectWithTag("GameManager").GetComponent<Dialog>();
+        Dialog dialog = GameObject.FindGameObjectWithTag("DialogBox").GetComponent<Dialog>();
         dialog.AddMessage("Welcome to the university!");
         dialog.AddMessage("In here, we study a lot, i hope you enjoy it.");
         dialog.AddMessage("See you later, goodbye!");
@@ -36,9 +37,7 @@ public class Dialog : MonoBehaviour
 {
     public Texture textBaloon;
     public AudioClip sound;
-    public GUIStyle font;
     public float letterPause;
-    public Vector2 textPosition;
     float time;
     bool show;
     float textTime;
@@ -47,6 +46,15 @@ public class Dialog : MonoBehaviour
     Queue<string> message = new Queue<string>();
     string curMessage;
     string typedMessage;
+
+    Text text;
+    Image box;
+
+    void Awake()
+    {
+        text = GameObject.Find("DialogBox").GetComponentInChildren <Text>();
+        box = GameObject.Find("DialogBox").GetComponentInChildren<Image>();
+    }
 
     /// <summary>
     /// Returns false if it isn't safe to start another conversation
@@ -90,23 +98,12 @@ public class Dialog : MonoBehaviour
             End();
     }
 
-    void OnGUI()
-    {
-        if (show)
-        {
-            GUI.color = new Color(1f, 1f, 1f, guiAlpha);
-          
-            GUI.matrix = Matrix4x4.TRS(Vector3.zero, Quaternion.identity, new Vector3(Screen.width / 1280f, Screen.height / 800f, 1.0f));
-            GUI.DrawTexture(new Rect(textPosition.x - 165, textPosition.y - 75, 1280, 256), textBaloon);
-            GUI.Label(new Rect(textPosition.x, textPosition.y, 950, 256), typedMessage, font);
-        }
-    }
-
-
     void Update()
     {
         textTime += Time.deltaTime;
-
+        text.text = typedMessage;
+        text.color = new Color(1f, 1f, 1f, guiAlpha);
+        box.color = new Color(1f, 1f, 1f, guiAlpha);
         if (show)
         {
             if (typedMessage == curMessage)

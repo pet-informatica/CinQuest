@@ -33,7 +33,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         InDialog = false;
-        dialog = GameObject.FindGameObjectWithTag("GameManager").GetComponent<Dialog>();
+        dialog = GameObject.FindGameObjectWithTag("DialogBox").GetComponent<Dialog>();
     }
 
 	void Update ()
