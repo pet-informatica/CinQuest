@@ -32,7 +32,9 @@ public class PlayerSpawn : MonoBehaviour
 
 	void OnLevelWasLoaded()
 	{
-        Transform target = GameObject.Find(leavingScene).GetComponent<Transform>();
+        Transform target = null;
+        if(GameObject.Find(leavingScene) != null) 
+            target = GameObject.Find(leavingScene).GetComponent<Transform>();
 
         if(target != null)
         {

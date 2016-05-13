@@ -49,9 +49,14 @@ public class SceneChanger : MonoBehaviour
 		Application.LoadLevel (destinyScene);
 	}
 
+    public void Change()
+    {
+        StartCoroutine(ChangeScene());
+    }
+
 	void OnTriggerEnter2D(Collider2D collider)
 	{
-		if(!locked && collider.tag == "Player")
-			StartCoroutine (ChangeScene());
+        if (!locked && collider.tag == "Player")
+            Change();
 	}
 }
