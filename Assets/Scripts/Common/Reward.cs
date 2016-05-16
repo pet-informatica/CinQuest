@@ -1,15 +1,13 @@
 ﻿using System;
 
-public class Reward
+/// <summary>
+/// Developed by: Peao (rngs);
+/// Represents a Reward, possible extensions could be an Item, Achievement...
+/// </summary>
+public abstract class Reward
 {
-	private int identifier { get; }
-	private string name { get; }
-	private string description { get; }
+	public int identifier { get; }
+	public string name { get; }
+	public string description { get; }
 
-	public Reward (int identifier, string name, string description)
-	{
-		this.identifier = identifier;
-		this.name = name;
-		this.description = description;
-	}
 }

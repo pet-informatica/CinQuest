@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class GameManager : MonoBehaviour 
 {
@@ -22,6 +23,9 @@ public class GameManager : MonoBehaviour
     private static Vector2 screenSize = new Vector2(1024.0f, 768.0f);
 	private QuestManager questManager; 
 	private GameConfiguration gameConfiguration;
+	// TODO: LOAD FROM DATA THESE PROPERTIES BELLOW.
+	public static List<IPreCondition> preConditions = new List<IPreCondition>();
+	public static List<Item> items = new List<Item> ();
 
 	void Awake () 
 	{
@@ -50,27 +54,30 @@ public class GameManager : MonoBehaviour
     }
 
 	/// <summary>
-	/// Developed by: Peao (rngs)
-	/// Create the Configuration Class of Game. Should be called in the begining of the game.
+	/// Developed by: Peao (rngs);
+	/// Create the Configuration Class of Game. Should be called at the begining of the game.
 	/// </summary>
 	private void loadAppConfiguration(){
 		this.gameConfiguration = new GameConfiguration ();
 	}
 
 	/// <summary>
-	/// Developed by: Peao (rngs)
+	/// Developed by: Peao (rngs);
 	/// Method where we should initiate all the systems managers of the Game.
 	/// </summary>
 	private void startManagers(){
-		this.questManager = new QuestManager (this.createQuestRepository());
+		
+		// QUEST MANAGER
+		this.questManager = new QuestManager (this.createQuestRepository(this.gameConfiguration.databaseType));
+		this.questManager.loadQuestsFromRepository (this.gameConfiguration.questCollectionPath);
 	}
 
 	/// <summary>
-	/// Developed by: Peao (rngs)
+	/// Developed by: Peao (rngs);
 	/// Method to instantiate the QuestRepository based on DatabaseStorageType.
 	/// </summary>
-	private IQuestRepository createQuestRepository(){
-		switch (this.gameConfiguration.databaseType) {
+	private IQuestRepository createQuestRepository(EDatabaseStorageType type){
+		switch (type) {
 		case EDatabaseStorageType.XML:
 			return new RepositoryXMLFactory().createQuestRepository();
 		default:

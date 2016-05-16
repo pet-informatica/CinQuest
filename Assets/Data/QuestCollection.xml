@@ -1,0 +1,19 @@
+﻿<QuestCollection>
+
+	<Quest>
+		<Identifier>1</Identifier>
+		<Name>TestQuest</Name>
+		<Description>This is a test quest.</Description>
+		<Unlocked>false</Unlocked>
+		<PreConditionsToUnlock>
+			<PreCondition identifier="1"/>
+		</PreConditionsToUnlock>
+		<PreConditionsToDone>
+			<PreCondition identifier="2"/>
+		</PreConditionsToDone>
+		<Rewards>
+			<Reward identifier="1"/>
+		</Rewards>
+	</Quest>
+
+</QuestCollection>

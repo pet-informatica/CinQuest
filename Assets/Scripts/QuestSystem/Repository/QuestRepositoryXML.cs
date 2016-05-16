@@ -1,6 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Xml;
+using System.Xml.Linq;
 
+/// <summary>
+/// Developed by: Peao (rngs);
+/// Quest repository XML.
+/// </summary>
 public class QuestRepositoryXML : IQuestRepository
 {
 	private Dictionary<int, Quest> _quests;
@@ -16,14 +22,33 @@ public class QuestRepositoryXML : IQuestRepository
 		}
 	}
 
+	/// <summary>
+	/// Adds the quest.
+	/// </summary>
+	/// <returns><c>true</c>, if quest was added, <c>false</c> otherwise.</returns>
+	/// <param name="newQuest">New quest.</param>
 	public bool addQuest(Quest newQuest){
-		return this._addQuest (newQuest);
+		if (this._quests.ContainsKey (newQuest.identifier))
+			return false;
+		this._quests.Add(newQuest.identifier, newQuest);
+		return true;
 	}
 
+	/// <summary>
+	/// Removes the quest.
+	/// </summary>
+	/// <returns><c>true</c>, if quest was removed, <c>false</c> otherwise.</returns>
+	/// <param name="identifier">Identifier.</param>
 	public bool removeQuest(int identifier){
 		return this._quests.Remove (identifier);
 	}
 
+	/// <summary>
+	/// Updates the quest.
+	/// </summary>
+	/// <returns><c>true</c>, if quest was updated, <c>false</c> otherwise.</returns>
+	/// <param name="identifier">Identifier.</param>
+	/// <param name="quest">Quest.</param>
 	public bool updateQuest(int identifier, Quest quest) {
 		Quest retrievedQuest = this.searchQuest (identifier);
 		if (retrievedQuest == null)
@@ -32,21 +57,31 @@ public class QuestRepositoryXML : IQuestRepository
 		return true;
 	}
 
+	/// <summary>
+	/// Searchs the quest.
+	/// </summary>
+	/// <returns>The quest.</returns>
+	/// <param name="identifier">Identifier.</param>
 	public Quest searchQuest(int identifier){
 		Quest ret = null;
 		this._quests.TryGetValue(identifier,out ret);
 		return ret;
 	}
 
-	public void deserialize(){
-		//TODO: Read from XML file all the Quests and initializate the Quests
-	}
+	/// <summary>
+	/// Build the Quest Repository by deserealizing the specified questCollectionFileName.
+	/// </summary>
+	/// <param name="questCollectionFileName">Quest collection file name.</param>
+	public void deserialize(string questCollectionFileName){
+		
+		XDocument doc = XDocument.Load(questCollectionFileName);
 
-	private bool _addQuest(Quest newQuest){
-		if (this._quests.ContainsKey (newQuest.identifier))
-			return false;
-		this._quests.Add(newQuest.identifier, newQuest);
-		return true;
+		if (doc != null) {
+			foreach (XElement quest in doc.Root.Elements()) {
+				Quest newQuest = QuestBuilderXML.buildQuest (quest);
+				if (newQuest != null)
+					this.addQuest (newQuest);
+			}
+		}
 	}
-}
-
+}			

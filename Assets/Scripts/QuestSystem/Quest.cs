@@ -2,7 +2,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using System;
+using System.Xml;
+using System.Xml.Serialization;
 
+/// <summary>
+/// Developed by: Peao (rngs);
+/// Class that represents a Quest.
+/// </summary>
 public class Quest
 {
 	// PRIVATE ATTRIBUTES
@@ -13,7 +19,7 @@ public class Quest
 	private bool _done { get; }
 	private List<IPreCondition> _preConditionsToUnlock { get; }
 	private List<IPreCondition> _preConditionsToDone { get; }
-	private List<Reward> _rewards;
+	private List<Item> _rewards;
 
 	// PUBLIC PROPERTIES
 	public int identifier { get { return this._identifier; } }
@@ -24,7 +30,9 @@ public class Quest
 	public List<IPreCondition> preConditionsToUnlock { get { return this._preConditionsToUnlock; } }
 	public List<IPreCondition> preConditionsToDone { get { return this._preConditionsToDone; } }
 
-	public Quest (int identifier, string name, string description, bool unlocked, List<IPreCondition> preConditionsToUnlock, List<IPreCondition> preConditionsToDone, List<Reward> rewards)
+	public Quest() {}
+
+	public Quest (int identifier, string name, string description, bool unlocked, List<IPreCondition> preConditionsToUnlock, List<IPreCondition> preConditionsToDone, List<Item> rewards)
 	{
 		this._identifier = identifier;
 		this._name = name;
@@ -36,13 +44,17 @@ public class Quest
 		this._rewards = rewards;
 	}
 
-	public List<Reward> getRewards(User currentUserProfile){
+	public List<Item> getRewards(User currentUserProfile){
 		if (this.checkPreConditionsStatus (currentUserProfile, _preConditionsToDone))
 			return this._rewards;
 		else
 			return null;
 	}
 
+	/// <summary>
+	/// Tries to activate the Quest based on currentUserProfile.
+	/// </summary>
+	/// <param name="currentUserProfile">Current user profile.</param>
 	public bool activate(User currentUserProfile){
 		if (this.checkPreConditionsStatus (currentUserProfile, _preConditionsToUnlock)) {
 			this._unlocked = true;
@@ -50,8 +62,13 @@ public class Quest
 		}
 		return false;
 	}
-
-	// If some pre condition does not matches then return false
+		
+	// <summary>
+	/// Checks the pre conditions status.
+	/// </summary>
+	/// <returns><c>true</c>, if pre conditions status was checked, <c>false</c> otherwise.</returns>
+	/// <param name="currentUserProfile">Current user profile.</param>
+	/// <param name="preConditions">Pre conditions.</param>/
 	private bool checkPreConditionsStatus(User currentUserProfile, List<IPreCondition> preConditions){
 		foreach (IPreCondition p in preConditions){
 			if (!p.checkIfMatches(currentUserProfile))

@@ -2,13 +2,10 @@
 using System.Collections;
 using System.Collections.Generic;
 
-/*
- *  Developed by Peao (rngs);
- * 
- * 	Generic definition of a Quest Repository.
- * 
- * */
-
+/// <summary>
+/// Developed by: Peao (rngs);
+///	Generic definition of a Quest Repository. 
+/// </summary>
 public interface IQuestRepository
 {
 	Dictionary<int, Quest> quests { get; }
@@ -16,5 +13,5 @@ public interface IQuestRepository
 	bool removeQuest(int identifier);
 	bool updateQuest(int identifier, Quest quest);
 	Quest searchQuest(int identifier);
-	void deserialize();
+	void deserialize(string questCollectionFileName);
 }
