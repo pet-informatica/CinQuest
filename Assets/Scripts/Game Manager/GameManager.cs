@@ -66,7 +66,11 @@ public class GameManager : MonoBehaviour
 	/// Method where we should initiate all the systems managers of the Game.
 	/// </summary>
 	private void startManagers(){
-		
+
+		// TODO: LOAD GAME ITEMS
+
+		// TODO: LOAD GAME PRECONDITIONS
+
 		// QUEST MANAGER
 		this.questManager = new QuestManager (this.createQuestRepository(this.gameConfiguration.databaseType));
 		this.questManager.loadQuestsFromRepository (this.gameConfiguration.questCollectionPath);
