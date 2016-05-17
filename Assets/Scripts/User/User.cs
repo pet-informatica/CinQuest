@@ -5,8 +5,8 @@ public class User
 {
 
 	public string name { get; set; }
-	public Dictionary<int,Quest> userQuests { get; }
-	public List<Item> items { get; } 
+	public Dictionary<int,Quest> userQuests { get; set;}
+	public List<Item> items { get; set;} 
 
 	public User (string name)
 	{

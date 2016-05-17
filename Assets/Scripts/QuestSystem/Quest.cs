@@ -12,13 +12,13 @@ using System.Xml.Serialization;
 public class Quest
 {
 	// PRIVATE ATTRIBUTES
-	private int _identifier { get; }
-	private string _name { get; }
-	private string _description { get; }
+	private int _identifier { get; set; }
+	private string _name { get; set;}
+	private string _description { get; set;}
 	private bool _unlocked { get; set; }
-	private bool _done { get; }
-	private List<IPreCondition> _preConditionsToUnlock { get; }
-	private List<IPreCondition> _preConditionsToDone { get; }
+	private bool _done { get; set;}
+	private List<IPreCondition> _preConditionsToUnlock { get; set;}
+	private List<IPreCondition> _preConditionsToDone { get; set;}
 	private List<Item> _rewards;
 
 	// PUBLIC PROPERTIES

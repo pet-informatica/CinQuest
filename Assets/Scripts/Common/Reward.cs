@@ -6,8 +6,8 @@
 /// </summary>
 public abstract class Reward
 {
-	public int identifier { get; }
-	public string name { get; }
-	public string description { get; }
+	public int identifier { get; set;}
+	public string name { get; set;}
+	public string description { get; set;}
 
 }
