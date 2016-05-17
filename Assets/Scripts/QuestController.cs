@@ -10,16 +10,16 @@ public class QuestController : MonoBehaviour {
 	public GUISkin skin;
 	public int numQuests = 0; 
 	private int questBookX=400, questBookY=0;
-	private List<Quest> questsDatabase;
+	private List<OldQuest> questsDatabase;
 	private int nextQuestID = 0;
 	private int currPage=0;
 	private int textBookHeight=200, textBookWidth=230;
 	private string description;
-	public Quest currQuest;
+	public OldQuest currQuest;
 	
 	void Start(){
-		this.questsDatabase = new List<Quest>();
-		Quest first = new Quest("Entrando no CIn", "Seja Bem-vindo a UFPE!! Corra até o CIn para não perder a aula inaugural!");
+		this.questsDatabase = new List<OldQuest>();
+		OldQuest first = new OldQuest("Entrando no CIn", "Seja Bem-vindo a UFPE!! Corra até o CIn para não perder a aula inaugural!");
 		first.questTasks.Add(new Task("Chegar no CIn", "Você deve chegar ao CIn pela porta principal"));
 		questsDatabase.Add(first);
 		this.numQuests = this.questsDatabase.Count;
@@ -109,7 +109,7 @@ public class QuestController : MonoBehaviour {
 		this.description+="</color>";
 	}
 	
-	void AddQuest(Quest quest){
+	void AddQuest(OldQuest quest){
 		quest.questID = ++this.nextQuestID;
 		this.questsDatabase.Add (quest);
 		this.numQuests++;
@@ -117,17 +117,17 @@ public class QuestController : MonoBehaviour {
 	
 	void AddTask(string questName, Task task){
 		task.taskID = ++this.nextQuestID;
-		Quest quest = this.FindQuest (questName);
+		OldQuest quest = this.FindQuest (questName);
 		quest.questTasks.Add (task);
 	}
 	
-	void AddTask(Quest quest, Task task){
+	void AddTask(OldQuest quest, Task task){
 		task.taskID = ++this.nextQuestID;
 		quest.questTasks.Add (task);
 	}
 	
 	void TaskComplete(string questName, string taskName){
-		Quest quest = this.FindQuest (questName);
+		OldQuest quest = this.FindQuest (questName);
 		Task task = this.FindTask (quest, taskName);
 		task.taskDone = true;
 		quest.questDone = quest.hasAllTasks();
@@ -155,7 +155,7 @@ public class QuestController : MonoBehaviour {
 		return true;
 	}
 	
-	Quest FindQuest(string questName){
+	OldQuest FindQuest(string questName){
 		for (int i=0; i < this.questsDatabase.Count; i++) {
 			if(this.questsDatabase[i].questName.Equals(questName)) {
 				return this.questsDatabase[i];
@@ -164,7 +164,7 @@ public class QuestController : MonoBehaviour {
 		return null;
 	}
 	
-	Task FindTask(Quest quest, string taskName){
+	Task FindTask(OldQuest quest, string taskName){
 		for (int i=0; i < quest.questTasks.Count; i++) {
 			if(quest.questTasks[i].taskName.Equals(taskName)) {
 				return quest.questTasks[i];
