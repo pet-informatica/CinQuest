@@ -21,11 +21,11 @@ public class GameManager : MonoBehaviour
 
 	public static GameManager instance = null;
     private static Vector2 screenSize = new Vector2(1024.0f, 768.0f);
-	private QuestManager questManager; 
-	private GameConfiguration gameConfiguration;
+	public QuestManager questManager { get; set; } 
+	public GameConfiguration gameConfiguration { get; set; } 
 	// TODO: LOAD FROM DATA THESE PROPERTIES BELLOW.
-	public static List<IPreCondition> preConditions = new List<IPreCondition>();
 	public static List<Item> items = new List<Item> ();
+	public static List<IPreCondition> preConditions = new List<IPreCondition>();
 
 	void Awake () 
 	{
@@ -74,6 +74,8 @@ public class GameManager : MonoBehaviour
 		// QUEST MANAGER
 		this.questManager = new QuestManager (this.createQuestRepository(this.gameConfiguration.databaseType));
 		this.questManager.loadQuestsFromRepository (this.gameConfiguration.questCollectionPath);
+
+		// TODO: LOAD USER STATE - HOW TO STORE USER INFORMATION OUTSIDE THE PROJECT? OR COULD IT BE INSIDE?
 	}
 
 	/// <summary>

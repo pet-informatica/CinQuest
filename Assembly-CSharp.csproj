@@ -46,7 +46,6 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Board Text Manager\BoardTextManager.cs" />
-     <Compile Include="Assets\Scripts\Common\Reward.cs" />
      <Compile Include="Assets\Scripts\Dialog\Dialog.cs" />
      <Compile Include="Assets\Scripts\Dialog\Speaker.cs" />
      <Compile Include="Assets\Scripts\Game Manager\CameraController.cs" />
@@ -62,6 +61,8 @@
      <Compile Include="Assets\Scripts\InterativeObject.cs" />
      <Compile Include="Assets\Scripts\InventoryController.cs" />
      <Compile Include="Assets\Scripts\Item.cs" />
+     <Compile Include="Assets\Scripts\ItemManager\GenericItem.cs" />
+     <Compile Include="Assets\Scripts\ItemManager\NotShowableItem.cs" />
      <Compile Include="Assets\Scripts\LookAtCharacter.cs" />
      <Compile Include="Assets\Scripts\Maps\CinParking\Car.cs" />
      <Compile Include="Assets\Scripts\Maps\CinParking\CarSensor.cs" />
@@ -76,6 +77,7 @@
      <Compile Include="Assets\Scripts\PathPlanner.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerFront.cs" />
+     <Compile Include="Assets\Scripts\PreConditions\GenericPreCondition.cs" />
      <Compile Include="Assets\Scripts\PreConditions\IPreCondition.cs" />
      <Compile Include="Assets\Scripts\QuestController.cs" />
      <Compile Include="Assets\Scripts\QuestSystem\Quest.cs" />

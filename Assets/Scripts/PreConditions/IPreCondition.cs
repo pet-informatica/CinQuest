@@ -12,3 +12,4 @@ public interface IPreCondition
 	string name { get; set; }
 	bool checkIfMatches(User userProfile);
 }
+
