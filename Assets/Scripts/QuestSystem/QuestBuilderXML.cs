@@ -4,6 +4,9 @@ using System.Xml;
 using System.Collections.Generic;
 using System.Xml.Linq;
 
+using UnityEngine;
+using System.Collections;
+
 /// <summary>
 /// Developed by: Peao (rngs);
 /// Quest Builder XML.
@@ -34,21 +37,21 @@ public class QuestBuilderXML
 		XElement preConditionsToUnlock = quest.Element ("PreConditionsToUnlock");
 		List<IPreCondition> p1 = new List<IPreCondition> ();
 		foreach (XElement element in preConditionsToUnlock.Elements()) {
-			int index = Int32.Parse (element.Attribute ("identifier").Value);
+			int index = Int32.Parse (element.Attribute ("identifier").Value) - 1;
 			p1.Add (GameManager.preConditions [index]);
 		}
 
 		XElement preConditionsToDone = quest.Element ("PreConditionsToDone");
 		List<IPreCondition> p2 = new List<IPreCondition> ();
 		foreach (XElement element in preConditionsToDone.Elements()) {
-			int index = Int32.Parse (element.Attribute ("identifier").Value);
+			int index = Int32.Parse (element.Attribute ("identifier").Value) - 1;
 			p2.Add (GameManager.preConditions [index]);
 		}
 
 		XElement rewards = quest.Element ("Rewards");
 		List<Item> r1 = new List<Item> ();
 		foreach (XElement element in rewards.Elements()) {
-			int index = Int32.Parse (element.Attribute ("identifier").Value);
+			int index = Int32.Parse (element.Attribute ("identifier").Value) - 1;
 			r1.Add (GameManager.items [index]);
 		}
 

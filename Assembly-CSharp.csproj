@@ -93,6 +93,7 @@
      <Compile Include="Assets\Scripts\Utils\GameConstants.cs" />
      <Compile Include="Assets\Scripts\Utils\RepositoryBaseFactory.cs" />
      <Compile Include="Assets\Scripts\Utils\RepositoryXMLFactory.cs" />
+     <None Include="Assets\Data\PreConditionCollection.xml" />
      <None Include="Assets\Data\QuestCollection.xml" />
      <None Include="Assets\Texts\cin_first_floor_rooms.txt" />
  <Reference Include="UnityEngine.UI">

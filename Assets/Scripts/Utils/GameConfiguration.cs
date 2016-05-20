@@ -58,17 +58,6 @@ public class GameConfiguration
 		//TODO: Certify about this.
 		string p1 = Application.dataPath;
 		string p2 = GameConstants.QUEST_COLLECTION_PATH;
-		try {
-			string combination = Path.Combine (p1, p2);
-
-			this._questCollectionPath = combination;
-		} catch (Exception e) {
-			if (p1 == null)
-				p1 = "null";
-			if (p2 == null)
-				p2 = "null";
-			Console.WriteLine ("You cannot combine '{0}' and '{1}' because: {2}{3}",
-				p1, p2, Environment.NewLine, e.Message);
-		}
+		this._questCollectionPath = p1+p2;
 	}
 }

@@ -1,5 +1,9 @@
 ﻿using System;
 
+/// <summary>
+/// Developed by: Peao (rngs);
+/// Generic pre condition.
+/// </summary>
 public class GenericPreCondition : IPreCondition {
 
 	public int identifier { get; set;}
@@ -20,7 +24,6 @@ public class GenericPreCondition : IPreCondition {
 		}
 		return false;
 	}
-
 }
 
 /* 

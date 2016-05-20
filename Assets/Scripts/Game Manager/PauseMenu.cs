@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using UnityEditor;
+//using UnityEditor;
 using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour {
@@ -74,7 +74,7 @@ public class PauseMenu : MonoBehaviour {
 	}
 
 	string GetInputButtonName(string name) {
-		var inputManager = AssetDatabase.LoadAllAssetsAtPath("ProjectSettings/InputManager.asset")[0];
+		/*var inputManager = AssetDatabase.LoadAllAssetsAtPath("ProjectSettings/InputManager.asset")[0];
 		SerializedObject obj = new SerializedObject(inputManager);
 		SerializedProperty axisArray = obj.FindProperty("m_Axes");
 
@@ -87,6 +87,7 @@ public class PauseMenu : MonoBehaviour {
 			}
 		}
 
-		return positiveButton;
+		return positiveButton;*/
+		return "x";
 	}
 }

@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using System;
+using System.IO;
 
 public class GameManager : MonoBehaviour 
 {
@@ -30,7 +32,8 @@ public class GameManager : MonoBehaviour
 	void Awake () 
 	{
 		if (instance == null)
-			instance = this;
+			//instance = this;
+			run();
 		else if (instance != this)
 			Destroy (gameObject);
 		DontDestroyOnLoad (gameObject);
@@ -38,7 +41,23 @@ public class GameManager : MonoBehaviour
 
 	void Update () 
 	{
-	
+		
+	}
+
+	private void run(){
+		instance = this;
+		print ("started");
+		loadAppConfiguration ();
+		print ("configuration loaded");
+		startManagers ();
+		print ("managers started");
+		Dictionary<int, Quest> quests = this.questManager.getQuests ();
+		Quest x = null;
+		quests.TryGetValue (1, out x);
+		print ("This is our first quest:");
+		print ("ID: " + x.identifier);
+		print ("Name :" + x.name);
+		print ("Description :" + x.description);
 	}
 
     /// <summary>
@@ -49,7 +68,6 @@ public class GameManager : MonoBehaviour
     public static void AutoResize()
     {
         Vector2 resizeVector = new Vector2((float)Screen.width / screenSize.x, (float)Screen.height / screenSize.y);
-
         GUI.matrix = Matrix4x4.TRS(Vector3.zero, Quaternion.identity, new Vector3(resizeVector.x, resizeVector.y, 1.0f));
     }
 
@@ -68,8 +86,11 @@ public class GameManager : MonoBehaviour
 	private void startManagers(){
 
 		// TODO: LOAD GAME ITEMS
+		items.Add(new Item("ItemTeste",1,"Item de teste",Item.ItemType.Weapon));
 
 		// TODO: LOAD GAME PRECONDITIONS
+		preConditions.Add(new GenericPreCondition(1, "PreCondition1", 1));
+		preConditions.Add(new GenericPreCondition(2, "PreCondition2", 1));
 
 		// QUEST MANAGER
 		this.questManager = new QuestManager (this.createQuestRepository(this.gameConfiguration.databaseType));
