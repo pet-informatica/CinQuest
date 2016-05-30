@@ -10,6 +10,7 @@ public class QuestUI : MonoBehaviour {
     public GameObject questBoxContent;
     public GameObject questButton;
     public Text questInfoName;
+    public Text questInfoDescription;
     RectTransform questBoxTransform;
     bool opened;
     float questButtonHeight;
@@ -35,7 +36,7 @@ public class QuestUI : MonoBehaviour {
     {
         for(int i = 0; i < 25; ++i)
         {
-            Quest quest = new Quest(0, "Roubar comida " + i, "Testando a quest " + i, true, null, null, null);
+            Quest quest = new Quest(0, "Roubar comida " + i, "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis fringilla turpis, eget fringilla ex interdum at. Duis non bibendum mauris. Nullam sit amet lectus accumsan, porttitor arcu a, dapibus nulla. Quisque commodo sit amet nisi vel aliquet. Nullam scelerisque, justo quis vulputate gravida, risus lacus tempor eros, a cursus purus ex bibendum mi. Cras non lacinia sem. Morbi sed arcu pellentesque, faucibus arcu quis, tincidunt urna. Maecenas sed neque eu turpis pellentesque rhoncus sodales at nibh. Donec varius, quam sit amet consectetur volutpat, ex risus convallis augue, sit amet dapibus diam lorem ac enim. Nullam ac lacus in augue bibendum elementum quis sed purus." + i, true, null, null, null);
             quests.Add(quest);
         }
     }
@@ -82,6 +83,14 @@ public class QuestUI : MonoBehaviour {
         questInfo.SetActive(false);
         opened = false;
     }
+
+    /// <summary>
+    /// Close only the QuestInfo Box
+    /// </summary>
+    public void CloseInfo()
+    {
+        questInfo.SetActive(false);
+    }
 	
 	void Update ()
     {
@@ -99,6 +108,7 @@ public class QuestUI : MonoBehaviour {
     public void ChangeSelectedQuest(Quest quest)
     {
         questInfoName.text = quest.name;
+        questInfoDescription.text = quest.description;
         questInfo.SetActive(true);
     }
 }
