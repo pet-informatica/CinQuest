@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-//using UnityEditor;
 using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour {
@@ -53,13 +52,13 @@ public class PauseMenu : MonoBehaviour {
 
 	private void openControl() {
 		controlCanvas.SetActive (true);
-		GameObject.Find ("upButton").GetComponent<Text> ().text = GetInputButtonName("Up");
-		GameObject.Find ("downButton").GetComponent<Text> ().text = GetInputButtonName("Down");
-		GameObject.Find ("leftButton").GetComponent<Text> ().text = GetInputButtonName("Left");
-		GameObject.Find ("rightButton").GetComponent<Text> ().text = GetInputButtonName("Right");
-		GameObject.Find ("runButton").GetComponent<Text> ().text = GetInputButtonName("Run");
-		GameObject.Find ("inventoryButton").GetComponent<Text> ().text = GetInputButtonName("Inventory");
-		GameObject.Find ("pauseButton").GetComponent<Text> ().text = GetInputButtonName("Pause");
+		GameObject.Find ("upButton").GetComponent<Text> ().text = "W";
+		GameObject.Find ("downButton").GetComponent<Text> ().text = "S";
+		GameObject.Find ("leftButton").GetComponent<Text> ().text = "A";
+		GameObject.Find ("rightButton").GetComponent<Text> ().text = "D";
+		GameObject.Find ("runButton").GetComponent<Text> ().text = "LEFT SHIFT";
+		GameObject.Find ("inventoryButton").GetComponent<Text> ().text = "Q";
+		GameObject.Find ("pauseButton").GetComponent<Text> ().text = "ESC";
 	}
 
 	public void quitGameOption() {
@@ -71,23 +70,5 @@ public class PauseMenu : MonoBehaviour {
 		SceneChanger sceneChanger = GetComponent<SceneChanger>();
 		sceneChanger.destinyScene = "GameOpening";
 		sceneChanger.Change();
-	}
-
-	string GetInputButtonName(string name) {
-		/*var inputManager = AssetDatabase.LoadAllAssetsAtPath("ProjectSettings/InputManager.asset")[0];
-		SerializedObject obj = new SerializedObject(inputManager);
-		SerializedProperty axisArray = obj.FindProperty("m_Axes");
-
-		string positiveButton = "";
-
-		for (int i = 0; i < axisArray.arraySize; i++) {
-			if (axisArray.GetArrayElementAtIndex (i).displayName == name) {
-				positiveButton = axisArray.GetArrayElementAtIndex (i).FindPropertyRelative ("positiveButton").stringValue;
-				return positiveButton.ToUpper();
-			}
-		}
-
-		return positiveButton;*/
-		return "x";
 	}
 }
