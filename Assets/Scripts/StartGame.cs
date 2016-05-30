@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
-using System.Collections;
+using System.Collections.Generic;
+using UnityEngine.UI;
+using System;
 
 public class StartGame : MonoBehaviour {
 
@@ -13,7 +15,7 @@ public class StartGame : MonoBehaviour {
     }
 
 	public void startGame() {
-        sceneChanger.Change();
+		sceneChanger.Change();
 	}
 
 	public void quitGame() {
