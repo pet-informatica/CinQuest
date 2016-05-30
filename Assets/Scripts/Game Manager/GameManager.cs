@@ -86,13 +86,13 @@ public class GameManager : MonoBehaviour
 		this.preConditionManager = new PreConditionManager(RepositoriesFactory.createPreConditionRepository(this.gameConfiguration.databaseType));
 		this.preConditionManager.loadPreConditionsFromFile (this.gameConfiguration.preConditionCollectionPath);
 		// DEBUG: REMOVE LATER
-		print ("THERE ARE: "+this.preConditionManager.getPreConditions ().Count+" PRECONDITIONS");
+		print ("# DEBUG: There were load: "+this.preConditionManager.getPreConditions ().Count+" PreConditions");
 
 		// QUEST MANAGER
 		this.questManager = new QuestManager (RepositoriesFactory.createQuestRepository(this.gameConfiguration.databaseType));
 		this.questManager.loadQuestsFromFile (this.gameConfiguration.questCollectionPath);
 		// DEBUG: REMOVE LATER
-		print ("THERE ARE: "+this.questManager.getQuests ().Count+" QUESTS");
+		print ("# DEBUG: There were load: "+this.questManager.getQuests ().Count+" Quests.");
 
 		// TODO: LOAD USER STATE - HOW TO STORE USER INFORMATION OUTSIDE THE PROJECT? OR COULD IT BE INSIDE?
 	}
