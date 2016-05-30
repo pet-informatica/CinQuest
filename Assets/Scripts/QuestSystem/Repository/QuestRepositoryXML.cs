@@ -1,4 +1,5 @@
-﻿using System;
+﻿using UnityEngine;
+using System;
 using System.Collections.Generic;
 using System.Xml;
 using System.Xml.Linq;
@@ -73,11 +74,17 @@ public class QuestRepositoryXML : IQuestRepository
 	/// </summary>
 	/// <param name="questCollectionFileName">Quest collection file name.</param>
 	public void deserialize(string questCollectionFileName){
-		
-		XDocument doc = XDocument.Load(questCollectionFileName);
 
-		if (doc != null) {
-			foreach (XElement quest in doc.Root.Elements()) {
+		TextAsset temp = Resources.Load(questCollectionFileName) as TextAsset;
+		XmlDocument doc = new XmlDocument();
+		doc.LoadXml(temp.text);
+
+		XmlNodeReader nodeReader = new XmlNodeReader(doc);
+		nodeReader.MoveToContent();
+		XDocument xDoc = XDocument.Load(nodeReader);
+
+		if (xDoc != null) {
+			foreach (XElement quest in xDoc.Root.Elements()) {
 				Quest newQuest = QuestBuilderXML.buildQuest (quest);
 				if (newQuest != null)
 					this.addQuest (newQuest);
