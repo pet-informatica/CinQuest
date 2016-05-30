@@ -28,12 +28,12 @@ public class GameManager : MonoBehaviour
 	public PreConditionManager preConditionManager { get; set; }
 	// TODO: LOAD FROM DATA THESE PROPERTIES BELLOW.
 	public static List<Item> items = new List<Item> ();
-	public static List<IPreCondition> preConditions = new List<IPreCondition>();
 
 	void Awake () 
 	{
-		if (instance == null)
+		if (instance == null) {
 			instance = this;
+		}
 		else if (instance != this)
 			Destroy (gameObject);
 		DontDestroyOnLoad (gameObject);
@@ -42,6 +42,16 @@ public class GameManager : MonoBehaviour
 	void Update () 
 	{
 		
+	}
+
+	/// <summary>
+	/// Developed by: Peao (rngs);
+	/// Loads and start the game.
+	/// </summary>
+	private void loadAndStartGame() {
+		instance = this;
+		this.loadAppConfiguration();
+		this.startManagers ();
 	}
 		
     /// <summary>
@@ -75,12 +85,14 @@ public class GameManager : MonoBehaviour
 		// TODO: LOAD GAME PRECONDITIONS
 		this.preConditionManager = new PreConditionManager(RepositoriesFactory.createPreConditionRepository(this.gameConfiguration.databaseType));
 		this.preConditionManager.loadPreConditionsFromFile (this.gameConfiguration.preConditionCollectionPath);
-		//preConditions.Add(new GenericPreCondition(1, "PreCondition1", 1));
-		//preConditions.Add(new GenericPreCondition(2, "PreCondition2", 1));
+		// DEBUG: REMOVE LATER
+		print ("THERE ARE: "+this.preConditionManager.getPreConditions ().Count+" PRECONDITIONS");
 
 		// QUEST MANAGER
 		this.questManager = new QuestManager (RepositoriesFactory.createQuestRepository(this.gameConfiguration.databaseType));
 		this.questManager.loadQuestsFromFile (this.gameConfiguration.questCollectionPath);
+		// DEBUG: REMOVE LATER
+		print ("THERE ARE: "+this.questManager.getQuests ().Count+" QUESTS");
 
 		// TODO: LOAD USER STATE - HOW TO STORE USER INFORMATION OUTSIDE THE PROJECT? OR COULD IT BE INSIDE?
 	}

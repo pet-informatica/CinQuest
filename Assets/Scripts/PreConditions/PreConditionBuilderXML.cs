@@ -10,8 +10,18 @@ public class PreConditionBuilderXML
 	public static IPreCondition buildPreCondition(XElement element){
 		GenericPreCondition preCondition = null;
 
-		//TODO: get values from element.
-	
+		if (element == null)
+			return preCondition;
+
+		if (!element.HasAttributes)
+			return preCondition;
+
+		int identifier = Int32.Parse (element.Attribute ("identifier").Value) - 1;
+		string name = element.Attribute ("name").Value;
+		int itemIdentifier = Int32.Parse (element.Attribute ("itemIdentifier").Value);
+
+		preCondition = new GenericPreCondition (identifier, name, itemIdentifier);
+
 		return preCondition;
 	}
 }
