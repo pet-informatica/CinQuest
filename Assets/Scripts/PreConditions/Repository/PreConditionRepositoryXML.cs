@@ -1,5 +1,7 @@
-﻿using System;
+﻿using UnityEngine;
+using System;
 using System.Collections.Generic;
+using System.Xml;
 using System.Xml.Linq;
 
 /// <summary>
@@ -72,10 +74,17 @@ public class PreConditionRepositoryXML : IPreConditionRepository
 	/// </summary>
 	/// <param name="preConditonCollectionFileName">Pre conditon collection file name.</param>
 	public void deserialize(string preConditonCollectionFilePath){
-		XDocument doc = XDocument.Load(preConditonCollectionFilePath);
 
-		if (doc != null) {
-			foreach (XElement preCondition in doc.Root.Elements()) {
+		TextAsset temp = Resources.Load(preConditonCollectionFilePath) as TextAsset;
+		XmlDocument doc = new XmlDocument();
+		doc.LoadXml(temp.text);
+
+		XmlNodeReader nodeReader = new XmlNodeReader(doc);
+		nodeReader.MoveToContent();
+		XDocument xDoc = XDocument.Load(nodeReader);
+
+		if (xDoc != null) {
+			foreach (XElement preCondition in xDoc.Root.Elements()) {
 				IPreCondition newPreCondition = PreConditionBuilderXML.buildPreCondition (preCondition);
 				if (newPreCondition != null)
 					this.addPreCondition (newPreCondition);

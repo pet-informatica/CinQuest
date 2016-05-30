@@ -58,13 +58,10 @@ public class GameConfiguration
 	/// </summary>
 	private void buildCollectionsPath ()
 	{
-		//TODO: Certify about this.
-		string app = Application.dataPath;
-
 		string q = GameConstants.QUEST_COLLECTION_PATH;
-		this._questCollectionPath = app + q;
+		this._questCollectionPath = q;
 
 		string p = GameConstants.PRECONDITION_COLLECTION_PATH;
-		this._preConditionCollectionPath = app + p;
+		this._preConditionCollectionPath = p;
 	}
 }

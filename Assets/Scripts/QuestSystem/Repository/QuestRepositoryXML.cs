@@ -75,7 +75,7 @@ public class QuestRepositoryXML : IQuestRepository
 	/// <param name="questCollectionFileName">Quest collection file name.</param>
 	public void deserialize(string questCollectionFileName){
 
-		TextAsset temp = Resources.Load("QuestCollection") as TextAsset;
+		TextAsset temp = Resources.Load(questCollectionFileName) as TextAsset;
 		XmlDocument doc = new XmlDocument();
 		doc.LoadXml(temp.text);
 
