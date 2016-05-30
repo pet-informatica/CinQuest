@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviour
     private static Vector2 screenSize = new Vector2(1024.0f, 768.0f);
 	public QuestManager questManager { get; set; } 
 	public GameConfiguration gameConfiguration { get; set; } 
+	public PreConditionManager preConditionManager { get; set; }
 	// TODO: LOAD FROM DATA THESE PROPERTIES BELLOW.
 	public static List<Item> items = new List<Item> ();
 	public static List<IPreCondition> preConditions = new List<IPreCondition>();
@@ -32,8 +33,7 @@ public class GameManager : MonoBehaviour
 	void Awake () 
 	{
 		if (instance == null)
-			//instance = this;
-			run();
+			instance = this;
 		else if (instance != this)
 			Destroy (gameObject);
 		DontDestroyOnLoad (gameObject);
@@ -43,23 +43,7 @@ public class GameManager : MonoBehaviour
 	{
 		
 	}
-
-	private void run(){
-		instance = this;
-		print ("started");
-		loadAppConfiguration ();
-		print ("configuration loaded");
-		startManagers ();
-		print ("managers started");
-		Dictionary<int, Quest> quests = this.questManager.getQuests ();
-		Quest x = null;
-		quests.TryGetValue (1, out x);
-		print ("This is our first quest:");
-		print ("ID: " + x.identifier);
-		print ("Name :" + x.name);
-		print ("Description :" + x.description);
-	}
-
+		
     /// <summary>
     /// Developed by: Lucas (lss5);
     /// Adjusts width and height of a GUI for it stays in proportion with the user's screen dimensions, using as base the dimensions of the author's screen (Vector2 screenSize).
@@ -89,26 +73,17 @@ public class GameManager : MonoBehaviour
 		items.Add(new Item("ItemTeste",1,"Item de teste",Item.ItemType.Weapon));
 
 		// TODO: LOAD GAME PRECONDITIONS
-		preConditions.Add(new GenericPreCondition(1, "PreCondition1", 1));
-		preConditions.Add(new GenericPreCondition(2, "PreCondition2", 1));
+		this.preConditionManager = new PreConditionManager(RepositoriesFactory.createPreConditionRepository(this.gameConfiguration.databaseType));
+		this.preConditionManager.loadPreConditionsFromFile (this.gameConfiguration.preConditionCollectionPath);
+		//preConditions.Add(new GenericPreCondition(1, "PreCondition1", 1));
+		//preConditions.Add(new GenericPreCondition(2, "PreCondition2", 1));
 
 		// QUEST MANAGER
-		this.questManager = new QuestManager (this.createQuestRepository(this.gameConfiguration.databaseType));
-		this.questManager.loadQuestsFromRepository (this.gameConfiguration.questCollectionPath);
+		this.questManager = new QuestManager (RepositoriesFactory.createQuestRepository(this.gameConfiguration.databaseType));
+		this.questManager.loadQuestsFromFile (this.gameConfiguration.questCollectionPath);
 
 		// TODO: LOAD USER STATE - HOW TO STORE USER INFORMATION OUTSIDE THE PROJECT? OR COULD IT BE INSIDE?
 	}
 
-	/// <summary>
-	/// Developed by: Peao (rngs);
-	/// Method to instantiate the QuestRepository based on DatabaseStorageType.
-	/// </summary>
-	private IQuestRepository createQuestRepository(EDatabaseStorageType type){
-		switch (type) {
-		case EDatabaseStorageType.XML:
-			return new RepositoryXMLFactory().createQuestRepository();
-		default:
-			return null;
-		}
-	}
+
 }

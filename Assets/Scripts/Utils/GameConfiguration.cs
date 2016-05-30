@@ -10,10 +10,13 @@ public class GameConfiguration
 {
 	private EDatabaseStorageType _databaseType;
 	private string _questCollectionPath = "";
+	private string _preConditionCollectionPath = "";
 
-	public EDatabaseStorageType databaseType { get { return _databaseType; } }
+	public EDatabaseStorageType databaseType { get { return this._databaseType; } }
 
-	public string questCollectionPath { get { return _questCollectionPath; } }
+	public string questCollectionPath { get { return this._questCollectionPath; } }
+
+	public string preConditionCollectionPath { get { return this._preConditionCollectionPath;}}
 
 	public GameConfiguration ()
 	{
@@ -26,7 +29,7 @@ public class GameConfiguration
 	private void loadConfigurationClass ()
 	{
 		this._databaseType = this.loadDatabaseType (GameConstants.APP_DATABASE_TYPE);
-		this.buildQuestCollectionPath ();
+		this.buildCollectionsPath ();
 	}
 
 	/// <summary>
@@ -53,11 +56,15 @@ public class GameConfiguration
 	/// <summary>
 	/// Builds the quest collection path.
 	/// </summary>
-	private void buildQuestCollectionPath ()
+	private void buildCollectionsPath ()
 	{
 		//TODO: Certify about this.
-		string p1 = Application.dataPath;
-		string p2 = GameConstants.QUEST_COLLECTION_PATH;
-		this._questCollectionPath = p1+p2;
+		string app = Application.dataPath;
+
+		string q = GameConstants.QUEST_COLLECTION_PATH;
+		this._questCollectionPath = app + q;
+
+		string p = GameConstants.PRECONDITION_COLLECTION_PATH;
+		this._preConditionCollectionPath = app + p;
 	}
 }

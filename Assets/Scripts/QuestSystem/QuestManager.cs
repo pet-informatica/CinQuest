@@ -7,11 +7,11 @@ using System.Collections.Generic;
 /// </summary>
 public class QuestManager
 {
-	private IQuestRepository questRepository;
+	private IQuestRepository _questRepository;
 
 	public QuestManager (IQuestRepository questRepository)
 	{
-		this.questRepository = questRepository;
+		this._questRepository = questRepository;
 	}
 
 	/// <summary>
@@ -19,20 +19,20 @@ public class QuestManager
 	/// </summary>
 	/// <returns>The quests.</returns>
 	public Dictionary<int, Quest> getQuests(){
-		if (this.questRepository.quests.Count < 0) {
+		if (this._questRepository.quests.Count < 0) {
 			throw new Exception ("No quests were found!");
 		}
-		return this.questRepository.quests;
+		return this._questRepository.quests;
 	}
 
 	/// <summary>
 	/// Loads the quests from repository.
 	/// </summary>
 	/// <returns><c>true</c>, if quests from repository was loaded, <c>false</c> otherwise.</returns>
-	public bool loadQuestsFromRepository(string questCollectionFileName){
+	public bool loadQuestsFromFile(string questCollectionFileName){
 		this.tryLoadQuests(questCollectionFileName);
 
-		if (this.questRepository.quests.Count > 0)
+		if (this._questRepository.quests.Count > 0)
 			return true;
 		
 		return false;
@@ -42,6 +42,6 @@ public class QuestManager
 	/// Tries the load quests.
 	/// </summary>
 	private void tryLoadQuests(string questCollectionFileName){
-		this.questRepository.deserialize(questCollectionFileName);
+		this._questRepository.deserialize(questCollectionFileName);
 	}
 }

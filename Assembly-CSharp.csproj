@@ -79,6 +79,10 @@
      <Compile Include="Assets\Scripts\Player\PlayerFront.cs" />
      <Compile Include="Assets\Scripts\PreConditions\GenericPreCondition.cs" />
      <Compile Include="Assets\Scripts\PreConditions\IPreCondition.cs" />
+     <Compile Include="Assets\Scripts\PreConditions\PreConditionBuilderXML.cs" />
+     <Compile Include="Assets\Scripts\PreConditions\PreConditionManager.cs" />
+     <Compile Include="Assets\Scripts\PreConditions\Repository\IPreConditionRepository.cs" />
+     <Compile Include="Assets\Scripts\PreConditions\Repository\PreConditionRepositoryXML.cs" />
      <Compile Include="Assets\Scripts\QuestController.cs" />
      <Compile Include="Assets\Scripts\QuestSystem\Quest.cs" />
      <Compile Include="Assets\Scripts\QuestSystem\QuestBuilderXML.cs" />
@@ -91,6 +95,7 @@
      <Compile Include="Assets\Scripts\Utils\EDatabaseStorageType.cs" />
      <Compile Include="Assets\Scripts\Utils\GameConfiguration.cs" />
      <Compile Include="Assets\Scripts\Utils\GameConstants.cs" />
+     <Compile Include="Assets\Scripts\Utils\RepositoriesFactory.cs" />
      <Compile Include="Assets\Scripts\Utils\RepositoryBaseFactory.cs" />
      <Compile Include="Assets\Scripts\Utils\RepositoryXMLFactory.cs" />
      <None Include="Assets\Resources\PreConditionCollection.xml" />
