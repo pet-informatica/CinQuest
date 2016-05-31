@@ -1,0 +1,1060 @@
+fileFormatVersion: 2
+guid: 43ae53ff3e92fcc478a5b2b889598ba2
+timeCreated: 1464668152
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: inventory_cinquest
+    21300002: inventory_slot_top_left
+    21300004: inventory_cinquest_2
+    21300006: inventory_cinquest_3
+    21300008: inventory_cinquest_4
+    21300010: inventory_cinquest_5
+    21300012: inventory_cinquest_6
+    21300014: inventory_cinquest_7
+    21300016: inventory_slot_center
+    21300018: inventory_cinquest_9
+    21300020: inventory_cinquest_10
+    21300022: inventory_cinquest_11
+    21300024: inventory_cinquest_12
+    21300026: inventory_cinquest_13
+    21300028: inventory_cinquest_14
+    21300030: inventory_cinquest_15
+    21300032: inventory_cinquest_16
+    21300034: inventory_cinquest_17
+    21300036: inventory_cinquest_18
+    21300038: inventory_cinquest_19
+    21300040: inventory_cinquest_20
+    21300042: inventory_cinquest_21
+    21300044: inventory_cinquest_22
+    21300046: inventory_cinquest_23
+    21300048: inventory_cinquest_24
+    21300050: inventory_cinquest_25
+    21300052: inventory_cinquest_26
+    21300054: inventory_cinquest_27
+    21300056: inventory_cinquest_28
+    21300058: inventory_cinquest_29
+    21300060: inventory_cinquest_30
+    21300062: inventory_cinquest_31
+    21300064: inventory_cinquest_32
+    21300066: inventory_cinquest_33
+    21300068: inventory_cinquest_34
+    21300070: inventory_cinquest_35
+    21300072: inventory_cinquest_36
+    21300074: inventory_cinquest_37
+    21300076: inventory_cinquest_38
+    21300078: inventory_cinquest_39
+    21300080: inventory_cinquest_40
+    21300082: inventory_cinquest_41
+    21300084: inventory_cinquest_42
+    21300086: inventory_cinquest_43
+    21300088: inventory_cinquest_44
+    21300090: inventory_cinquest_45
+    21300092: inventory_cinquest_46
+    21300094: inventory_cinquest_47
+    21300096: inventory_cinquest_48
+    21300098: inventory_cinquest_49
+    21300100: inventory_cinquest_50
+    21300102: inventory_cinquest_51
+    21300104: inventory_item_test
+    21300106: inventory_cinquest_53
+    21300108: inventory_cinquest_54
+    21300110: inventory_cinquest_55
+    21300112: inventory_cinquest_56
+    21300114: inventory_cinquest_57
+    21300116: inventory_cinquest_58
+    21300118: inventory_cinquest_59
+    21300120: inventory_cinquest_60
+    21300122: inventory_cinquest_61
+    21300124: inventory_cinquest_62
+    21300126: inventory_cinquest_63
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: inventory_cinquest
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 389
+        width: 452
+        height: 331
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 68, y: -96.5}
+        - {x: 71, y: -97.5}
+        - {x: 221, y: -97.5}
+        - {x: 224, y: -96.5}
+        - {x: 226, y: -93.5}
+        - {x: 226, y: 55.5}
+        - {x: 224, y: 58.5}
+        - {x: 221, y: 59.5}
+        - {x: 215, y: 60.5}
+        - {x: 214, y: 59.5}
+        - {x: 78, y: 59.5}
+        - {x: 77, y: 60.5}
+        - {x: 71, y: 60.5}
+        - {x: 65, y: 55.5}
+        - {x: 64, y: 52.5}
+        - {x: 64, y: 38.5}
+        - {x: 65, y: 35.5}
+        - {x: 65, y: 30.5}
+        - {x: 64, y: 29.5}
+        - {x: 64, y: 54.5}
+        - {x: 58, y: 60.5}
+        - {x: 0, y: 64.5}
+        - {x: 0, y: 156.5}
+        - {x: -1, y: 159.5}
+        - {x: -7, y: 164.5}
+        - {x: -11, y: 165.5}
+        - {x: -27, y: 165.5}
+        - {x: -29, y: 163.5}
+        - {x: -157, y: 163.5}
+        - {x: -160, y: 162.5}
+        - {x: -167, y: 161.5}
+        - {x: -221, y: 160.5}
+        - {x: -224, y: 159.5}
+        - {x: -226, y: 156.5}
+        - {x: -226, y: 64.5}
+        - {x: -224, y: 61.5}
+        - {x: -226, y: 57.5}
+        - {x: -226, y: -163.5}
+        - {x: -224, y: -165.5}
+        - {x: 60, y: -165.5}
+        - {x: 63, y: -163.5}
+        - {x: 64, y: -160.5}
+        - {x: 64, y: -91.5}
+    - name: inventory_slot_top_left
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 687
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 19}
+        - {x: -19, y: -19}
+        - {x: 19, y: -19}
+        - {x: 19, y: 19}
+    - name: inventory_cinquest_2
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 687
+        width: 36
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 19}
+        - {x: -18, y: -19}
+        - {x: 18, y: -19}
+        - {x: 18, y: 19}
+    - name: inventory_cinquest_3
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 687
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 19}
+        - {x: -19, y: -19}
+        - {x: 19, y: -19}
+        - {x: 19, y: 19}
+    - name: inventory_cinquest_4
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 687
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 19}
+        - {x: -19, y: -19}
+        - {x: 19, y: -19}
+        - {x: 19, y: 19}
+    - name: inventory_cinquest_5
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 687
+        width: 36
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 19}
+        - {x: -18, y: -19}
+        - {x: 18, y: -19}
+        - {x: 18, y: 19}
+    - name: inventory_cinquest_6
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 687
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 19}
+        - {x: -19, y: -19}
+        - {x: 19, y: -19}
+        - {x: 19, y: 19}
+    - name: inventory_cinquest_7
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 650
+        width: 38
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 18}
+        - {x: -19, y: -18}
+        - {x: 19, y: -18}
+        - {x: 19, y: 18}
+    - name: inventory_slot_center
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 650
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -18}
+        - {x: 18, y: -18}
+        - {x: 18, y: 18}
+    - name: inventory_cinquest_9
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 650
+        width: 38
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 18}
+        - {x: -19, y: -18}
+        - {x: 19, y: -18}
+        - {x: 19, y: 18}
+    - name: inventory_cinquest_10
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 650
+        width: 38
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 18}
+        - {x: -19, y: -18}
+        - {x: 19, y: -18}
+        - {x: 19, y: 18}
+    - name: inventory_cinquest_11
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 650
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -18}
+        - {x: 18, y: -18}
+        - {x: 18, y: 18}
+    - name: inventory_cinquest_12
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 650
+        width: 38
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 18}
+        - {x: -19, y: -18}
+        - {x: 19, y: -18}
+        - {x: 19, y: 18}
+    - name: inventory_cinquest_13
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 611
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 19}
+        - {x: -19, y: -19}
+        - {x: 19, y: -19}
+        - {x: 19, y: 19}
+    - name: inventory_cinquest_14
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 611
+        width: 36
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 19}
+        - {x: -18, y: -19}
+        - {x: 18, y: -19}
+        - {x: 18, y: 19}
+    - name: inventory_cinquest_15
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 611
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 19}
+        - {x: -19, y: -19}
+        - {x: 19, y: -19}
+        - {x: 19, y: 19}
+    - name: inventory_cinquest_16
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 611
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 19}
+        - {x: -19, y: -19}
+        - {x: 19, y: -19}
+        - {x: 19, y: 19}
+    - name: inventory_cinquest_17
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 611
+        width: 36
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 19}
+        - {x: -18, y: -19}
+        - {x: 18, y: -19}
+        - {x: 18, y: 19}
+    - name: inventory_cinquest_18
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 611
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 19}
+        - {x: -19, y: -19}
+        - {x: 19, y: -19}
+        - {x: 19, y: 19}
+    - name: inventory_cinquest_19
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 541
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: inventory_cinquest_20
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 527
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 19}
+        - {x: -19, y: -19}
+        - {x: 19, y: -19}
+        - {x: 19, y: 19}
+    - name: inventory_cinquest_21
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 527
+        width: 36
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 19}
+        - {x: -18, y: -19}
+        - {x: 18, y: -19}
+        - {x: 18, y: 19}
+    - name: inventory_cinquest_22
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 527
+        width: 36
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 19}
+        - {x: -18, y: -19}
+        - {x: 18, y: -19}
+        - {x: 18, y: 19}
+    - name: inventory_cinquest_23
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 527
+        width: 36
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 19}
+        - {x: -18, y: -19}
+        - {x: 18, y: -19}
+        - {x: 18, y: 19}
+    - name: inventory_cinquest_24
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 527
+        width: 36
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 19}
+        - {x: -18, y: -19}
+        - {x: 18, y: -19}
+        - {x: 18, y: 19}
+    - name: inventory_cinquest_25
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 527
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 19}
+        - {x: -19, y: -19}
+        - {x: 19, y: -19}
+        - {x: 19, y: 19}
+    - name: inventory_cinquest_26
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 525
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: inventory_cinquest_27
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 490
+        width: 38
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 18}
+        - {x: -19, y: -18}
+        - {x: 19, y: -18}
+        - {x: 19, y: 18}
+    - name: inventory_cinquest_28
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 490
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -18}
+        - {x: 18, y: -18}
+        - {x: 18, y: 18}
+    - name: inventory_cinquest_29
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 490
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -18}
+        - {x: 18, y: -18}
+        - {x: 18, y: 18}
+    - name: inventory_cinquest_30
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 490
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -18}
+        - {x: 18, y: -18}
+        - {x: 18, y: 18}
+    - name: inventory_cinquest_31
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 490
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -18}
+        - {x: 18, y: -18}
+        - {x: 18, y: 18}
+    - name: inventory_cinquest_32
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 490
+        width: 38
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 18}
+        - {x: -19, y: -18}
+        - {x: 19, y: -18}
+        - {x: 19, y: 18}
+    - name: inventory_cinquest_33
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 509
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: inventory_cinquest_34
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 453
+        width: 38
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 18}
+        - {x: -19, y: -18}
+        - {x: 19, y: -18}
+        - {x: 19, y: 18}
+    - name: inventory_cinquest_35
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 453
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -18}
+        - {x: 18, y: -18}
+        - {x: 18, y: 18}
+    - name: inventory_cinquest_36
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 453
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -18}
+        - {x: 18, y: -18}
+        - {x: 18, y: 18}
+    - name: inventory_cinquest_37
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 453
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -18}
+        - {x: 18, y: -18}
+        - {x: 18, y: 18}
+    - name: inventory_cinquest_38
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 453
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -18}
+        - {x: 18, y: -18}
+        - {x: 18, y: 18}
+    - name: inventory_cinquest_39
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 453
+        width: 38
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 18}
+        - {x: -19, y: -18}
+        - {x: 19, y: -18}
+        - {x: 19, y: 18}
+    - name: inventory_cinquest_40
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 416
+        width: 38
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 18}
+        - {x: -19, y: -18}
+        - {x: 19, y: -18}
+        - {x: 19, y: 18}
+    - name: inventory_cinquest_41
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 416
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -18}
+        - {x: 18, y: -18}
+        - {x: 18, y: 18}
+    - name: inventory_cinquest_42
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 416
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -18}
+        - {x: 18, y: -18}
+        - {x: 18, y: 18}
+    - name: inventory_cinquest_43
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 416
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -18}
+        - {x: 18, y: -18}
+        - {x: 18, y: 18}
+    - name: inventory_cinquest_44
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 416
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -18}
+        - {x: 18, y: -18}
+        - {x: 18, y: 18}
+    - name: inventory_cinquest_45
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 416
+        width: 38
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 18}
+        - {x: -19, y: -18}
+        - {x: 19, y: -18}
+        - {x: 19, y: 18}
+    - name: inventory_cinquest_46
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 377
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 19}
+        - {x: -19, y: -19}
+        - {x: 19, y: -19}
+        - {x: 19, y: 19}
+    - name: inventory_cinquest_47
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 377
+        width: 36
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 19}
+        - {x: -18, y: -19}
+        - {x: 18, y: -19}
+        - {x: 18, y: 19}
+    - name: inventory_cinquest_48
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 377
+        width: 36
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 19}
+        - {x: -18, y: -19}
+        - {x: 18, y: -19}
+        - {x: 18, y: 19}
+    - name: inventory_cinquest_49
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 377
+        width: 36
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 19}
+        - {x: -18, y: -19}
+        - {x: 18, y: -19}
+        - {x: 18, y: 19}
+    - name: inventory_cinquest_50
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 377
+        width: 36
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 19}
+        - {x: -18, y: -19}
+        - {x: 18, y: -19}
+        - {x: 18, y: 19}
+    - name: inventory_cinquest_51
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 377
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 19}
+        - {x: -19, y: -19}
+        - {x: 19, y: -19}
+        - {x: 19, y: 19}
+    - name: inventory_item_test
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 314
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: inventory_cinquest_53
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 314
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: inventory_cinquest_54
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 312
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: inventory_cinquest_55
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 312
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: inventory_cinquest_56
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 315
+        width: 160
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: inventory_cinquest_57
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 280
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: inventory_cinquest_58
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 287
+        width: 22
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: inventory_cinquest_59
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 284
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: inventory_cinquest_60
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 284
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: inventory_cinquest_61
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 283
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: inventory_cinquest_62
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 284
+        width: 162
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: inventory_cinquest_63
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 255
+        width: 160
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
