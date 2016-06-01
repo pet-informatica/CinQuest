@@ -59,6 +59,9 @@
      <Compile Include="Assets\Scripts\GuiFalaController.cs" />
      <Compile Include="Assets\Scripts\INACIA_NPC.cs" />
      <Compile Include="Assets\Scripts\InterativeObject.cs" />
+     <Compile Include="Assets\Scripts\Inventory\InventoryItem.cs" />
+     <Compile Include="Assets\Scripts\Inventory\InventoryManager.cs" />
+     <Compile Include="Assets\Scripts\Inventory\InventorySlot.cs" />
      <Compile Include="Assets\Scripts\InventoryController.cs" />
      <Compile Include="Assets\Scripts\Item.cs" />
      <Compile Include="Assets\Scripts\ItemManager\GenericItem.cs" />
