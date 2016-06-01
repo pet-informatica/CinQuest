@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using System;
 using System.IO;
 
@@ -14,6 +15,12 @@ public class GameManager : MonoBehaviour
 		keeping it alive across the scenes. However, there must never be more than one instance
 		of the GameManager on the game, that's why we make it be a singleton. A singleton is an object
 		that is instantiated once the game starts, and then never again.
+
+        The GameManager is also responsible for activating and disabling some children objects, such as the Minimap,
+        the PauseMenuUI, the QuestManagerUI and the InventoryUI. For that, you have a list of string called "diableChildrenInScene".
+        You must populate it with the name of every scene that those object mustn't be present, such as the initial menu, and the game
+        manager will disable them in these scenes. Of course, you must also populate the "childrenObjets" list for the game manager
+        to know wich object he must keep track and diable/enable between scenes.
 
 		How to use it: Attach it to the GameManger prefab. But you can't just drag the GameManager prefab on the scenes, because of it's
 		singleton behavior. You have to instantiate him on the first scenes, but using a script, the so called Loader.
@@ -29,6 +36,9 @@ public class GameManager : MonoBehaviour
 	// TODO: LOAD FROM DATA THESE PROPERTIES BELLOW.
 	public static List<Item> items = new List<Item> ();
 
+    public List<string> disableChildrenInScene;
+    public List<GameObject> childrenObjects;
+
 	void Awake () 
 	{
 		if (instance == null) {
@@ -37,7 +47,34 @@ public class GameManager : MonoBehaviour
 		else if (instance != this)
 			Destroy (gameObject);
 		DontDestroyOnLoad (gameObject);
-	}
+        ActivateChildren();
+    }
+
+    void OnLevelWasLoaded(int level)
+    {
+        ActivateChildren();
+    }
+
+    /// <summary>
+    /// Enable/Disable the children objects such as InventoryUI and QuestUI between scenes.
+    /// </summary>
+    void ActivateChildren()
+    {
+        bool activate = true;
+        string currentScene = SceneManager.GetActiveScene().name;
+
+        foreach(string scene in disableChildrenInScene)
+            if (currentScene == scene)
+                   activate = false;
+
+        if (activate)
+            foreach (GameObject child in childrenObjects)
+                child.SetActive(true);
+
+        else if (!activate)
+            foreach (GameObject child in childrenObjects)
+                child.SetActive(false);
+    }
 
 	void Update () 
 	{
