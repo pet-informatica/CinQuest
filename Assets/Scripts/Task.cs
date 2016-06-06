@@ -43,7 +43,7 @@ public class Task {
 	
 	public bool hasCatched(int id){
 		for(int i=0; i < this.taskItemsCatched.Count; i++){
-			if(this.taskItemsCatched[i].itemID == id) return true;
+			if(this.taskItemsCatched[i].identifier == id) return true;
 		}
 		return false;
 	}

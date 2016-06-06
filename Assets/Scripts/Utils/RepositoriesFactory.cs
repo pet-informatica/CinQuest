@@ -15,11 +15,24 @@ public class RepositoriesFactory
 		}
 	}
 
-	/// <summary>
-	/// Developed by: Peao (rngs);
-	/// Method to instantiate the PreConditionRepository based on DatabaseStorageType.
+    /// <summary>
+	/// Developed by: Higor (hcmb);
+	/// Method to instantiate the ItemRepository based on DatabaseStorageType.
 	/// </summary>
-	public static IPreConditionRepository createPreConditionRepository(EDatabaseStorageType type){
+	public static IGenericItemRepository createItemRepository(EDatabaseStorageType type)
+    {
+        switch (type)
+        {
+            default:
+                return new GenericItemRepository();
+        }
+    }
+
+    /// <summary>
+    /// Developed by: Peao (rngs);
+    /// Method to instantiate the PreConditionRepository based on DatabaseStorageType.
+    /// </summary>
+    public static IPreConditionRepository createPreConditionRepository(EDatabaseStorageType type){
 		switch (type) {
 		case EDatabaseStorageType.XML:
 			return new RepositoryXMLFactory().createPreConditionRepository();

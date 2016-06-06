@@ -7,7 +7,7 @@
 /// </summary>
 public class NotShowableItem : GenericItem
 {
-	public NotShowableItem (int identifier, string name, string description) : base (identifier,name,description)
+	public NotShowableItem (int identifier) : base (identifier)
 	{
 		
 	}

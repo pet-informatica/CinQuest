@@ -1,18 +1,14 @@
-﻿using System;
+﻿using UnityEngine;
 
 /// <summary>
 /// Developed by: Peao (rngs);
 /// Represents a GenericItem, possible extensions could be an Item, NotShowableItem, Achievement...
 /// </summary>
-public class GenericItem
+public class GenericItem : MonoBehaviour
 {
-	public int identifier { get; set;}
-	public string name { get; set;}
-	public string description { get; set;}
+	public int identifier { get; set; }
 
-	public GenericItem(int identifier, string name, string description){
+	public GenericItem(int identifier){
 		this.identifier = identifier;
-		this.name = name;
-		this.description = description;
 	}
 }
