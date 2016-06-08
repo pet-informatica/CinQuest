@@ -1,4 +1,3 @@
 ﻿<PreConditionCollection>
  <PreCondition identifier="1" name="CheckCracha" itemIdentifier="1"/>
- <PreCondition identifier="2" name="CheckLogin" itemIdentifier="2"/>
 </PreConditionCollection>
