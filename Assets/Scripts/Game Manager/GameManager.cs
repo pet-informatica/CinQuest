@@ -30,24 +30,28 @@ public class GameManager : MonoBehaviour
 
 	public static GameManager instance = null;
     private static Vector2 screenSize = new Vector2(1024.0f, 768.0f);
+
+    /* Game Managers */
 	public QuestManager questManager { get; set; } 
+    public ItemManager itemManager { get; set; }
 	public GameConfiguration gameConfiguration { get; set; } 
 	public PreConditionManager preConditionManager { get; set; }
-	// TODO: LOAD FROM DATA THESE PROPERTIES BELLOW.
-	public static List<Item> items = new List<Item> ();
 
+    /* UI Control */
     public List<string> disableChildrenInScene;
     public List<GameObject> childrenObjects;
 
 	void Awake () 
 	{
 		if (instance == null) {
-			this.loadAndStartGame ();
+            ActivateChildren();
+            this.loadAndStartGame ();
 		}
 		else if (instance != this)
 			Destroy (gameObject);
 		DontDestroyOnLoad (gameObject);
-        ActivateChildren();
+       
+     
     }
 
     void OnLevelWasLoaded(int level)
@@ -64,22 +68,18 @@ public class GameManager : MonoBehaviour
         string currentScene = SceneManager.GetActiveScene().name;
 
         foreach(string scene in disableChildrenInScene)
-            if (currentScene == scene)
+            if (currentScene.Equals(scene))
                    activate = false;
 
         if (activate)
             foreach (GameObject child in childrenObjects)
                 child.SetActive(true);
-
+       
         else if (!activate)
             foreach (GameObject child in childrenObjects)
                 child.SetActive(false);
+       
     }
-
-	void Update () 
-	{
-		
-	}
 
 	/// <summary>
 	/// Developed by: Peao (rngs);
@@ -116,20 +116,17 @@ public class GameManager : MonoBehaviour
 	/// </summary>
 	private void startManagers(){
 
-		// TODO: LOAD GAME ITEMS
-		items.Add(new Item("ItemTeste",1,"Item de teste",Item.ItemType.Weapon));
+        // TODO: LOAD GAME ITEMS
+        this.itemManager = new ItemManager(RepositoriesFactory.createItemRepository(this.gameConfiguration.databaseType));
+        this.itemManager.loadItemsFromAssets();
 
 		// TODO: LOAD GAME PRECONDITIONS
 		this.preConditionManager = new PreConditionManager(RepositoriesFactory.createPreConditionRepository(this.gameConfiguration.databaseType));
 		this.preConditionManager.loadPreConditionsFromFile (this.gameConfiguration.preConditionCollectionPath);
-		// DEBUG: REMOVE LATER
-		print ("# DEBUG: There were load: "+this.preConditionManager.getPreConditions ().Count+" PreConditions");
 
 		// QUEST MANAGER
 		this.questManager = new QuestManager (RepositoriesFactory.createQuestRepository(this.gameConfiguration.databaseType));
 		this.questManager.loadQuestsFromFile (this.gameConfiguration.questCollectionPath);
-		// DEBUG: REMOVE LATER
-		print ("# DEBUG: There were load: "+this.questManager.getQuests ().Count+" Quests.");
 
 		// TODO: LOAD USER STATE - HOW TO STORE USER INFORMATION OUTSIDE THE PROJECT? OR COULD IT BE INSIDE?
 	}

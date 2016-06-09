@@ -19,7 +19,7 @@ public class Quest
 	private bool _done { get; set;}
 	private List<IPreCondition> _preConditionsToUnlock { get; set;}
 	private List<IPreCondition> _preConditionsToDone { get; set;}
-	private List<Item> _rewards;
+	private List<GenericItem> _rewards;
 
 	// PUBLIC PROPERTIES
 	public int identifier { get { return this._identifier; } }
@@ -32,7 +32,7 @@ public class Quest
 
 	public Quest() {}
 
-	public Quest (int identifier, string name, string description, bool unlocked, List<IPreCondition> preConditionsToUnlock, List<IPreCondition> preConditionsToDone, List<Item> rewards)
+	public Quest (int identifier, string name, string description, bool unlocked, List<IPreCondition> preConditionsToUnlock, List<IPreCondition> preConditionsToDone, List<GenericItem> rewards)
 	{
 		this._identifier = identifier;
 		this._name = name;
@@ -44,7 +44,7 @@ public class Quest
 		this._rewards = rewards;
 	}
 
-	public List<Item> getRewards(User currentUserProfile){
+	public List<GenericItem> getRewards(User currentUserProfile){
 		if (this.checkPreConditionsStatus (currentUserProfile, _preConditionsToDone))
 			return this._rewards;
 		else

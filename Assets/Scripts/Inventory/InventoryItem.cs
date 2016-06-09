@@ -25,7 +25,7 @@ public class InventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
 	public void OnDrag (PointerEventData eventData)
 	{
 		transform.position = Input.mousePosition;
-		transform.parent = originalParent.transform.parent;
+		transform.SetParent(originalParent.transform.parent);
 	}
 
 	public void OnEndDrag (PointerEventData eventData)
