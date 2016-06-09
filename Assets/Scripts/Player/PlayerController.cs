@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
 
     Rigidbody2D rb;
     Animator anim;
-    Dialog dialog;
+    DialogManager dialog;
 
 	void Awake ()
     {
@@ -33,7 +33,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         InDialog = false;
-        dialog = GameObject.FindGameObjectWithTag("DialogBox").GetComponent<Dialog>();
+        dialog = GameObject.FindGameObjectWithTag("DialogBox").GetComponent<DialogManager>();
     }
 
 	void Update ()
