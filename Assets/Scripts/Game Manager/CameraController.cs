@@ -21,14 +21,26 @@ public class CameraController : MonoBehaviour
     {
         followingPlayerX = true;
         followingPlayerY = true;
-        player = GameObject.FindGameObjectWithTag("Player").transform;
-	}
+        if (GameObject.FindGameObjectWithTag("Player") != null)
+            player = GameObject.FindGameObjectWithTag("Player").transform;
+    }
+
+    void OnLevelWasLoaded()
+    {
+        followingPlayerX = true;
+        followingPlayerY = true;
+        if(GameObject.FindGameObjectWithTag("Player") != null)
+            player = GameObject.FindGameObjectWithTag("Player").transform;
+    }
 	
 	void Update ()
     {
-        Vector3 target = transform.position;
-        if(followingPlayerX) target.x = player.transform.position.x;
-        if(followingPlayerY) target.y = player.transform.position.y;
-        transform.position = Vector3.Lerp(transform.position, target, followSpeed * Time.deltaTime);
+        if(player != null)
+        {
+            Vector3 target = transform.position;
+            if (followingPlayerX) target.x = player.transform.position.x;
+            if (followingPlayerY) target.y = player.transform.position.y;
+            transform.position = Vector3.Lerp(transform.position, target, followSpeed * Time.deltaTime);
+        }
 	}
 }
