@@ -44,12 +44,14 @@ public class GameManager : MonoBehaviour
 	void Awake () 
 	{
 		if (instance == null) {
-			this.loadAndStartGame ();
+            ActivateChildren();
+            this.loadAndStartGame ();
 		}
 		else if (instance != this)
 			Destroy (gameObject);
 		DontDestroyOnLoad (gameObject);
-        ActivateChildren();
+       
+     
     }
 
     void OnLevelWasLoaded(int level)
@@ -66,16 +68,17 @@ public class GameManager : MonoBehaviour
         string currentScene = SceneManager.GetActiveScene().name;
 
         foreach(string scene in disableChildrenInScene)
-            if (currentScene == scene)
+            if (currentScene.Equals(scene))
                    activate = false;
 
         if (activate)
             foreach (GameObject child in childrenObjects)
                 child.SetActive(true);
-
+       
         else if (!activate)
             foreach (GameObject child in childrenObjects)
                 child.SetActive(false);
+       
     }
 
 	/// <summary>

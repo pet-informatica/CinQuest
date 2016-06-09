@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 
@@ -39,14 +40,14 @@ public class SceneChanger : MonoBehaviour
 		//Then wait until the fade is over
 		yield return new WaitForSeconds (1);
         //And finally change the scene
-        string sceneName = Application.loadedLevelName;
+        string sceneName = SceneManager.GetActiveScene().name;
        
         
         if (specificName != "")
             sceneName = specificName;
 		PlayerSpawn.SetTarget(sceneName);
 
-		Application.LoadLevel (destinyScene);
+		SceneManager.LoadScene (destinyScene);
 	}
 
     public void Change()

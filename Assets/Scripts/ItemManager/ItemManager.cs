@@ -34,6 +34,8 @@ public class ItemManager {
     /// <returns>The item object, or null if not found</returns>
     public GenericItem getItem(int identifier)
     {
+        if (!this._itemRepository.items.ContainsKey(identifier))
+            return null;
         return this._itemRepository.items[identifier];
     }
 

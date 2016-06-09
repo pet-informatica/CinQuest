@@ -31,6 +31,7 @@ public class GenericItemRepository : IGenericItemRepository
     public bool loadItens()
     {
         //TODO: LOAD ITENS FROM PROJECT ASSETS VIA CODE
+        _items = new Dictionary<int, GenericItem>();
         return false;
     }
 
