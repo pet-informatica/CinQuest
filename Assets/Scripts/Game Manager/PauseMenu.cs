@@ -16,7 +16,6 @@ public class PauseMenu : MonoBehaviour {
 
 	private GameObject pauseCanvas;
 	private GameObject controlCanvas;
-	private GameObject eventSystem;
 
 	void Start() {
 		pauseCanvas = GameObject.Find("Pause Canvas");
@@ -26,8 +25,6 @@ public class PauseMenu : MonoBehaviour {
 		controlCanvas = GameObject.Find("Control Canvas");
 		if(controlCanvas != null)
 			controlCanvas.SetActive (false);
-
-		eventSystem = GameObject.Find("EventSystem");
 	}
 
 	void Update () {
