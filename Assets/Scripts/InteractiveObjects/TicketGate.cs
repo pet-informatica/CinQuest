@@ -21,13 +21,16 @@ public class TicketGate : MonoBehaviour {
     }
 
     /// <summary>
-    /// TODO: Search the inventory items trying to find the IDCard.
-    /// PEAO: Set it to false and then test it. Set it to true and test it again.
+    /// Check the PreCondition of Cracha.
     /// </summary>
     /// <returns>True if the player inventory has an IDCard.</returns>
     bool PlayerHasIDCard()
     {
-        return false;
+		// TODO; Get profile of current user.
+		User currentUser = new User ("mock");
+		// PreConditon number 0, PreCondition of Crachá.
+		IPreCondition checkCracha = GameManager.instance.preConditionManager.getPreCondition (0);
+		return checkCracha.checkIfMatches (currentUser);
     }
 
     /// <summary>

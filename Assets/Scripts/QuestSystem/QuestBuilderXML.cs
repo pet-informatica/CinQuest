@@ -37,14 +37,14 @@ public class QuestBuilderXML
 		XElement preConditionsToUnlock = quest.Element ("PreConditionsToUnlock");
 		List<IPreCondition> p1 = new List<IPreCondition> ();
 		foreach (XElement element in preConditionsToUnlock.Elements()) {
-			int index = Int32.Parse (element.Attribute ("identifier").Value) - 1;
+			int index = Int32.Parse (element.Attribute ("identifier").Value);
 			p1.Add (GameManager.instance.preConditionManager.getPreConditions()[index]);
 		}
 
 		XElement preConditionsToDone = quest.Element ("PreConditionsToDone");
 		List<IPreCondition> p2 = new List<IPreCondition> ();
 		foreach (XElement element in preConditionsToDone.Elements()) {
-			int index = Int32.Parse (element.Attribute ("identifier").Value) - 1;
+			int index = Int32.Parse (element.Attribute ("identifier").Value);
 			p2.Add (GameManager.instance.preConditionManager.getPreConditions()[index]);
 		}
 

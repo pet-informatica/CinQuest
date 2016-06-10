@@ -18,7 +18,7 @@ public class GenericPreCondition : IPreCondition {
 	}
 
 	public bool checkIfMatches(User userProfile){
-		foreach (Item i in userProfile.items) {
+		foreach (GenericItem i in userProfile.items) {
 			if (i.identifier.Equals(this.itemIdentifier))
 				return true;
 		}

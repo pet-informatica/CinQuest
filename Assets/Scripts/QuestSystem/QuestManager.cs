@@ -15,6 +15,18 @@ public class QuestManager
 	}
 
 	/// <summary>
+	/// Gets the quest.
+	/// </summary>
+	/// <returns>The quest.</returns>
+	/// <param name="identifier">Identifier.</param>
+	public Quest getQuest(int identifier)
+	{
+		if (!this._questRepository.quests.ContainsKey(identifier))
+			return null;
+		return this._questRepository.quests[identifier];
+	}
+
+	/// <summary>
 	/// Gets the quests.
 	/// </summary>
 	/// <returns>The quests.</returns>
