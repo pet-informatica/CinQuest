@@ -1,29 +1,23 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// Developed by: Higor (hcmb)
+/// ScreenFader can be used for fading the screen in/out whenever needed.
+/// This script must be attached to the GameManager prefab to work.
+/// </summary>
 public class ScreenFader : MonoBehaviour 
 {
-	/*
-
-		Developed by: Higor
-
-		Description: The ScreenFader is responsible for making a FadeIn/FadeOut effect whenever we need it.
-		Generally, it will be used to fade when changing scenes.
-
-		How to use it: This script MUST be attached to the GameManager prefab. Put a black texture on it, and
-		set the fadeSpeed (The fade speed is the exact time in seconds, so use 1 for 1 second off fade in for example).
-	 */
-
 	public Texture2D texture;
-	public float fadeSpeed = 0.8f;
 
-	private int drawDepth = -100;
-	private float alpha = 1.0f;
-	private int fadeDirection = -1;
+	float fadeTime = 1.2f;
+	int drawDepth = -100;
+	float alpha = 1.0f;
+	int fadeDirection = -1;
 
 	void OnGUI()
 	{
-		alpha += fadeDirection * fadeSpeed * Time.deltaTime;
+		alpha += fadeDirection * (1f/fadeTime) * Time.deltaTime;
 		alpha = Mathf.Clamp01 (alpha);
 
 		GUI.color = new Color (GUI.color.r, GUI.color.g, GUI.color.b, alpha);
@@ -31,20 +25,24 @@ public class ScreenFader : MonoBehaviour
 		GUI.DrawTexture (new Rect (0f, 0f, Screen.width, Screen.height), texture);
 	}
 
-	/// <summary>
-	/// Start fading the screen in or out
-	/// </summary>
-	/// <returns>The time it takes for fading in seconds</returns>
-	/// <param name="direction">Use 1 for fading in, and -1 for fading out</param>
-	public float BeginFade(int direction)
-	{
-		fadeDirection = direction;
-		return fadeSpeed;
-	}
+    /// <summary>
+    /// Start fading the screen in or out
+    /// </summary>
+    /// <returns>The time it takes for fading in seconds</returns>
+    /// <param name="direction">Use 1 for fading in, and -1 for fading out</param>
+    /// <param name="speed">The time in seconds for the fade to finish.</param>
+    public float BeginFade(int direction, float time)
+    {
+        fadeDirection = direction;
+        fadeTime = time;
+        return fadeTime;
+    }
 
-	//Fade out everytime a new scene is loaded.
-	void OnLevelWasLoaded()
+    /// <summary>
+    /// Fade out everytime a new scene is loaded.
+    /// </summary>
+    void OnLevelWasLoaded()
 	{
-		BeginFade (-1);
+		BeginFade (-1, 1.2f);
 	}
 }

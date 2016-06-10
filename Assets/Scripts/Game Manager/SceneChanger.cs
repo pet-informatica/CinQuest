@@ -32,21 +32,21 @@ public class SceneChanger : MonoBehaviour
     public string specificName = "";
 	public bool locked = false;
 
+    /// <summary>
+    /// Calls the ScreenFader to fade in and then when it's done set's the player to spawn
+    /// in the specific position related to the scene he is leaving.
+    /// </summary>
 	IEnumerator ChangeScene()
 	{
-		//To make the fade in, we simple call the ScreenFader script, present in the GameManager object, to start the fade.
-		//*See the ScreenFader script and the GameManger script for more information.
-		GameObject.FindGameObjectWithTag ("GameManager").GetComponent<ScreenFader> ().BeginFade (1);
-		//Then wait until the fade is over
-		yield return new WaitForSeconds (1);
-        //And finally change the scene
+        ScreenFader fader = GameObject.FindGameObjectWithTag("GameManager").GetComponent<ScreenFader>();
+		yield return new WaitForSeconds (fader.BeginFade(1, 1.2f));
+
         string sceneName = SceneManager.GetActiveScene().name;
        
-        
         if (specificName != "")
             sceneName = specificName;
-		PlayerSpawn.SetTarget(sceneName);
 
+		PlayerSpawn.SetTarget(sceneName);
 		SceneManager.LoadScene (destinyScene);
 	}
 
