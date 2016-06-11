@@ -4,6 +4,8 @@ using UnityEngine.EventSystems;
 
 public class CharacterSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler {
 
+	public GameObject selected;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -16,7 +18,7 @@ public class CharacterSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
 
 	public void OnPointerEnter (PointerEventData eventData)
 	{
-		GameObject.Find ("Selected").transform.position = gameObject.transform.position;
+		selected.transform.position = gameObject.transform.position;
 	}
 		
 	public void OnPointerExit (PointerEventData eventData)

@@ -46,7 +46,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Board Text Manager\BoardTextManager.cs" />
-     <Compile Include="Assets\Scripts\Choose Character\ArrowScript.cs" />
+     <Compile Include="Assets\Scripts\Choose Character\CharacterChooserManager.cs" />
      <Compile Include="Assets\Scripts\Choose Character\CharacterSlot.cs" />
      <Compile Include="Assets\Scripts\DialogManager\Dialog.cs" />
      <Compile Include="Assets\Scripts\DialogManager\DialogManager.cs" />
