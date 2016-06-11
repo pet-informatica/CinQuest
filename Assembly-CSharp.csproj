@@ -46,8 +46,12 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Board Text Manager\BoardTextManager.cs" />
-     <Compile Include="Assets\Scripts\Dialog\Dialog.cs" />
-     <Compile Include="Assets\Scripts\Dialog\Speaker.cs" />
+     <Compile Include="Assets\Scripts\Choose Character\CharacterSlot.cs" />
+     <Compile Include="Assets\Scripts\DialogManager\Dialog.cs" />
+     <Compile Include="Assets\Scripts\DialogManager\DialogManager.cs" />
+     <Compile Include="Assets\Scripts\DialogManager\EDialogPriority.cs" />
+     <Compile Include="Assets\Scripts\DialogManager\InterativeSpeaker.cs" />
+     <Compile Include="Assets\Scripts\DialogManager\Speaker.cs" />
      <Compile Include="Assets\Scripts\Game Manager\CameraController.cs" />
      <Compile Include="Assets\Scripts\Game Manager\CameraUnfollower.cs" />
      <Compile Include="Assets\Scripts\Game Manager\GameManager.cs" />
@@ -56,16 +60,15 @@
      <Compile Include="Assets\Scripts\Game Manager\PlayerSpawn.cs" />
      <Compile Include="Assets\Scripts\Game Manager\SceneChanger.cs" />
      <Compile Include="Assets\Scripts\Game Manager\ScreenFader.cs" />
-     <Compile Include="Assets\Scripts\GuiFalaController.cs" />
-     <Compile Include="Assets\Scripts\INACIA_NPC.cs" />
-     <Compile Include="Assets\Scripts\InterativeObject.cs" />
      <Compile Include="Assets\Scripts\Inventory\InventoryItem.cs" />
      <Compile Include="Assets\Scripts\Inventory\InventoryManager.cs" />
      <Compile Include="Assets\Scripts\Inventory\InventorySlot.cs" />
-     <Compile Include="Assets\Scripts\InventoryController.cs" />
-     <Compile Include="Assets\Scripts\Item.cs" />
      <Compile Include="Assets\Scripts\ItemManager\GenericItem.cs" />
+     <Compile Include="Assets\Scripts\ItemManager\Item.cs" />
+     <Compile Include="Assets\Scripts\ItemManager\ItemManager.cs" />
      <Compile Include="Assets\Scripts\ItemManager\NotShowableItem.cs" />
+     <Compile Include="Assets\Scripts\ItemManager\Repository\GenericItemRepository.cs" />
+     <Compile Include="Assets\Scripts\ItemManager\Repository\IGenericItemRepository.cs" />
      <Compile Include="Assets\Scripts\LookAtCharacter.cs" />
      <Compile Include="Assets\Scripts\Maps\CinParking\Car.cs" />
      <Compile Include="Assets\Scripts\Maps\CinParking\CarSensor.cs" />
@@ -75,9 +78,6 @@
      <Compile Include="Assets\Scripts\Maps\CinParking\Waypoint.cs" />
      <Compile Include="Assets\Scripts\Minimap\MinimapArrow.cs" />
      <Compile Include="Assets\Scripts\Move.cs" />
-     <Compile Include="Assets\Scripts\NPCController.cs" />
-     <Compile Include="Assets\Scripts\OldQuest.cs" />
-     <Compile Include="Assets\Scripts\PathPlanner.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerFront.cs" />
      <Compile Include="Assets\Scripts\PreConditions\GenericPreCondition.cs" />
@@ -86,7 +86,6 @@
      <Compile Include="Assets\Scripts\PreConditions\PreConditionManager.cs" />
      <Compile Include="Assets\Scripts\PreConditions\Repository\IPreConditionRepository.cs" />
      <Compile Include="Assets\Scripts\PreConditions\Repository\PreConditionRepositoryXML.cs" />
-     <Compile Include="Assets\Scripts\QuestController.cs" />
      <Compile Include="Assets\Scripts\QuestSystem\Quest.cs" />
      <Compile Include="Assets\Scripts\QuestSystem\QuestBuilderXML.cs" />
      <Compile Include="Assets\Scripts\QuestSystem\QuestButton.cs" />
@@ -95,7 +94,6 @@
      <Compile Include="Assets\Scripts\QuestSystem\Repository\IQuestRepository.cs" />
      <Compile Include="Assets\Scripts\QuestSystem\Repository\QuestRepositoryXML.cs" />
      <Compile Include="Assets\Scripts\StartGame.cs" />
-     <Compile Include="Assets\Scripts\Task.cs" />
      <Compile Include="Assets\Scripts\User\User.cs" />
      <Compile Include="Assets\Scripts\Utils\EDatabaseStorageType.cs" />
      <Compile Include="Assets\Scripts\Utils\GameConfiguration.cs" />
