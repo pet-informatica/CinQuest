@@ -6,10 +6,15 @@ public class CharacterChooserManager : MonoBehaviour {
 	public GameObject[] optionsPanels;
 
 	private int currentOptionPanel = 0;
+	private GameObject leftArrow;
+	private GameObject rightArrow;
 
 	// Use this for initialization
 	void Start () {
-	
+		leftArrow = GameObject.Find ("Left Arrow");
+		rightArrow = GameObject.Find ("Right Arrow");
+
+		leftArrow.SetActive (false);
 	}
 	
 	// Update is called once per frame
@@ -18,24 +23,34 @@ public class CharacterChooserManager : MonoBehaviour {
 	}
 
 	public void nextCharacters() {
-		if (currentOptionPanel + 1 < optionsPanels.Length) {
-//			optionsPanels [currentOptionPanel].GetComponent<RectTransform> ().localPosition = new Vector3 (-1065, 0, 0);
+		leftArrow.SetActive (true);
 
+		if (currentOptionPanel + 1 < optionsPanels.Length) {
 			StartCoroutine(MoveFunction(optionsPanels [currentOptionPanel], new Vector3(-1065, 0, 0)));
+
 			currentOptionPanel++;
 
-//			optionsPanels [currentOptionPanel].GetComponent<RectTransform> ().localPosition = new Vector3 (0, 0, 0);
 			StartCoroutine(MoveFunction(optionsPanels [currentOptionPanel], new Vector3(0, 0, 0)));
+
+			if (currentOptionPanel == optionsPanels.Length -1) {
+				rightArrow.SetActive (false);
+			}
 		}
 	}
 
 	public void previousCharacters() {
+		rightArrow.SetActive (true);
+
 		if (currentOptionPanel - 1 >= 0) {
-//			optionsPanels [currentOptionPanel].GetComponent<RectTransform> ().localPosition = new Vector3 (1065, 0, 0);
 			StartCoroutine(MoveFunction(optionsPanels [currentOptionPanel], new Vector3(1065, 0, 0)));
+
 			currentOptionPanel--;
-//			optionsPanels [currentOptionPanel].GetComponent<RectTransform> ().localPosition = new Vector3 (0, 0, 0);
+
 			StartCoroutine(MoveFunction(optionsPanels [currentOptionPanel], new Vector3(0, 0, 0)));
+
+			if (currentOptionPanel == 0) {
+				leftArrow.SetActive (false);
+			}
 		}
 	}
 
