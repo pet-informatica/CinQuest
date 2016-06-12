@@ -4,26 +4,26 @@ using System.Collections;
 public class CharacterChooserManager : MonoBehaviour {
 
 	public GameObject[] optionsPanels;
+	public GameObject leftArrow;
+	public GameObject rightArrow;
+	public GameObject selected;
 
 	private int currentOptionPanel = 0;
-	private GameObject leftArrow;
-	private GameObject rightArrow;
+	private static GameObject selectedCharacter;
 
-	// Use this for initialization
+
 	void Start () {
-		leftArrow = GameObject.Find ("Left Arrow");
-		rightArrow = GameObject.Find ("Right Arrow");
-
 		leftArrow.SetActive (false);
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+		
+	public static void selectCharacter(GameObject character) {
+		selectedCharacter = character;
 	}
 
 	public void nextCharacters() {
 		leftArrow.SetActive (true);
+		selected.SetActive (false);
+		selectedCharacter = null;
 
 		if (currentOptionPanel + 1 < optionsPanels.Length) {
 			StartCoroutine(MoveFunction(optionsPanels [currentOptionPanel], new Vector3(-1065, 0, 0)));
@@ -40,6 +40,8 @@ public class CharacterChooserManager : MonoBehaviour {
 
 	public void previousCharacters() {
 		rightArrow.SetActive (true);
+		selected.SetActive (false);
+		selectedCharacter = null;
 
 		if (currentOptionPanel - 1 >= 0) {
 			StartCoroutine(MoveFunction(optionsPanels [currentOptionPanel], new Vector3(1065, 0, 0)));

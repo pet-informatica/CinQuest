@@ -2,27 +2,26 @@
 using System.Collections;
 using UnityEngine.EventSystems;
 
-public class CharacterSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler {
+public class CharacterSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler {
 
 	public GameObject selected;
-
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+	public GameObject current;
 
 	public void OnPointerEnter (PointerEventData eventData)
 	{
-		selected.transform.position = gameObject.transform.position;
+		current.SetActive (true);
+		current.transform.position = gameObject.transform.position;
 	}
 		
 	public void OnPointerExit (PointerEventData eventData)
 	{
-		
+		current.SetActive (false);
+	}
+
+	public void OnPointerClick (PointerEventData eventData)
+	{
+		selected.SetActive (true);
+		selected.transform.position = gameObject.transform.position;
+		CharacterChooserManager.selectCharacter (gameObject);
 	}
 }
