@@ -98,11 +98,11 @@ public class DialogManager : MonoBehaviour
         textField.color = new Color(1f, 1f, 1f, guiAlpha);
         box.color = new Color(1f, 1f, 1f, guiAlpha);
 
-        if (Input.GetKeyDown(KeyCode.DownArrow))
+        if (Input.GetButtonDown("Down"))
             if (selectedResponse < avaiableResponses - 1)
                 SelectResponse(selectedResponse + 1);
 
-        if (Input.GetKeyDown(KeyCode.UpArrow))
+        if (Input.GetButtonDown("Up"))
             if (selectedResponse > 0)
                 SelectResponse(selectedResponse - 1);
     }
