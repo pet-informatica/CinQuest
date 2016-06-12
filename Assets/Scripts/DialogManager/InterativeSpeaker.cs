@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 using System.Collections.Generic;
 
 /// <summary>
@@ -9,7 +8,7 @@ using System.Collections.Generic;
 /// </summary>
 public class InterativeSpeaker : Speaker
 {
-    public InterativeSpeaker(List<Dialog> dialogs) : base(dialogs) { }
+    public InterativeSpeaker(List<DialogTree> dialogs) : base(dialogs) { }
 
     void Start()
     {
@@ -22,7 +21,8 @@ public class InterativeSpeaker : Speaker
         {
             if (Input.GetKeyDown(KeyCode.Z))
             {
-                Speak(dialogs[defaultDialogIndex]);
+                if(defaultDialogIndex < dialogs.Count && dialogs[defaultDialogIndex] != null)
+                    Speak(dialogs[defaultDialogIndex]);
             }
         }
     }

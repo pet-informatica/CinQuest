@@ -1,33 +1,28 @@
 ﻿using UnityEngine;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine.UI;
-using System;
 
 public class DialogManager : MonoBehaviour
 {
-    public Texture textBaloon;
     public AudioClip sound;
+    public Text[] responses;
+    public Color selectedResponseColor;
+    public Color normalResponseColor;
+    public Text textField;
+    public Image box;
     public float letterPause;
-    public float timeBetweenChats = 0.5f;
+    public float timeBetweenChats = 0.25f;
+
+    int avaiableResponses;
+    int selectedResponse;
     float time;
-    bool show;
     float textTime;
     float guiAlpha;
 
-    Dialog currentDialog;
-    Queue<string> message = new Queue<string>();
+    DialogTree curDialog;
+    DialogTreeNode curNode;
     string curMessage;
     string typedMessage;
-
-    Text text;
-    Image box;
-
-    void Awake()
-    {
-        text = GameObject.Find("DialogBox").GetComponentInChildren <Text>();
-        box = GameObject.Find("DialogBox").GetComponentInChildren<Image>();
-    }
 
     /// <summary>
     /// Returns true if there is a conversation alredy happening
@@ -40,9 +35,9 @@ public class DialogManager : MonoBehaviour
     /// </summary>
     /// <param name="dialog">The dialog to speak</param>
     /// <returns>True if the new dialog succeded and will be speech. False if it couldn't.</returns>
-    public bool Speak(Dialog dialog)
+    public bool Speak(DialogTree dialog)
     {
-        if (IsSpeaking && dialog.priority <= currentDialog.priority)
+        if (IsSpeaking && dialog.priority <= curDialog.priority)
         return false; 
 
         ClearDialogBox();
@@ -61,9 +56,8 @@ public class DialogManager : MonoBehaviour
     }
 
     /// <summary>
-    /// Types a string message letter by letter.
+    /// Adds a letter from curMessage to typedMessage every letterPause seconds
     /// </summary>
-    /// <returns></returns>
     IEnumerator TypeText()
     {
         foreach (char letter in curMessage.ToCharArray())
@@ -82,10 +76,10 @@ public class DialogManager : MonoBehaviour
     /// <param name="start">The start value for the fade. 0 for completely gone and 1 for fully on screen.</param>
     /// <param name="end">The end value for the fade. 0 for completely gone and 1 for fully on screen.</param>
     /// <param name="lenght">The time in seconts it takes for the fade to happen</param>
-    /// <returns></returns>
     IEnumerator GUIFade(float start, float end, float lenght)
     {
         guiAlpha = start;
+
         for (float i = 0f; i <= 1f; i += Time.deltaTime * (1f / lenght))
         {
             guiAlpha = Mathf.Lerp(start, end, i);
@@ -93,26 +87,41 @@ public class DialogManager : MonoBehaviour
         }
 
         guiAlpha = end;
+    }
 
-        if (guiAlpha == 0f)
-            End();
+    /// <summary>
+    /// Updates the UI color/text every frame.
+    /// </summary>
+    void UpdateUI()
+    {
+        textField.text = typedMessage;
+        textField.color = new Color(1f, 1f, 1f, guiAlpha);
+        box.color = new Color(1f, 1f, 1f, guiAlpha);
+
+        if (Input.GetButtonDown("Down"))
+            if (selectedResponse < avaiableResponses - 1)
+                SelectResponse(selectedResponse + 1);
+
+        if (Input.GetButtonDown("Up"))
+            if (selectedResponse > 0)
+                SelectResponse(selectedResponse - 1);
     }
 
     void Update()
     {
         textTime += Time.deltaTime;
-        text.text = typedMessage;
-        text.color = new Color(1f, 1f, 1f, guiAlpha);
-        box.color = new Color(1f, 1f, 1f, guiAlpha);
+
+        UpdateUI();
+
         if (IsSpeaking)
         {
             if (typedMessage == curMessage)
             {
                 StopCoroutine("TypeText");
 
-                if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Z))
+                if (Input.GetButtonDown("Interaction"))
                 {
-                    if (message.Count > 0)
+                    if (curNode.children.Count > 0)
                         Type();
                     else
                         EndConversation();
@@ -120,7 +129,7 @@ public class DialogManager : MonoBehaviour
             }
             else
             {
-                if ((Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Z)) && textTime > 0.25f)
+                if (Input.GetButtonDown("Interaction") && textTime > 0.25f)
                 {
                     typedMessage = curMessage;
                     textTime = 0f;
@@ -137,22 +146,25 @@ public class DialogManager : MonoBehaviour
     /// </summary>
     /// <param name="dialog">The dialog to start the conversation</param>
     /// <returns>The time it will take to fully start the conversation</returns>
-    float StartConversation(Dialog dialog)
+    float StartConversation(DialogTree dialog)
     {
         if (!IsSpeaking && textTime > 0f)
         {
-            currentDialog = dialog;
+            IsSpeaking = true;
+            textTime = 0f;
 
-            foreach (string m in dialog.messages)
-                message.Enqueue(m);
+            curDialog = dialog;
+            curNode = curDialog.root;
+            curMessage = curNode.message;
+            typedMessage = "";
+            StartCoroutine(TypeText());
+            SetResponses(curNode);
+            SelectResponse(0);
 
             float fadeStart = 0f;
             float fadeEnd = 1f;
-            float fadeLenght = 0.5f;
+            float fadeLenght = 0.25f;
             StartCoroutine(GUIFade(fadeStart, fadeEnd, fadeLenght));
-            textTime = 0f;
-            Type();
-            IsSpeaking = true;
             return (fadeStart - fadeEnd) / (1f / fadeLenght);
         }
         return 0;
@@ -164,41 +176,60 @@ public class DialogManager : MonoBehaviour
     /// <returns>The time it will take to fully end the conversation</returns>
     float EndConversation()
     {
-        StopCoroutine("TypeText");
-        currentDialog = null;
-        textTime = -timeBetweenChats;
-        curMessage = "";
-        message.Clear();
         IsSpeaking = false;
+        curDialog = null;
+        curNode = null;
+        curMessage = "";
+        textTime = -timeBetweenChats;
+        StopCoroutine("TypeText");
+
         float fadeStart = 1f;
         float fadeEnd = 0f;
-        float fadeLenght = 0.5f;
+        float fadeLenght = 0.25f;
         StartCoroutine(GUIFade(fadeStart, fadeEnd, fadeLenght));
         return (fadeStart - fadeEnd) / (1f / fadeLenght);
     }
 
     /// <summary>
-    /// Pop the message queue in order to show the top message
+    /// Traverse the tree to one of the curNode childrens depending on the chosed response from UI
     /// </summary>
     void Type()
     {
-        curMessage = message.Peek();
-        message.Dequeue();
+        curNode = curNode.children[selectedResponse];
+        curMessage = curNode.message;
         typedMessage = "";
+        SetResponses(curNode);
         StartCoroutine(TypeText());
     }
 
     /// <summary>
-    /// Stop all coroutines and clear variables for ending the dialog
+    /// Sets the avaiable responses in the UI
     /// </summary>
-    void End()
+    /// <param name="">A DialogTreeNode, containing all it's children nodes, each having a specific response to be reached.</param>
+    void SetResponses(DialogTreeNode node)
     {
-        typedMessage = "";
-        StopCoroutine("TypeText");
-        currentDialog = null;
-        textTime = -timeBetweenChats;
-        curMessage = "";
-        message.Clear();
-        IsSpeaking = false;
+        avaiableResponses = node.children.Count;
+
+        for(int i = 0; i < avaiableResponses; ++i)
+            responses[i].text = node.children[i].response;
+
+        for (int i = avaiableResponses; i < responses.Length; ++i)
+            responses[i].text = "";
+
+        selectedResponse = 0;
+        SelectResponse(selectedResponse);
+    }
+
+    /// <summary>
+    /// Select a new response from the list and change the UI color for the text UI to show it's selected
+    /// </summary>
+    /// <param name="response">The index of the response to select in the response array. Range from 0 to responses.Length.</param>
+    void SelectResponse(int response)
+    {
+        for(int i = 0; i < responses.Length; ++i)
+            responses[i].color = normalResponseColor;
+
+        selectedResponse = response;
+        responses[selectedResponse].color = selectedResponseColor;
     }
 }
