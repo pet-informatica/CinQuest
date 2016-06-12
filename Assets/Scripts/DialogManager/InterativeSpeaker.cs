@@ -19,7 +19,7 @@ public class InterativeSpeaker : Speaker
     {
         if (collider.tag == "PlayerFront")
         {
-            if (Input.GetKeyDown(KeyCode.Z))
+            if (Input.GetButtonDown("Interaction"))
             {
                 if(defaultDialogIndex < dialogs.Count && dialogs[defaultDialogIndex] != null)
                     Speak(dialogs[defaultDialogIndex]);
