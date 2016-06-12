@@ -3,8 +3,12 @@ using System.Collections.Generic;
 using System.Collections;
 using UnityEngine.UI;
 
-public class QuestUI : MonoBehaviour {
-
+/// <summary>
+/// Developed by: Higor (hcmb)
+/// Controls all the logic behind the Quest interface. Stores a list of quests to display in the UI panel.
+/// </summary>
+public class QuestUI : MonoBehaviour
+{
     public GameObject questBox;
     public GameObject questInfo;
     public GameObject questBoxContent;
@@ -94,7 +98,7 @@ public class QuestUI : MonoBehaviour {
 	
 	void Update ()
     {
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetButtonDown("Quests"))
         {
             if (opened) CloseWindow();
             else OpenWindow();

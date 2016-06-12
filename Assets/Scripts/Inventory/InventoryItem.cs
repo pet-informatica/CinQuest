@@ -34,7 +34,7 @@ public class InventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
 		GetComponent<CanvasGroup> ().blocksRaycasts = true;
 		if (noParent) {
 			transform.position = originalSlot;
-			transform.parent = originalParent;
+			transform.SetParent(originalParent);
 		}
 	}
 

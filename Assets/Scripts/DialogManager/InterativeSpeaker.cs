@@ -21,7 +21,8 @@ public class InterativeSpeaker : Speaker
         {
             if (Input.GetKeyDown(KeyCode.Z))
             {
-                Speak(dialogs[defaultDialogIndex]);
+                if(defaultDialogIndex < dialogs.Count && dialogs[defaultDialogIndex] != null)
+                    Speak(dialogs[defaultDialogIndex]);
             }
         }
     }

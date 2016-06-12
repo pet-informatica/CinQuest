@@ -119,7 +119,7 @@ public class DialogManager : MonoBehaviour
             {
                 StopCoroutine("TypeText");
 
-                if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Z))
+                if (Input.GetButtonDown("Interaction"))
                 {
                     if (curNode.children.Count > 0)
                         Type();
@@ -129,7 +129,7 @@ public class DialogManager : MonoBehaviour
             }
             else
             {
-                if ((Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Z)) && textTime > 0.25f)
+                if (Input.GetButtonDown("Interaction") && textTime > 0.25f)
                 {
                     typedMessage = curMessage;
                     textTime = 0f;

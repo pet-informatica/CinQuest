@@ -12,7 +12,7 @@ using UnityEngine;
 [Serializable]
 public class DialogTreeNode : ScriptableObject
 {
-    public string message;
     public string response;
+    public string message;
     public List<DialogTreeNode> children;
 }
