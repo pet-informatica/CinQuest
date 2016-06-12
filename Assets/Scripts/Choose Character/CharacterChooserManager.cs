@@ -15,11 +15,18 @@ public class CharacterChooserManager : MonoBehaviour {
 	void Start () {
 		leftArrow.SetActive (false);
 	}
-		
+
+	/// <summary>
+	/// Selects the character.
+	/// </summary>
+	/// <param name="character">Character.</param>
 	public static void selectCharacter(GameObject character) {
 		selectedCharacter = character;
 	}
 
+	/// <summary>
+	/// Changes the panel to the right using Lerp and shows another set of character
+	/// </summary>
 	public void nextCharacters() {
 		leftArrow.SetActive (true);
 		selected.SetActive (false);
@@ -38,6 +45,9 @@ public class CharacterChooserManager : MonoBehaviour {
 		}
 	}
 
+	/// <summary>
+	/// Changes the panel to the left using Lerp and shows another set of character
+	/// </summary>
 	public void previousCharacters() {
 		rightArrow.SetActive (true);
 		selected.SetActive (false);
@@ -56,16 +66,21 @@ public class CharacterChooserManager : MonoBehaviour {
 		}
 	}
 
-	IEnumerator MoveFunction(GameObject panel, Vector3 newPosition)
+	/// <summary>
+	/// Moves object smoothly from one position to another
+	/// </summary>
+	/// <param name="Object">Object.</param>
+	/// <param name="newPosition">New position.</param>
+	IEnumerator MoveFunction(GameObject obj, Vector3 newPosition)
 	{
 		float timeSinceStarted = 0f;
 		while (true)
 		{
 			timeSinceStarted += Time.deltaTime * 2.0f;
-			panel.GetComponent<RectTransform> ().localPosition = 
-				Vector3.Lerp(panel.GetComponent<RectTransform> ().localPosition, newPosition, timeSinceStarted);
+			obj.GetComponent<RectTransform> ().localPosition = 
+				Vector3.Lerp(obj.GetComponent<RectTransform> ().localPosition, newPosition, timeSinceStarted);
 
-			if (panel.GetComponent<RectTransform> ().localPosition == newPosition)
+			if (obj.GetComponent<RectTransform> ().localPosition == newPosition)
 			{
 				yield break;
 			}
