@@ -48,8 +48,9 @@
      <Compile Include="Assets\Scripts\Board Text Manager\BoardTextManager.cs" />
      <Compile Include="Assets\Scripts\Choose Character\CharacterChooserManager.cs" />
      <Compile Include="Assets\Scripts\Choose Character\CharacterSlot.cs" />
-     <Compile Include="Assets\Scripts\DialogManager\Dialog.cs" />
      <Compile Include="Assets\Scripts\DialogManager\DialogManager.cs" />
+     <Compile Include="Assets\Scripts\DialogManager\DialogTree.cs" />
+     <Compile Include="Assets\Scripts\DialogManager\DialogTreeNode.cs" />
      <Compile Include="Assets\Scripts\DialogManager\EDialogPriority.cs" />
      <Compile Include="Assets\Scripts\DialogManager\InterativeSpeaker.cs" />
      <Compile Include="Assets\Scripts\DialogManager\Speaker.cs" />
