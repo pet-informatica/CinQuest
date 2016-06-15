@@ -103,7 +103,7 @@ public class DialogTreeNode : ScriptableObject
     /// pointing to an UnnavaiableNode, the method will go for the first AvaiableNode it finds. If
     /// there is node, it will return null.</param>
     /// <returns>The child wich was reached by the player response index.</returns>
-    public virtual DialogTreeNode GoToChild(int response)
+    public virtual DialogTreeNode FetchAvaiable(int response)
     {
         int index = -1;
         while (response >= 0)
@@ -116,5 +116,14 @@ public class DialogTreeNode : ScriptableObject
                 response--;
         }
         return Children[index];
+    }
+
+    /// <summary>
+    /// This method is called everytime the current node is reached. Can be extended by children classes
+    /// to do some work, like giving rewards for the user, in case of a RewardTreeNode.
+    /// </summary>
+    public virtual void Execute()
+    {
+       
     }
 }

@@ -20,7 +20,6 @@ public class DialogManager : MonoBehaviour
     float guiAlpha;
 
     DialogTree curDialog;
-    DialogTreeNode curNode;
     string curMessage;
     string typedMessage;
 
@@ -121,7 +120,7 @@ public class DialogManager : MonoBehaviour
 
                 if (Input.GetButtonDown("Interaction"))
                 {
-                    if (!curNode.IsLeaf)
+                    if (!curDialog.Head.IsLeaf)
                         Type();
                     else
                         EndConversation();
@@ -154,11 +153,11 @@ public class DialogManager : MonoBehaviour
             textTime = 0f;
 
             curDialog = dialog;
-            curNode = curDialog.Root;
-            curMessage = curNode.Message;
+            curDialog.Start();
+            curMessage = curDialog.Head.Message;
             typedMessage = "";
             StartCoroutine(TypeText());
-            SetResponses(curNode);
+            SetResponses(curDialog.Head);
             SelectResponse(0);
 
             float fadeStart = 0f;
@@ -178,7 +177,6 @@ public class DialogManager : MonoBehaviour
     {
         IsSpeaking = false;
         curDialog = null;
-        curNode = null;
         curMessage = "";
         textTime = -timeBetweenChats;
         StopCoroutine("TypeText");
@@ -195,10 +193,10 @@ public class DialogManager : MonoBehaviour
     /// </summary>
     void Type()
     {
-        curNode = curNode.GoToChild(selectedResponse);
-        curMessage = curNode.Message;
+        curDialog.GoToChild(selectedResponse);
+        curMessage = curDialog.Head.Message;
         typedMessage = "";
-        SetResponses(curNode);
+        SetResponses(curDialog.Head);
         StartCoroutine(TypeText());
     }
 

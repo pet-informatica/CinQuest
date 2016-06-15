@@ -23,11 +23,34 @@ public class DialogTree : ScriptableObject
 
     [SerializeField]
     DialogTreeNode root;
+
+    DialogTreeNode head;
     /// <summary>
     /// The head of the tree. Can have at most 4 children.
     /// </summary>
-    public DialogTreeNode Root
+    public DialogTreeNode Head
     {
-        get { return root; }
+        get { return head; }
+    }
+
+    /// <summary>
+    /// Set's the head of the tree back to it's original position.
+    /// </summary>
+    public void Start()
+    {
+        head = root;
+    }
+
+    /// <summary>
+    /// Go down a level in the tree for one of it's childs.
+    /// </summary>
+    /// <param name="response">The index of the child.</param>
+    public void GoToChild(int response)
+    {
+        if(head.FetchAvaiable(response) != null)
+        {
+            head = head.FetchAvaiable(response);
+            head.Execute();
+        }
     }
 }
