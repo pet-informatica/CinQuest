@@ -4,7 +4,12 @@ using System.Collections.Generic;
 
 public class User  : MonoBehaviour 
 {
-	public static User instance = null;
+    static User instance = null;
+    public static User Instance
+    {
+        get { return instance; }
+    }
+
 
 	private string _name;
 	private Dictionary<int,Quest> _userQuests;

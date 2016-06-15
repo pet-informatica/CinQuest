@@ -16,7 +16,7 @@ public class CrachaGiver : MonoBehaviour
 	void Start() {
 		// TODO: Start some conversation 
 
-		User currentUser = User.instance;
+		User currentUser = User.Instance;
 		this.giveCracha(currentUser);
 	}
 

@@ -25,7 +25,7 @@ public class DialogManager : MonoBehaviour
     string typedMessage;
 
     /// <summary>
-    /// Returns true if there is a conversation alredy happening
+    /// Returns true if there is a conversation alredy happening.
     /// </summary>
     public bool IsSpeaking { get; private set; }
 
@@ -33,11 +33,11 @@ public class DialogManager : MonoBehaviour
     /// Try to speak an dialog. If there is a dialog alredy happening, check it's priority and
     /// choose to maintain the one with the higher.
     /// </summary>
-    /// <param name="dialog">The dialog to speak</param>
+    /// <param name="dialog">The dialog to speak.</param>
     /// <returns>True if the new dialog succeded and will be speech. False if it couldn't.</returns>
     public bool Speak(DialogTree dialog)
     {
-        if (IsSpeaking && dialog.priority <= curDialog.priority)
+        if (IsSpeaking && dialog.Priority <= curDialog.Priority)
         return false; 
 
         ClearDialogBox();
@@ -56,7 +56,7 @@ public class DialogManager : MonoBehaviour
     }
 
     /// <summary>
-    /// Adds a letter from curMessage to typedMessage every letterPause seconds
+    /// Adds a letter from curMessage to typedMessage every letterPause seconds.
     /// </summary>
     IEnumerator TypeText()
     {
@@ -75,7 +75,7 @@ public class DialogManager : MonoBehaviour
     /// </summary>
     /// <param name="start">The start value for the fade. 0 for completely gone and 1 for fully on screen.</param>
     /// <param name="end">The end value for the fade. 0 for completely gone and 1 for fully on screen.</param>
-    /// <param name="lenght">The time in seconts it takes for the fade to happen</param>
+    /// <param name="lenght">The time in seconts it takes for the fade to happen.</param>
     IEnumerator GUIFade(float start, float end, float lenght)
     {
         guiAlpha = start;
@@ -121,7 +121,7 @@ public class DialogManager : MonoBehaviour
 
                 if (Input.GetButtonDown("Interaction"))
                 {
-                    if (curNode.children.Count > 0)
+                    if (!curNode.IsLeaf)
                         Type();
                     else
                         EndConversation();
@@ -142,10 +142,10 @@ public class DialogManager : MonoBehaviour
     }
 
     /// <summary>
-    /// Start fading in the dialog box and show's the messages in it's queue
+    /// Start fading in the dialog box and show's the messages in it's queue.
     /// </summary>
-    /// <param name="dialog">The dialog to start the conversation</param>
-    /// <returns>The time it will take to fully start the conversation</returns>
+    /// <param name="dialog">The dialog to start the conversation.</param>
+    /// <returns>The time it will take to fully start the conversation.</returns>
     float StartConversation(DialogTree dialog)
     {
         if (!IsSpeaking && textTime > 0f)
@@ -154,8 +154,8 @@ public class DialogManager : MonoBehaviour
             textTime = 0f;
 
             curDialog = dialog;
-            curNode = curDialog.root;
-            curMessage = curNode.message;
+            curNode = curDialog.Root;
+            curMessage = curNode.Message;
             typedMessage = "";
             StartCoroutine(TypeText());
             SetResponses(curNode);
@@ -171,9 +171,9 @@ public class DialogManager : MonoBehaviour
     }
 
     /// <summary>
-    ///  Fade out the dialog box and stop conversation
+    ///  Fade out the dialog box and stop conversation.
     /// </summary>
-    /// <returns>The time it will take to fully end the conversation</returns>
+    /// <returns>The time it will take to fully end the conversation.</returns>
     float EndConversation()
     {
         IsSpeaking = false;
@@ -191,29 +191,33 @@ public class DialogManager : MonoBehaviour
     }
 
     /// <summary>
-    /// Traverse the tree to one of the curNode childrens depending on the chosed response from UI
+    /// Traverse the tree to one of the curNode childrens depending on the chosed response from UI.
     /// </summary>
     void Type()
     {
-        curNode = curNode.children[selectedResponse];
-        curMessage = curNode.message;
+        curNode = curNode.GoToChild(selectedResponse);
+        curMessage = curNode.Message;
         typedMessage = "";
         SetResponses(curNode);
         StartCoroutine(TypeText());
     }
 
     /// <summary>
-    /// Sets the avaiable responses in the UI
+    /// Sets the avaiable responses in the UI.
     /// </summary>
     /// <param name="">A DialogTreeNode, containing all it's children nodes, each having a specific response to be reached.</param>
     void SetResponses(DialogTreeNode node)
     {
-        avaiableResponses = node.children.Count;
+        avaiableResponses = node.AvaiableChildren;
 
-        for(int i = 0; i < avaiableResponses; ++i)
-            responses[i].text = node.children[i].response;
+        int resp = 0;
+        for(int i = 0; i < node.Children.Count; i++)
+        {
+            if (node.Children[i].IsAvaiable())
+                responses[resp++].text = node.Children[i].Response;
+        }
 
-        for (int i = avaiableResponses; i < responses.Length; ++i)
+        for (int i = resp; i < responses.Length; ++i)
             responses[i].text = "";
 
         selectedResponse = 0;
@@ -221,7 +225,7 @@ public class DialogManager : MonoBehaviour
     }
 
     /// <summary>
-    /// Select a new response from the list and change the UI color for the text UI to show it's selected
+    /// Select a new response from the list and change the UI color for the text UI to show it's selected.
     /// </summary>
     /// <param name="response">The index of the response to select in the response array. Range from 0 to responses.Length.</param>
     void SelectResponse(int response)

@@ -1,22 +1,20 @@
 ﻿using UnityEngine;
-using System.Collections;
 
+/// <summary>
+/// Developed by: Higor (hcmb)
+/// Instantiates the singletons in scene. Must be attached to main camera, and every camera
+/// in every scene must have it.
+/// </summary>
 public class Loader : MonoBehaviour 
 {
-	/* Developed by: Higor
-	 
-		Description: This scripts instantiates the GameManager, in case it isn't alredy instantiated.
-		How to use it: Just attach it to the main camera, because it will be present in every scene.
-		Then, drag the GameManager prefab to the public variable field;
-		*See the GameManager script for more information.
-	  
-	*/
-
 	public GameObject gameManager;
+    public GameObject user;
 
 	void Awake () 
 	{
-		if (GameManager.instance == null)
+		if (GameManager.Instance == null)
 			Instantiate (gameManager, Vector3.zero, Quaternion.identity);
-	}
+        if (User.Instance == null)
+            Instantiate(user, Vector3.zero, Quaternion.identity);
+    }
 }

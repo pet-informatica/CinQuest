@@ -28,14 +28,19 @@ public class GameManager : MonoBehaviour
 		
 	 */
 
-	public static GameManager instance = null;
+	static GameManager instance = null;
+    public static GameManager Instance
+    {
+        get { return instance; }
+    }
+
     private static Vector2 screenSize = new Vector2(1024.0f, 768.0f);
 
     /* Game Managers */
-	public QuestManager questManager { get; set; } 
-    public ItemManager itemManager { get; set; }
-	public GameConfiguration gameConfiguration { get; set; } 
-	public PreConditionManager preConditionManager { get; set; }
+	public QuestManager questManager { get; private set; } 
+    public ItemManager itemManager { get; private set; }
+	public GameConfiguration gameConfiguration { get; private set; } 
+	public PreConditionManager preConditionManager { get; private set; }
 
     /* UI Control */
     public List<string> disableChildrenInScene;
