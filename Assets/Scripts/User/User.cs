@@ -1,18 +1,42 @@
 ﻿using System;
+using UnityEngine;
 using System.Collections.Generic;
 
-public class User
+public class User  : MonoBehaviour 
 {
+	public static User instance = null;
 
-	public string name { get; set; }
-	public Dictionary<int,Quest> userQuests { get; set;}
-	public List<GenericItem> items { get; set;} 
+	private string _name;
+	private Dictionary<int,Quest> _userQuests;
+	private List<GenericItem> _items;
 
-	public User (string name)
+	public string userName { get { return this._name; } }
+	public Dictionary<int,Quest> userQuests { get { return this._userQuests; } }
+	public List<GenericItem> items { get { return this._items; } }
+
+	void Awake () 
 	{
-		this.name = name;
-		this.userQuests = new Dictionary<int,Quest> ();
-		this.items = new List<GenericItem>();
+		if (instance == null) {
+			this.loadUser ();
+		}
+		else if (instance != this)
+			Destroy (gameObject);
+		DontDestroyOnLoad (gameObject);
 	}
-		
+
+	private void loadUser (){
+		instance = this;
+		this._name = "peaonunes";
+		this._userQuests = new Dictionary<int,Quest> ();
+		this._items = new List<GenericItem>();
+	}
+
+	private void loadUserDataFromFile(){
+		//TODO: Deserialize user data.
+	}
+
+	public void addItem(GenericItem newItem){
+		//TODO: Synchronize the inventory too. This will depend on Lucas activite right now. We should update it later.
+		this._items.Add(newItem);
+	}
 }

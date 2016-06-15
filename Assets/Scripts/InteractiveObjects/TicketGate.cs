@@ -8,7 +8,7 @@ using System.Collections;
 public class TicketGate : MonoBehaviour {
 
     public TicketGate target;
-    public Dialog noIDDialog;
+	public DialogTree noIDDialog;
 
     DialogManager dialog;
     ScreenFader fader;
@@ -27,7 +27,7 @@ public class TicketGate : MonoBehaviour {
     bool PlayerHasIDCard()
     {
 		// TODO; Get profile of current user.
-		User currentUser = new User ("mock");
+		User currentUser = User.instance;
 		// PreConditon number 0, PreCondition of Crachá.
 		IPreCondition checkCracha = GameManager.instance.preConditionManager.getPreCondition (0);
 		return checkCracha.checkIfMatches (currentUser);

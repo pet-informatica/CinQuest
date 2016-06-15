@@ -16,8 +16,7 @@ public class CrachaGiver : MonoBehaviour
 	void Start() {
 		// TODO: Start some conversation 
 
-		// TODO: Method to get the instance of the current User Profile.
-		User currentUser = null;
+		User currentUser = User.instance;
 		this.giveCracha(currentUser);
 	}
 
@@ -44,8 +43,7 @@ public class CrachaGiver : MonoBehaviour
 	private void giveCracha(User currentUser){
 		if (checkIfQuest1Done (currentUser)) {
 			foreach (GenericItem reward in _quest1.getRewards(currentUser)) {
-				//TODO: Synchronize the inventory too. This will depend on Lucas activite right now. We should update it later.
-				currentUser.items.Add (reward);
+				currentUser.addItem (reward);
 			}
 			//TODO: Starts a conversation about the Cracha
 		} else {
