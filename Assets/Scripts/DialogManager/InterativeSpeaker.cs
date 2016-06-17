@@ -8,8 +8,6 @@ using System.Collections.Generic;
 /// </summary>
 public class InterativeSpeaker : Speaker
 {
-    public InterativeSpeaker(List<DialogTree> dialogs) : base(dialogs) { }
-
     void Start()
     {
         dialogManager = GameObject.FindGameObjectWithTag("DialogBox").GetComponent<DialogManager>();

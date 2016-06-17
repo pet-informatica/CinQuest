@@ -33,21 +33,9 @@ public class QuestUI : MonoBehaviour
 	}
 
     /// <summary>
-    /// Temporary method only for testing purposes. Must be erased latter.
+    /// Get all the current quests from the user instance updated.
     /// </summary>
-    void LoadFakeQuests()
-    {
-        for(int i = 0; i < 25; ++i)
-        {
-            Quest quest = new Quest(0, "Roubar comida " + i, "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis fringilla turpis, eget fringilla ex interdum at. Duis non bibendum mauris. Nullam sit amet lectus accumsan, porttitor arcu a, dapibus nulla. Quisque commodo sit amet nisi vel aliquet. Nullam scelerisque, justo quis vulputate gravida, risus lacus tempor eros, a cursus purus ex bibendum mi. Cras non lacinia sem. Morbi sed arcu pellentesque, faucibus arcu quis, tincidunt urna. Maecenas sed neque eu turpis pellentesque rhoncus sodales at nibh. Donec varius, quam sit amet consectetur volutpat, ex risus convallis augue, sit amet dapibus diam lorem ac enim. Nullam ac lacus in augue bibendum elementum quis sed purus." + i, true, null, null, null);
-            quests.Add(quest);
-        }
-    }
-
-    /// <summary>
-    /// Get all the current quests from the user instance.
-    /// </summary>
-    void UpdateQuestsFromUser()
+    public void UpdateQuestsFromUser()
     {
        quests.Clear();
        User user = User.Instance;
@@ -66,18 +54,27 @@ public class QuestUI : MonoBehaviour
         foreach (GameObject obj in buttons) Destroy(obj);
         buttons.Clear();
 
-        int buttonAmount = quests.Count;
+        int buttonAmount = 0;
+        foreach(Quest quest in quests)
+            if (quest.Unlocked)
+                buttonAmount++;
+
         questBoxTransform.sizeDelta = new Vector2(0, buttonAmount * questButtonHeight);
+        int offset = 0;
         for(int i = 0; i < buttonAmount; ++i)
         {
+            if (!quests[i].Unlocked)
+                continue;
+
             GameObject newButton = Instantiate(questButton) as GameObject;
             buttons.Add(newButton);
             RectTransform newButtonTransform = newButton.GetComponent<RectTransform>();
             newButton.transform.SetParent(questBoxContent.transform, false);
-            newButtonTransform.anchoredPosition = new Vector2(0, -i * questButtonHeight);
+            newButtonTransform.anchoredPosition = new Vector2(0, -offset * questButtonHeight);
            
             QuestButton buttonScript = newButton.GetComponent<QuestButton>();
             buttonScript.quest = quests[i];
+            offset++;
         }
     }
 
@@ -124,8 +121,8 @@ public class QuestUI : MonoBehaviour
     /// <param name="quest">The quest for displaying the info</param>
     public void ChangeSelectedQuest(Quest quest)
     {
-        questInfoName.text = quest.name;
-        questInfoDescription.text = quest.description;
+        questInfoName.text = quest.Name;
+        questInfoDescription.text = quest.Description;
         questInfo.SetActive(true);
     }
 }

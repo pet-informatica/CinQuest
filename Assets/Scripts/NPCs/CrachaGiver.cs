@@ -30,7 +30,7 @@ public class CrachaGiver : MonoBehaviour
 		currentUser.Quests.TryGetValue (_quest1Identifier, out _quest1);
 
 		if (_quest1 != null) {
-			return _quest1.done;
+			return _quest1.Done;
 		} else
 			return false;
 		
@@ -42,7 +42,7 @@ public class CrachaGiver : MonoBehaviour
 	/// <param name="currentUser">Current user.</param>
 	private void giveCracha(User currentUser){
 		if (checkIfQuest1Done (currentUser)) {
-			foreach (GenericItem reward in _quest1.getRewards(currentUser)) {
+			foreach (GenericItem reward in _quest1.GetRewards(currentUser)) {
 				currentUser.addItem (reward);
 			}
 			//TODO: Starts a conversation about the Cracha

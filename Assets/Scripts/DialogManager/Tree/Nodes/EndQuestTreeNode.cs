@@ -28,7 +28,11 @@ public class EndQuestTreeNode : DialogTreeNode
     {
         User user = User.Instance;
         Quest quest = user.GetQuest(QuestID);
-        if (quest != null)
-            quest.finish(user);
+        if (quest != null && !quest.Done)
+        {
+            quest.Finish(user);
+            GameManager.Instance.UpdateQuestUI();
+        }
+           
     }
 }

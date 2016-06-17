@@ -11,7 +11,7 @@ public class QuestButton : MonoBehaviour {
     void Start()
     {
         questUI = GameObject.Find("QuestManager").GetComponent<QuestUI>();
-        GetComponentInChildren<Text>().text = quest.name;
+        GetComponentInChildren<Text>().text = quest.Name;
     }   
 
     public void OnClick()

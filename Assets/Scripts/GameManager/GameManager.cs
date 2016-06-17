@@ -29,6 +29,9 @@ public class GameManager : MonoBehaviour
 	 */
 
 	static GameManager instance = null;
+    /// <summary>
+    /// The true instance for static accesing this class resources.
+    /// </summary>
     public static GameManager Instance
     {
         get { return instance; }
@@ -45,6 +48,8 @@ public class GameManager : MonoBehaviour
     /* UI Control */
     public List<string> disableChildrenInScene;
     public List<GameObject> childrenObjects;
+    QuestUI questUI;
+    
 
 	void Awake () 
 	{
@@ -55,8 +60,6 @@ public class GameManager : MonoBehaviour
 		else if (instance != this)
 			Destroy (gameObject);
 		DontDestroyOnLoad (gameObject);
-       
-     
     }
 
     void OnLevelWasLoaded(int level)
@@ -65,10 +68,20 @@ public class GameManager : MonoBehaviour
     }
 
     /// <summary>
+    /// Calls for the QuestUI to update itself.
+    /// </summary>
+    public void UpdateQuestUI()
+    {
+        questUI.UpdateQuestsFromUser();
+    }
+
+    /// <summary>
     /// Enable/Disable the children objects such as InventoryUI and QuestUI between scenes.
     /// </summary>
     void ActivateChildren()
     {
+        questUI = GetComponentInChildren<QuestUI>();
+
         bool activate = true;
         string currentScene = SceneManager.GetActiveScene().name;
 

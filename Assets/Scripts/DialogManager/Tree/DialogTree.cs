@@ -39,6 +39,7 @@ public class DialogTree : ScriptableObject
     public void Start()
     {
         head = root;
+        head.Execute();
     }
 
     /// <summary>

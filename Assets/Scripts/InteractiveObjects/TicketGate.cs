@@ -8,16 +8,16 @@ using System.Collections;
 public class TicketGate : MonoBehaviour {
 
     public TicketGate target;
-	public DialogTree noIDDialog;
-
-    DialogManager dialog;
+    public DialogTree noIdDialog;
+    Speaker speaker;
     ScreenFader fader;
     bool transporting;
 
     void Start()
     {
         fader = GameObject.FindGameObjectWithTag("GameManager").GetComponent<ScreenFader>();
-        dialog = GameObject.FindGameObjectWithTag("GameManager").GetComponentInChildren<DialogManager>();
+        speaker = gameObject.AddComponent<Speaker>();
+        speaker.SetDialog(noIdDialog);
     }
 
     /// <summary>
@@ -26,10 +26,8 @@ public class TicketGate : MonoBehaviour {
     /// <returns>True if the player inventory has an IDCard.</returns>
     bool PlayerHasIDCard()
     {
-		// TODO; Get profile of current user.
 		User currentUser = User.Instance;
-		// PreConditon number 0, PreCondition of Crachá.
-		IPreCondition checkCracha = GameManager.Instance.preConditionManager.getPreCondition (0);
+		IPreCondition checkCracha = GameManager.Instance.preConditionManager.getPreCondition (1);
 		return checkCracha.checkIfMatches (currentUser);
     }
 
@@ -78,7 +76,7 @@ public class TicketGate : MonoBehaviour {
             }
             else
             {
-                dialog.Speak(noIDDialog);
+                speaker.Speak();
             }   
         }  
     }

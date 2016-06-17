@@ -28,9 +28,9 @@ public class QuestRepositoryXML : IQuestRepository
 	/// <returns><c>true</c>, if quest was added, <c>false</c> otherwise.</returns>
 	/// <param name="newQuest">New quest.</param>
 	public bool addQuest(Quest newQuest){
-		if (this._quests.ContainsKey (newQuest.identifier))
+		if (this._quests.ContainsKey (newQuest.Identifier))
 			return false;
-		this._quests.Add(newQuest.identifier, newQuest);
+		this._quests.Add(newQuest.Identifier, newQuest);
 		return true;
 	}
 

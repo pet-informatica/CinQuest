@@ -28,7 +28,10 @@ public class StartQuestTreeNode : DialogTreeNode
     {
         User user = User.Instance;
         Quest quest = user.GetQuest(QuestID);
-        if (quest != null)
-           quest.activate(user);
+        if (quest != null && !quest.Unlocked)
+        {
+            quest.Activate(user);
+            GameManager.Instance.UpdateQuestUI();
+        }
     }
 }
