@@ -22,19 +22,6 @@ public class ConditionalTreeNode : DialogTreeNode
     }
 
     /// <summary>
-    /// Constructs a new TreeNode
-    /// </summary>
-    /// <param name="response">The response avaiable for the player in GUI that will make him reach this node.</param>
-    /// <param name="message">The message displayed on GUI when this node is reached.</param>
-    /// <param name="children">A list of TreeNodes reachable from this one.</param>
-    /// <param name="preconditionIDs">A list of ID's for each precondition required to make this node avaiable.</param>
-    public ConditionalTreeNode(string response, string message, List<DialogTreeNode> children, List<int> preconditionIDs)
-        :base(response, message, children)
-    {
-        this.preconditionIDs = preconditionIDs;
-    }
-
-    /// <summary>
     /// Check if all the pre conditions are satisfied.
     /// </summary>
     /// <returns>TRUE if the current node can be reached. False otherwise.</returns>

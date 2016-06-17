@@ -62,6 +62,21 @@ public class Quest
 		}
 		return false;
 	}
+
+    /// <summary>
+    /// Tries to set the Quest to done based on currentUserProfile generic items.
+    /// </summary>
+    /// <param name="currentUserProfile">Current user profile for checking the preconditions.</param>
+    /// <returns></returns>
+    public bool finish(User currentUserProfile)
+    {
+        if(this.checkPreConditionsStatus(currentUserProfile, _preConditionsToDone))
+        {
+            this._done = true;
+            return true;
+        }
+        return false;
+    }
 		
 	// <summary>
 	/// Checks the pre conditions status.

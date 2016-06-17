@@ -9,16 +9,16 @@ using System.Collections.Generic;
 /// </summary>
 [CreateAssetMenu]
 [Serializable]
-public class RewardTreeNode : DialogTreeNode
+public class StartQuestTreeNode : DialogTreeNode
 {
     [SerializeField]
-    List<int> rewardIDs;
+    int questId;
     /// <summary>
     /// The list of the reward item ID's that the user will win after reaching this node
     /// </summary>
-    public List<int> RewardIDs
+    public int QuestID
     {
-        get { return rewardIDs; }
+        get { return questId; }
     }
 
     /// <summary>
@@ -27,10 +27,8 @@ public class RewardTreeNode : DialogTreeNode
     public override void Execute()
     {
         User user = User.Instance;
-
-        foreach(int id in RewardIDs)
-        {
-            user.addItem(GameManager.Instance.itemManager.getItem(id));
-        }
+        Quest quest = user.getQuest(QuestID);
+        if (quest != null)
+           quest.activate(user);
     }
 }

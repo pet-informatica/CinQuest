@@ -40,6 +40,13 @@ public class User  : MonoBehaviour
 		//TODO: Deserialize user data.
 	}
 
+    public Quest getQuest(int id)
+    {
+        if (userQuests.ContainsKey(id))
+            return userQuests[id];
+        return null;
+    }
+
 	public void addItem(GenericItem newItem){
 		//TODO: Synchronize the inventory too. This will depend on Lucas activite right now. We should update it later.
 		this._items.Add(newItem);

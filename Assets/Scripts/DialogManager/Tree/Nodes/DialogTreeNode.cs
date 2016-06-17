@@ -70,19 +70,6 @@ public class DialogTreeNode : ScriptableObject
     }
 
     /// <summary>
-    /// Constructs a new TreeNode
-    /// </summary>
-    /// <param name="response">The response avaiable for the player in GUI that will make him reach this node.</param>
-    /// <param name="message">The message displayed on GUI when this node is reached.</param>
-    /// <param name="children">A list of TreeNodes reachable from this one.</param>
-    public DialogTreeNode(string response, string message, List<DialogTreeNode> children)
-    {
-        this.response = response;
-        this.message = message;
-        this.children = children;
-    }
-
-    /// <summary>
     /// Returns if it is possible to reach this node. The node can be BLOCKED by several reasons,
     /// such as the player not having the required PreConditions. In a DialogTreeNode, every node
     /// is reachable, but in inherited classes such as ConditionalTreeNode this method will check
