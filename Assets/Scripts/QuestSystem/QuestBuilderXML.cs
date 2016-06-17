@@ -52,7 +52,7 @@ public class QuestBuilderXML
 		List<GenericItem> r1 = new List<GenericItem> ();
 		foreach (XElement element in rewards.Elements()) {
 			int index = Int32.Parse (element.Attribute ("identifier").Value);
-            r1.Add(GameManager.Instance.itemManager.getItem(index));
+            r1.Add(GameManager.Instance.itemManager.GetItem(index));
 		}
 
 		newQuest = new Quest (identifier, name, description, unlocked, p1, p2, r1);

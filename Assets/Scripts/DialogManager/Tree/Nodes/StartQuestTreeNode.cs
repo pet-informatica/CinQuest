@@ -21,6 +21,22 @@ public class StartQuestTreeNode : DialogTreeNode
         get { return questId; }
     }
 
+
+    /// <summary>
+    /// Check if the current node is avaiable. It won't be if it is starting a quest that is locked, or alredy done.
+    /// </summary>
+    /// <returns>Returns if the current node is avaiable to be reached</returns>
+    public override bool IsAvaiable()
+    {
+        User user = User.Instance;
+        Quest quest = user.GetQuest(QuestID);
+        if (quest != null && quest.Unlocked && !quest.Done)
+        {
+            return true;
+        }
+        return false;
+    }
+
     /// <summary>
     /// When the node is reached, gives a list of rewards for the player
     /// </summary>

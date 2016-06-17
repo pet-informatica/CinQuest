@@ -8,10 +8,10 @@ using System.Collections.Generic;
 /// </summary>
 public interface IGenericItemRepository
 {
-    Dictionary<int, GenericItem> items { get; }
-    bool loadItens();
-    bool addItem(GenericItem item);
-    bool removeItem(int identifier);
-    bool updateItem(int identifier, GenericItem item);
-    GenericItem searchItem(int identifier);
+    Dictionary<int, GenericItem> Items { get; }
+    bool LoadItens();
+    bool AddItem(GenericItem item);
+    bool RemoveItem(int identifier);
+    bool UpdateItem(int identifier, GenericItem item);
+    GenericItem SearchItem(int identifier);
 }

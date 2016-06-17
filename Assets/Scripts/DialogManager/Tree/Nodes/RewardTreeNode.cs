@@ -30,7 +30,7 @@ public class RewardTreeNode : DialogTreeNode
 
         foreach(int id in RewardIDs)
         {
-            user.addItem(GameManager.Instance.itemManager.getItem(id));
+            user.AddItem(GameManager.Instance.itemManager.GetItem(id));
         }
     }
 }

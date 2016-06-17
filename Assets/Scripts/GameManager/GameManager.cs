@@ -136,10 +136,15 @@ public class GameManager : MonoBehaviour
 
         // TODO: LOAD GAME ITEMS
         this.itemManager = new ItemManager(RepositoriesFactory.createItemRepository(this.gameConfiguration.databaseType));
-        this.itemManager.loadItemsFromAssets();
+        this.itemManager.LoadItemsFromAssets();
 
-		// TODO: LOAD GAME PRECONDITIONS
-		this.preConditionManager = new PreConditionManager(RepositoriesFactory.createPreConditionRepository(this.gameConfiguration.databaseType));
+        //FAKING CRACHA ITEM FOR PRECONDITION CHECK
+        this.itemManager.AddItem(new GenericItem(1));
+        this.itemManager.AddItem(new GenericItem(2));
+
+
+        // TODO: LOAD GAME PRECONDITIONS
+        this.preConditionManager = new PreConditionManager(RepositoriesFactory.createPreConditionRepository(this.gameConfiguration.databaseType));
 		this.preConditionManager.loadPreConditionsFromFile (this.gameConfiguration.preConditionCollectionPath);
 
 		// QUEST MANAGER

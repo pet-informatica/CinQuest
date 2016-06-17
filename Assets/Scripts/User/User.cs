@@ -58,7 +58,7 @@ public class User  : MonoBehaviour
         LoadQuestsFromManager();
 	}
 
-	private void loadUserDataFromFile(){
+	private void LoadUserDataFromFile(){
 		//TODO: Deserialize user data.
 	}
 
@@ -78,8 +78,8 @@ public class User  : MonoBehaviour
         return null;
     }
 
-	public void addItem(GenericItem newItem){
+	public void AddItem(GenericItem newItem){
 		//TODO: Synchronize the inventory too. This will depend on Lucas activite right now. We should update it later.
 		this.items.Add(newItem);
-	}
+    }
 }

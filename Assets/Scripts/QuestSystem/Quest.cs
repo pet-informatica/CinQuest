@@ -120,7 +120,6 @@ public class Quest
 	public bool Activate(User currentUserProfile){
 		if (this.CheckPreConditionsStatus (currentUserProfile, preconditionsToUnlock)) {
 			this.unlocked = true;
-          
 			return true;
 		}
 		return false;
@@ -136,6 +135,12 @@ public class Quest
         if(this.CheckPreConditionsStatus(currentUserProfile, preconditionsToDone))
         {
             this.done = true;
+            
+            foreach (GenericItem item in rewards)
+            {
+                currentUserProfile.AddItem(item);
+               
+            }
             return true;
         }
         return false;
@@ -152,6 +157,7 @@ public class Quest
         {
 			if (!p.checkIfMatches(currentUserProfile))
             {
+                UnityEngine.Debug.Log("player got not ");
                 return false;
             }
 		}
