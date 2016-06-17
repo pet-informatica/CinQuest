@@ -17,10 +17,9 @@ public class QuestRepositoryXML : IQuestRepository
 		this._quests = new Dictionary<int, Quest> ();
 	}
 
-	public Dictionary<int, Quest> quests { 
-		get {
-			return _quests;
-		}
+	public Dictionary<int, Quest> quests
+    { 
+		get { return _quests; }
 	}
 
 	/// <summary>

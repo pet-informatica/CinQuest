@@ -27,7 +27,7 @@ public class CrachaGiver : MonoBehaviour
 	/// <param name="currentUser">Current user.</param>
 	private bool checkIfQuest1Done(User currentUser){
 
-		currentUser.userQuests.TryGetValue (_quest1Identifier, out _quest1);
+		currentUser.Quests.TryGetValue (_quest1Identifier, out _quest1);
 
 		if (_quest1 != null) {
 			return _quest1.done;

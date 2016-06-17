@@ -5,50 +5,81 @@ using System.Collections.Generic;
 public class User  : MonoBehaviour 
 {
     static User instance = null;
+    /// <summary>
+    /// The user static instance for acessing it's content from the outside.
+    /// </summary>
     public static User Instance
     {
         get { return instance; }
     }
 
+	string nick;
+    /// <summary>
+    /// The nickname for this player.
+    /// </summary>
+    public string Nick
+    {
+        get { return nick; }
+    }
 
-	private string _name;
-	private Dictionary<int,Quest> _userQuests;
-	private List<GenericItem> _items;
+    Dictionary<int, Quest> quests;
+    /// <summary>
+    /// A dictionary indexed by quest identifier containing all the user quests.
+    /// </summary>
+    public Dictionary<int, Quest> Quests
+    {
+        get { return this.quests; }
+    }
 
-	public string userName { get { return this._name; } }
-	public Dictionary<int,Quest> userQuests { get { return this._userQuests; } }
-	public List<GenericItem> items { get { return this._items; } }
+    List<GenericItem> items;
+	/// <summary>
+    /// A list of GenericItem containing all the user items.
+    /// </summary>
+	public List<GenericItem> Items
+    {
+        get { return this.items; }
+    }
 
 	void Awake () 
 	{
 		if (instance == null) {
-			this.loadUser ();
+			this.LoadNewUser();
 		}
 		else if (instance != this)
 			Destroy (gameObject);
 		DontDestroyOnLoad (gameObject);
 	}
 
-	private void loadUser (){
+	private void LoadNewUser (){
 		instance = this;
-		this._name = "peaonunes";
-		this._userQuests = new Dictionary<int,Quest> ();
-		this._items = new List<GenericItem>();
+		nick = "peaonunes";
+		quests = new Dictionary<int,Quest> ();
+        items = new List<GenericItem>();
+        LoadQuestsFromManager();
 	}
 
 	private void loadUserDataFromFile(){
 		//TODO: Deserialize user data.
 	}
 
-    public Quest getQuest(int id)
+    private void LoadQuestsFromManager()
     {
-        if (userQuests.ContainsKey(id))
-            return userQuests[id];
+        QuestManager manager = GameManager.Instance.questManager;
+        if(manager != null)
+        {
+            quests = manager.getQuests();
+        }
+    }
+
+    public Quest GetQuest(int id)
+    {
+        if (quests.ContainsKey(id))
+            return quests[id];
         return null;
     }
 
 	public void addItem(GenericItem newItem){
 		//TODO: Synchronize the inventory too. This will depend on Lucas activite right now. We should update it later.
-		this._items.Add(newItem);
+		this.items.Add(newItem);
 	}
 }

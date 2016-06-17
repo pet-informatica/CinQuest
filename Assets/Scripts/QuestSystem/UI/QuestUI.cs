@@ -27,8 +27,7 @@ public class QuestUI : MonoBehaviour
         questBoxTransform = questBoxContent.GetComponent<RectTransform>();
         questButtonHeight = questButton.GetComponent<RectTransform>().rect.height;
 
-        LoadFakeQuests();
-        UpdateQuestBoxContent();
+        UpdateQuestsFromUser();
 
         CloseWindow();
 	}
@@ -43,6 +42,20 @@ public class QuestUI : MonoBehaviour
             Quest quest = new Quest(0, "Roubar comida " + i, "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis fringilla turpis, eget fringilla ex interdum at. Duis non bibendum mauris. Nullam sit amet lectus accumsan, porttitor arcu a, dapibus nulla. Quisque commodo sit amet nisi vel aliquet. Nullam scelerisque, justo quis vulputate gravida, risus lacus tempor eros, a cursus purus ex bibendum mi. Cras non lacinia sem. Morbi sed arcu pellentesque, faucibus arcu quis, tincidunt urna. Maecenas sed neque eu turpis pellentesque rhoncus sodales at nibh. Donec varius, quam sit amet consectetur volutpat, ex risus convallis augue, sit amet dapibus diam lorem ac enim. Nullam ac lacus in augue bibendum elementum quis sed purus." + i, true, null, null, null);
             quests.Add(quest);
         }
+    }
+
+    /// <summary>
+    /// Get all the current quests from the user instance.
+    /// </summary>
+    void UpdateQuestsFromUser()
+    {
+       quests.Clear();
+       User user = User.Instance;
+       foreach(Quest quest in user.Quests.Values)
+       {
+            quests.Add(quest);
+       }
+       UpdateQuestBoxContent();
     }
 
     /// <summary>
@@ -66,7 +79,6 @@ public class QuestUI : MonoBehaviour
             QuestButton buttonScript = newButton.GetComponent<QuestButton>();
             buttonScript.quest = quests[i];
         }
-
     }
 
     /// <summary>
@@ -74,6 +86,7 @@ public class QuestUI : MonoBehaviour
     /// </summary>
     public void OpenWindow()
     {
+        UpdateQuestBoxContent();
         questBox.SetActive(true);
         opened = true;
     }
