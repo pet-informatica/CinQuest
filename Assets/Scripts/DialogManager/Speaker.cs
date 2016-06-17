@@ -30,17 +30,26 @@ public class Speaker : MonoBehaviour
     /// Communicates with the DialogManager in the ItemManager to try to start a dialog.
     /// </summary>
     /// <param name="dialog">The dialog tree to speak.</param>
-    public void Speak()
+    public virtual void Speak()
     {
-        dialogManager.Speak(dialogs[defaultDialogIndex]);
+        dialogManager.Speak(dialogs[defaultDialogIndex], this);
     }
 
     /// <summary>
     /// Communicates with the DialogManager in the ItemManager to try to start a dialog.
     /// </summary>
     /// <param name="dialog">The dialog tree to speak.</param>
-    public void Speak(DialogTree dialog)
+    public virtual void Speak(DialogTree dialog)
     {
-        dialogManager.Speak(dialog);
+        dialogManager.Speak(dialog, this);
+    }
+
+    /// <summary>
+    /// Called everytime a conversation is finished. Can be extended for executing actions.
+    /// </summary>
+    /// <param name="endingNode">The last node speaked before the conversation ended.</param>
+    public virtual void EndConversation(DialogTreeNode endingNode)
+    {
+        
     }
 }

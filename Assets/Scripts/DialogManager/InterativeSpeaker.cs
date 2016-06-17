@@ -8,9 +8,11 @@ using System.Collections.Generic;
 /// </summary>
 public class InterativeSpeaker : Speaker
 {
+    protected GameObject player;
+
     void Start()
     {
-        dialogManager = GameObject.FindGameObjectWithTag("DialogBox").GetComponent<DialogManager>();
+        this.dialogManager = GameObject.FindGameObjectWithTag("DialogBox").GetComponent<DialogManager>();
     }
 
     void OnTriggerStay2D(Collider2D collider)
@@ -20,7 +22,10 @@ public class InterativeSpeaker : Speaker
             if (Input.GetButtonDown("Interaction"))
             {
                 if(defaultDialogIndex < dialogs.Count && dialogs[defaultDialogIndex] != null)
+                {
+                    player = collider.transform.parent.gameObject;
                     Speak(dialogs[defaultDialogIndex]);
+                }     
             }
         }
     }

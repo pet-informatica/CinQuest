@@ -19,6 +19,7 @@ public class DialogManager : MonoBehaviour
     float textTime;
     float guiAlpha;
 
+    Speaker curSpeaker;
     DialogTree curDialog;
     string curMessage;
     string typedMessage;
@@ -33,14 +34,15 @@ public class DialogManager : MonoBehaviour
     /// choose to maintain the one with the higher.
     /// </summary>
     /// <param name="dialog">The dialog to speak.</param>
+    /// <param name="speaker">The character that started the conversation.</param>
     /// <returns>True if the new dialog succeded and will be speech. False if it couldn't.</returns>
-    public bool Speak(DialogTree dialog)
+    public bool Speak(DialogTree dialog, Speaker speaker)
     {
         if (IsSpeaking && dialog.Priority <= curDialog.Priority)
         return false; 
 
         ClearDialogBox();
-        StartConversation(dialog);
+        StartConversation(dialog, speaker);
         return true;
     }
 
@@ -145,7 +147,7 @@ public class DialogManager : MonoBehaviour
     /// </summary>
     /// <param name="dialog">The dialog to start the conversation.</param>
     /// <returns>The time it will take to fully start the conversation.</returns>
-    float StartConversation(DialogTree dialog)
+    float StartConversation(DialogTree dialog, Speaker speaker)
     {
         if (!IsSpeaking && textTime > 0f)
         {
@@ -153,6 +155,7 @@ public class DialogManager : MonoBehaviour
             textTime = 0f;
 
             curDialog = dialog;
+            curSpeaker = speaker;
             curDialog.Start();
             curMessage = curDialog.Head.Message;
             typedMessage = "";
@@ -175,6 +178,7 @@ public class DialogManager : MonoBehaviour
     /// <returns>The time it will take to fully end the conversation.</returns>
     float EndConversation()
     {
+        curSpeaker.EndConversation(curDialog.Head);
         IsSpeaking = false;
         curDialog = null;
         curMessage = "";
