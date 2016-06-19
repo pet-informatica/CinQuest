@@ -20,9 +20,9 @@ public class GenericItemRepository : IGenericItemRepository
     /// <returns>Returns false if the repository alredy contains an item with that identifier. True otherwise.</returns>
     public bool AddItem(GenericItem item)
     {
-        if (items.ContainsKey(item.identifier))
+        if (items.ContainsKey(item.Identifier))
             return false;
-        items.Add(item.identifier, item);
+        items.Add(item.Identifier, item);
         return true;
     }
 
