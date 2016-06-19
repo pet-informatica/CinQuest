@@ -6,9 +6,10 @@ using System;
 /// Definition for a not showable item.
 /// Could contain differents properties.
 /// </summary>
-[CreateAssetMenu]
+[CreateAssetMenu(menuName = "ItemsSystem/Token")]
 [Serializable]
 public class TokenItem : GenericItem
 {
+	public bool active;
 	
 }
