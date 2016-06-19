@@ -25,6 +25,10 @@ public class IdGenerator : ScriptableObject
 		get{ return currentID; }
 	}
 
+	/// <summary>
+	/// Generates the identifier for the items and updates the currentID.
+	/// </summary>
+	/// <returns>The identifier.</returns>
 	public int GenerateID()
 	{
 		currentID++;

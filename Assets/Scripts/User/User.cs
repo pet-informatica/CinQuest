@@ -31,13 +31,13 @@ public class User  : MonoBehaviour
         get { return this.quests; }
     }
 
-    List<GenericItem> items;
+    List<int> itemsID;
 	/// <summary>
-    /// A list of GenericItem containing all the user items.
+    /// A list of integer that contains the identifiers of all the user's items.
     /// </summary>
-	public List<GenericItem> Items
+	public List<int> ItemsID
     {
-        get { return this.items; }
+        get { return this.itemsID; }
     }
 
 	void Awake () 
@@ -54,7 +54,7 @@ public class User  : MonoBehaviour
 		instance = this;
 		nick = "peaonunes";
 		quests = new Dictionary<int,Quest> ();
-        items = new List<GenericItem>();
+        itemsID = new List<int>();
         LoadQuestsFromManager();
 	}
 
@@ -77,9 +77,18 @@ public class User  : MonoBehaviour
             return quests[id];
         return null;
     }
-
-	public void AddItem(GenericItem newItem){
-		//TODO: Synchronize the inventory too. This will depend on Lucas activite right now. We should update it later.
-		this.items.Add(newItem);
+	/// <summary>
+	/// Adds the identifier of a specific item into the User's list of items ids.
+	/// </summary>
+	/// <param name="itemID">The item's identifier that will be added to the list.</param>
+	public void AddItem(int itemID){
+		this.itemsID.Add(itemID);
     }
+	/// <summary>
+	/// Removes the identifier of a specific item from the User's list of items ids.
+	/// </summary>
+	/// <param name="itemID">The item's identifier that will be removed from the list.</param>
+	public void RemoveItem(int itemID){
+		this.itemsID.Remove(itemID);
+	}
 }

@@ -11,5 +11,9 @@ using System;
 public class TokenItem : GenericItem
 {
 	public bool active;
-	
+
+	public bool IsActive ()
+	{
+		return active;
+	}
 }
