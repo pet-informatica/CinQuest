@@ -38,6 +38,7 @@ public class GameManager : MonoBehaviour
     }
 
     private static Vector2 screenSize = new Vector2(1024.0f, 768.0f);
+	public IdGenerator idGenerator;
 
     /* Game Managers */
 	public QuestManager questManager { get; private set; } 
@@ -137,11 +138,11 @@ public class GameManager : MonoBehaviour
         // TODO: LOAD GAME ITEMS
         this.itemManager = new ItemManager(RepositoriesFactory.createItemRepository(this.gameConfiguration.databaseType));
         this.itemManager.LoadItemsFromAssets();
-
+		/*
         //FAKING CRACHA ITEM FOR PRECONDITION CHECK
         this.itemManager.AddItem(new GenericItem(1));
         this.itemManager.AddItem(new GenericItem(2));
-
+		*/
 
         // TODO: LOAD GAME PRECONDITIONS
         this.preConditionManager = new PreConditionManager(RepositoriesFactory.createPreConditionRepository(this.gameConfiguration.databaseType));

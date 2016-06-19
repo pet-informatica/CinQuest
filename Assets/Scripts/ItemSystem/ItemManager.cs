@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 /// <summary>
 /// Developed by: Higor (hcmb)
-/// Item Manager
+/// Item Manager.
 /// </summary>
 public class ItemManager {
 
