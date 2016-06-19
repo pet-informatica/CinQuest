@@ -39,11 +39,25 @@ public class ItemManager {
         return itemRepository.Items[identifier];
     }
 
+	public void AddItemAtUser(int itemID)
+	{
+		User user = User.Instance;
+		user.AddItem (itemID);
+		//TODO: synchronize with the inventoryController, but, for now, its testable.
+	}
+
+	public void RemoveItemFromUser(int itemID)
+	{
+		User user = User.Instance;
+		user.RemoveItem(itemID);
+		//TODO: synchronize with the inventoryController, but, for now, its testable.
+	}
+
     /// <summary>
     /// Adds a new item into the repository
     /// </summary>
     /// <param name="item">The item for adding.</param>
-    public void AddItem(GenericItem item)
+    public void AddItemAtRepository(GenericItem item)
     {
         itemRepository.AddItem(item);
     }
