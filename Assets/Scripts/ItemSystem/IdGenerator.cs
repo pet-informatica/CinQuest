@@ -14,7 +14,7 @@ using System;
 /// So, although there's an option at the create menu to create a IdGenerator, it should
 /// not be used.
 /// </summary>
-[CreateAssetMenu]
+[CreateAssetMenu(menuName = "ItemsSystem/IDGenerator")]
 [Serializable]
 public class IdGenerator : ScriptableObject
 {

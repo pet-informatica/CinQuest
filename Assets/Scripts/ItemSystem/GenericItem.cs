@@ -5,7 +5,7 @@ using System;
 /// Developed by: Peao (rngs);
 /// Represents a GenericItem, possible extensions could be an Item, NotShowableItem, Achievement...
 /// </summary>
-[CreateAssetMenu]
+[CreateAssetMenu(menuName = "ItemsSystem/GenericItem")]
 [Serializable]
 public class GenericItem : ScriptableObject
 {
@@ -24,11 +24,4 @@ public class GenericItem : ScriptableObject
 		set { this.name = name; }
 	}
 
-	public GenericItem() {}
-	/*
-	public void OnEnable()
-	{
-		identifier = GameManager.Instance.idGenerator.GenerateID ();
-		this.name = name;
-	}*/
 }

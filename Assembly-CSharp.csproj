@@ -70,10 +70,10 @@
      <Compile Include="Assets\Scripts\InteractiveObjects\TicketGate.cs" />
      <Compile Include="Assets\Scripts\ItemSystem\GenericItem.cs" />
      <Compile Include="Assets\Scripts\ItemSystem\IdGenerator.cs" />
+     <Compile Include="Assets\Scripts\ItemSystem\InventoriableItem.cs" />
      <Compile Include="Assets\Scripts\ItemSystem\Inventory\InventoryItem.cs" />
      <Compile Include="Assets\Scripts\ItemSystem\Inventory\InventoryManager.cs" />
      <Compile Include="Assets\Scripts\ItemSystem\Inventory\InventorySlot.cs" />
-     <Compile Include="Assets\Scripts\ItemSystem\Item.cs" />
      <Compile Include="Assets\Scripts\ItemSystem\ItemManager.cs" />
      <Compile Include="Assets\Scripts\ItemSystem\Repository\GenericItemRepository.cs" />
      <Compile Include="Assets\Scripts\ItemSystem\Repository\IGenericItemRepository.cs" />
