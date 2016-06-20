@@ -4,7 +4,7 @@
 /// Developed by: Peao (rngs);
 /// Represents a GenericItem, possible extensions could be an Item, NotShowableItem, Achievement...
 /// </summary>
-public class GenericItem : MonoBehaviour
+public class GenericItem
 {
 	public int identifier { get; set; }
 

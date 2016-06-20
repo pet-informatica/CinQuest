@@ -6,9 +6,9 @@
 /// </summary>
 public enum EDialogPriority
 {
-    Maximum,
-    High,
-    Medium,
-    Low,
     Minimum,
+    Low,
+    Medium,
+    High,
+    Maximum,
 }

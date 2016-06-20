@@ -16,7 +16,7 @@ public class PreConditionBuilderXML
 		if (!element.HasAttributes)
 			return preCondition;
 
-		int identifier = Int32.Parse (element.Attribute ("identifier").Value) - 1;
+		int identifier = Int32.Parse (element.Attribute ("identifier").Value);
 		string name = element.Attribute ("name").Value;
 		int itemIdentifier = Int32.Parse (element.Attribute ("itemIdentifier").Value);
 

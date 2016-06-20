@@ -7,24 +7,24 @@ using System.Collections.Generic;
 /// </summary>
 public class ItemManager {
 
-    private IGenericItemRepository _itemRepository;
+    private IGenericItemRepository itemRepository;
 
-    public ItemManager(IGenericItemRepository _itemRepository)
+    public ItemManager(IGenericItemRepository itemRepository)
     {
-        this._itemRepository = _itemRepository;
+        this.itemRepository = itemRepository;
     }
 
     /// <summary>
     /// Gets the itens.
     /// </summary>
     /// <returns>The itens.</returns>
-    public Dictionary<int, GenericItem> getItems()
+    public Dictionary<int, GenericItem> GetItems()
     {
-        if (this._itemRepository.items.Count < 0)
+        if (this.itemRepository.Items.Count < 0)
         {
             throw new Exception("No items were found!");
         }
-        return this._itemRepository.items;
+        return this.itemRepository.Items;
     }
 
     /// <summary>
@@ -32,22 +32,31 @@ public class ItemManager {
     /// </summary>
     /// <param name="identifier">The item identifier</param>
     /// <returns>The item object, or null if not found</returns>
-    public GenericItem getItem(int identifier)
+    public GenericItem GetItem(int identifier)
     {
-        if (!this._itemRepository.items.ContainsKey(identifier))
+        if (!itemRepository.Items.ContainsKey(identifier))
             return null;
-        return this._itemRepository.items[identifier];
+        return itemRepository.Items[identifier];
+    }
+
+    /// <summary>
+    /// Adds a new item into the repository
+    /// </summary>
+    /// <param name="item">The item for adding.</param>
+    public void AddItem(GenericItem item)
+    {
+        itemRepository.AddItem(item);
     }
 
     /// <summary>
     /// Loads the itens from repository.
     /// </summary>
     /// <returns><c>true</c>, if quests from repository was loaded, <c>false</c> otherwise.</returns>
-    public bool loadItemsFromAssets()
+    public bool LoadItemsFromAssets()
     {
-        this.tryLoadItems();
+        this.TryLoadItems();
 
-        if (this._itemRepository.items.Count > 0)
+        if (this.itemRepository.Items.Count > 0)
             return true;
 
         return false;
@@ -56,8 +65,8 @@ public class ItemManager {
     /// <summary>
     /// Tries the load items.
     /// </summary>
-    private void tryLoadItems()
+    private void TryLoadItems()
     {
-        this._itemRepository.loadItens();
+        this.itemRepository.LoadItens();
     }
 }

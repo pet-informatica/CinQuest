@@ -15,6 +15,18 @@ public class PreConditionManager
 	}
 
 	/// <summary>
+	/// Returns an preCondition in the repository by identifier
+	/// </summary>
+	/// <param name="identifier">The preCondition identifier</param>
+	/// <returns>The preCondition object, or null if not found</returns>
+	public IPreCondition getPreCondition(int identifier)
+	{
+		if (!this._preConditionRepository.preConditions.ContainsKey(identifier))
+			return null;
+		return this._preConditionRepository.preConditions[identifier];
+	}
+
+	/// <summary>
 	/// Gets the pre conditions.
 	/// </summary>
 	/// <returns>The pre conditions.</returns>

@@ -7,12 +7,10 @@ using System.Collections.Generic;
 /// </summary>
 public class GenericItemRepository : IGenericItemRepository
 {
-    private Dictionary<int, GenericItem> _items;
+    private Dictionary<int, GenericItem> items;
 
-    public Dictionary<int, GenericItem> items {
-        get {
-            return _items;
-        }
+    public Dictionary<int, GenericItem> Items {
+        get { return items; }
     }
 
     /// <summary>
@@ -20,7 +18,7 @@ public class GenericItemRepository : IGenericItemRepository
     /// </summary>
     /// <param name="item">The item for adding</param>
     /// <returns>Returns false if the repository alredy contains an item with that identifier. True otherwise.</returns>
-    public bool addItem(GenericItem item)
+    public bool AddItem(GenericItem item)
     {
         if (items.ContainsKey(item.identifier))
             return false;
@@ -28,10 +26,10 @@ public class GenericItemRepository : IGenericItemRepository
         return true;
     }
 
-    public bool loadItens()
+    public bool LoadItens()
     {
         //TODO: LOAD ITENS FROM PROJECT ASSETS VIA CODE
-        _items = new Dictionary<int, GenericItem>();
+        items = new Dictionary<int, GenericItem>();
         return false;
     }
 
@@ -40,7 +38,7 @@ public class GenericItemRepository : IGenericItemRepository
     /// </summary>
     /// <param name="identifier">The identifier of the item to remove</param>
     /// <returns>Returns false if the repository doens't have an item with that identifier. True otherwise.</returns>
-    public bool removeItem(int identifier)
+    public bool RemoveItem(int identifier)
     {
         return items.Remove(identifier);
     }
@@ -50,7 +48,7 @@ public class GenericItemRepository : IGenericItemRepository
     /// </summary>
     /// <param name="identifier">The identifier of the item for searching</param>
     /// <returns>Returns the Item found, or null if there is no item with that identifier.</returns>
-    public GenericItem searchItem(int identifier)
+    public GenericItem SearchItem(int identifier)
     {
         return items[identifier];
     }
@@ -61,9 +59,9 @@ public class GenericItemRepository : IGenericItemRepository
     /// <param name="identifier">The item identifier</param>
     /// <param name="item">The new item object updated</param>
     /// <returns>Returns false if the is no item with that identifier to update, or true if it was sucessfully updated</returns>
-    public bool updateItem(int identifier, GenericItem item)
+    public bool UpdateItem(int identifier, GenericItem item)
     {
-        GenericItem retrieveItem = this.searchItem(identifier);
+        GenericItem retrieveItem = this.SearchItem(identifier);
         if (retrieveItem == null)
             return false;
         retrieveItem = item;

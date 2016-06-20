@@ -8,33 +8,48 @@ using System.Collections.Generic;
 /// classes like InterativeSpeaker for setting the conditions under wich
 /// those dialogs are going to show off.
 /// </summary>
-public abstract class Speaker : MonoBehaviour
+public class Speaker : MonoBehaviour
 {
     public List<DialogTree> dialogs;
     public int defaultDialogIndex;
     protected DialogManager dialogManager;
-
-    /// <summary>
-    /// Creates a new Speaker
-    /// </summary>
-    /// <param name="dialogs">The list of dialog trees it can speak</param>
-    public Speaker(List<DialogTree> dialogs)
-    {
-        this.dialogs = dialogs;
-        this.defaultDialogIndex = 0;
-    }
 
     void Start()
     {
         this.dialogManager = GameObject.FindGameObjectWithTag("DialogBox").GetComponent<DialogManager>();
     }
 
-    /// <summary>
-    /// Communicates with the DialogManager in the ItemManager to try to start a dialog
-    /// </summary>
-    /// <param name="dialog">The dialog tree to speak</param>
-    public void Speak(DialogTree dialog)
+    public void SetDialog(DialogTree dialog)
     {
-        dialogManager.Speak(dialog);
+        dialogs = new List<DialogTree>();
+        dialogs.Add(dialog);
+        defaultDialogIndex = 0;
+    }
+
+    /// <summary>
+    /// Communicates with the DialogManager in the ItemManager to try to start a dialog.
+    /// </summary>
+    /// <param name="dialog">The dialog tree to speak.</param>
+    public virtual void Speak()
+    {
+        dialogManager.Speak(dialogs[defaultDialogIndex], this);
+    }
+
+    /// <summary>
+    /// Communicates with the DialogManager in the ItemManager to try to start a dialog.
+    /// </summary>
+    /// <param name="dialog">The dialog tree to speak.</param>
+    public virtual void Speak(DialogTree dialog)
+    {
+        dialogManager.Speak(dialog, this);
+    }
+
+    /// <summary>
+    /// Called everytime a conversation is finished. Can be extended for executing actions.
+    /// </summary>
+    /// <param name="endingNode">The last node speaked before the conversation ended.</param>
+    public virtual void EndConversation(DialogTreeNode endingNode)
+    {
+        
     }
 }
