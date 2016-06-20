@@ -42,14 +42,14 @@ public class ItemManager {
 	public void AddItemAtUser(int itemID)
 	{
 		User user = User.Instance;
-		user.AddItem (itemID);
+		user.AddItemID(itemID);
 		//TODO: synchronize with the inventoryController, but, for now, its testable.
 	}
 
 	public void RemoveItemFromUser(int itemID)
 	{
 		User user = User.Instance;
-		user.RemoveItem(itemID);
+		user.RemoveItemID(itemID);
 		//TODO: synchronize with the inventoryController, but, for now, its testable.
 	}
 

@@ -40,6 +40,16 @@ public class User  : MonoBehaviour
         get { return this.itemsID; }
     }
 
+	List<GenericItem> items;
+	/// <summary>
+	/// A list of GenericItem containing all the user items.
+	/// </summary>
+	/// <value>The items.</value>
+	public List<GenericItem> Items 
+	{
+		get { return this.items; }
+	}
+
 	void Awake () 
 	{
 		if (instance == null) {
@@ -53,7 +63,8 @@ public class User  : MonoBehaviour
 	private void LoadNewUser (){
 		instance = this;
 		nick = "peaonunes";
-		quests = new Dictionary<int,Quest> ();
+		quests = new Dictionary<int,Quest>();
+		items = new List<GenericItem>();
         itemsID = new List<int>();
         LoadQuestsFromManager();
 	}
@@ -78,17 +89,33 @@ public class User  : MonoBehaviour
         return null;
     }
 	/// <summary>
+	/// Adds the item.
+	/// </summary>
+	/// <param name="item">Item.</param>
+	public void AddItem(GenericItem item) 
+	{
+		this.items.Add (item);
+	}
+	/// <summary>
+	/// Removes the item.
+	/// </summary>
+	/// <param name="item">Item.</param>
+	public void RemoveItem(GenericItem item)
+	{
+		this.items.Remove (item);
+	}
+	/// <summary>
 	/// Adds the identifier of a specific item into the User's list of items ids.
 	/// </summary>
 	/// <param name="itemID">The item's identifier that will be added to the list.</param>
-	public void AddItem(int itemID){
+	public void AddItemID(int itemID){
 		this.itemsID.Add(itemID);
     }
 	/// <summary>
 	/// Removes the identifier of a specific item from the User's list of items ids.
 	/// </summary>
 	/// <param name="itemID">The item's identifier that will be removed from the list.</param>
-	public void RemoveItem(int itemID){
+	public void RemoveItemID(int itemID){
 		this.itemsID.Remove(itemID);
 	}
 }
