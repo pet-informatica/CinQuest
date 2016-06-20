@@ -6,7 +6,7 @@ using System.Collections;
 [Serializable]
 public class InventoriableItem : GenericItem 
 {
-	public Texture2D icon;
+	public Sprite icon;
 	public string description;
 	public bool disposable;
 }
