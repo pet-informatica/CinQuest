@@ -1,4 +1,6 @@
-﻿using System;
+﻿using UnityEditor;
+using UnityEngine;
+using System;
 using System.Collections.Generic;
 
 /// <summary>
@@ -28,9 +30,25 @@ public class GenericItemRepository : IGenericItemRepository
 
     public bool LoadItens()
     {
-        //TODO: LOAD ITENS FROM PROJECT ASSETS VIA CODE
+        //UNDER CONSTRUCTION
         items = new Dictionary<int, GenericItem>();
-        return false;
+		if (items.Count == 0)
+			Console.Write ("No items\n");
+
+		UnityEngine.Object[] data;
+		data = AssetDatabase.LoadAllAssetsAtPath("Assets/Prefabs/Items");
+
+		foreach (GenericItem i in data) {
+			items.Add (i.Identifier, i);
+			Console.Write (i.Name + "\n");
+		}
+
+		if (items.Count > 0) {
+			Console.Write ("Deu certo!\n");
+			return true;
+		} 
+
+		return false;
     }
 
     /// <summary>
