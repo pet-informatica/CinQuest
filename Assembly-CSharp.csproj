@@ -45,15 +45,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\AlertBox\AlertBox.cs" />
      <Compile Include="Assets\Scripts\Board Text Manager\BoardTextManager.cs" />
      <Compile Include="Assets\Scripts\Choose Character\CharacterChooserManager.cs" />
      <Compile Include="Assets\Scripts\Choose Character\CharacterSlot.cs" />
      <Compile Include="Assets\Scripts\DialogManager\DialogManager.cs" />
-     <Compile Include="Assets\Scripts\DialogManager\DialogTree.cs" />
-     <Compile Include="Assets\Scripts\DialogManager\DialogTreeNode.cs" />
      <Compile Include="Assets\Scripts\DialogManager\EDialogPriority.cs" />
      <Compile Include="Assets\Scripts\DialogManager\InterativeSpeaker.cs" />
      <Compile Include="Assets\Scripts\DialogManager\Speaker.cs" />
+     <Compile Include="Assets\Scripts\DialogManager\Tree\DialogTree.cs" />
+     <Compile Include="Assets\Scripts\DialogManager\Tree\Nodes\ConditionalTreeNode.cs" />
+     <Compile Include="Assets\Scripts\DialogManager\Tree\Nodes\DialogTreeNode.cs" />
+     <Compile Include="Assets\Scripts\DialogManager\Tree\Nodes\EndQuestTreeNode.cs" />
+     <Compile Include="Assets\Scripts\DialogManager\Tree\Nodes\RewardTreeNode.cs" />
+     <Compile Include="Assets\Scripts\DialogManager\Tree\Nodes\StartQuestTreeNode.cs" />
      <Compile Include="Assets\Scripts\GameManager\CameraController.cs" />
      <Compile Include="Assets\Scripts\GameManager\CameraUnfollower.cs" />
      <Compile Include="Assets\Scripts\GameManager\GameManager.cs" />
@@ -61,7 +66,9 @@
      <Compile Include="Assets\Scripts\GameManager\PauseMenu.cs" />
      <Compile Include="Assets\Scripts\GameManager\PlayerSpawn.cs" />
      <Compile Include="Assets\Scripts\GameManager\SceneChanger.cs" />
+     <Compile Include="Assets\Scripts\GameManager\SceneNamer.cs" />
      <Compile Include="Assets\Scripts\GameManager\ScreenFader.cs" />
+     <Compile Include="Assets\Scripts\InteractiveObjects\Teleporter.cs" />
      <Compile Include="Assets\Scripts\InteractiveObjects\TicketGate.cs" />
      <Compile Include="Assets\Scripts\Inventory\InventoryItem.cs" />
      <Compile Include="Assets\Scripts\Inventory\InventoryManager.cs" />
@@ -79,9 +86,10 @@
      <Compile Include="Assets\Scripts\Maps\CinParking\Mover.cs" />
      <Compile Include="Assets\Scripts\Maps\CinParking\MoverSpawner.cs" />
      <Compile Include="Assets\Scripts\Maps\CinParking\Waypoint.cs" />
+     <Compile Include="Assets\Scripts\Minimap\Minimap.cs" />
      <Compile Include="Assets\Scripts\Minimap\MinimapArrow.cs" />
      <Compile Include="Assets\Scripts\Move.cs" />
-     <Compile Include="Assets\Scripts\NPCs\CrachaGiver.cs" />
+     <Compile Include="Assets\Scripts\NPCs\Recepcionist.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerFront.cs" />
      <Compile Include="Assets\Scripts\PreConditions\GenericPreCondition.cs" />
@@ -92,11 +100,11 @@
      <Compile Include="Assets\Scripts\PreConditions\Repository\PreConditionRepositoryXML.cs" />
      <Compile Include="Assets\Scripts\QuestSystem\Quest.cs" />
      <Compile Include="Assets\Scripts\QuestSystem\QuestBuilderXML.cs" />
-     <Compile Include="Assets\Scripts\QuestSystem\QuestButton.cs" />
      <Compile Include="Assets\Scripts\QuestSystem\QuestManager.cs" />
-     <Compile Include="Assets\Scripts\QuestSystem\QuestUI.cs" />
      <Compile Include="Assets\Scripts\QuestSystem\Repository\IQuestRepository.cs" />
      <Compile Include="Assets\Scripts\QuestSystem\Repository\QuestRepositoryXML.cs" />
+     <Compile Include="Assets\Scripts\QuestSystem\UI\QuestButton.cs" />
+     <Compile Include="Assets\Scripts\QuestSystem\UI\QuestUI.cs" />
      <Compile Include="Assets\Scripts\StartGame.cs" />
      <Compile Include="Assets\Scripts\User\User.cs" />
      <Compile Include="Assets\Scripts\Utils\EDatabaseStorageType.cs" />

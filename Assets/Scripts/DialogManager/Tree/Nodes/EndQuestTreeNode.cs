@@ -31,8 +31,8 @@ public class EndQuestTreeNode : DialogTreeNode
         if (quest != null && !quest.Done)
         {
             quest.Finish(user);
+			AlertBox.Instance.OpenWindow ("QUEST COMPLETED!", "Congratulations you have completed the " + quest.Name + " Quest!");
             GameManager.Instance.UpdateQuestUI();
         }
-           
     }
 }

@@ -17,11 +17,12 @@ public class Recepcionist : InterativeSpeaker
 
     public override void EndConversation(DialogTreeNode endingNode)
     {
-        if(endingNode.Response == "Catraca")
-        {
-            if (playerInside) teleporter.Teleport(player, true, destine);
-            else teleporter.Teleport(player, true, origin);
-        }
+		if (endingNode.Response == "Catraca") {
+			if (playerInside)
+				teleporter.Teleport (player, true, destine);
+			else
+				teleporter.Teleport (player, true, origin);
+		}
     }
 
     void OnTriggerEnter2D(Collider2D collider)
