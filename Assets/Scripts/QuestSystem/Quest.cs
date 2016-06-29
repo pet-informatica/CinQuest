@@ -78,6 +78,15 @@ public class Quest
         get { return rewards; }
     }
 
+	string questDoneMessage;
+	/// <summary>
+	/// Gets the message that should be displayed when you finalize a quest.
+	/// </summary>
+	/// <value>The quest done message.</value>
+	public string QuestDoneMessage {
+		get { return questDoneMessage; }
+	}
+
 	public Quest() {}
 
     /// <summary>
@@ -90,7 +99,8 @@ public class Quest
     /// <param name="preconditionsToUnlock">A list of IPrecondition the user must match in order to unlock this quest.</param>
     /// <param name="preconditionsToDone">A list of IPrecondition the user must match in order to finish this quest.</param>
     /// <param name="rewards">A list o GenericItem the user will be rewarded when finishing this quest.</param>
-	public Quest (int identifier, string name, string description, bool unlocked, List<IPreCondition> preconditionsToUnlock, List<IPreCondition> preconditionsToDone, List<GenericItem> rewards)
+	/// <param name="questDoneMessage">Gets the message that should be displayed when you finalize a quest.</param>
+	public Quest (int identifier, string name, string description, bool unlocked, List<IPreCondition> preconditionsToUnlock, List<IPreCondition> preconditionsToDone, List<GenericItem> rewards, string questDoneMessage)
 	{
 		this.identifier = identifier;
 		this.name = name;
@@ -100,6 +110,7 @@ public class Quest
 		this.preconditionsToUnlock = preconditionsToUnlock;
 		this.preconditionsToDone = preconditionsToDone;
 		this.rewards = rewards;
+		this.questDoneMessage = questDoneMessage;
 	}
 
     /// <summary>
