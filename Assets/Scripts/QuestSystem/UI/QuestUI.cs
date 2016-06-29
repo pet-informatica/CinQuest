@@ -15,6 +15,7 @@ public class QuestUI : MonoBehaviour
     public GameObject questButton;
     public Text questInfoName;
     public Text questInfoDescription;
+	//public Text questDone;
     RectTransform questBoxTransform;
     bool opened;
     float questButtonHeight;
@@ -123,6 +124,7 @@ public class QuestUI : MonoBehaviour
     {
         questInfoName.text = quest.Name;
         questInfoDescription.text = quest.Description;
+		//questDone.text = quest.Done ? GameConstants.QUEST_COMPLETED : GameConstants.QUEST_NOT_COMPLETED;
         questInfo.SetActive(true);
     }
 }

@@ -11,5 +11,6 @@ public class GameConstants
 	public const string PRECONDITION_COLLECTION_PATH = "PreConditionCollection";
 
 	// Others
-	public const string QUEST_COMPLETE = "Quest Completa!";
+	public const string QUEST_COMPLETED = "Quest Completa!";
+	public const string QUEST_NOT_COMPLETED = "Quest não completa!";
 }
