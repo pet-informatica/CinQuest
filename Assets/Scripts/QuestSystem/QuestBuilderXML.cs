@@ -55,7 +55,9 @@ public class QuestBuilderXML
             r1.Add(GameManager.Instance.itemManager.GetItem(index));
 		}
 
-		newQuest = new Quest (identifier, name, description, unlocked, p1, p2, r1);
+		string questDoneMessage = quest.Element ("QuestDoneMessage").Value;
+
+		newQuest = new Quest (identifier, name, description, unlocked, p1, p2, r1,questDoneMessage);
 	
 		return newQuest;
 	}
@@ -63,7 +65,7 @@ public class QuestBuilderXML
 
 /*  EXAMPLE OF A XML:
  * 
- * <Quest>
+ * <!-- <Quest>
 		<Identifier>1</Identifier>
 		<Name>TestQuest</Name>
 		<Description>This is a test quest.</Description>
@@ -78,6 +80,8 @@ public class QuestBuilderXML
 			<Reward identifier="1"/>
 		</Rewards>
 	</Quest>
+
+	-->
 
  * 
  * */

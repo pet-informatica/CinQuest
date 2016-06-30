@@ -31,6 +31,7 @@
 		<Rewards>
 			<Reward identifier="1"/>
 		</Rewards>
+		<QuestDoneMessage>	Parabéns, agora você tem um crachá e é verdadeiramente um aluno do CIn! Nada de ficar pedindo pra seu Edson para abrir para você! Lembre-se de cuidar bem dele... May the crachá be with you!</QuestDoneMessage>
 	</Quest>
 
 </QuestCollection>
