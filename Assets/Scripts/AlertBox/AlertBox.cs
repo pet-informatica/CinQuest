@@ -15,6 +15,8 @@ public class AlertBox : MonoBehaviour
 	public Text textTitle;
 	public Image alertBox;
 	public Text alertText;
+    public Image closeBtn;
+    public Image closeRing;
 	public GameObject alertBoxObject;
 	public bool isOpen { get; private set; }
 
@@ -37,26 +39,9 @@ public class AlertBox : MonoBehaviour
 	{
 		if (instance == null) {
 			instance = this;
-			UpdateAlertBoxContent ("Default", "None...");
-			isOpen = false;
-			alertBoxObject.SetActive (false);
+            isOpen = true;
+            StartCoroutine(CloseBox(0.01f));
 		}
-	}
-
-	/// <summary>
-	/// Start this instance.
-	/// </summary>
-	void Start ()
-	{
-		alertBoxObject.SetActive (false);
-	}
-
-	/// <summary>
-	/// Update this instance.
-	/// </summary>
-	void Update(){
-		if (!isOpen)
-			alertBoxObject.SetActive (isOpen);
 	}
 
 	/// <summary>
@@ -65,24 +50,33 @@ public class AlertBox : MonoBehaviour
 	public void OpenWindow(string title, string message)
 	{
 		if (!checkWindowStatus () && checkIfAlertBoxIsOnScene()) {
-			isOpen = true;
+            isOpen = true;
 			alertBoxObject.SetActive(isOpen);
-			StartCoroutine(GUIFade(1f, 0f, 0.01f));
-			UpdateAlertBoxContent(title, message);
-		}
+            UpdateAlertBoxContent(title, message);
+            StartCoroutine(OpenBox(0.25f));
+        }
 	}
+
+    /// <summary>
+    /// Updates this instance 
+    /// </summary>
+    void Update()
+    {
+        textTitle.color = new Color(1f, 1f, 1f, guiAlpha);
+        alertBox.color = new Color(1f, 1f, 1f, guiAlpha);
+        alertText.color = new Color(1f, 1f, 1f, guiAlpha);
+        closeBtn.color = new Color(1f, 1f, 1f, guiAlpha);
+        closeRing.color = new Color(1f, 1f, 1f, guiAlpha);
+    }
 
 	/// <summary>
 	/// Closes the info.
 	/// </summary>
 	public void CloseInfo()
 	{
-		if (checkWindowStatus () && checkIfAlertBoxIsOnScene()) {
-			StartCoroutine(GUIFade(1f, 0f, 0.01f));
-			UpdateAlertBoxContent ("Default", "None...");
-			isOpen = false;
-			alertBoxObject.SetActive(isOpen);
-		}
+        if (checkWindowStatus () && checkIfAlertBoxIsOnScene()) {
+            StartCoroutine(CloseBox(0.25f));  
+        }
 	}
 
 	/// <summary>
@@ -134,4 +128,28 @@ public class AlertBox : MonoBehaviour
 
 		this.guiAlpha = end;
 	}
+
+    /// <summary>
+    /// Open the UI alert box
+    /// </summary>
+    /// <param name="length">The time in seconds it will take for the box to fade in</param>
+    /// <returns></returns>
+    private IEnumerator OpenBox(float length)
+    {
+        StartCoroutine(GUIFade(0.0f, 1.0f, length));
+        yield return null;
+    }
+
+    /// <summary>
+    /// Waits for the GUIFade to completely take box out of screen, and then set it's gameobject o inactive.
+    /// </summary>
+    /// <param name="length">The time it will take in seconds for fading out.</param>
+    /// <returns></returns>
+    private IEnumerator CloseBox(float length)
+    {
+        isOpen = false;
+        StartCoroutine(GUIFade(1.0f, 0.0f, length));
+        yield return new WaitForSeconds(length);
+        alertBoxObject.SetActive(isOpen);
+    }
 }
