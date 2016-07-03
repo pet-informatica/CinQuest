@@ -49,8 +49,7 @@ public class User  : MonoBehaviour
 	{
 		get { return this.items; }
 	}
-
-<<<<<<< HEAD
+		
 	InventoryModel inventory;
 	/// <summary>
 	/// The inventory model with the lists of items and tokens.
@@ -61,9 +60,7 @@ public class User  : MonoBehaviour
 	{
 		get { return this.inventory; }
 	}
-
-=======
->>>>>>> origin/itemManager
+		
 	void Awake () 
 	{
 		if (instance == null) {
