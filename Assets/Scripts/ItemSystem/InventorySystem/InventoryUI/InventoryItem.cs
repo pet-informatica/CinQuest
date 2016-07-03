@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class InventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler {
 
@@ -9,6 +10,8 @@ public class InventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
 	public static bool noParent;
 	Transform originalParent;
 	Vector3 originalSlot;
+	public string name = "Elmo do amigo Petiano.";
+	public string description = "Um elmo estiloso da colecao de chapeus de Peao.\n\r Use-o com sabedoria.";
 
 	void Start () {
 
@@ -39,5 +42,6 @@ public class InventoryItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
 	}
 
 	void Update () {
+		
 	}
 }

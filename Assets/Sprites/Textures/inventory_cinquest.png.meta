@@ -1,73 +1,73 @@
 fileFormatVersion: 2
 guid: 43ae53ff3e92fcc478a5b2b889598ba2
-timeCreated: 1464668152
+timeCreated: 1467582146
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: inventory_cinquest
-    21300002: inventory_slot_top_left
-    21300004: inventory_cinquest_2
-    21300006: inventory_cinquest_3
-    21300008: inventory_cinquest_4
-    21300010: inventory_cinquest_5
-    21300012: inventory_cinquest_6
-    21300014: inventory_cinquest_7
-    21300016: inventory_slot_center
-    21300018: inventory_cinquest_9
-    21300020: inventory_cinquest_10
-    21300022: inventory_cinquest_11
-    21300024: inventory_cinquest_12
-    21300026: inventory_cinquest_13
-    21300028: inventory_cinquest_14
-    21300030: inventory_cinquest_15
-    21300032: inventory_cinquest_16
-    21300034: inventory_cinquest_17
-    21300036: inventory_cinquest_18
-    21300038: inventory_cinquest_19
-    21300040: inventory_cinquest_20
+    21300000: inventory
+    21300002: normal_slot_top_left
+    21300004: normal_slot_top_middle
+    21300006: normal_slot_top_right
+    21300008: highlighted_slot_top_left
+    21300010: highlighted_slot_top_middle
+    21300012: highlighted_slot_top_right
+    21300014: normal_slot_middle_left
+    21300016: normal_slot_middle
+    21300018: normal_slot_middle_right
+    21300020: highlighted_slot_middle_left
+    21300022: highlighted_slot_middle
+    21300024: highlighted_slot_middle_right
+    21300026: normal_slot_bottom_left
+    21300028: normal_slot_bottom_middle
+    21300030: normal_slot_bottom_right
+    21300032: highlighted_slot_bottom_left
+    21300034: highlighted_slot_bottom_middle
+    21300036: highlighted_slot_bottom_right
+    21300038: exit_button
+    21300040: selected_slot_top_left
     21300042: inventory_cinquest_21
-    21300044: inventory_cinquest_22
+    21300044: selected_slot_top_middle
     21300046: inventory_cinquest_23
     21300048: inventory_cinquest_24
-    21300050: inventory_cinquest_25
-    21300052: inventory_cinquest_26
+    21300050: selected_slot_top_right
+    21300052: exit_button_highlighted
     21300054: inventory_cinquest_27
     21300056: inventory_cinquest_28
     21300058: inventory_cinquest_29
     21300060: inventory_cinquest_30
     21300062: inventory_cinquest_31
     21300064: inventory_cinquest_32
-    21300066: inventory_cinquest_33
-    21300068: inventory_cinquest_34
+    21300066: exit_button_selected
+    21300068: selected_cinquest_34
     21300070: inventory_cinquest_35
-    21300072: inventory_cinquest_36
+    21300072: selected_slot_middle
     21300074: inventory_cinquest_37
     21300076: inventory_cinquest_38
-    21300078: inventory_cinquest_39
+    21300078: selected_slot_middle_right
     21300080: inventory_cinquest_40
     21300082: inventory_cinquest_41
     21300084: inventory_cinquest_42
     21300086: inventory_cinquest_43
     21300088: inventory_cinquest_44
     21300090: inventory_cinquest_45
-    21300092: inventory_cinquest_46
+    21300092: selected_slot_bottom_left
     21300094: inventory_cinquest_47
-    21300096: inventory_cinquest_48
+    21300096: selected_slot_bottom_middle
     21300098: inventory_cinquest_49
     21300100: inventory_cinquest_50
-    21300102: inventory_cinquest_51
-    21300104: inventory_item_test
-    21300106: inventory_cinquest_53
-    21300108: inventory_cinquest_54
-    21300110: inventory_cinquest_55
-    21300112: inventory_cinquest_56
-    21300114: inventory_cinquest_57
-    21300116: inventory_cinquest_58
-    21300118: inventory_cinquest_59
-    21300120: inventory_cinquest_60
-    21300122: inventory_cinquest_61
-    21300124: inventory_cinquest_62
-    21300126: inventory_cinquest_63
+    21300102: selected_slot_bottom_right
+    21300104: inventory_item_test_1
+    21300106: inventory_item_test_2
+    21300108: inventory_item_test_3
+    21300110: inventory_item_test_4
+    21300112: button
+    21300114: inventory_item_test_5
+    21300116: inventory_item_test_6
+    21300118: inventory_item_test_7
+    21300120: inventory_item_test_8
+    21300122: inventory_item_test_9
+    21300124: button_highlighted
+    21300126: button_selected
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -114,7 +114,7 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: inventory_cinquest
+    - name: inventory
       rect:
         serializedVersion: 2
         x: 41
@@ -168,7 +168,7 @@ TextureImporter:
         - {x: 63, y: -163.5}
         - {x: 64, y: -160.5}
         - {x: 64, y: -91.5}
-    - name: inventory_slot_top_left
+    - name: normal_slot_top_left
       rect:
         serializedVersion: 2
         x: 514
@@ -183,7 +183,7 @@ TextureImporter:
         - {x: -19, y: -19}
         - {x: 19, y: -19}
         - {x: 19, y: 19}
-    - name: inventory_cinquest_2
+    - name: normal_slot_top_middle
       rect:
         serializedVersion: 2
         x: 553
@@ -198,7 +198,7 @@ TextureImporter:
         - {x: -18, y: -19}
         - {x: 18, y: -19}
         - {x: 18, y: 19}
-    - name: inventory_cinquest_3
+    - name: normal_slot_top_right
       rect:
         serializedVersion: 2
         x: 590
@@ -213,7 +213,7 @@ TextureImporter:
         - {x: -19, y: -19}
         - {x: 19, y: -19}
         - {x: 19, y: 19}
-    - name: inventory_cinquest_4
+    - name: highlighted_slot_top_left
       rect:
         serializedVersion: 2
         x: 766
@@ -228,7 +228,7 @@ TextureImporter:
         - {x: -19, y: -19}
         - {x: 19, y: -19}
         - {x: 19, y: 19}
-    - name: inventory_cinquest_5
+    - name: highlighted_slot_top_middle
       rect:
         serializedVersion: 2
         x: 805
@@ -243,10 +243,10 @@ TextureImporter:
         - {x: -18, y: -19}
         - {x: 18, y: -19}
         - {x: 18, y: 19}
-    - name: inventory_cinquest_6
+    - name: highlighted_slot_top_right
       rect:
         serializedVersion: 2
-        x: 842
+        x: 843
         y: 687
         width: 38
         height: 38
@@ -257,8 +257,9 @@ TextureImporter:
       - - {x: -19, y: 19}
         - {x: -19, y: -19}
         - {x: 19, y: -19}
-        - {x: 19, y: 19}
-    - name: inventory_cinquest_7
+        - {x: 19, y: 18}
+        - {x: 18, y: 19}
+    - name: normal_slot_middle_left
       rect:
         serializedVersion: 2
         x: 514
@@ -273,7 +274,7 @@ TextureImporter:
         - {x: -19, y: -18}
         - {x: 19, y: -18}
         - {x: 19, y: 18}
-    - name: inventory_slot_center
+    - name: normal_slot_middle
       rect:
         serializedVersion: 2
         x: 553
@@ -288,7 +289,7 @@ TextureImporter:
         - {x: -18, y: -18}
         - {x: 18, y: -18}
         - {x: 18, y: 18}
-    - name: inventory_cinquest_9
+    - name: normal_slot_middle_right
       rect:
         serializedVersion: 2
         x: 590
@@ -303,7 +304,7 @@ TextureImporter:
         - {x: -19, y: -18}
         - {x: 19, y: -18}
         - {x: 19, y: 18}
-    - name: inventory_cinquest_10
+    - name: highlighted_slot_middle_left
       rect:
         serializedVersion: 2
         x: 766
@@ -318,7 +319,7 @@ TextureImporter:
         - {x: -19, y: -18}
         - {x: 19, y: -18}
         - {x: 19, y: 18}
-    - name: inventory_cinquest_11
+    - name: highlighted_slot_middle
       rect:
         serializedVersion: 2
         x: 805
@@ -333,7 +334,7 @@ TextureImporter:
         - {x: -18, y: -18}
         - {x: 18, y: -18}
         - {x: 18, y: 18}
-    - name: inventory_cinquest_12
+    - name: highlighted_slot_middle_right
       rect:
         serializedVersion: 2
         x: 842
@@ -348,7 +349,7 @@ TextureImporter:
         - {x: -19, y: -18}
         - {x: 19, y: -18}
         - {x: 19, y: 18}
-    - name: inventory_cinquest_13
+    - name: normal_slot_bottom_left
       rect:
         serializedVersion: 2
         x: 514
@@ -363,7 +364,7 @@ TextureImporter:
         - {x: -19, y: -19}
         - {x: 19, y: -19}
         - {x: 19, y: 19}
-    - name: inventory_cinquest_14
+    - name: normal_slot_bottom_middle
       rect:
         serializedVersion: 2
         x: 553
@@ -378,7 +379,7 @@ TextureImporter:
         - {x: -18, y: -19}
         - {x: 18, y: -19}
         - {x: 18, y: 19}
-    - name: inventory_cinquest_15
+    - name: normal_slot_bottom_right
       rect:
         serializedVersion: 2
         x: 590
@@ -393,7 +394,7 @@ TextureImporter:
         - {x: -19, y: -19}
         - {x: 19, y: -19}
         - {x: 19, y: 19}
-    - name: inventory_cinquest_16
+    - name: highlighted_slot_bottom_left
       rect:
         serializedVersion: 2
         x: 766
@@ -408,7 +409,7 @@ TextureImporter:
         - {x: -19, y: -19}
         - {x: 19, y: -19}
         - {x: 19, y: 19}
-    - name: inventory_cinquest_17
+    - name: highlighted_slot_bottom_middle
       rect:
         serializedVersion: 2
         x: 805
@@ -423,7 +424,7 @@ TextureImporter:
         - {x: -18, y: -19}
         - {x: 18, y: -19}
         - {x: 18, y: 19}
-    - name: inventory_cinquest_18
+    - name: highlighted_slot_bottom_right
       rect:
         serializedVersion: 2
         x: 842
@@ -438,7 +439,7 @@ TextureImporter:
         - {x: -19, y: -19}
         - {x: 19, y: -19}
         - {x: 19, y: 19}
-    - name: inventory_cinquest_19
+    - name: exit_button
       rect:
         serializedVersion: 2
         x: 571
@@ -449,7 +450,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: inventory_cinquest_20
+    - name: selected_slot_top_left
       rect:
         serializedVersion: 2
         x: 702
@@ -464,22 +465,7 @@ TextureImporter:
         - {x: -19, y: -19}
         - {x: 19, y: -19}
         - {x: 19, y: 19}
-    - name: inventory_cinquest_21
-      rect:
-        serializedVersion: 2
-        x: 741
-        y: 527
-        width: 36
-        height: 38
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 19}
-        - {x: -18, y: -19}
-        - {x: 18, y: -19}
-        - {x: 18, y: 19}
-    - name: inventory_cinquest_22
+    - name: selected_slot_top_middle
       rect:
         serializedVersion: 2
         x: 778
@@ -494,37 +480,7 @@ TextureImporter:
         - {x: -18, y: -19}
         - {x: 18, y: -19}
         - {x: 18, y: 19}
-    - name: inventory_cinquest_23
-      rect:
-        serializedVersion: 2
-        x: 815
-        y: 527
-        width: 36
-        height: 38
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 19}
-        - {x: -18, y: -19}
-        - {x: 18, y: -19}
-        - {x: 18, y: 19}
-    - name: inventory_cinquest_24
-      rect:
-        serializedVersion: 2
-        x: 852
-        y: 527
-        width: 36
-        height: 38
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 19}
-        - {x: -18, y: -19}
-        - {x: 18, y: -19}
-        - {x: 18, y: 19}
-    - name: inventory_cinquest_25
+    - name: selected_slot_top_right
       rect:
         serializedVersion: 2
         x: 889
@@ -539,7 +495,7 @@ TextureImporter:
         - {x: -19, y: -19}
         - {x: 19, y: -19}
         - {x: 19, y: 19}
-    - name: inventory_cinquest_26
+    - name: exit_button_highlighted
       rect:
         serializedVersion: 2
         x: 571
@@ -550,97 +506,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: inventory_cinquest_27
-      rect:
-        serializedVersion: 2
-        x: 702
-        y: 490
-        width: 38
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -19, y: 18}
-        - {x: -19, y: -18}
-        - {x: 19, y: -18}
-        - {x: 19, y: 18}
-    - name: inventory_cinquest_28
-      rect:
-        serializedVersion: 2
-        x: 741
-        y: 490
-        width: 36
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: inventory_cinquest_29
-      rect:
-        serializedVersion: 2
-        x: 778
-        y: 490
-        width: 36
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: inventory_cinquest_30
-      rect:
-        serializedVersion: 2
-        x: 815
-        y: 490
-        width: 36
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: inventory_cinquest_31
-      rect:
-        serializedVersion: 2
-        x: 852
-        y: 490
-        width: 36
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: inventory_cinquest_32
-      rect:
-        serializedVersion: 2
-        x: 889
-        y: 490
-        width: 38
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -19, y: 18}
-        - {x: -19, y: -18}
-        - {x: 19, y: -18}
-        - {x: 19, y: 18}
-    - name: inventory_cinquest_33
+    - name: exit_button_selected
       rect:
         serializedVersion: 2
         x: 571
@@ -651,7 +517,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: inventory_cinquest_34
+    - name: selected_cinquest_34
       rect:
         serializedVersion: 2
         x: 702
@@ -666,22 +532,7 @@ TextureImporter:
         - {x: -19, y: -18}
         - {x: 19, y: -18}
         - {x: 19, y: 18}
-    - name: inventory_cinquest_35
-      rect:
-        serializedVersion: 2
-        x: 741
-        y: 453
-        width: 36
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: inventory_cinquest_36
+    - name: selected_slot_middle
       rect:
         serializedVersion: 2
         x: 778
@@ -696,37 +547,7 @@ TextureImporter:
         - {x: -18, y: -18}
         - {x: 18, y: -18}
         - {x: 18, y: 18}
-    - name: inventory_cinquest_37
-      rect:
-        serializedVersion: 2
-        x: 815
-        y: 453
-        width: 36
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: inventory_cinquest_38
-      rect:
-        serializedVersion: 2
-        x: 852
-        y: 453
-        width: 36
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: inventory_cinquest_39
+    - name: selected_slot_middle_right
       rect:
         serializedVersion: 2
         x: 889
@@ -741,97 +562,7 @@ TextureImporter:
         - {x: -19, y: -18}
         - {x: 19, y: -18}
         - {x: 19, y: 18}
-    - name: inventory_cinquest_40
-      rect:
-        serializedVersion: 2
-        x: 702
-        y: 416
-        width: 38
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -19, y: 18}
-        - {x: -19, y: -18}
-        - {x: 19, y: -18}
-        - {x: 19, y: 18}
-    - name: inventory_cinquest_41
-      rect:
-        serializedVersion: 2
-        x: 741
-        y: 416
-        width: 36
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: inventory_cinquest_42
-      rect:
-        serializedVersion: 2
-        x: 778
-        y: 416
-        width: 36
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: inventory_cinquest_43
-      rect:
-        serializedVersion: 2
-        x: 815
-        y: 416
-        width: 36
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: inventory_cinquest_44
-      rect:
-        serializedVersion: 2
-        x: 852
-        y: 416
-        width: 36
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: inventory_cinquest_45
-      rect:
-        serializedVersion: 2
-        x: 889
-        y: 416
-        width: 38
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -19, y: 18}
-        - {x: -19, y: -18}
-        - {x: 19, y: -18}
-        - {x: 19, y: 18}
-    - name: inventory_cinquest_46
+    - name: selected_slot_bottom_left
       rect:
         serializedVersion: 2
         x: 702
@@ -846,22 +577,7 @@ TextureImporter:
         - {x: -19, y: -19}
         - {x: 19, y: -19}
         - {x: 19, y: 19}
-    - name: inventory_cinquest_47
-      rect:
-        serializedVersion: 2
-        x: 741
-        y: 377
-        width: 36
-        height: 38
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 19}
-        - {x: -18, y: -19}
-        - {x: 18, y: -19}
-        - {x: 18, y: 19}
-    - name: inventory_cinquest_48
+    - name: selected_slot_bottom_middle
       rect:
         serializedVersion: 2
         x: 778
@@ -876,37 +592,7 @@ TextureImporter:
         - {x: -18, y: -19}
         - {x: 18, y: -19}
         - {x: 18, y: 19}
-    - name: inventory_cinquest_49
-      rect:
-        serializedVersion: 2
-        x: 815
-        y: 377
-        width: 36
-        height: 38
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 19}
-        - {x: -18, y: -19}
-        - {x: 18, y: -19}
-        - {x: 18, y: 19}
-    - name: inventory_cinquest_50
-      rect:
-        serializedVersion: 2
-        x: 852
-        y: 377
-        width: 36
-        height: 38
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 19}
-        - {x: -18, y: -19}
-        - {x: 18, y: -19}
-        - {x: 18, y: 19}
-    - name: inventory_cinquest_51
+    - name: selected_slot_bottom_right
       rect:
         serializedVersion: 2
         x: 889
@@ -921,7 +607,7 @@ TextureImporter:
         - {x: -19, y: -19}
         - {x: 19, y: -19}
         - {x: 19, y: 19}
-    - name: inventory_item_test
+    - name: inventory_item_test_1
       rect:
         serializedVersion: 2
         x: 71
@@ -932,7 +618,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: inventory_cinquest_53
+    - name: inventory_item_test_2
       rect:
         serializedVersion: 2
         x: 103
@@ -943,7 +629,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: inventory_cinquest_54
+    - name: inventory_item_test_3
       rect:
         serializedVersion: 2
         x: 141
@@ -954,7 +640,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: inventory_cinquest_55
+    - name: inventory_item_test_4
       rect:
         serializedVersion: 2
         x: 169
@@ -965,7 +651,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: inventory_cinquest_56
+    - name: button
       rect:
         serializedVersion: 2
         x: 315
@@ -976,7 +662,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: inventory_cinquest_57
+    - name: inventory_item_test_5
       rect:
         serializedVersion: 2
         x: 73
@@ -987,7 +673,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: inventory_cinquest_58
+    - name: inventory_item_test_6
       rect:
         serializedVersion: 2
         x: 106
@@ -998,7 +684,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: inventory_cinquest_59
+    - name: inventory_item_test_7
       rect:
         serializedVersion: 2
         x: 135
@@ -1009,7 +695,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: inventory_cinquest_60
+    - name: inventory_item_test_8
       rect:
         serializedVersion: 2
         x: 150
@@ -1020,7 +706,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: inventory_cinquest_61
+    - name: inventory_item_test_9
       rect:
         serializedVersion: 2
         x: 172
@@ -1031,7 +717,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: inventory_cinquest_62
+    - name: button_highlighted
       rect:
         serializedVersion: 2
         x: 314
@@ -1042,7 +728,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: inventory_cinquest_63
+    - name: button_selected
       rect:
         serializedVersion: 2
         x: 315
