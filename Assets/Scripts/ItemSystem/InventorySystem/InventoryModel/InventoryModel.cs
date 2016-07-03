@@ -6,8 +6,8 @@ using System.Collections;
 /// Developed by: Lucas (lss5)
 /// </summary>
 public class InventoryModel : MonoBehaviour {
-	public Dictionary<int, Item> items { get; set; }
-	private Dictionary<int, Token> tokens { get; set; }
+	public List<Item> items { get; set; }
+	private List<Token> tokens { get; set; }
 
 	/// <summary>
 	/// Determines whether the GenericItem is a Token or not.
@@ -23,10 +23,10 @@ public class InventoryModel : MonoBehaviour {
 		GameManager gameManager = GameManager.Instance;
 		GenericItem temp = gameManager.GetComponent<ItemManager>().GetItem(identifier);
 		if (IsToken (temp)) {
-			tokens.Add(temp.Identifier, (Token)temp);
+			tokens.Add((Token)temp);
 			return true;
 		} else {
-			items.Add(temp.Identifier, (Item)temp);
+			items.Add((Item)temp);
 			return true;
 		}
 		return false;
@@ -35,28 +35,10 @@ public class InventoryModel : MonoBehaviour {
 	bool RemoveItem (int identifier) {
 		GameManager gameManager = GameManager.Instance;
 		GenericItem temp = gameManager.GetComponent<ItemManager>().GetItem(identifier);
-		if (temp == null)
-			return false;
 		if (IsToken (temp)) {
-			return tokens.Remove(identifier);
+			return tokens.Remove((Token)temp);
 		} else {
-			return items.Remove(identifier);
+			return items.Remove((Item)temp);
 		}
-	}
-
-	bool SearchAtItems (int identifier) {
-		return items.ContainsKey (identifier);
-	}
-
-	bool SearchArTokens (int identifier) {
-		return tokens.ContainsKey (identifier);
-	}
-	/// <summary>
-	/// Checks if the user has the GenericItem.
-	/// </summary>
-	/// <returns><c>true</c>, if item was checked, <c>false</c> otherwise.</returns>
-	/// <param name="identifier">Identifier.</param>
-	bool CheckItem (int identifier) {
-		return (SearchAtItems (identifier)) || (SearchArTokens (identifier));
 	}
 }
