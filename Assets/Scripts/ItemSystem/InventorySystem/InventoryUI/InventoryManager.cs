@@ -5,9 +5,12 @@ public class InventoryManager : MonoBehaviour {
 
 	public GameObject inventoryCanvas;
 
+
 	// Use this for initialization
 	void Start () {
 		inventoryCanvas.SetActive (false);
+		this.GetComponentInChildren<GameObject> ().GetComponentsInChildren<InventoryUI> ().Initialize ();
+
 	}
 	
 	// Update is called once per frame

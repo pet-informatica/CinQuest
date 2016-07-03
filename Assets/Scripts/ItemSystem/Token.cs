@@ -8,7 +8,7 @@ using System;
 /// </summary>
 [CreateAssetMenu(menuName = "ItemsSystem/Token")]
 [Serializable]
-public class TokenItem : GenericItem
+public class Token : GenericItem
 {
 	public bool active;
 

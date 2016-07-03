@@ -50,6 +50,17 @@ public class User  : MonoBehaviour
 		get { return this.items; }
 	}
 
+	InventoryModel inventory;
+	/// <summary>
+	/// The inventory model with the lists of items and tokens.
+	/// Every method that modifies the inventory status must be called through the InventoryController.
+	/// </summary>
+	/// <value>The inventory.</value>
+	public InventoryModel Inventory 
+	{
+		get { return this.inventory; }
+	}
+
 	void Awake () 
 	{
 		if (instance == null) {
