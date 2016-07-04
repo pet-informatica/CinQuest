@@ -1,7 +1,6 @@
 ﻿using System;
-using System.Collections;
-using UnityEngine.UI;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 /// <summary>
 /// The Global Map instanced classe
@@ -58,6 +57,28 @@ public class Map : MonoBehaviour
         }
 
         Scroll();
+        ClampPosition();
+    }
+
+    /// <summary>
+    /// Dont let the content get out of bounds inside canvas.
+    /// </summary>
+    void ClampPosition()
+    {
+        float twidth = (contentRect.rect.width) / 2.0f;
+        float theight = (contentRect.rect.height) / 2.0f;
+        twidth *= minZoom;
+        theight *= minZoom;
+        float cwidth = (contentRect.rect.width) * contentRect.localScale.x;
+        float cheight = (contentRect.rect.height) * contentRect.localScale.y;
+        float cx = contentRect.anchoredPosition.x;
+        float cy = contentRect.anchoredPosition.y;
+        float margin = Mathf.Pow(contentRect.localScale.x, 14);
+        Vector3 npos = new Vector3(Mathf.Clamp(cx, -Mathf.Abs(twidth - cwidth)- margin, Mathf.Abs(twidth - cwidth)+margin),
+                                   Mathf.Clamp(cy, -Mathf.Abs(theight - cheight)- margin, Mathf.Abs(theight - cheight)+ margin), 0);
+        contentRect.anchoredPosition = npos;
+                    
+                                    
     }
 
     /// <summary>
@@ -82,7 +103,8 @@ public class Map : MonoBehaviour
         {
             IsOpen = true;
             UI.SetActive(true);
-            Minimap.Instance.Close();
+            if (Minimap.Instance != null)
+                Minimap.Instance.Close();
         }
     }
 
@@ -95,7 +117,8 @@ public class Map : MonoBehaviour
         {
             IsOpen = false;
             UI.SetActive(false);
-            Minimap.Instance.Open();
+            if(Minimap.Instance != null)
+                Minimap.Instance.Open();
         }
     }
 
@@ -108,5 +131,21 @@ public class Map : MonoBehaviour
         if (UI == null)
             throw new NullReferenceException();
         return true;
+    }
+
+    /// <summary>
+    /// Called when the mouse is clicked. Useful for dragging UI.
+    /// </summary>
+    public void OnDrag(BaseEventData eventData)
+    {
+        var pointerData = eventData as PointerEventData;
+
+        if (pointerData == null) { return; }
+
+
+        var currentPosition = contentRect.position;
+        currentPosition.x += pointerData.delta.x;
+        currentPosition.y += pointerData.delta.y;
+        contentRect.position = currentPosition;
     }
 }
