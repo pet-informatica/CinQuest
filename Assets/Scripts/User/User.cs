@@ -22,6 +22,24 @@ public class User  : MonoBehaviour
         get { return nick; }
     }
 
+	string name;
+	/// <summary>
+	/// The player's name.
+	/// </summary>
+	public string Name 
+	{
+		get { return name; }
+	}
+
+	string course;
+	/// <summary>
+	/// The course of the player.
+	/// </summary>
+	public string Course 
+	{
+		get { return course; }
+	}
+
     Dictionary<int, Quest> quests;
     /// <summary>
     /// A dictionary indexed by quest identifier containing all the user quests.
@@ -74,6 +92,8 @@ public class User  : MonoBehaviour
 	private void LoadNewUser (){
 		instance = this;
 		nick = "peaonunes";
+		name = "Peao Nunes Galdino da Silveira";
+		course = "Computer Science";
 		quests = new Dictionary<int,Quest>();
 		items = new List<GenericItem>();
         itemsID = new List<int>();

@@ -11,9 +11,13 @@ public class InventoryUI : MonoBehaviour {
 	public Sprite[] spriteSheet;
 	public Text selectedItemTitle;
 	public Text selectedItemDescription;
+	public Text playerName;
+	public Text playerLogin;
+	public Text playerCourse;
 
 	// Use this for initialization
 	void Start () {
+
 		inventorySize = new Vector2(6, 5);
 		for (int i = 1; i <= inventorySize.x; i++) {
 			for (int j = 1; j <= inventorySize.y; j++) {
@@ -27,12 +31,21 @@ public class InventoryUI : MonoBehaviour {
 				slot.GetComponent<RectTransform> ().anchoredPosition = new Vector3 ((windowSize.x) / (inventorySize.x + 1) * i, (windowSize.y) / (inventorySize.y + 1) * -j, 0);
 			}
 		}
+
+		Debug.Log ("Parei aqui.");
+
+		User user = User.Instance;
+		playerName.text = user.Name;
+		playerLogin.text = GenerateLogin (user.Name);
+		playerCourse.text = user.Course;
+	
+		Debug.Log ("Depois aqui");
 	
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	
+		
 	}
 
 	void ChangeSlotSprite (GameObject slot, int i, int j) {
@@ -55,5 +68,18 @@ public class InventoryUI : MonoBehaviour {
 			slot.GetComponent<Image>().sprite = spriteSheet [5];
 		else slot.GetComponent<Image>().sprite = spriteSheet [4];
 
+	}
+
+	string GenerateLogin (string name) {
+		string login = "";
+		string[] names = name.Split (' ');
+		foreach (string str in names) {
+			if (str.Length > 3) {
+				string temp = str.ToLower ();
+				login += temp [0];
+			}
+		} 
+
+		return login;
 	}
 }
