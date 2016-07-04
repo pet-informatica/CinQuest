@@ -1,6 +1,8 @@
 ﻿using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using System.Collections.Generic;
+using UnityEngine.UI;
 
 /// <summary>
 /// The Global Map instanced classe
@@ -11,10 +13,15 @@ public class Map : MonoBehaviour
     public AudioClip openingSound;
     public GameObject UI;
     public GameObject content;
+    public GameObject description;
     public float minZoom = 0.5f;
     public float maxZoom = 2.0f;
     public float zoomSpeed = 5.0f;
     RectTransform contentRect;
+    RectTransform descriptionRect;
+    RectTransform descriptionTextRect;
+    Text descriptionText;
+    bool objectHovered;
 
     /// <summary>
     /// Returns true if the global map is alredy opened.
@@ -34,6 +41,8 @@ public class Map : MonoBehaviour
         get { return instance; }
     }
 
+    private MapRepository model;
+
     /// <summary>
     /// Awake this instance.
     /// </summary>
@@ -41,9 +50,13 @@ public class Map : MonoBehaviour
     {
         if (instance == null)
         {
+            model = new MapRepository();
             instance = this;
             IsOpen = true;
             contentRect = content.GetComponent<RectTransform>();
+            descriptionRect = description.GetComponent<RectTransform>();
+            descriptionText = description.GetComponentInChildren<Text>();
+            descriptionTextRect = descriptionText.GetComponent<RectTransform>();
             Close();
         }
     }
@@ -58,6 +71,9 @@ public class Map : MonoBehaviour
 
         Scroll();
         ClampPosition();
+
+        if (objectHovered)
+            UpdateDescription();
     }
 
     /// <summary>
@@ -76,9 +92,7 @@ public class Map : MonoBehaviour
         float margin = Mathf.Pow(contentRect.localScale.x, 14);
         Vector3 npos = new Vector3(Mathf.Clamp(cx, -Mathf.Abs(twidth - cwidth)- margin, Mathf.Abs(twidth - cwidth)+margin),
                                    Mathf.Clamp(cy, -Mathf.Abs(theight - cheight)- margin, Mathf.Abs(theight - cheight)+ margin), 0);
-        contentRect.anchoredPosition = npos;
-                    
-                                    
+        contentRect.anchoredPosition = npos;                               
     }
 
     /// <summary>
@@ -136,16 +150,52 @@ public class Map : MonoBehaviour
     /// <summary>
     /// Called when the mouse is clicked. Useful for dragging UI.
     /// </summary>
+    /// <param name="eventData">The eventData associated with unity UI EventSystem</param>
     public void OnDrag(BaseEventData eventData)
     {
         var pointerData = eventData as PointerEventData;
 
         if (pointerData == null) { return; }
 
-
         var currentPosition = contentRect.position;
         currentPosition.x += pointerData.delta.x;
         currentPosition.y += pointerData.delta.y;
         contentRect.position = currentPosition;
+    }
+
+    /// <summary>
+    /// Called by EventSystem when a MapObject is hovered. Receives the eventData and communicates with
+    /// the model repository for getting the MapObject info and then opens it in the description UI
+    /// </summary>
+    /// <param name="eventData">The eventData associated with unity UI EventSystem</param>
+    public void ShowDescription(BaseEventData eventData)
+    {
+        var pointerData = eventData as PointerEventData;
+        string hovered = pointerData.pointerEnter.name;
+        description.SetActive(true);
+        descriptionText.text = model.Get(hovered).Title;
+        objectHovered = true;
+    }
+
+    /// <summary>
+    /// Updates the description UI for matching mouse position when it's active.
+    /// </summary>
+    public void UpdateDescription()
+    {
+        Vector2 p = descriptionRect.position;
+        p = Input.mousePosition;
+        p.y += 25f;
+        descriptionRect.position = p;
+        descriptionRect.sizeDelta = new Vector2(descriptionRect.sizeDelta.x, descriptionTextRect.rect.height + 25f);
+    }
+
+    /// <summary>
+    /// Called by EventSystem when a MapObject is hovered. Hides the description UI.
+    /// </summary>
+    /// <param name="eventData">The eventData associated with unity UI EventSystem</param>
+    public void HideDescription(BaseEventData eventData)
+    {
+        description.SetActive(false);
+        objectHovered = false;
     }
 }
