@@ -72,7 +72,7 @@
      <Compile Include="Assets\Scripts\InteractiveObjects\TicketGate.cs" />
      <Compile Include="Assets\Scripts\ItemSystem\GenericItem.cs" />
      <Compile Include="Assets\Scripts\ItemSystem\IdGenerator.cs" />
-<<<<<<< HEAD
+     <Compile Include="Assets\Scripts\ItemSystem\InventorySystem\InventoryController\InventoryController.cs" />
      <Compile Include="Assets\Scripts\ItemSystem\InventorySystem\InventoryModel\InventoryModel.cs" />
      <Compile Include="Assets\Scripts\ItemSystem\InventorySystem\InventoryUI\InventoryItem.cs" />
      <Compile Include="Assets\Scripts\ItemSystem\InventorySystem\InventoryUI\InventoryManager.cs" />
@@ -83,16 +83,6 @@
      <Compile Include="Assets\Scripts\ItemSystem\Repository\GenericItemRepository.cs" />
      <Compile Include="Assets\Scripts\ItemSystem\Repository\IGenericItemRepository.cs" />
      <Compile Include="Assets\Scripts\ItemSystem\Token.cs" />
-=======
-     <Compile Include="Assets\Scripts\ItemSystem\InventoriableItem.cs" />
-     <Compile Include="Assets\Scripts\ItemSystem\Inventory\InventoryItem.cs" />
-     <Compile Include="Assets\Scripts\ItemSystem\Inventory\InventoryManager.cs" />
-     <Compile Include="Assets\Scripts\ItemSystem\Inventory\InventorySlot.cs" />
-     <Compile Include="Assets\Scripts\ItemSystem\ItemManager.cs" />
-     <Compile Include="Assets\Scripts\ItemSystem\Repository\GenericItemRepository.cs" />
-     <Compile Include="Assets\Scripts\ItemSystem\Repository\IGenericItemRepository.cs" />
-     <Compile Include="Assets\Scripts\ItemSystem\TokenItem.cs" />
->>>>>>> origin/itemManager
      <Compile Include="Assets\Scripts\LookAtCharacter.cs" />
      <Compile Include="Assets\Scripts\Maps\CinParking\Car.cs" />
      <Compile Include="Assets\Scripts\Maps\CinParking\CarSensor.cs" />

@@ -13,10 +13,6 @@ public class InventoryManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		CloseInventory ();
-	}
-
-	public void CloseInventory() {
 		if (Input.GetButtonDown("Inventory")) {
 			if (inventoryCanvas.activeSelf) {
 				inventoryCanvas.SetActive (false);
@@ -25,4 +21,5 @@ public class InventoryManager : MonoBehaviour {
 			}
 		}
 	}
+
 }
