@@ -86,6 +86,9 @@
      <Compile Include="Assets\Scripts\Maps\CinParking\Mover.cs" />
      <Compile Include="Assets\Scripts\Maps\CinParking\MoverSpawner.cs" />
      <Compile Include="Assets\Scripts\Maps\CinParking\Waypoint.cs" />
+     <Compile Include="Assets\Scripts\Minimap\Map.cs" />
+     <Compile Include="Assets\Scripts\Minimap\MapObject.cs" />
+     <Compile Include="Assets\Scripts\Minimap\MapRepository.cs" />
      <Compile Include="Assets\Scripts\Minimap\Minimap.cs" />
      <Compile Include="Assets\Scripts\Minimap\MinimapArrow.cs" />
      <Compile Include="Assets\Scripts\Move.cs" />
@@ -106,6 +109,7 @@
      <Compile Include="Assets\Scripts\QuestSystem\UI\QuestButton.cs" />
      <Compile Include="Assets\Scripts\QuestSystem\UI\QuestUI.cs" />
      <Compile Include="Assets\Scripts\StartGame.cs" />
+     <Compile Include="Assets\Scripts\Tutorial\Tutorial.cs" />
      <Compile Include="Assets\Scripts\User\User.cs" />
      <Compile Include="Assets\Scripts\Utils\EDatabaseStorageType.cs" />
      <Compile Include="Assets\Scripts\Utils\GameConfiguration.cs" />
