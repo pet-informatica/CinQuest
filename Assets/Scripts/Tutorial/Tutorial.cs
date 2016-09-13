@@ -40,7 +40,7 @@ public class Tutorial : MonoBehaviour
 	/// </summary>
 	void Awake () 
 	{
-		if (!isOpen && this.checkIfAlertBoxIsOnScene()) {
+		if (!isOpen && this.checkIfAlertBoxIsOnScene() && !(GameManager.Instance.gameConfiguration.tutorialDone)) {
 			this.OpenWindow ();
 		}
 	}
@@ -72,6 +72,7 @@ public class Tutorial : MonoBehaviour
 			textPosition += 1;
 		} else {
 			tutorialCanvas.SetActive (false);
+			GameManager.Instance.gameConfiguration.tutorialDone = true;
 			isOpen = false;
 		}
 	}
