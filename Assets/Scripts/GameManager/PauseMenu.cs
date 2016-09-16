@@ -16,6 +16,7 @@ public class PauseMenu : MonoBehaviour {
 
 	private GameObject pauseCanvas;
 	private GameObject controlCanvas;
+	private GameObject feedbackCanvas;
 
 	void Start() {
 		pauseCanvas = GameObject.Find("Pause Canvas");
@@ -25,6 +26,10 @@ public class PauseMenu : MonoBehaviour {
 		controlCanvas = GameObject.Find("Control Canvas");
 		if(controlCanvas != null)
 			controlCanvas.SetActive (false);
+		
+		feedbackCanvas = GameObject.Find("Feedback Canvas");
+		if (feedbackCanvas != null)
+			feedbackCanvas.SetActive (false);
 	}
 
 	void Update () {
@@ -56,6 +61,14 @@ public class PauseMenu : MonoBehaviour {
 		GameObject.Find ("runButton").GetComponent<Text> ().text = "LEFT SHIFT";
 		GameObject.Find ("inventoryButton").GetComponent<Text> ().text = "Q";
 		GameObject.Find ("pauseButton").GetComponent<Text> ().text = "ESC";
+	}
+
+	public void openFeedbackOption() {
+		GameObject.Find ("PauseManager").GetComponent<PauseMenu> ().openFeedback();
+	}
+
+	private void openFeedback(){
+		feedbackCanvas.SetActive (true);
 	}
 
 	public void quitGameOption() {
