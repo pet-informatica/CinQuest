@@ -14,9 +14,12 @@ public class Map : MonoBehaviour
     public GameObject UI;
     public GameObject content;
     public GameObject description;
+	public GameObject[] contents;
     public float minZoom = 0.5f;
     public float maxZoom = 2.0f;
     public float zoomSpeed = 5.0f;
+ 	public Dictionary<string, GameObject> maps;
+	public Dictionary<string, string> parent;
     RectTransform contentRect;
     RectTransform descriptionRect;
     RectTransform descriptionTextRect;
@@ -57,6 +60,12 @@ public class Map : MonoBehaviour
             descriptionRect = description.GetComponent<RectTransform>();
             descriptionText = description.GetComponentInChildren<Text>();
             descriptionTextRect = descriptionText.GetComponent<RectTransform>();
+			maps = new Dictionary<string, GameObject> ();
+			parent = new Dictionary<string, string> ();
+			maps.Add ("Global", contents [0]);
+			maps.Add ("Cin", contents [1]);
+			parent.Add ("Global", "1");
+			parent.Add ("Cin", "Global");
             Close();
         }
     }
@@ -198,4 +207,30 @@ public class Map : MonoBehaviour
         description.SetActive(false);
         objectHovered = false;
     }
+
+	/// <summary>
+	/// Executed when a button inside the map is clicked. Changes the map content according to the button name.
+	/// </summary>
+	/// <param name="eventData">Event data.</param>
+	public void ChangeContent(BaseEventData eventData){
+		var pointerData = eventData as PointerEventData;
+		string name = pointerData.pointerEnter.name;
+		if (maps.ContainsKey (name)) {
+			content.SetActive (false);
+			content = maps[name];
+			content.SetActive (true);
+		}
+	}
+
+	/// <summary>
+	/// Returns to the parent of the current content
+	/// </summary>
+	public void GoBack(){
+		Debug.Log (content.name);
+		if (parent [content.name] != "") {
+			content.SetActive (false);
+			content = maps [parent [content.name]];
+			content.SetActive (true);
+		}
+	}
 }
