@@ -81,4 +81,13 @@ public class PauseMenu : MonoBehaviour {
 		sceneChanger.destinyScene = "GameOpening";
 		sceneChanger.Change();
 	}
+
+	public void closeFeedback() {
+		GameObject.Find ("PauseManager").GetComponent<PauseMenu> ().cancel();
+	}
+
+	private void cancel(){
+		feedbackCanvas.SetActive (false);
+	}
+
 }
