@@ -1,11 +1,11 @@
 fileFormatVersion: 2
 guid: da83fad4851c72840b8a32e8463b92f1
-timeCreated: 1474337292
+timeCreated: 1474495009
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: ui_0
-    21300002: ui_1
+    21300002: back_btn
     21300004: ui_2
     21300006: aroundBtn
     21300008: ui_5
@@ -27,6 +27,8 @@ TextureImporter:
     21300040: downarrow_icon
     21300042: scroller_btn
     21300044: cursor
+    21300046: back_arrow
+    21300048: back_btn2
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -83,19 +85,6 @@ TextureImporter:
         y: 488
         width: 218
         height: 76
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: -1
-    - serializedVersion: 2
-      name: ui_1
-      rect:
-        serializedVersion: 2
-        x: 251
-        y: 448
-        width: 211
-        height: 100
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -361,6 +350,45 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: -1
+    - serializedVersion: 2
+      name: back_btn
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 456
+        width: 34
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: back_arrow
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 460
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: back_btn2
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 456
+        width: 34
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
     outline: []
   spritePackingTag: 
   userData: 
