@@ -15,6 +15,7 @@ public class Map : MonoBehaviour
     public GameObject UI;
     public GameObject description;
 	public MapModel model;
+	public Text title;
     public float minZoom = 0.5f;
     public float maxZoom = 2.0f;
     public float zoomSpeed = 5.0f;
@@ -23,6 +24,7 @@ public class Map : MonoBehaviour
     RectTransform descriptionTextRect;
 	GameObject activeStage;
     Text descriptionText;
+
     bool objectHovered;
 
     /// <summary>
@@ -134,6 +136,7 @@ public class Map : MonoBehaviour
 		activeStage = model.FindStage (hash).stage;
 		activeStage.SetActive (true);
 		contentRect = activeStage.GetComponent<RectTransform>();
+		title.text = model.FindStage (hash).title;
 	}
 
 	/// <summary>

@@ -17,6 +17,7 @@ public class MapModel : MonoBehaviour {
 	{
 		public string hash;
 		public string parent;
+		public string title;
 		public GameObject stage;
 	}
 	public MapStage[] stages;
