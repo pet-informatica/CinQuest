@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using UnityEditor;
 using UnityEngine.EventSystems;
 using System.Collections.Generic;
 using UnityEngine.UI;
@@ -12,15 +13,18 @@ public class Map : MonoBehaviour
 {
     public AudioClip openingSound;
     public GameObject UI;
-    public GameObject content;
     public GameObject description;
+	public MapModel model;
+	public Text title;
     public float minZoom = 0.5f;
     public float maxZoom = 2.0f;
     public float zoomSpeed = 5.0f;
     RectTransform contentRect;
     RectTransform descriptionRect;
     RectTransform descriptionTextRect;
+	GameObject activeStage;
     Text descriptionText;
+
     bool objectHovered;
 
     /// <summary>
@@ -31,8 +35,7 @@ public class Map : MonoBehaviour
         get; private set;
     }
 
-    private static Map instance = null;
-
+    static Map instance = null;
     /// <summary>
     /// Gets the unique instance of the Map for static access
     /// </summary>
@@ -40,9 +43,7 @@ public class Map : MonoBehaviour
     {
         get { return instance; }
     }
-
-    private MapRepository model;
-
+		
     /// <summary>
     /// Awake this instance.
     /// </summary>
@@ -50,10 +51,10 @@ public class Map : MonoBehaviour
     {
         if (instance == null)
         {
-            model = new MapRepository();
             instance = this;
             IsOpen = true;
-            contentRect = content.GetComponent<RectTransform>();
+			model.Populate ();
+			ChangeStage (Application.loadedLevelName);
             descriptionRect = description.GetComponent<RectTransform>();
             descriptionText = description.GetComponentInChildren<Text>();
             descriptionTextRect = descriptionText.GetComponent<RectTransform>();
@@ -119,8 +120,34 @@ public class Map : MonoBehaviour
             UI.SetActive(true);
             if (Minimap.Instance != null)
                 Minimap.Instance.Close();
+			ChangeStage (Application.loadedLevelName);
         }
     }
+
+	/// <summary>
+	/// Changes the current world map stage to another based on hash
+	/// </summary>
+	/// <param name="hash">The target stage formal hash name for searching in a dictionary inside model.</param>
+	void ChangeStage(string hash)
+	{
+		HideDescription ();
+		if (activeStage != null)
+			activeStage.SetActive (false);
+		activeStage = model.FindStage (hash).stage;
+		activeStage.SetActive (true);
+		contentRect = activeStage.GetComponent<RectTransform>();
+		title.text = model.FindStage (hash).title;
+	}
+
+	/// <summary>
+	/// Search for the name of the parent of a stage in the model dictionary.
+	/// </summary>
+	/// <returns>The name of the parent of the desired child.</returns>
+	/// <param name="hash">The target child formal hash name for searching in dictionary.</param>
+	string ParentStage(string hash)
+	{
+		return model.FindStage(hash).parent;
+	}
 
     /// <summary>
     /// Closes the map UI panel.
@@ -139,7 +166,7 @@ public class Map : MonoBehaviour
     /// <summary>
     /// Checks if alert box is on scene.
     /// </summary>
-    /// <returns><c>true</c>, if if alert is on scene, <c>false</c> otherwise.</returns>
+    /// <returns><c>true</c> if alert is on scene, <c>false</c> otherwise.</returns>
     private bool checkIfMapIsOnScene()
     {
         if (UI == null)
@@ -173,7 +200,7 @@ public class Map : MonoBehaviour
         var pointerData = eventData as PointerEventData;
         string hovered = pointerData.pointerEnter.name;
         description.SetActive(true);
-        descriptionText.text = model.Get(hovered).Title;
+		descriptionText.text = model.FindObject(hovered).title;
         objectHovered = true;
     }
 
@@ -198,4 +225,30 @@ public class Map : MonoBehaviour
         description.SetActive(false);
         objectHovered = false;
     }
+
+	/// <summary>
+	/// Hides the object description from UI.
+	/// </summary>
+	public void HideDescription()
+	{
+		description.SetActive(false);
+		objectHovered = false;
+	}
+
+	/// <summary>
+	/// Executed when a button inside the map is clicked. Changes the map stage content according to the buttons name.
+	/// </summary>
+	/// <param name="eventData">Event data.</param>
+	public void ChangeContent(BaseEventData eventData){
+		var pointerData = eventData as PointerEventData;
+		string name = pointerData.pointerEnter.name;
+		ChangeStage (name);
+	}
+
+	/// <summary>
+	/// Returns to the parent of the current stage
+	/// </summary>
+	public void GoBack(){
+		ChangeStage (ParentStage (activeStage.name));
+	}
 }
