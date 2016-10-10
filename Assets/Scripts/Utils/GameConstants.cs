@@ -11,6 +11,7 @@ public class GameConstants
 	public const string PRECONDITION_COLLECTION_PATH = "PreConditionCollection";
 
 	// Others
+	public const string QUEST_UNLOCKED = "Quest bloqueada!";
 	public const string QUEST_COMPLETED = "Quest completa!";
 	public const string QUEST_NOT_COMPLETED = "Quest em andamento...";
 }
