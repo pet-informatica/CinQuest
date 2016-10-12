@@ -11,12 +11,15 @@ public class GameConfiguration
 	private EDatabaseStorageType _databaseType;
 	private string _questCollectionPath = "";
 	private string _preConditionCollectionPath = "";
+	private bool _tutorialDone = false;
 
 	public EDatabaseStorageType databaseType { get { return this._databaseType; } }
 
 	public string questCollectionPath { get { return this._questCollectionPath; } }
 
 	public string preConditionCollectionPath { get { return this._preConditionCollectionPath;}}
+
+	public bool tutorialDone { get { return this._tutorialDone; } set { this._tutorialDone = value; } }
 
 	public GameConfiguration ()
 	{
