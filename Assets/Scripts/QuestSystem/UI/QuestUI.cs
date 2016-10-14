@@ -9,123 +9,123 @@ using UnityEngine.UI;
 /// </summary>
 public class QuestUI : MonoBehaviour
 {
-    public GameObject questBox;
-    public GameObject questInfo;
-    public GameObject questBoxContent;
-    public GameObject questButton;
-    public Text questInfoName;
-    public Text questInfoDescription;
+	public GameObject questBox;
+	public GameObject questInfo;
+	public GameObject questBoxContent;
+	public GameObject questButton;
+	public Text questInfoName;
+	public Text questInfoDescription;
 	public Text questStatus;
-    RectTransform questBoxTransform;
-    bool opened;
-    float questButtonHeight;
+	RectTransform questBoxTransform;
+	bool opened;
+	float questButtonHeight;
 
-    List<Quest> quests = new List<Quest>();
-    List<GameObject> buttons = new List<GameObject>();
-	
+	List<Quest> quests = new List<Quest>();
+	List<GameObject> buttons = new List<GameObject>();
+
 	void Start ()
-    {
-        questBoxTransform = questBoxContent.GetComponent<RectTransform>();
-        questButtonHeight = questButton.GetComponent<RectTransform>().rect.height;
+	{
+		questBoxTransform = questBoxContent.GetComponent<RectTransform>();
+		questButtonHeight = questButton.GetComponent<RectTransform>().rect.height;
 
-        UpdateQuestsFromUser();
+		UpdateQuestsFromUser();
 
-        CloseWindow();
+		CloseWindow();
 	}
 
-    /// <summary>
-    /// Get all the current quests from the user instance updated.
-    /// </summary>
-    public void UpdateQuestsFromUser()
-    {
-       quests.Clear();
-       User user = User.Instance;
-       foreach(Quest quest in user.Quests.Values)
-       {
-            quests.Add(quest);
-       }
-       UpdateQuestBoxContent();
-    }
+	/// <summary>
+	/// Get all the current quests from the user instance updated.
+	/// </summary>
+	public void UpdateQuestsFromUser()
+	{
+		quests.Clear();
+		User user = User.Instance;
+		foreach(Quest quest in user.Quests.Values)
+		{
+			quests.Add(quest);
+		}
+		UpdateQuestBoxContent();
+	}
 
-    /// <summary>
-    /// Remove all the buttons from QuestManager Box and insert new ones according to the current quests inside quest list.
-    /// </summary>
-    void UpdateQuestBoxContent()
-    {
-        foreach (GameObject obj in buttons) Destroy(obj);
-        buttons.Clear();
+	/// <summary>
+	/// Remove all the buttons from QuestManager Box and insert new ones according to the current quests inside quest list.
+	/// </summary>
+	void UpdateQuestBoxContent()
+	{
+		foreach (GameObject obj in buttons) Destroy(obj);
+		buttons.Clear();
 
-        int buttonAmount = 0;
-        foreach(Quest quest in quests)
-            if (quest.Unlocked)
-                buttonAmount++;
+		int buttonAmount = quests.Count;
 
-        questBoxTransform.sizeDelta = new Vector2(0, buttonAmount * questButtonHeight);
-        int offset = 0;
-        for(int i = 0; i < buttonAmount; ++i)
-        {
-            if (!quests[i].Unlocked)
-                continue;
+		questBoxTransform.sizeDelta = new Vector2(0, buttonAmount * questButtonHeight);
+		int offset = 0;
+		for(int i = 0; i < buttonAmount; ++i)
+		{
+			//if (!quests[i].Unlocked)
+			//	continue;
 
-            GameObject newButton = Instantiate(questButton) as GameObject;
-            buttons.Add(newButton);
-            RectTransform newButtonTransform = newButton.GetComponent<RectTransform>();
-            newButton.transform.SetParent(questBoxContent.transform, false);
-            newButtonTransform.anchoredPosition = new Vector2(0, -offset * questButtonHeight);
-           
-            QuestButton buttonScript = newButton.GetComponent<QuestButton>();
-            buttonScript.quest = quests[i];
-            offset++;
-        }
-    }
+			GameObject newButton = Instantiate(questButton) as GameObject;
+			buttons.Add(newButton);
+			RectTransform newButtonTransform = newButton.GetComponent<RectTransform>();
+			newButton.transform.SetParent(questBoxContent.transform, false);
+			newButtonTransform.anchoredPosition = new Vector2(0, -offset * questButtonHeight);
 
-    /// <summary>
-    /// Open the Quest Manager Canvas, setting it's gameobject to active
-    /// </summary>
-    public void OpenWindow()
-    {
-        UpdateQuestBoxContent();
-        questBox.SetActive(true);
-        opened = true;
-    }
+			QuestButton buttonScript = newButton.GetComponent<QuestButton>();
+			buttonScript.quest = quests[i];
+			offset++;
+		}
+	}
 
-    /// <summary>
-    /// Close the Quest Manager Canvas, setting it's gameobject to inactive
-    /// </summary>
-    public void CloseWindow()
-    {
-        questBox.SetActive(false);
-        questInfo.SetActive(false);
-        opened = false;
-    }
+	/// <summary>
+	/// Open the Quest Manager Canvas, setting it's gameobject to active
+	/// </summary>
+	public void OpenWindow()
+	{
+		UpdateQuestBoxContent();
+		questBox.SetActive(true);
+		opened = true;
+	}
 
-    /// <summary>
-    /// Close only the QuestInfo Box
-    /// </summary>
-    public void CloseInfo()
-    {
-        questInfo.SetActive(false);
-    }
-	
+	/// <summary>
+	/// Close the Quest Manager Canvas, setting it's gameobject to inactive
+	/// </summary>
+	public void CloseWindow()
+	{
+		questBox.SetActive(false);
+		questInfo.SetActive(false);
+		opened = false;
+	}
+
+	/// <summary>
+	/// Close only the QuestInfo Box
+	/// </summary>
+	public void CloseInfo()
+	{
+		questInfo.SetActive(false);
+	}
+
 	void Update ()
-    {
-        if (Input.GetButtonDown("Quests"))
-        {
-            if (opened) CloseWindow();
-            else OpenWindow();
-        }
+	{
+		if (Input.GetButtonDown("Quests"))
+		{
+			if (opened) CloseWindow();
+			else OpenWindow();
+		}
 	}
 
-    /// <summary>
-    /// Change the information in the QuestInfo box for matching a quest
-    /// </summary>
-    /// <param name="quest">The quest for displaying the info</param>
-    public void ChangeSelectedQuest(Quest quest)
-    {
-        questInfoName.text = quest.Name;
-        questInfoDescription.text = quest.Description;
+	/// <summary>
+	/// Change the information in the QuestInfo box for matching a quest
+	/// </summary>
+	/// <param name="quest">The quest for displaying the info</param>
+	public void ChangeSelectedQuest(Quest quest)
+	{
+		questInfoName.text = quest.Name;
+		questInfoDescription.text = quest.Description;
 
-		if (quest.Done) {
+		if (!quest.Unlocked) {
+			questStatus.text = GameConstants.QUEST_UNLOCKED;
+			questStatus.color = Color.red;
+		} else if (quest.Done) {
 			questStatus.text = GameConstants.QUEST_COMPLETED;
 			questStatus.color = Color.yellow;
 		} else {
@@ -133,6 +133,6 @@ public class QuestUI : MonoBehaviour
 			questStatus.color = Color.white;
 		}
 
-        questInfo.SetActive(true);
-    }
+		questInfo.SetActive(true);
+	}
 }
