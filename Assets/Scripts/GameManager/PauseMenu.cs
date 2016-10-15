@@ -4,11 +4,10 @@ using UnityEngine.UI;
 public class PauseMenu : MonoBehaviour {
 	/*
     *   Developed by: Torres (phtg)
-    *   Description: It's the pause menu. When user presses 'ESC', player is frozen and the menu appears. 
+    *   Description: It's the pause menu. When user presses 'P', player is frozen and the menu appears. 
     * 				Player is able to select the options with the mouse. 
-    *   How to use it: This class carries two important prefabs: Canvas and EventSystem. Both are really important
-    * 					for the canvas to work. This script is attached to GameManager. When player presses 'ESC' the
-    * 					game object of the Canvas is loaded together with the EventSystem.
+    *   How to use it: This class carries the Pause Canvas and all its children. This script is attached to GameManager. 
+    * 					When player presses 'P' the game object of the Canvas is loaded.
     * 					All the changes in the menu itself must be made in Unity selecting the Canvas prefab (Pause Canvas).
     * 					DO NOT do anything hardcoded! Functions here are the actions that will be called by each button on the
     * 					menu. In Unity, select the button and go to OnClick() and select the function you want.
@@ -17,6 +16,7 @@ public class PauseMenu : MonoBehaviour {
 	private GameObject pauseCanvas;
 	private GameObject controlCanvas;
 	private GameObject feedbackCanvas;
+	private GameObject[] allCanvas;
 
 	void Start() {
 		pauseCanvas = GameObject.Find("Pause Canvas");
@@ -30,16 +30,19 @@ public class PauseMenu : MonoBehaviour {
 		feedbackCanvas = GameObject.Find("Feedback Canvas");
 		if (feedbackCanvas != null)
 			feedbackCanvas.SetActive (false);
+
+		// pauseCanvas must be in the last position!
+		allCanvas = new GameObject[] {feedbackCanvas, controlCanvas, pauseCanvas};
 	}
 
 	void Update () {
-		if (pauseCanvas != null && Input.GetButtonDown("Pause")) {
-			if (pauseCanvas.activeSelf) {
-				if (controlCanvas.activeSelf) {
-					controlCanvas.SetActive (false);
-				} else {
-					GameObject.FindGameObjectWithTag ("Player").GetComponent<PlayerController> ().OnPause (false);
-					pauseCanvas.SetActive (false);
+		if (Input.GetButtonDown ("Pause")) {
+			if (allCanvas [allCanvas.Length - 1].activeSelf) {
+				foreach (GameObject canvas in allCanvas) {
+					if (canvas.activeSelf) {
+						canvas.SetActive (false);
+						break;
+					}
 				}
 			} else {
 				GameObject.FindGameObjectWithTag ("Player").GetComponent<PlayerController> ().OnPause (true);
@@ -48,11 +51,7 @@ public class PauseMenu : MonoBehaviour {
 		}
 	}
 
-	public void openControlOption() {
-		GameObject.Find ("PauseManager").GetComponent<PauseMenu> ().openControl();
-	}
-
-	private void openControl() {
+	public void openControl() {
 		controlCanvas.SetActive (true);
 		GameObject.Find ("upButton").GetComponent<Text> ().text = "W";
 		GameObject.Find ("downButton").GetComponent<Text> ().text = "S";
@@ -60,26 +59,19 @@ public class PauseMenu : MonoBehaviour {
 		GameObject.Find ("rightButton").GetComponent<Text> ().text = "D";
 		GameObject.Find ("runButton").GetComponent<Text> ().text = "LEFT SHIFT";
 		GameObject.Find ("inventoryButton").GetComponent<Text> ().text = "Q";
-		GameObject.Find ("pauseButton").GetComponent<Text> ().text = "ESC";
+		GameObject.Find ("pauseButton").GetComponent<Text> ().text = "P";
 	}
 
-	public void openFeedbackOption() {
-		GameObject.Find ("PauseManager").GetComponent<PauseMenu> ().openFeedback();
-	}
-
-	private void openFeedback(){
+	public void openFeedback(){
 		feedbackCanvas.SetActive (true);
 	}
 
-	public void quitGameOption() {
-		GameObject.Find ("PauseManager").GetComponent<PauseMenu> ().quitGame();
-	}
-
-	private void quitGame() {
+	public void quitGame() {
 		gameObject.AddComponent<SceneChanger>();
 		SceneChanger sceneChanger = GetComponent<SceneChanger>();
 		sceneChanger.destinyScene = "GameOpening";
 		sceneChanger.Change();
+		pauseCanvas.SetActive (false);
 	}
 		
 }
