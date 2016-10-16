@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using System;
 using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 
 public class GameManager : MonoBehaviour 
 {
@@ -50,9 +51,12 @@ public class GameManager : MonoBehaviour
     public List<GameObject> childrenObjects;
     QuestUI questUI;
     
+	/* Game Data */
+	public GameData gameData;
 
 	void Awake () 
 	{
+		gameData = new GameData ();
 		if (instance == null) {
             ActivateChildren();
             this.loadAndStartGame ();
@@ -154,5 +158,19 @@ public class GameManager : MonoBehaviour
 
 	}
 
+	public void SaveGame() {
+		DataAccess.SaveGame (gameData);
+	}
 
+	public void LoadGame() {
+		gameData = DataAccess.Load ();
+	}
+
+	public bool CanLoadGame() {
+		return DataAccess.CanLoadGame ();
+	}
+
+	public void DeleteSavedData() {
+		DataAccess.DeleteSavedData ();
+	}
 }

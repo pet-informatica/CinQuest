@@ -1,19 +1,36 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class CharacterChooserManager : MonoBehaviour {
+
+	SceneChanger sceneChanger;
 
 	public GameObject[] optionsPanels;
 	public GameObject leftArrow;
 	public GameObject rightArrow;
 	public GameObject selected;
+	public GameObject nickname;
 
-	private int currentOptionPanel = 0;
+	private int currentOptionPanel;
 	private static GameObject selectedCharacter;
 
+	void Awake() {
+		gameObject.AddComponent<SceneChanger>();
+		sceneChanger = GetComponent<SceneChanger>();
+		sceneChanger.destinyScene = "CinParking";
+	}
 
 	void Start () {
+		currentOptionPanel = 0;
 		leftArrow.SetActive (false);
+		if (optionsPanels.Length > 1) {
+			rightArrow.SetActive (true);
+		}
+	}
+
+	void Update() {
+//		print (currentOptionPanel);
 	}
 
 	/// <summary>
@@ -28,16 +45,17 @@ public class CharacterChooserManager : MonoBehaviour {
 	/// Changes the panel to the right using Lerp and shows another set of character
 	/// </summary>
 	public void nextCharacters() {
+		print (currentOptionPanel);
 		leftArrow.SetActive (true);
 		selected.SetActive (false);
 		selectedCharacter = null;
 
 		if (currentOptionPanel + 1 < optionsPanels.Length) {
-			StartCoroutine(MoveFunction(optionsPanels [currentOptionPanel], new Vector3(-1065, 0, 0)));
+			StartCoroutine(MoveFunction(optionsPanels [currentOptionPanel], new Vector3(-1065, 60, 0)));
 
 			currentOptionPanel++;
 
-			StartCoroutine(MoveFunction(optionsPanels [currentOptionPanel], new Vector3(0, 0, 0)));
+			StartCoroutine(MoveFunction(optionsPanels [currentOptionPanel], new Vector3(0, 60, 0)));
 
 			if (currentOptionPanel == optionsPanels.Length -1) {
 				rightArrow.SetActive (false);
@@ -54,11 +72,11 @@ public class CharacterChooserManager : MonoBehaviour {
 		selectedCharacter = null;
 
 		if (currentOptionPanel - 1 >= 0) {
-			StartCoroutine(MoveFunction(optionsPanels [currentOptionPanel], new Vector3(1065, 0, 0)));
+			StartCoroutine(MoveFunction(optionsPanels [currentOptionPanel], new Vector3(1065, 60, 0)));
 
 			currentOptionPanel--;
 
-			StartCoroutine(MoveFunction(optionsPanels [currentOptionPanel], new Vector3(0, 0, 0)));
+			StartCoroutine(MoveFunction(optionsPanels [currentOptionPanel], new Vector3(0, 60, 0)));
 
 			if (currentOptionPanel == 0) {
 				leftArrow.SetActive (false);
@@ -87,5 +105,11 @@ public class CharacterChooserManager : MonoBehaviour {
 				
 			yield return null;
 		}
+	}
+
+	public void StartGame() {
+		GameManager.Instance.gameData.PlayerName = nickname.GetComponent<Text> ().text;
+		GameManager.Instance.SaveGame ();
+		sceneChanger.Change();
 	}
 }
