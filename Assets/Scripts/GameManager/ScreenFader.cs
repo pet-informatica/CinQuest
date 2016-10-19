@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 /// <summary>
@@ -38,10 +39,20 @@ public class ScreenFader : MonoBehaviour
         return fadeTime;
     }
 
-    /// <summary>
-    /// Fade out everytime a new scene is loaded.
-    /// </summary>
-    void OnLevelWasLoaded()
+	void OnEnable()
+	{
+		SceneManager.sceneLoaded += OnLevelFinishedLoading;
+	}
+
+	void OnDisable()
+	{
+		SceneManager.sceneLoaded -= OnLevelFinishedLoading;
+	}
+
+	/// <summary>
+	/// Fade out everytime a new scene is loaded.
+	/// </summary>
+	void OnLevelFinishedLoading(Scene scene, LoadSceneMode mode)
 	{
 		BeginFade (-1, 1.2f);
 	}
