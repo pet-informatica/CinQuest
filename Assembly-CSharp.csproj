@@ -59,6 +59,8 @@
      <Compile Include="Assets\Scripts\DialogManager\Tree\Nodes\EndQuestTreeNode.cs" />
      <Compile Include="Assets\Scripts\DialogManager\Tree\Nodes\RewardTreeNode.cs" />
      <Compile Include="Assets\Scripts\DialogManager\Tree\Nodes\StartQuestTreeNode.cs" />
+     <Compile Include="Assets\Scripts\GameData\DataAccess.cs" />
+     <Compile Include="Assets\Scripts\GameData\GameData.cs" />
      <Compile Include="Assets\Scripts\GameManager\CameraController.cs" />
      <Compile Include="Assets\Scripts\GameManager\CameraUnfollower.cs" />
      <Compile Include="Assets\Scripts\GameManager\Feedback.cs" />

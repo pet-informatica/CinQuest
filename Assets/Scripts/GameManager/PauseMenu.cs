@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 public class PauseMenu : MonoBehaviour {
 	/*
@@ -13,46 +14,39 @@ public class PauseMenu : MonoBehaviour {
     * 					menu. In Unity, select the button and go to OnClick() and select the function you want.
     */
 
-	private GameObject pauseCanvas;
-	private GameObject controlCanvas;
-	private GameObject feedbackCanvas;
-	private GameObject[] allCanvas;
+	public GameObject pauseCanvas;
+	public GameObject controlCanvas;
+	public GameObject feedbackCanvas;
+	private Stack<GameObject> allCanvas;
+
+	static PauseMenu instance;
 
 	void Start() {
-		pauseCanvas = GameObject.Find("Pause Canvas");
-		if (pauseCanvas != null)
-			pauseCanvas.SetActive (false);
+		instance = this;
 
-		controlCanvas = GameObject.Find("Control Canvas");
-		if(controlCanvas != null)
-			controlCanvas.SetActive (false);
-		
-		feedbackCanvas = GameObject.Find("Feedback Canvas");
-		if (feedbackCanvas != null)
-			feedbackCanvas.SetActive (false);
-
-		// pauseCanvas must be in the last position!
-		allCanvas = new GameObject[] {feedbackCanvas, controlCanvas, pauseCanvas};
+		allCanvas = new Stack<GameObject>();
+		allCanvas.Push(pauseCanvas);
 	}
 
 	void Update () {
 		if (Input.GetButtonDown ("Pause")) {
-			if (allCanvas [allCanvas.Length - 1].activeSelf) {
-				foreach (GameObject canvas in allCanvas) {
-					if (canvas.activeSelf) {
-						canvas.SetActive (false);
-						break;
-					}
-				}
+			if (pauseCanvas.activeSelf) {
+				allCanvas.Pop ().SetActive (false);
 			} else {
-				GameObject.FindGameObjectWithTag ("Player").GetComponent<PlayerController> ().OnPause (true);
 				pauseCanvas.SetActive (true);
+				allCanvas.Push (pauseCanvas);
 			}
 		}
 	}
 
+	public static PauseMenu Instance
+	{
+		get { return instance; }
+	}
+
 	public void openControl() {
 		controlCanvas.SetActive (true);
+		allCanvas.Push (controlCanvas);
 		GameObject.Find ("upButton").GetComponent<Text> ().text = "W";
 		GameObject.Find ("downButton").GetComponent<Text> ().text = "S";
 		GameObject.Find ("leftButton").GetComponent<Text> ().text = "A";
@@ -64,6 +58,7 @@ public class PauseMenu : MonoBehaviour {
 
 	public void openFeedback(){
 		feedbackCanvas.SetActive (true);
+		allCanvas.Push (feedbackCanvas);
 	}
 
 	public void quitGame() {
@@ -73,5 +68,16 @@ public class PauseMenu : MonoBehaviour {
 		sceneChanger.Change();
 		pauseCanvas.SetActive (false);
 	}
-		
+
+	public void CloseFeedback() {
+		this.allCanvas.Pop ().SetActive (false);
+	}
+
+	void OnDisable() {
+		GameObject.FindGameObjectWithTag ("Player").GetComponent<PlayerController> ().OnPause (false);
+	}
+
+	void OnEnable() {
+		GameObject.FindGameObjectWithTag ("Player").GetComponent<PlayerController> ().OnPause (true);
+	}
 }
