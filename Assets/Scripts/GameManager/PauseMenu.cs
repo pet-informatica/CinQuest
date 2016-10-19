@@ -74,10 +74,12 @@ public class PauseMenu : MonoBehaviour {
 	}
 
 	void OnDisable() {
-		GameObject.FindGameObjectWithTag ("Player").GetComponent<PlayerController> ().OnPause (false);
+		if(	GameObject.FindGameObjectWithTag ("Player") != null)
+			GameObject.FindGameObjectWithTag ("Player").GetComponent<PlayerController> ().OnPause (false);
 	}
 
 	void OnEnable() {
-		GameObject.FindGameObjectWithTag ("Player").GetComponent<PlayerController> ().OnPause (false);
+		if(	GameObject.FindGameObjectWithTag ("Player") != null)
+			GameObject.FindGameObjectWithTag ("Player").GetComponent<PlayerController> ().OnPause (false);
 	}
 }
