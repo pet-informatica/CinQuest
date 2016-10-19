@@ -12,6 +12,26 @@ using UnityEngine;
 [Serializable]
 public class DialogTreeNode : ScriptableObject
 {
+	[SerializeField]
+	List<int> preconditionIds;
+	/// <summary>
+	/// The list of the Precondition ID's that the user must satisfie in order to reach this node.
+	/// </summary>
+	public List<int> PreconditionIds
+	{
+		get { return preconditionIds; }
+	}
+
+	[SerializeField]
+	List<int> rewardIds;
+	/// <summary>
+	/// The list of the reward item ID's that the user will win after reaching this node
+	/// </summary>
+	public List<int> RewardIds
+	{
+		get { return rewardIds; }
+	}
+
     [SerializeField]
     string response;
     /// <summary>
@@ -70,18 +90,6 @@ public class DialogTreeNode : ScriptableObject
     }
 
     /// <summary>
-    /// Returns if it is possible to reach this node. The node can be BLOCKED by several reasons,
-    /// such as the player not having the required PreConditions. In a DialogTreeNode, every node
-    /// is reachable, but in inherited classes such as ConditionalTreeNode this method will check
-    /// if the players has all the preconditions specified in a list.
-    /// </summary>
-    /// <returns>TRUE if the current node can be reached. False otherwise.</returns>
-    public virtual bool IsAvaiable()
-    {
-        return true;
-    }
-
-    /// <summary>
     /// Execute it when needed to traverse down the tree and go for a child node. Additional logic
     /// can be added by inherited classes overriding this method in order to execute an action in 
     /// the process of changing the current dialog tree node.
@@ -105,12 +113,33 @@ public class DialogTreeNode : ScriptableObject
         return Children[index];
     }
 
-    /// <summary>
-    /// This method is called everytime the current node is reached. Can be extended by children classes
-    /// to do some work, like giving rewards for the user, in case of a RewardTreeNode.
-    /// </summary>
-    public virtual void Execute()
-    {
-       
-    }
+	/// <summary>
+	/// Check if all the pre conditions are satisfied.
+	/// </summary>
+	/// <returns>TRUE if the current node can be reached. False otherwise.</returns>
+	public virtual bool IsAvaiable()
+	{
+		User user = User.Instance;
+
+		foreach(int id in preconditionIds)
+		{
+			if (!GameManager.Instance.preConditionManager.getPreCondition (id).checkIfMatches (user))
+				return false;	
+		}
+
+		return true;
+	}
+
+	/// <summary>
+	/// When the node is reached, gives a list of rewards for the player
+	/// </summary>
+	public virtual void Execute()
+	{
+		User user = User.Instance;
+
+		foreach(int id in RewardIds)
+		{
+			user.AddItem(GameManager.Instance.itemManager.GetItem(id));
+		}
+	}
 }
