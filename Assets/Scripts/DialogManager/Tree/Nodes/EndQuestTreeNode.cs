@@ -26,6 +26,7 @@ public class EndQuestTreeNode : DialogTreeNode
     /// </summary>
     public override void Execute()
     {
+		base.Execute ();
         User user = User.Instance;
         Quest quest = user.GetQuest(QuestID);
         if (quest != null && !quest.Done)

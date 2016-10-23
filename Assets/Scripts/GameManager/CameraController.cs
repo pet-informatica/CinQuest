@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class CameraController : MonoBehaviour
@@ -25,13 +26,23 @@ public class CameraController : MonoBehaviour
             player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
-    void OnLevelWasLoaded()
-    {
-        followingPlayerX = true;
-        followingPlayerY = true;
-        if(GameObject.FindGameObjectWithTag("Player") != null)
-            player = GameObject.FindGameObjectWithTag("Player").transform;
-    }
+	void OnEnable()
+	{
+		SceneManager.sceneLoaded += OnLevelFinishedLoading;
+	}
+
+	void OnDisable()
+	{
+		SceneManager.sceneLoaded -= OnLevelFinishedLoading;
+	}
+
+	void OnLevelFinishedLoading(Scene scene, LoadSceneMode mode)
+	{
+		followingPlayerX = true;
+		followingPlayerY = true;
+		if(GameObject.FindGameObjectWithTag("Player") != null)
+			player = GameObject.FindGameObjectWithTag("Player").transform;
+	}
 	
 	void Update ()
     {

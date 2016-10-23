@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using System;
 using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 
 public class GameManager : MonoBehaviour 
 {
@@ -50,9 +51,12 @@ public class GameManager : MonoBehaviour
     public List<GameObject> childrenObjects;
     QuestUI questUI;
     
+	/* Game Data */
+	public GameData gameData;
 
 	void Awake () 
 	{
+		gameData = new GameData ();
 		if (instance == null) {
             ActivateChildren();
             this.loadAndStartGame ();
@@ -62,7 +66,17 @@ public class GameManager : MonoBehaviour
 		DontDestroyOnLoad (gameObject);
     }
 
-    void OnLevelWasLoaded(int level)
+	void OnEnable()
+	{
+		SceneManager.sceneLoaded += OnLevelFinishedLoading;
+	}
+
+	void OnDisable()
+	{
+		SceneManager.sceneLoaded -= OnLevelFinishedLoading;
+	}
+
+	void OnLevelFinishedLoading(Scene scene, LoadSceneMode mode)
     {
         ActivateChildren();
     }
@@ -142,7 +156,6 @@ public class GameManager : MonoBehaviour
         this.itemManager.AddItem(new GenericItem(1));
         this.itemManager.AddItem(new GenericItem(2));
 
-
         // TODO: LOAD GAME PRECONDITIONS
         this.preConditionManager = new PreConditionManager(RepositoriesFactory.createPreConditionRepository(this.gameConfiguration.databaseType));
 		this.preConditionManager.loadPreConditionsFromFile (this.gameConfiguration.preConditionCollectionPath);
@@ -152,7 +165,22 @@ public class GameManager : MonoBehaviour
 		this.questManager.loadQuestsFromFile (this.gameConfiguration.questCollectionPath);
 
 		// TODO: LOAD USER STATE - HOW TO STORE USER INFORMATION OUTSIDE THE PROJECT? OR COULD IT BE INSIDE?
+
 	}
 
+	public void SaveGame() {
+		DataAccess.SaveGame (gameData);
+	}
 
+	public void LoadGame() {
+		gameData = DataAccess.Load ();
+	}
+
+	public bool CanLoadGame() {
+		return DataAccess.CanLoadGame ();
+	}
+
+	public void DeleteSavedData() {
+		DataAccess.DeleteSavedData ();
+	}
 }

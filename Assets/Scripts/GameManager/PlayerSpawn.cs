@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class PlayerSpawn : MonoBehaviour 
@@ -30,20 +31,30 @@ public class PlayerSpawn : MonoBehaviour
         leavingScene = currentLevel;
 	}
 
-	void OnLevelWasLoaded()
+	void OnEnable()
 	{
-        Transform target = null;
-        if(GameObject.Find(leavingScene) != null) 
-            target = GameObject.Find(leavingScene).GetComponent<Transform>();
+		SceneManager.sceneLoaded += OnLevelFinishedLoading;
+	}
 
-        if(target != null)
-        {
-            Transform spawn = target.GetChild(0).GetComponent<Transform>();
-            Transform player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
-            Vector3 playerPosition = new Vector3(spawn.position.x, spawn.position.y, player.position.z);
-            Vector3 cameraPosition = new Vector3(spawn.position.x, spawn.position.y, Camera.main.transform.position.z);
-            player.position = playerPosition;
-            Camera.main.transform.position = cameraPosition;
-        }
+	void OnDisable()
+	{
+		SceneManager.sceneLoaded -= OnLevelFinishedLoading;
+	}
+		
+	void OnLevelFinishedLoading(Scene scene, LoadSceneMode mode)
+	{
+		Transform target = null;
+		if(GameObject.Find(leavingScene) != null) 
+			target = GameObject.Find(leavingScene).GetComponent<Transform>();
+
+		if(target != null)
+		{
+			Transform spawn = target.GetChild(0).GetComponent<Transform>();
+			Transform player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+			Vector3 playerPosition = new Vector3(spawn.position.x, spawn.position.y, player.position.z);
+			Vector3 cameraPosition = new Vector3(spawn.position.x, spawn.position.y, Camera.main.transform.position.z);
+			player.position = playerPosition;
+			Camera.main.transform.position = cameraPosition;
+		}
 	}
 }

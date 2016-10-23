@@ -5,16 +5,25 @@ using System;
 
 public class StartGame : MonoBehaviour {
 
-    public string startScene = "CinParking";
     SceneChanger sceneChanger;
+	public GameObject loadGameButton;
 	
 	void Awake() {
         gameObject.AddComponent<SceneChanger>();
         sceneChanger = GetComponent<SceneChanger>();
-        sceneChanger.destinyScene = "CinParking";
+
+		loadGameButton.GetComponent<Button> ().interactable = GameManager.Instance.CanLoadGame ();
     }
 
 	public void startGame() {
+		GameManager.Instance.DeleteSavedData ();
+		sceneChanger.destinyScene = "ChooseCharacter";
+		sceneChanger.Change();
+	}
+
+	public void LoadGame() {
+		GameManager.Instance.LoadGame ();
+		sceneChanger.destinyScene = "CinParking";
 		sceneChanger.Change();
 	}
 
