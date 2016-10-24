@@ -24,6 +24,16 @@ public class DialogTreeNode : ScriptableObject
 	}
 
 	[SerializeField]
+	List<int> lockconditionIds;
+	/// <summary>
+	/// The list of the Precondition ID's that the user must satisfie in order to reach this node.
+	/// </summary>
+	public List<int> LockconditionIds
+	{
+		get { return lockconditionIds; }
+	}
+
+	[SerializeField]
 	List<int> rewardIds;
 	/// <summary>
 	/// The list of the reward item ID's that the user will win after reaching this node
@@ -68,7 +78,7 @@ public class DialogTreeNode : ScriptableObject
     /// </summary>
     public bool IsLeaf
     {
-        get { return Children.Count == 0; }
+        get { return AvaiableChildren == 0; }
     }
 
 	public string speaker;
@@ -130,6 +140,13 @@ public class DialogTreeNode : ScriptableObject
 			if (!GameManager.Instance.preConditionManager.getPreCondition (id).checkIfMatches (user))
 				return false;	
 		}
+
+		foreach(int id in LockconditionIds)
+		{
+			if (GameManager.Instance.preConditionManager.getPreCondition (id).checkIfMatches (user))
+				return false;	
+		}
+		
 
 		return true;
 	}

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Recepcionist : InterativeSpeaker
+public class Gatekeeper : InterativeSpeaker
 {
     public Transform origin;
     public Transform destine;
@@ -17,7 +17,7 @@ public class Recepcionist : InterativeSpeaker
 
     public override void EndConversation(DialogTreeNode endingNode)
     {
-		if (endingNode.Response == "Catraca") {
+		if (endingNode.Response == "Perdi o crachá!") {
 			if (playerInside)
 				teleporter.Teleport (player, true, destine);
 			else

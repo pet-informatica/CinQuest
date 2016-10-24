@@ -157,6 +157,7 @@ public class DialogManager : MonoBehaviour
             curDialog = dialog;
             curSpeaker = speaker;
 			curDialog.Start();
+		
 			curDialog.Head.speaker = speaker.gameObject.name;
 			curDialog.Execute ();
             curMessage = curDialog.Head.Message;
@@ -180,6 +181,7 @@ public class DialogManager : MonoBehaviour
     /// <returns>The time it will take to fully end the conversation.</returns>
     float EndConversation()
     {
+		curDialog.Execute ();
         curSpeaker.EndConversation(curDialog.Head);
         IsSpeaking = false;
         curDialog = null;
@@ -199,6 +201,7 @@ public class DialogManager : MonoBehaviour
     /// </summary>
     void Type()
     {
+		curDialog.Execute ();
         curDialog.GoToChild(selectedResponse);
         curMessage = curDialog.Head.Message;
         typedMessage = "";

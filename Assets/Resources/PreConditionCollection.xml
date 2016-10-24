@@ -1,4 +1,7 @@
 ﻿<PreConditionCollection>
-  <PreCondition identifier="1" name="CheckCracha" itemIdentifier="1"/>
-  <PreCondition identifier="2" name="NeedCracha" itemIdentifier="2"/>
+  <PreCondition identifier="1" name="quest1-freshman-speak-1" itemIdentifier="1"/>
+  <PreCondition identifier="2" name="quest1-gatekeeper-speak-1" itemIdentifier="2"/>
+  <PreCondition identifier="3" name="quest1-freshman-speak-2" itemIdentifier="3"/>
+  <PreCondition identifier="4" name="quest1-helpdesk-speak-1" itemIdentifier="4"/>
+  <PreCondition identifier="5" name="got-idcard" itemIdentifier="5"/>
 </PreConditionCollection>

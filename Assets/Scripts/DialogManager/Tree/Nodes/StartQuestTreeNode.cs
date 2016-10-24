@@ -28,12 +28,15 @@ public class StartQuestTreeNode : DialogTreeNode
     /// <returns>Returns if the current node is avaiable to be reached</returns>
     public override bool IsAvaiable()
     {
-		if (!base.IsAvaiable ())
+		if (!base.IsAvaiable ()) {
 			return false;
+		}
+			
         User user = User.Instance;
         Quest quest = user.GetQuest(QuestID);
         if (quest != null && quest.Unlocked && !quest.Done)
         {
+			
             return true;
         }
         return false;

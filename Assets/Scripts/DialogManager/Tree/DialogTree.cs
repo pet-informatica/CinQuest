@@ -57,7 +57,6 @@ public class DialogTree : ScriptableObject
 			DialogTreeNode target = head.FetchAvaiable (response);
 			target.speaker = head.speaker;
 			head = target;
-            head.Execute();
         }
     }
 }

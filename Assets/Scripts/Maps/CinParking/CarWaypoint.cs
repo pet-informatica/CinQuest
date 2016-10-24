@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Waypoint : MonoBehaviour
+public class CarWaypoint : Waypoint
 {
     /*
         Developed by: Higor
@@ -12,12 +12,7 @@ public class Waypoint : MonoBehaviour
         How to use it: Attach it to a gameobject with a transform and sets it's previous waypoint, that is,
         the waypoint from where the car/wanderer is coming from before reaching this spot. Note that doing it for 
         every waypoint, you will have a complete path for the car to travel and reach it.
-
-        *The carSpawner variable is optional. Leave it empty if you are NOT dealing with cars.
     */
-
-    public bool avaiable = true;
-    public GameObject previous;
 
     public CarSpawner carSpawner;
 
