@@ -153,10 +153,12 @@ public class DialogManager : MonoBehaviour
         {
             IsSpeaking = true;
             textTime = 0f;
-
+		
             curDialog = dialog;
             curSpeaker = speaker;
-            curDialog.Start();
+			curDialog.Start();
+			curDialog.Head.speaker = speaker.gameObject.name;
+			curDialog.Execute ();
             curMessage = curDialog.Head.Message;
             typedMessage = "";
             StartCoroutine(TypeText());

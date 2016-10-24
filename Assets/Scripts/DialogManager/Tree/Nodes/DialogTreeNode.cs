@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 /// <summary>
 /// Developed by: Higor (hcmb)
@@ -69,6 +70,9 @@ public class DialogTreeNode : ScriptableObject
     {
         get { return Children.Count == 0; }
     }
+
+	public string speaker;
+	public bool broadcaster;
 
     /// <summary>
     /// The number of reachable and avaiable nodes from the current one.
@@ -141,5 +145,17 @@ public class DialogTreeNode : ScriptableObject
 		{
 			user.AddItem(GameManager.Instance.itemManager.GetItem(id));
 		}
+
+		if (broadcaster) {
+			GameObject player = GameObject.Find (speaker);
+			if (player != null) {
+				IBroadcaster broad = player.GetComponent<IBroadcaster> ();
+				if (broad != null) {
+					broad.Broad ();
+				}
+
+			}
+		}
+
 	}
 }

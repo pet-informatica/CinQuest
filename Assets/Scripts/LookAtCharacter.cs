@@ -26,7 +26,8 @@ public class LookAtCharacter : MonoBehaviour {
 
     void OnTriggerExit2D(Collider2D objeto)
     {
-        spriteRenderer.sprite = origin;
+		if(backToOrigin)
+       	 spriteRenderer.sprite = origin;
     }
 
 	private void updateSprite(Collider2D objeto){
