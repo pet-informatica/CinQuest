@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 
 public class NPCListener : MonoBehaviour {
@@ -12,8 +13,8 @@ public class NPCListener : MonoBehaviour {
 		get { return instance; }
 	}
 
-	public NPCGroup[] groups;
-	Dictionary<string, int> index;
+	HashSet<string> toEnable = new HashSet<string> ();
+	HashSet<string> toDisable = new HashSet<string> ();
 
 	void Awake(){
 		if (instance == null) {
@@ -24,23 +25,79 @@ public class NPCListener : MonoBehaviour {
 		DontDestroyOnLoad (gameObject);
 	}
 
-	void Start () {
-		index = new Dictionary<string, int> ();
-
-		for(int i = 0; i < groups.Length; ++i){
-			index.Add (groups [i].name, i);
-		}
-	}
-	
-	public void Instantiate(string name){
-		foreach (GameObject go in groups[index[name]].npcs) {
-			go.SetActive (true);
-		}
+	void Start(){
+		
 	}
 
+	void OnEnable()
+	{
+		SceneManager.sceneLoaded += OnLevelFinishedLoading;
+	}
+
+	void OnDisable()
+	{
+		SceneManager.sceneLoaded -= OnLevelFinishedLoading;
+	}
+
+	void OnLevelFinishedLoading(Scene scene, LoadSceneMode mode)
+	{
+		Process ();
+	}
+
+	/// <summary>
+	/// Adds a npc group a name in the list of toEnable group for enabling latter
+	/// </summary>
+	/// <param name="name">Name.</param>
+	public void Enable(string name){
+		toEnable.Add (name);
+	}
+
+
+	/// <summary>
+	/// Adds a npc group a name in the list of toDisable group for disabling latter
+	/// </summary>
+	/// <param name="name">Name.</param>
 	public void Disable(string name){
-		foreach (GameObject go in groups[index[name]].npcs) {
+		toDisable.Add (name);
+	}
+
+	/// <summary>
+	/// Adds a npc group a name in the list of toEnable and enables it instantly
+	/// </summary>
+	/// <param name="name">Name.</param>
+	public void EnableInstantly(string name){
+		toEnable.Add (name);
+		GameObject go = GameObject.Find (name);
+		if (go != null)
+			go.SetActive (true);
+	}
+
+	/// <summary>
+	/// Adds a npc group a name in the list of toDisable and disables it instantly
+	/// </summary>
+	/// <param name="name">Name.</param>
+	public void DisableInstantly(string name){
+		toDisable.Add (name);
+		GameObject go = GameObject.Find (name);
+		if (go != null)
 			go.SetActive (false);
+	}
+
+	/// <summary>
+	/// Flushes the hash set, enabling all gameobjects toEnable and disabling all gameobjects toDisable
+	/// </summary>
+	void Process(){
+		foreach (string name in toEnable) {
+			GameObject go = GameObject.Find (name);
+			if (go != null) 
+				go.SetActive (true);
+			
+				
+		}
+		foreach (string name in toDisable) {
+			GameObject go = GameObject.Find (name);
+			if (go != null)
+				go.SetActive (false);
 		}
 	}
 }
