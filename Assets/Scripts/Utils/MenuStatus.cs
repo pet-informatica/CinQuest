@@ -21,15 +21,6 @@ namespace AssemblyCSharp
 				{"Map", false},
 				{"Quest", false}
 			};
-//			this.menuProblem = new Dictionary<string,bool> () {
-//				{ "Pause", new List<string> { } },
-//				{ "Control", new List<string> { } },
-//				{ "Feedback", new List<string> { } },
-//				{ "Inventory", new List<string> { "Pause", "Controle" } },
-//				{ "Map", new List<string> { "Pause", "Controle" } },
-//				{ "Quest", new List<string> { "Pause", "Controle" } }
-//			};
-
 		}
 
 		/// <summary>
@@ -53,7 +44,7 @@ namespace AssemblyCSharp
 		public bool openProblem(string menu){
 			bool problem = false;
 
-			//quando o feedback está aberto, nenhuma tecla deve funcionar para abrir um menu
+			//when the feedback is open, no key should work to open a other menu
 			if (menuStatus ["Feedback"]) {
 				problem = true;
 			} else {
