@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using AssemblyCSharp;
 
 public class PauseMenu : MonoBehaviour {
 	/*
@@ -17,6 +18,8 @@ public class PauseMenu : MonoBehaviour {
 	private GameObject controlCanvas;
 	private GameObject feedbackCanvas;
 	private GameObject[] allCanvas;
+	private MenuStatus menuStatus;
+
 
 	void Start() {
 		pauseCanvas = GameObject.Find("Pause Canvas");
@@ -33,20 +36,25 @@ public class PauseMenu : MonoBehaviour {
 
 		// pauseCanvas must be in the last position!
 		allCanvas = new GameObject[] {feedbackCanvas, controlCanvas, pauseCanvas};
+
+		menuStatus = GameManager.Instance.menuStatus;
 	}
 
 	void Update () {
-		if (Input.GetButtonDown ("Pause")) {
+
+		if (Input.GetButtonDown ("Pause") && !menuStatus.openProblem("Pause")) {
 			if (allCanvas [allCanvas.Length - 1].activeSelf) {
 				foreach (GameObject canvas in allCanvas) {
 					if (canvas.activeSelf) {
 						canvas.SetActive (false);
+						menuStatus.close ("Pause");
 						break;
 					}
 				}
 			} else {
 				GameObject.FindGameObjectWithTag ("Player").GetComponent<PlayerController> ().OnPause (true);
 				pauseCanvas.SetActive (true);
+				menuStatus.open ("Pause");
 			}
 		}
 	}
@@ -63,6 +71,7 @@ public class PauseMenu : MonoBehaviour {
 	}
 
 	public void openFeedback(){
+		menuStatus.open ("Feedback");
 		feedbackCanvas.SetActive (true);
 	}
 

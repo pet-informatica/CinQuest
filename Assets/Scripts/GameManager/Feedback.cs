@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using AssemblyCSharp;
 
 public class Feedback : MonoBehaviour {
 
@@ -8,10 +9,12 @@ public class Feedback : MonoBehaviour {
 	private Feedback feedback;
 	public InputField emailFeed;
 	public InputField bodyFeed;
+	private MenuStatus menuStatus;
 
 	void Start () {
 		feedbackCanvas = GameObject.Find("Feedback Canvas");
 		feedback = feedbackCanvas.GetComponent<Feedback> ();
+		menuStatus = GameManager.Instance.menuStatus;
 	}
 
 	void Update () {
@@ -22,6 +25,7 @@ public class Feedback : MonoBehaviour {
 	}
 
 	private void cancel(){
+		menuStatus.close ("Feedback");
 		feedbackCanvas.SetActive (false);
 	}
 
@@ -40,7 +44,7 @@ public class Feedback : MonoBehaviour {
 		print (email + "/" + body);
 		//Open the Default Mail App
 		Application.OpenURL("mailto:" + email + "?subject=" + subject + "&body=" + body);
-		print ("enviou???");
-
+		//print ("enviou???");
+		feedback.cancel();
 	}
 }
