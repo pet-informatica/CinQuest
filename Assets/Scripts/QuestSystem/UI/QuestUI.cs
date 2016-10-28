@@ -19,6 +19,7 @@ public class QuestUI : MonoBehaviour
 	RectTransform questBoxTransform;
 	bool opened;
 	float questButtonHeight;
+	private MenuStatus menuStatus;
 
 	List<Quest> quests = new List<Quest>();
 	List<GameObject> buttons = new List<GameObject>();
@@ -27,6 +28,7 @@ public class QuestUI : MonoBehaviour
 	{
 		questBoxTransform = questBoxContent.GetComponent<RectTransform>();
 		questButtonHeight = questButton.GetComponent<RectTransform>().rect.height;
+		menuStatus = GameManager.Instance.menuStatus;
 
 		UpdateQuestsFromUser();
 
@@ -84,6 +86,7 @@ public class QuestUI : MonoBehaviour
 		UpdateQuestBoxContent();
 		questBox.SetActive(true);
 		opened = true;
+		menuStatus.open ("Quest");
 	}
 
 	/// <summary>
@@ -94,6 +97,7 @@ public class QuestUI : MonoBehaviour
 		questBox.SetActive(false);
 		questInfo.SetActive(false);
 		opened = false;
+		menuStatus.close ("Quest");
 	}
 
 	/// <summary>
@@ -106,7 +110,7 @@ public class QuestUI : MonoBehaviour
 
 	void Update ()
 	{
-		if (Input.GetButtonDown("Quests"))
+		if (Input.GetButtonDown("Quests") && !menuStatus.openProblem("Quest"))
 		{
 			if (opened) CloseWindow();
 			else OpenWindow();
