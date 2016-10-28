@@ -1,40 +1,23 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
-using AssemblyCSharp;
 
 public class Feedback : MonoBehaviour {
 
-	private GameObject feedbackCanvas;
-	private Feedback feedback;
 	public InputField emailFeed;
 	public InputField bodyFeed;
 	private MenuStatus menuStatus;
 
 	void Start () {
-		feedbackCanvas = GameObject.Find("Feedback Canvas");
-		feedback = feedbackCanvas.GetComponent<Feedback> ();
 		menuStatus = GameManager.Instance.menuStatus;
 	}
 
-	void Update () {
-	}
-
 	public void closeFeedback() {
-		feedback.cancel();
-	}
-
-	private void cancel(){
 		menuStatus.close ("Feedback");
-		feedbackCanvas.SetActive (false);
+		PauseMenu.Instance.CloseFeedback();
 	}
 
-	public void emailFeedback() {
-		feedback.sendEmail();
-	}
-
-	private void sendEmail(){
-		
+	public void sendEmail(){
 		//email Id to send the mail to
 		string email = emailFeed.text;
 		//subject of the mail
@@ -45,6 +28,6 @@ public class Feedback : MonoBehaviour {
 		//Open the Default Mail App
 		Application.OpenURL("mailto:" + email + "?subject=" + subject + "&body=" + body);
 		//print ("enviou???");
-		feedback.cancel();
+		closeFeedback();
 	}
 }

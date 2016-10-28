@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Collections;
 using UnityEngine.UI;
-using AssemblyCSharp;
 
 /// <summary>
 /// Developed by: Higor (hcmb)

@@ -43,10 +43,20 @@ public class Minimap : MonoBehaviour {
         title.text = SceneNamer.UI(SceneManager.GetActiveScene().name);
     }
 
-    void OnLevelWasLoaded(int level)
-    {
-        UpdateTitle();
-    }
+	void OnEnable()
+	{
+		SceneManager.sceneLoaded += OnLevelFinishedLoading;
+	}
+
+	void OnDisable()
+	{
+		SceneManager.sceneLoaded -= OnLevelFinishedLoading;
+	}
+
+	void OnLevelFinishedLoading(Scene scene, LoadSceneMode mode)
+	{
+		UpdateTitle();
+	}
 
     void UpdateTitle()
     {

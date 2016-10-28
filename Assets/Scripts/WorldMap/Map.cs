@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
-using UnityEditor;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 using UnityEngine.UI;
 
@@ -54,7 +54,7 @@ public class Map : MonoBehaviour
             instance = this;
             IsOpen = true;
 			model.Populate ();
-			ChangeStage (Application.loadedLevelName);
+			ChangeStage (SceneManager.GetActiveScene().name);
             descriptionRect = description.GetComponent<RectTransform>();
             descriptionText = description.GetComponentInChildren<Text>();
             descriptionTextRect = descriptionText.GetComponent<RectTransform>();
@@ -120,7 +120,7 @@ public class Map : MonoBehaviour
             UI.SetActive(true);
             if (Minimap.Instance != null)
                 Minimap.Instance.Close();
-			ChangeStage (Application.loadedLevelName);
+			ChangeStage (SceneManager.GetActiveScene().name);
         }
     }
 

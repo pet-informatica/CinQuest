@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class MinimapArrow : MonoBehaviour
@@ -12,12 +13,21 @@ public class MinimapArrow : MonoBehaviour
             anim = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
     }
 
-    void OnLevelWasLoaded()
-    {
-        if(GameObject.FindGameObjectWithTag("Player") != null)
-            anim = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
-    }
-    
+	void OnEnable()
+	{
+		SceneManager.sceneLoaded += OnLevelFinishedLoading;
+	}
+
+	void OnDisable()
+	{
+		SceneManager.sceneLoaded -= OnLevelFinishedLoading;
+	}
+
+	void OnLevelFinishedLoading(Scene scene, LoadSceneMode mode)
+	{
+		if(GameObject.FindGameObjectWithTag("Player") != null)
+			anim = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
+	}
 
     void UpdateSensorPosition()
     {

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-using AssemblyCSharp;
+using System.Collections.Generic;
 
 public class PauseMenu : MonoBehaviour {
 	/*
@@ -14,53 +14,43 @@ public class PauseMenu : MonoBehaviour {
     * 					menu. In Unity, select the button and go to OnClick() and select the function you want.
     */
 
-	private GameObject pauseCanvas;
-	private GameObject controlCanvas;
-	private GameObject feedbackCanvas;
-	private GameObject[] allCanvas;
+	public GameObject pauseCanvas;
+	public GameObject controlCanvas;
+	public GameObject feedbackCanvas;
+	private Stack<GameObject> allCanvas;
 	private MenuStatus menuStatus;
 
+	static PauseMenu instance;
 
 	void Start() {
-		pauseCanvas = GameObject.Find("Pause Canvas");
-		if (pauseCanvas != null)
-			pauseCanvas.SetActive (false);
-
-		controlCanvas = GameObject.Find("Control Canvas");
-		if(controlCanvas != null)
-			controlCanvas.SetActive (false);
-		
-		feedbackCanvas = GameObject.Find("Feedback Canvas");
-		if (feedbackCanvas != null)
-			feedbackCanvas.SetActive (false);
-
-		// pauseCanvas must be in the last position!
-		allCanvas = new GameObject[] {feedbackCanvas, controlCanvas, pauseCanvas};
-
+		instance = this;
 		menuStatus = GameManager.Instance.menuStatus;
+		allCanvas = new Stack<GameObject>();
+		allCanvas.Push(pauseCanvas);
 	}
 
 	void Update () {
-
 		if (Input.GetButtonDown ("Pause") && !menuStatus.openProblem("Pause")) {
-			if (allCanvas [allCanvas.Length - 1].activeSelf) {
-				foreach (GameObject canvas in allCanvas) {
-					if (canvas.activeSelf) {
-						canvas.SetActive (false);
-						menuStatus.close ("Pause");
-						break;
-					}
-				}
+			if (pauseCanvas.activeSelf) {
+				allCanvas.Pop ().SetActive (false);
+				if(allCanvas.Count == 1)
+					menuStatus.close ("Pause");
 			} else {
-				GameObject.FindGameObjectWithTag ("Player").GetComponent<PlayerController> ().OnPause (true);
 				pauseCanvas.SetActive (true);
 				menuStatus.open ("Pause");
+				allCanvas.Push (pauseCanvas);
 			}
 		}
 	}
 
+	public static PauseMenu Instance
+	{
+		get { return instance; }
+	}
+
 	public void openControl() {
 		controlCanvas.SetActive (true);
+		allCanvas.Push (controlCanvas);
 		GameObject.Find ("upButton").GetComponent<Text> ().text = "W";
 		GameObject.Find ("downButton").GetComponent<Text> ().text = "S";
 		GameObject.Find ("leftButton").GetComponent<Text> ().text = "A";
@@ -73,6 +63,7 @@ public class PauseMenu : MonoBehaviour {
 	public void openFeedback(){
 		menuStatus.open ("Feedback");
 		feedbackCanvas.SetActive (true);
+		allCanvas.Push (feedbackCanvas);
 	}
 
 	public void quitGame() {
@@ -82,5 +73,18 @@ public class PauseMenu : MonoBehaviour {
 		sceneChanger.Change();
 		pauseCanvas.SetActive (false);
 	}
-		
+
+	public void CloseFeedback() {
+		this.allCanvas.Pop ().SetActive (false);
+	}
+
+	void OnDisable() {
+		if(	GameObject.FindGameObjectWithTag ("Player") != null)
+			GameObject.FindGameObjectWithTag ("Player").GetComponent<PlayerController> ().OnPause (false);
+	}
+
+	void OnEnable() {
+		if(	GameObject.FindGameObjectWithTag ("Player") != null)
+			GameObject.FindGameObjectWithTag ("Player").GetComponent<PlayerController> ().OnPause (false);
+	}
 }
