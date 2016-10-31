@@ -13,14 +13,12 @@ public class Quest1NPCFreshman : MonoBehaviour, IBroadcaster {
 	public GameObject[] paths;
 	InterativeSpeaker speaker;
 	NPCMover mover;
-	Move move;
 	EState state;
 	int currentDialog;
 	int currentPath;
 
 	void Start () {
 		state = EState.AtGate;
-		move = GetComponent<Move> ();
 		mover = GetComponent < NPCMover> ();
 		speaker = GetComponent<InterativeSpeaker> ();
 	}
@@ -44,6 +42,13 @@ public class Quest1NPCFreshman : MonoBehaviour, IBroadcaster {
 	}
 
 	/// <summary>
+	/// Stops every movement
+	/// </summary>
+	void Halt(){
+		mover.CancelPath ();
+	}
+
+	/// <summary>
 	/// Speaks the next dialog in the list latter when interacting with player.
 	/// </summary>
 	void NextDialog(){
@@ -57,6 +62,8 @@ public class Quest1NPCFreshman : MonoBehaviour, IBroadcaster {
 		if (state == EState.AtGate) {
 			MoveToPath ();
 			NextDialog ();
+		} if (state == EState.WaitingGatekeeper) {
+			Halt ();
 		}
 		state++;
 	}

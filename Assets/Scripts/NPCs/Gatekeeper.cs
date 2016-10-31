@@ -6,8 +6,9 @@ public class Gatekeeper : InterativeSpeaker
     public Transform origin;
     public Transform destine;
 
-    Teleporter teleporter;
-    bool playerInside;
+    protected Teleporter teleporter;
+	protected bool playerInside;
+
 
 	void Start ()
     {

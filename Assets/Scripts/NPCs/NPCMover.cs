@@ -5,16 +5,8 @@ using System.Collections.Generic;
 /// Helper class that can move an NPC with the Move script attached.
 /// Developed by: hcmb
 /// </summary>
-public class NPCMover : MonoBehaviour 
+public class NPCMover : Move 
 {
-	Move move;
-	Animator anim;
-
-	void Start () {
-		move = GetComponent<Move> ();
-		anim = GetComponent<Animator> ();
-	}
-
 	/// <summary>
 	/// Start walking the Move script to a target last waypoint, using it's previousw waypoints in order to build a path.
 	/// </summary>
@@ -31,9 +23,9 @@ public class NPCMover : MonoBehaviour
 		}
 
 		for (int i = path.Count - 1; i >= 0; i--)
-			move.addPoint(path[i]);
-
+			addPoint(path[i]);
+		
 		anim.enabled = true;
-		move.StartMoving ();
+		StartMoving ();
 	}
 }
