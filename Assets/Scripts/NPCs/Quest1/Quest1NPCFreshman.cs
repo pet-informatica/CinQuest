@@ -81,6 +81,10 @@ public class Quest1NPCFreshman : MonoBehaviour, IBroadcaster {
 			MoveToPath ();
 		} else if (state == EState.GoingForHelpdesk) {
 			NextDialog ();
+		} else if (state == EState.AtHelpdesk) {
+			NextDialog ();
+		} else if (state == EState.QuestEnd) {
+			MoveToPath ();
 		}
 		state++;
 	}
