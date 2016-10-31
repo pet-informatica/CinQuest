@@ -174,18 +174,31 @@ public class GameManager : MonoBehaviour
 
 	}
 
+	/// <summary>
+	/// Saves the game data.
+	/// </summary>
 	public void SaveGame() {
 		DataAccess.SaveGame (gameData);
 	}
 
+	/// <summary>
+	/// Loads the game data.
+	/// </summary>
 	public void LoadGame() {
 		gameData = DataAccess.Load ();
 	}
 
+	/// <summary>
+	/// Determines whether this instance can load game.
+	/// </summary>
+	/// <returns><c>true</c> if this instance can load game; otherwise, <c>false</c>.</returns>
 	public bool CanLoadGame() {
 		return DataAccess.CanLoadGame ();
 	}
 
+	/// <summary>
+	/// Deletes the saved data.
+	/// </summary>
 	public void DeleteSavedData() {
 		DataAccess.DeleteSavedData ();
 	}
