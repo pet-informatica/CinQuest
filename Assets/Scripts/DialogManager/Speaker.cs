@@ -30,18 +30,18 @@ public class Speaker : MonoBehaviour
     /// Communicates with the DialogManager in the ItemManager to try to start a dialog.
     /// </summary>
     /// <param name="dialog">The dialog tree to speak.</param>
-    public virtual void Speak()
+    public virtual bool Speak()
     {
-        dialogManager.Speak(dialogs[defaultDialogIndex], this);
+        return dialogManager.Speak(dialogs[defaultDialogIndex], this);
     }
 
     /// <summary>
     /// Communicates with the DialogManager in the ItemManager to try to start a dialog.
     /// </summary>
     /// <param name="dialog">The dialog tree to speak.</param>
-    public virtual void Speak(DialogTree dialog)
+	public virtual bool Speak(DialogTree dialog)
     {
-        dialogManager.Speak(dialog, this);
+		return dialogManager.Speak(dialog, this);
     }
 
     /// <summary>

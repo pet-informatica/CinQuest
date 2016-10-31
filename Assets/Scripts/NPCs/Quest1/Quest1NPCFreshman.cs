@@ -6,6 +6,8 @@ public class Quest1NPCFreshman : MonoBehaviour, IBroadcaster {
 	public enum EState{
 		AtGate,
 		WaitingGatekeeper,
+		WaitingPlayer,
+		GoingForHelpdesk,
 		AtHelpdesk,
 		QuestEnd
 	}
@@ -24,7 +26,16 @@ public class Quest1NPCFreshman : MonoBehaviour, IBroadcaster {
 	}
 
 	void Update () {
-		
+		if (state == EState.WaitingPlayer) {
+			if (speaker.Speak ()) {
+				ChangeState ();
+			}
+				//ChangeState ();
+		} else if (state == EState.GoingForHelpdesk) {
+			if (!mover.isMoving ()) {
+				ChangeState ();
+			}
+		}
 	}
 
 	/// <summary>
@@ -39,6 +50,7 @@ public class Quest1NPCFreshman : MonoBehaviour, IBroadcaster {
 	/// </summary>
 	void MoveToPath(){
 		mover.GoForTargetWaypoint (paths [currentPath]);
+		currentPath++;
 	}
 
 	/// <summary>
@@ -62,8 +74,13 @@ public class Quest1NPCFreshman : MonoBehaviour, IBroadcaster {
 		if (state == EState.AtGate) {
 			MoveToPath ();
 			NextDialog ();
-		} if (state == EState.WaitingGatekeeper) {
+		} else if (state == EState.WaitingGatekeeper) {
 			Halt ();
+			NextDialog ();
+		} else if (state == EState.WaitingPlayer) {
+			MoveToPath ();
+		} else if (state == EState.GoingForHelpdesk) {
+			NextDialog ();
 		}
 		state++;
 	}

@@ -39,22 +39,15 @@ public class DialogManager : MonoBehaviour
     public bool Speak(DialogTree dialog, Speaker speaker)
     {
         if (IsSpeaking && dialog.Priority <= curDialog.Priority)
-        return false; 
+        	return false; 
 
-        ClearDialogBox();
-        StartConversation(dialog, speaker);
-        return true;
+		WaitUntilItEnds ();
+		return StartConversation (dialog, speaker) != 0f;
     }
 
-    /// <summary>
-    /// Erase the messages and fade out the GUI. Blocks the method that calls it until it's
-    /// done and it's safe for progressing.
-    /// </summary>
-    /// <returns></returns>
-    IEnumerator ClearDialogBox()
-    {
-        yield return new WaitForSeconds(EndConversation());
-    }
+	IEnumerator WaitUntilItEnds(){
+		yield return new WaitForSeconds (EndConversation ());
+	}
 
     /// <summary>
     /// Adds a letter from curMessage to typedMessage every letterPause seconds.
