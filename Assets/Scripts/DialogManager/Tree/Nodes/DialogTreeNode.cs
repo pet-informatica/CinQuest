@@ -97,8 +97,9 @@ public class DialogTreeNode : ScriptableObject
                 if (node.IsAvaiable())
                 {
                     avaiable++;
-                }
+				}
             }
+
             return avaiable;
         }
     }

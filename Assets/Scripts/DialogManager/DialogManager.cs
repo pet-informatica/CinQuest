@@ -156,6 +156,7 @@ public class DialogManager : MonoBehaviour
             curMessage = curDialog.Head.Message;
             typedMessage = "";
             StartCoroutine(TypeText());
+	
             SetResponses(curDialog.Head);
             SelectResponse(0);
 
@@ -165,7 +166,7 @@ public class DialogManager : MonoBehaviour
             StartCoroutine(GUIFade(fadeStart, fadeEnd, fadeLenght));
             return (fadeStart - fadeEnd) / (1f / fadeLenght);
         }
-        return 0;
+        return 0f;
     }
 
     /// <summary>
@@ -208,8 +209,9 @@ public class DialogManager : MonoBehaviour
     /// <param name="">A DialogTreeNode, containing all it's children nodes, each having a specific response to be reached.</param>
     void SetResponses(DialogTreeNode node)
     {
+		
         avaiableResponses = node.AvaiableChildren;
-
+	
         int resp = 0;
         for(int i = 0; i < node.Children.Count; i++)
         {
@@ -221,6 +223,7 @@ public class DialogManager : MonoBehaviour
             responses[i].text = "";
 
         selectedResponse = 0;
+
         SelectResponse(selectedResponse);
     }
 
@@ -234,6 +237,7 @@ public class DialogManager : MonoBehaviour
             responses[i].color = normalResponseColor;
 
         selectedResponse = response;
-        responses[selectedResponse].color = selectedResponseColor;
+
+		responses[selectedResponse].color = selectedResponseColor;
     }
 }

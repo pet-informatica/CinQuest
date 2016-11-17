@@ -50,6 +50,9 @@ public class NPCListener : MonoBehaviour {
 	/// <param name="name">Name.</param>
 	public void Enable(string name){
 		toEnable.Add (name);
+		if (toDisable.Contains (name)) {
+			toDisable.Remove (name);
+		}
 	}
 
 
@@ -59,6 +62,9 @@ public class NPCListener : MonoBehaviour {
 	/// <param name="name">Name.</param>
 	public void Disable(string name){
 		toDisable.Add (name);
+		if (toEnable.Contains (name)) {
+			toEnable.Remove (name);
+		}
 	}
 
 	/// <summary>
@@ -66,7 +72,7 @@ public class NPCListener : MonoBehaviour {
 	/// </summary>
 	/// <param name="name">Name.</param>
 	public void EnableInstantly(string name){
-		toEnable.Add (name);
+		Enable (name);
 		GameObject go = GameObject.Find (name);
 		if (go != null)
 			go.SetActive (true);
@@ -77,7 +83,7 @@ public class NPCListener : MonoBehaviour {
 	/// </summary>
 	/// <param name="name">Name.</param>
 	public void DisableInstantly(string name){
-		toDisable.Add (name);
+		Disable (name);
 		GameObject go = GameObject.Find (name);
 		if (go != null)
 			go.SetActive (false);

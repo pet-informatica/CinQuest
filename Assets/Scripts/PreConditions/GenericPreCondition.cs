@@ -20,10 +20,8 @@ public class GenericPreCondition : IPreCondition {
 
 
 	public bool checkIfMatches(User userProfile){
-		Debug.Log ("teste");
-		Debug.Log (userProfile);
+		Debug.Log (userProfile.Items);
 		foreach (GenericItem i in userProfile.Items) {
-			Debug.Log (i.identifier + " / " + this.itemIdentifier);
 			if (i.identifier.Equals(this.itemIdentifier))
 				return true;
 		}
