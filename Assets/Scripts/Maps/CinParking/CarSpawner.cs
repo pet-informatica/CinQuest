@@ -90,12 +90,12 @@ public class CarSpawner : MoverSpawner
         {
             Move move = cars[carToUnpark].GetComponent<Move>();
 
-            GameObject currentWaypoint = carScripts[carToUnpark].parkedAt.GetComponent<Waypoint>().previous;
+            GameObject currentWaypoint = carScripts[carToUnpark].parkedAt.GetComponent<CarWaypoint>().previous;
 
             while(currentWaypoint != null)
             {
                 move.addPoint(new Vector2(currentWaypoint.transform.position.x, currentWaypoint.transform.position.y));
-                currentWaypoint = currentWaypoint.GetComponent<Waypoint>().previous;
+                currentWaypoint = currentWaypoint.GetComponent<CarWaypoint>().previous;
             }
 
             move.addPoint(new Vector2(targetWaypoint.transform.position.x, targetWaypoint.transform.position.y));
@@ -144,10 +144,10 @@ public class CarSpawner : MoverSpawner
     {
         GameObject[] parkingSpots = GameObject.FindGameObjectsWithTag("ParkingSpot");
 
-        Waypoint[] spots = new Waypoint[parkingSpots.Length];
+        CarWaypoint[] spots = new CarWaypoint[parkingSpots.Length];
 
         for (int i = 0; i < parkingSpots.Length; i++)
-            spots[i] = parkingSpots[i].GetComponent<Waypoint>();
+            spots[i] = parkingSpots[i].GetComponent<CarWaypoint>();
 
         int foundAvaibleSpot = -1;
         for (int i = 0; i < spots.Length; i++)
@@ -168,7 +168,7 @@ public class CarSpawner : MoverSpawner
             while (currentPoint != null)
             {
                 trip.Add(new Vector2(currentPoint.transform.position.x, currentPoint.transform.position.y));
-                currentPoint = currentPoint.GetComponent<Waypoint>().previous;
+                currentPoint = currentPoint.GetComponent<CarWaypoint>().previous;
             }
 
             for (int i = trip.Count - 1; i >= 0; i--)

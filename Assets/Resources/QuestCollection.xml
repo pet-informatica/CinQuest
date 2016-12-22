@@ -8,6 +8,9 @@
 		<PreConditionsToUnlock>
 			<PreCondition identifier="1"/>
 		</PreConditionsToUnlock>
+		<PreConditionsToLock>
+			<PreCondition identifier="1"/>
+		</PreConditionsToLock>
 		<PreConditionsToDone>
 			<PreCondition identifier="2"/>
 		</PreConditionsToDone>
@@ -20,18 +23,20 @@
 
 	<Quest>
 		<Identifier>1</Identifier>
-		<Name>Temos que pegar... O Crachá!</Name>
-		<Description>Todo aluno do CIn precisa fazer seu crachá para poder entrar e sair do Centro. Nessa primeira Quest você aprenderá a fazer seu crachá!</Description>
+		<Name>Temos que pegar... O Login!</Name>
+		<Description>Todo aluno do CIn precisa conseguir o seu login para poder acessar os computadores, e o e-mail pessoal. Nesta quest você aprenderá a fazer isso!</Description>
 		<Unlocked>false</Unlocked>
 		<PreConditionsToUnlock>
 		</PreConditionsToUnlock>
+		<PreConditionsToLock>
+		</PreConditionsToLock>
 		<PreConditionsToDone>
-			<PreCondition identifier="2"/>
+			<PreCondition identifier="3"/>
 		</PreConditionsToDone>
 		<Rewards>
-			<Reward identifier="1"/>
+			<Reward identifier="4"/>
 		</Rewards>
-		<QuestDoneMessage>	Parabéns, agora você tem um crachá e é verdadeiramente um aluno do CIn! Nada de ficar pedindo pra seu Edson para abrir para você! Lembre-se de cuidar bem dele... May the crachá be with you!</QuestDoneMessage>
+		<QuestDoneMessage>	Parabéns, agora você tem um login e é verdadeiramente um aluno do CIn! Cuidado para não deixar sua conta logada nos computadores, e nem o seu email aberto!</QuestDoneMessage>
 	</Quest>
 
 	<Quest>

@@ -39,11 +39,11 @@ public class Move : MonoBehaviour
 {
 	public float moveSpeed = 100f;
     public Queue<Vector2> path = new Queue<Vector2>();
-    const float EPS = 5f;
-    bool canMove;
+	protected const float EPS = 5f;
+	protected bool canMove;
 
-    Animator anim;
-    Rigidbody2D rb;
+    protected Animator anim;
+	protected Rigidbody2D rb;
 
     void Awake ()
     {
@@ -77,18 +77,26 @@ public class Move : MonoBehaviour
         this.canMove = true;
 	}
 
+	IEnumerator wait(){
+		yield return new WaitForSeconds (0.25f);
+		this.anim.enabled = false;
+	}
+
     public void StopMoving()
     {
         this.canMove = false;
         this.anim.SetFloat("VerticalSpeed", 0);
         this.anim.SetFloat("HorizontalSpeed", 0);
+		StartCoroutine (wait());
     }
 
-   
+	public void CancelPath(){
+		this.path.Clear ();
+	}
 	
 	void Update ()
     {
-        if (path.Count == 0)
+		if (path.Count == 0 && canMove)
             StopMoving();
 
         if (canMove && path.Count > 0)
@@ -114,7 +122,7 @@ public class Move : MonoBehaviour
                     transform.position += new Vector3(x * Time.deltaTime * moveSpeed, y * Time.deltaTime * moveSpeed, 0);
                    
 
-                if(anim != null)
+				if(anim != null)
                 {
                     this.anim.SetFloat("VerticalSpeed", y);
                     this.anim.SetFloat("HorizontalSpeed", x);

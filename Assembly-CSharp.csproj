@@ -38,10 +38,10 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="UnityEngine">
-      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
-      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -84,11 +84,17 @@
      <Compile Include="Assets\Scripts\Maps\CinParking\Car.cs" />
      <Compile Include="Assets\Scripts\Maps\CinParking\CarSensor.cs" />
      <Compile Include="Assets\Scripts\Maps\CinParking\CarSpawner.cs" />
+     <Compile Include="Assets\Scripts\Maps\CinParking\CarWaypoint.cs" />
      <Compile Include="Assets\Scripts\Maps\CinParking\Mover.cs" />
      <Compile Include="Assets\Scripts\Maps\CinParking\MoverSpawner.cs" />
-     <Compile Include="Assets\Scripts\Maps\CinParking\Waypoint.cs" />
      <Compile Include="Assets\Scripts\Move.cs" />
-     <Compile Include="Assets\Scripts\NPCs\Recepcionist.cs" />
+     <Compile Include="Assets\Scripts\NPCs\Gatekeeper.cs" />
+     <Compile Include="Assets\Scripts\NPCs\IBroadcaster.cs" />
+     <Compile Include="Assets\Scripts\NPCs\NPCListener.cs" />
+     <Compile Include="Assets\Scripts\NPCs\NPCMover.cs" />
+     <Compile Include="Assets\Scripts\NPCs\Quest1\Quest1NPCFreshman.cs" />
+     <Compile Include="Assets\Scripts\NPCs\Quest1\Quest1NPCGatekeeper.cs" />
+     <Compile Include="Assets\Scripts\NPCs\Quest1\Quest1NPCHelpdesk.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerFront.cs" />
      <Compile Include="Assets\Scripts\PreConditions\GenericPreCondition.cs" />
@@ -114,6 +120,7 @@
      <Compile Include="Assets\Scripts\Utils\RepositoriesFactory.cs" />
      <Compile Include="Assets\Scripts\Utils\RepositoryBaseFactory.cs" />
      <Compile Include="Assets\Scripts\Utils\RepositoryXMLFactory.cs" />
+     <Compile Include="Assets\Scripts\Utils\Waypoint.cs" />
      <Compile Include="Assets\Scripts\WorldMap\Map.cs" />
      <Compile Include="Assets\Scripts\WorldMap\MapModel.cs" />
      <Compile Include="Assets\Scripts\WorldMap\Minimap.cs" />
@@ -122,10 +129,10 @@
      <None Include="Assets\Resources\QuestCollection.xml" />
      <None Include="Assets\Texts\cin_first_floor_rooms.txt" />
  <Reference Include="UnityEngine.UI">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
