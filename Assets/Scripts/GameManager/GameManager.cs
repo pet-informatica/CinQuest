@@ -146,6 +146,15 @@ public class GameManager : MonoBehaviour
 	}
 
 	/// <summary>
+	/// This method will be erased when the item system is done
+	/// </summary>
+	private void FakeItensLoad(){
+		for (int i = 0; i < 50; ++i) {
+			this.itemManager.AddItem (new GenericItem (i));
+		}
+	}
+
+	/// <summary>
 	/// Developed by: Peao (rngs);
 	/// Method where we should initiate all the systems managers of the Game.
 	/// </summary>
@@ -154,6 +163,8 @@ public class GameManager : MonoBehaviour
         // TODO: LOAD GAME ITEMS
         this.itemManager = new ItemManager(RepositoriesFactory.createItemRepository(this.gameConfiguration.databaseType));
         this.itemManager.LoadItemsFromAssets();
+
+		FakeItensLoad ();
 
         // TODO: LOAD GAME PRECONDITIONS
         this.preConditionManager = new PreConditionManager(RepositoriesFactory.createPreConditionRepository(this.gameConfiguration.databaseType));

@@ -20,7 +20,6 @@ public class GenericPreCondition : IPreCondition {
 
 
 	public bool checkIfMatches(User userProfile){
-		Debug.Log (userProfile.Items);
 		foreach (GenericItem i in userProfile.Items) {
 			if (i.identifier.Equals(this.itemIdentifier))
 				return true;
