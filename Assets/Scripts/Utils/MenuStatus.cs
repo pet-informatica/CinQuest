@@ -38,7 +38,12 @@ public class MenuStatus
 		menuStatus [menu] = false;
 		//Debug.Log (menu + " " + menuStatus [menu].ToString());
 	}
-		
+
+	/// <summary>
+	/// Check the rules over the open menu problem.
+	/// </summary>
+	/// <returns><c>true</c>, if problem was opened, <c>false</c> otherwise.</returns>
+	/// <param name="menu">Menu.</param>
 	public bool openProblem(string menu){
 		bool problem = false;
 
