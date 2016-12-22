@@ -33,7 +33,8 @@ public class GameManager : MonoBehaviour
     /// <summary>
     /// The true instance for static accesing this class resources.
     /// </summary>
-    public static GameManager Instance
+
+	public static GameManager Instance
     {
         get { return instance; }
     }
@@ -45,6 +46,8 @@ public class GameManager : MonoBehaviour
     public ItemManager itemManager { get; private set; }
 	public GameConfiguration gameConfiguration { get; private set; } 
 	public PreConditionManager preConditionManager { get; private set; }
+	public MenuStatus menuStatus { get; private set; }
+
 
     /* UI Control */
     public List<string> disableChildrenInScene;
@@ -160,22 +163,38 @@ public class GameManager : MonoBehaviour
 		this.questManager = new QuestManager (RepositoriesFactory.createQuestRepository(this.gameConfiguration.databaseType));
 		this.questManager.loadQuestsFromFile (this.gameConfiguration.questCollectionPath);
 
+		// MENU STATUS
+		this.menuStatus = new MenuStatus();
+
 		// TODO: LOAD USER STATE - HOW TO STORE USER INFORMATION OUTSIDE THE PROJECT? OR COULD IT BE INSIDE?
 
 	}
 
+	/// <summary>
+	/// Saves the game data.
+	/// </summary>
 	public void SaveGame() {
 		DataAccess.SaveGame (gameData);
 	}
 
+	/// <summary>
+	/// Loads the game data.
+	/// </summary>
 	public void LoadGame() {
 		gameData = DataAccess.Load ();
 	}
 
+	/// <summary>
+	/// Determines whether this instance can load game.
+	/// </summary>
+	/// <returns><c>true</c> if this instance can load game; otherwise, <c>false</c>.</returns>
 	public bool CanLoadGame() {
 		return DataAccess.CanLoadGame ();
 	}
 
+	/// <summary>
+	/// Deletes the saved data.
+	/// </summary>
 	public void DeleteSavedData() {
 		DataAccess.DeleteSavedData ();
 	}

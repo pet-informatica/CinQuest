@@ -45,7 +45,6 @@ public class CharacterChooserManager : MonoBehaviour {
 	/// Changes the panel to the right using Lerp and shows another set of character
 	/// </summary>
 	public void nextCharacters() {
-		print (currentOptionPanel);
 		leftArrow.SetActive (true);
 		selected.SetActive (false);
 		selectedCharacter = null;

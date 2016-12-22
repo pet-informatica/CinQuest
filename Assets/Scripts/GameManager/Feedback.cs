@@ -6,8 +6,14 @@ public class Feedback : MonoBehaviour {
 
 	public InputField emailFeed;
 	public InputField bodyFeed;
+	private MenuStatus menuStatus;
+
+	void Start () {
+		menuStatus = GameManager.Instance.menuStatus;
+	}
 
 	public void closeFeedback() {
+		menuStatus.close ("Feedback");
 		PauseMenu.Instance.CloseFeedback();
 	}
 
@@ -21,7 +27,7 @@ public class Feedback : MonoBehaviour {
 		print (email + "/" + body);
 		//Open the Default Mail App
 		Application.OpenURL("mailto:" + email + "?subject=" + subject + "&body=" + body);
-		print ("enviou???");
-
+		//print ("enviou???");
+		closeFeedback();
 	}
 }
