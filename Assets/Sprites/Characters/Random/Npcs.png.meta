@@ -1,0 +1,6663 @@
+fileFormatVersion: 2
+guid: f4744c41326175c40ac94c6cc9298f88
+timeCreated: 1476059918
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: npcs_0
+    21300002: npcs_1
+    21300004: npcs_2
+    21300006: npcs_3
+    21300008: npcs_4
+    21300010: npcs_5
+    21300012: npcs_6
+    21300014: npcs_7
+    21300016: npcs_8
+    21300018: npcs_9
+    21300020: npcs_10
+    21300022: npcs_11
+    21300024: npcs_12
+    21300026: npcs_13
+    21300028: npcs_14
+    21300030: npcs_15
+    21300032: npcs_16
+    21300034: npcs_17
+    21300036: npcs_18
+    21300038: npcs_19
+    21300040: npcs_20
+    21300042: npcs_21
+    21300044: npcs_22
+    21300046: npcs_23
+    21300048: npcs_24
+    21300050: npcs_25
+    21300052: npcs_26
+    21300054: npcs_27
+    21300056: npcs_28
+    21300058: npcs_29
+    21300060: npcs_30
+    21300062: npcs_31
+    21300064: npcs_32
+    21300066: npcs_33
+    21300068: npcs_34
+    21300070: npcs_35
+    21300072: npcs_36
+    21300074: npcs_37
+    21300076: npcs_38
+    21300078: npcs_39
+    21300080: npcs_40
+    21300082: npcs_41
+    21300084: npcs_42
+    21300086: npcs_43
+    21300088: npcs_44
+    21300090: npcs_45
+    21300092: npcs_46
+    21300094: npcs_47
+    21300096: npcs_48
+    21300098: npcs_49
+    21300100: npcs_50
+    21300102: npcs_51
+    21300104: npcs_52
+    21300106: npcs_53
+    21300108: npcs_54
+    21300110: npcs_55
+    21300112: npcs_56
+    21300114: npcs_57
+    21300116: npcs_58
+    21300118: npcs_59
+    21300120: npcs_60
+    21300122: npcs_61
+    21300124: npcs_62
+    21300126: npcs_63
+    21300128: npcs_64
+    21300130: npcs_65
+    21300132: npcs_66
+    21300134: npcs_67
+    21300136: npcs_68
+    21300138: npcs_69
+    21300140: npcs_70
+    21300142: npcs_71
+    21300144: npcs_72
+    21300146: npcs_73
+    21300148: npcs_74
+    21300150: npcs_75
+    21300152: npcs_76
+    21300154: npcs_77
+    21300156: npcs_78
+    21300158: npcs_79
+    21300160: npcs_80
+    21300162: npcs_81
+    21300164: npcs_82
+    21300166: npcs_83
+    21300168: npcs_84
+    21300170: npcs_85
+    21300172: npcs_86
+    21300174: npcs_87
+    21300176: npcs_88
+    21300178: npcs_89
+    21300180: npcs_90
+    21300182: npcs_91
+    21300184: npcs_92
+    21300186: npcs_93
+    21300188: npcs_94
+    21300190: npcs_95
+    21300192: npcs_96
+    21300194: npcs_97
+    21300196: npcs_98
+    21300198: npcs_99
+    21300200: npcs_100
+    21300202: npcs_101
+    21300204: npcs_102
+    21300206: npcs_103
+    21300208: npcs_104
+    21300210: npcs_105
+    21300212: npcs_106
+    21300214: npcs_107
+    21300216: npcs_108
+    21300218: npcs_109
+    21300220: npcs_110
+    21300222: npcs_111
+    21300224: npcs_112
+    21300226: npcs_113
+    21300228: npcs_114
+    21300230: npcs_115
+    21300232: npcs_116
+    21300234: npcs_117
+    21300236: npcs_118
+    21300238: npcs_119
+    21300240: npcs_120
+    21300242: npcs_121
+    21300244: npcs_122
+    21300246: npcs_123
+    21300248: npcs_124
+    21300250: npcs_125
+    21300252: npcs_126
+    21300254: npcs_127
+    21300256: npcs_128
+    21300258: npcs_129
+    21300260: npcs_130
+    21300262: npcs_131
+    21300264: npcs_132
+    21300266: npcs_133
+    21300268: npcs_134
+    21300270: npcs_135
+    21300272: npcs_136
+    21300274: npcs_137
+    21300276: npcs_138
+    21300278: npcs_139
+    21300280: npcs_140
+    21300282: npcs_141
+    21300284: npcs_142
+    21300286: npcs_143
+    21300288: npcs_144
+    21300290: npcs_145
+    21300292: npcs_146
+    21300294: npcs_147
+    21300296: npcs_148
+    21300298: npcs_149
+    21300300: npcs_150
+    21300302: npcs_151
+    21300304: npcs_152
+    21300306: npcs_153
+    21300308: npcs_154
+    21300310: npcs_155
+    21300312: npcs_156
+    21300314: npcs_157
+    21300316: npcs_158
+    21300318: npcs_159
+    21300320: npcs_160
+    21300322: npcs_161
+    21300324: npcs_162
+    21300326: npcs_163
+    21300328: npcs_164
+    21300330: npcs_165
+    21300332: npcs_166
+    21300334: npcs_167
+    21300336: npcs_168
+    21300338: npcs_169
+    21300340: npcs_170
+    21300342: npcs_171
+    21300344: npcs_172
+    21300346: npcs_173
+    21300348: npcs_174
+    21300350: npcs_175
+    21300352: npcs_176
+    21300354: npcs_177
+    21300356: npcs_178
+    21300358: npcs_179
+    21300360: npcs_180
+    21300362: npcs_181
+    21300364: npcs_182
+    21300366: npcs_183
+    21300368: npcs_184
+    21300370: npcs_185
+    21300372: npcs_186
+    21300374: npcs_187
+    21300376: npcs_188
+    21300378: npcs_189
+    21300380: npcs_190
+    21300382: npcs_191
+    21300384: npcs_192
+    21300386: npcs_193
+    21300388: npcs_194
+    21300390: npcs_195
+    21300392: npcs_196
+    21300394: npcs_197
+    21300396: npcs_198
+    21300398: npcs_199
+    21300400: npcs_200
+    21300402: npcs_201
+    21300404: npcs_202
+    21300406: npcs_203
+    21300408: npcs_204
+    21300410: npcs_205
+    21300412: npcs_206
+    21300414: npcs_207
+    21300416: npcs_208
+    21300418: npcs_209
+    21300420: npcs_210
+    21300422: npcs_211
+    21300424: npcs_212
+    21300426: npcs_213
+    21300428: npcs_214
+    21300430: npcs_215
+    21300432: npcs_216
+    21300434: npcs_217
+    21300436: npcs_218
+    21300438: npcs_219
+    21300440: npcs_220
+    21300442: npcs_221
+    21300444: npcs_222
+    21300446: npcs_223
+    21300448: npcs_224
+    21300450: npcs_225
+    21300452: npcs_226
+    21300454: npcs_227
+    21300456: npcs_228
+    21300458: npcs_229
+    21300460: npcs_230
+    21300462: npcs_231
+    21300464: npcs_232
+    21300466: npcs_233
+    21300468: npcs_234
+    21300470: npcs_235
+    21300472: npcs_236
+    21300474: npcs_237
+    21300476: npcs_238
+    21300478: npcs_239
+    21300480: npcs_240
+    21300482: npcs_241
+    21300484: npcs_242
+    21300486: npcs_243
+    21300488: npcs_244
+    21300490: npcs_245
+    21300492: npcs_246
+    21300494: npcs_247
+    21300496: npcs_248
+    21300498: npcs_249
+    21300500: npcs_250
+    21300502: npcs_251
+    21300504: npcs_252
+    21300506: npcs_253
+    21300508: npcs_254
+    21300510: npcs_255
+    21300512: npcs_256
+    21300514: npcs_257
+    21300516: npcs_258
+    21300518: npcs_259
+    21300520: npcs_260
+    21300522: npcs_261
+    21300524: npcs_262
+    21300526: npcs_263
+    21300528: npcs_264
+    21300530: npcs_265
+    21300532: npcs_266
+    21300534: npcs_267
+    21300536: npcs_268
+    21300538: npcs_269
+    21300540: npcs_270
+    21300542: npcs_271
+    21300544: npcs_272
+    21300546: npcs_273
+    21300548: npcs_274
+    21300550: npcs_275
+    21300552: npcs_276
+    21300554: npcs_277
+    21300556: npcs_278
+    21300558: npcs_279
+    21300560: npcs_280
+    21300562: npcs_281
+    21300564: npcs_282
+    21300566: npcs_283
+    21300568: npcs_284
+    21300570: npcs_285
+    21300572: npcs_286
+    21300574: npcs_287
+    21300576: npcs_288
+    21300578: npcs_289
+    21300580: npcs_290
+    21300582: npcs_291
+    21300584: npcs_292
+    21300586: npcs_293
+    21300588: npcs_294
+    21300590: npcs_295
+    21300592: npcs_296
+    21300594: npcs_297
+    21300596: npcs_298
+    21300598: npcs_299
+    21300600: npcs_300
+    21300602: npcs_301
+    21300604: npcs_302
+    21300606: npcs_303
+    21300608: npcs_304
+    21300610: npcs_305
+    21300612: npcs_306
+    21300614: npcs_307
+    21300616: npcs_308
+    21300618: npcs_309
+    21300620: npcs_310
+    21300622: npcs_311
+    21300624: npcs_312
+    21300626: npcs_313
+    21300628: npcs_314
+    21300630: npcs_315
+    21300632: npcs_316
+    21300634: npcs_317
+    21300636: npcs_318
+    21300638: npcs_319
+    21300640: npcs_320
+    21300642: npcs_321
+    21300644: npcs_322
+    21300646: npcs_323
+    21300648: npcs_324
+    21300650: npcs_325
+    21300652: npcs_326
+    21300654: npcs_327
+    21300656: npcs_328
+    21300658: npcs_329
+    21300660: npcs_330
+    21300662: npcs_331
+    21300664: npcs_332
+    21300666: npcs_333
+    21300668: npcs_334
+    21300670: npcs_335
+    21300672: npcs_336
+    21300674: npcs_337
+    21300676: npcs_338
+    21300678: npcs_339
+    21300680: npcs_340
+    21300682: npcs_341
+    21300684: npcs_342
+    21300686: npcs_343
+    21300688: npcs_344
+    21300690: npcs_345
+    21300692: npcs_346
+    21300694: npcs_347
+    21300696: npcs_348
+    21300698: npcs_349
+    21300700: npcs_350
+    21300702: npcs_351
+    21300704: npcs_352
+    21300706: npcs_353
+    21300708: npcs_354
+    21300710: npcs_355
+    21300712: npcs_356
+    21300714: npcs_357
+    21300716: npcs_358
+    21300718: npcs_359
+    21300720: npcs_360
+    21300722: npcs_361
+    21300724: npcs_362
+    21300726: npcs_363
+    21300728: npcs_364
+    21300730: npcs_365
+    21300732: npcs_366
+    21300734: npcs_367
+    21300736: npcs_368
+    21300738: npcs_369
+    21300740: npcs_370
+    21300742: npcs_371
+    21300744: npcs_372
+    21300746: npcs_373
+    21300748: npcs_374
+    21300750: npcs_375
+    21300752: npcs_376
+    21300754: npcs_377
+    21300756: npcs_378
+    21300758: npcs_379
+    21300760: npcs_380
+    21300762: npcs_381
+    21300764: npcs_382
+    21300766: npcs_383
+    21300768: npcs_384
+    21300770: npcs_385
+    21300772: npcs_386
+    21300774: npcs_387
+    21300776: npcs_388
+    21300778: npcs_389
+    21300780: npcs_390
+    21300782: npcs_391
+    21300784: npcs_392
+    21300786: npcs_393
+    21300788: npcs_394
+    21300790: npcs_395
+    21300792: npcs_396
+    21300794: npcs_397
+    21300796: npcs_398
+    21300798: npcs_399
+    21300800: npcs_400
+    21300802: npcs_401
+    21300804: npcs_402
+    21300806: npcs_403
+    21300808: npcs_404
+    21300810: npcs_405
+    21300812: npcs_406
+    21300814: npcs_407
+    21300816: npcs_408
+    21300818: npcs_409
+    21300820: npcs_410
+    21300822: npcs_411
+    21300824: npcs_412
+    21300826: npcs_413
+    21300828: npcs_414
+    21300830: npcs_415
+    21300832: npcs_416
+    21300834: npcs_417
+    21300836: npcs_418
+    21300838: npcs_419
+    21300840: npcs_420
+    21300842: npcs_421
+    21300844: npcs_422
+    21300846: npcs_423
+    21300848: npcs_424
+    21300850: npcs_425
+    21300852: npcs_426
+    21300854: npcs_427
+    21300856: npcs_428
+    21300858: npcs_429
+    21300860: npcs_430
+    21300862: npcs_431
+    21300864: npcs_432
+    21300866: npcs_433
+    21300868: npcs_434
+    21300870: npcs_435
+    21300872: npcs_436
+    21300874: npcs_437
+    21300876: npcs_438
+    21300878: npcs_439
+    21300880: npcs_440
+    21300882: npcs_441
+    21300884: npcs_442
+    21300886: npcs_443
+    21300888: npcs_444
+    21300890: npcs_445
+    21300892: npcs_446
+    21300894: npcs_447
+    21300896: npcs_448
+    21300898: npcs_449
+    21300900: npcs_450
+    21300902: npcs_451
+    21300904: npcs_452
+    21300906: npcs_453
+    21300908: npcs_454
+    21300910: npcs_455
+    21300912: npcs_456
+    21300914: npcs_457
+    21300916: npcs_458
+    21300918: npcs_459
+    21300920: npcs_460
+    21300922: npcs_461
+    21300924: npcs_462
+    21300926: npcs_463
+    21300928: npcs_464
+    21300930: npcs_465
+    21300932: npcs_466
+    21300934: npcs_467
+    21300936: npcs_468
+    21300938: npcs_469
+    21300940: npcs_470
+    21300942: npcs_471
+    21300944: npcs_472
+    21300946: npcs_473
+    21300948: npcs_474
+    21300950: npcs_475
+    21300952: npcs_476
+    21300954: npcs_477
+    21300956: npcs_478
+    21300958: npcs_479
+    21300960: npcs_480
+    21300962: npcs_481
+    21300964: npcs_482
+    21300966: npcs_483
+    21300968: npcs_484
+    21300970: npcs_485
+    21300972: npcs_486
+    21300974: npcs_487
+    21300976: npcs_488
+    21300978: npcs_489
+    21300980: npcs_490
+    21300982: npcs_491
+    21300984: npcs_492
+    21300986: npcs_493
+    21300988: npcs_494
+    21300990: npcs_495
+    21300992: npcs_496
+    21300994: npcs_497
+    21300996: npcs_498
+    21300998: npcs_499
+    21301000: npcs_500
+    21301002: npcs_501
+    21301004: npcs_502
+    21301006: npcs_503
+    21301008: npcs_504
+    21301010: npcs_505
+    21301012: npcs_506
+    21301014: npcs_507
+    21301016: npcs_508
+    21301018: npcs_509
+    21301020: npcs_510
+    21301022: npcs_511
+    21301024: npcs_512
+    21301026: npcs_513
+    21301028: npcs_514
+    21301030: npcs_515
+    21301032: npcs_516
+    21301034: npcs_517
+    21301036: npcs_518
+    21301038: npcs_519
+    21301040: npcs_520
+    21301042: npcs_521
+    21301044: npcs_522
+    21301046: npcs_523
+    21301048: npcs_524
+    21301050: npcs_525
+    21301052: npcs_526
+    21301054: npcs_527
+    21301056: npcs_528
+    21301058: npcs_529
+    21301060: npcs_530
+    21301062: npcs_531
+    21301064: npcs_532
+    21301066: npcs_533
+    21301068: npcs_534
+    21301070: npcs_535
+    21301072: npcs_536
+    21301074: npcs_537
+    21301076: npcs_538
+    21301078: npcs_539
+    21301080: npcs_540
+    21301082: npcs_541
+    21301084: npcs_542
+    21301086: npcs_543
+    21301088: npcs_544
+    21301090: npcs_545
+    21301092: npcs_546
+    21301094: npcs_547
+    21301096: npcs_548
+    21301098: npcs_549
+    21301100: npcs_550
+    21301102: npcs_551
+    21301104: npcs_552
+    21301106: npcs_553
+    21301108: npcs_554
+    21301110: npcs_555
+    21301112: npcs_556
+    21301114: npcs_557
+    21301116: npcs_558
+    21301118: npcs_559
+    21301120: npcs_560
+    21301122: npcs_561
+    21301124: npcs_562
+    21301126: npcs_563
+    21301128: npcs_564
+    21301130: npcs_565
+    21301132: npcs_566
+    21301134: npcs_567
+    21301136: npcs_568
+    21301138: npcs_569
+    21301140: npcs_570
+    21301142: npcs_571
+    21301144: npcs_572
+    21301146: npcs_573
+    21301148: npcs_574
+    21301150: npcs_575
+    21301152: npcs_576
+    21301154: npcs_577
+    21301156: npcs_578
+    21301158: npcs_579
+    21301160: npcs_580
+    21301162: npcs_581
+    21301164: npcs_582
+    21301166: npcs_583
+    21301168: npcs_584
+    21301170: npcs_585
+    21301172: npcs_586
+    21301174: npcs_587
+    21301176: npcs_588
+    21301178: npcs_589
+    21301180: npcs_590
+    21301182: npcs_591
+    21301184: npcs_592
+    21301186: npcs_593
+    21301188: npcs_594
+    21301190: npcs_595
+    21301192: npcs_596
+    21301194: npcs_597
+    21301196: npcs_598
+    21301198: npcs_599
+    21301200: npcs_600
+    21301202: npcs_601
+    21301204: npcs_602
+    21301206: npcs_603
+    21301208: npcs_604
+    21301210: npcs_605
+    21301212: npcs_606
+    21301214: npcs_607
+    21301216: npcs_608
+    21301218: npcs_609
+    21301220: npcs_610
+    21301222: npcs_611
+    21301224: npcs_612
+    21301226: npcs_613
+    21301228: npcs_614
+    21301230: npcs_615
+    21301232: npcs_616
+    21301234: npcs_617
+    21301236: npcs_618
+    21301238: npcs_619
+    21301240: npcs_620
+    21301242: npcs_621
+    21301244: npcs_622
+    21301246: npcs_623
+    21301248: npcs_624
+    21301250: npcs_625
+    21301252: npcs_626
+    21301254: npcs_627
+    21301256: npcs_628
+    21301258: npcs_629
+    21301260: npcs_630
+    21301262: npcs_631
+    21301264: npcs_632
+    21301266: npcs_633
+    21301268: npcs_634
+    21301270: npcs_635
+    21301272: npcs_636
+    21301274: npcs_637
+    21301276: npcs_638
+    21301278: npcs_639
+    21301280: npcs_640
+    21301282: npcs_641
+    21301284: npcs_642
+    21301286: npcs_643
+    21301288: npcs_644
+    21301290: npcs_645
+    21301292: npcs_646
+    21301294: npcs_647
+    21301296: npcs_648
+    21301298: npcs_649
+    21301300: npcs_650
+    21301302: npcs_651
+    21301304: npcs_652
+    21301306: npcs_653
+    21301308: npcs_654
+    21301310: npcs_655
+    21301312: npcs_656
+    21301314: npcs_657
+    21301316: npcs_658
+    21301318: npcs_659
+    21301320: npcs_660
+    21301322: npcs_661
+    21301324: npcs_662
+    21301326: npcs_663
+    21301328: npcs_664
+    21301330: npcs_665
+    21301332: npcs_666
+    21301334: npcs_667
+    21301336: npcs_668
+    21301338: npcs_669
+    21301340: npcs_670
+    21301342: npcs_671
+    21301344: npcs_672
+    21301346: npcs_673
+    21301348: npcs_674
+    21301350: npcs_675
+    21301352: npcs_676
+    21301354: npcs_677
+    21301356: npcs_678
+    21301358: npcs_679
+    21301360: npcs_680
+    21301362: npcs_681
+    21301364: npcs_682
+    21301366: npcs_683
+    21301368: npcs_684
+    21301370: npcs_685
+    21301372: npcs_686
+    21301374: npcs_687
+    21301376: npcs_688
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 0.8
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: npcs_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 293
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_1
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 293
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_2
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 293
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_3
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 293
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_4
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 293
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_5
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 293
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_6
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 293
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_7
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 293
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_8
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 293
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_9
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 293
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_10
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 293
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_11
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 293
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_12
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 293
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_13
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 293
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_14
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 293
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_15
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 293
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_16
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 293
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_17
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 293
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_18
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 293
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_19
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 293
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_20
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 293
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_21
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 293
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_22
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 293
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_23
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 293
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_24
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 293
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_25
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 293
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_26
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 293
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_27
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 293
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_28
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 293
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_29
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 293
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_30
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 293
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_31
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 293
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_32
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 293
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_33
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 293
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_34
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 293
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_35
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 293
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_36
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 293
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_37
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 293
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_38
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 293
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_39
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 293
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_40
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 293
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_41
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 293
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_42
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 271
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_43
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 271
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_44
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 271
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_45
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 271
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_46
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 271
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_47
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 271
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_48
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 271
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_49
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 271
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_50
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 271
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_51
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 271
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_52
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 271
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_53
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 270
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_54
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 270
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_55
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 270
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_56
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 270
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_57
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 270
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_58
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 270
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_59
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 270
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_60
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 270
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_61
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 270
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_62
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 270
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_63
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 270
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_64
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 270
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_65
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 270
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_66
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 270
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_67
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 270
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_68
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 270
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_69
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 270
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_70
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 270
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_71
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 270
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_72
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 270
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_73
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 270
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_74
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 270
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_75
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 270
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_76
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 270
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_77
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 270
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_78
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 270
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_79
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 270
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_80
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 270
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_81
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 270
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_82
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 249
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_83
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 249
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_84
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 249
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_85
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 249
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_86
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 249
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_87
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 249
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_88
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 249
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_89
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 249
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_90
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 249
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_91
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 249
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_92
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 249
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_93
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 249
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_94
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 249
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_95
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 249
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_96
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 249
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_97
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 249
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_98
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 249
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_99
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 249
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_100
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 249
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_101
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 249
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_102
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 249
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_103
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 249
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_104
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 249
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_105
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 249
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_106
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 249
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_107
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 249
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_108
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 249
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_109
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 249
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_110
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 249
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_111
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 249
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_112
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 249
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_113
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 249
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_114
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 249
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_115
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 249
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_116
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 249
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_117
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 249
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_118
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 249
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_119
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 249
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_120
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 249
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_121
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 227
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_122
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 227
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_123
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 227
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_124
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 227
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_125
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 227
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_126
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 227
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_127
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 227
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_128
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 227
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_129
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 227
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_130
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 227
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_131
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 227
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_132
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 227
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_133
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 227
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_134
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 227
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_135
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 227
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_136
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 227
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_137
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 227
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_138
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 227
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_139
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 227
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_140
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 227
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_141
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 227
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_142
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 227
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_143
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 227
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_144
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 227
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_145
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 227
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_146
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 227
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_147
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 227
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_148
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 227
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_149
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 227
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_150
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 227
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_151
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 227
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_152
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 227
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_153
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 227
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_154
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 228
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_155
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 228
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_156
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 228
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_157
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 228
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_158
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 228
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_159
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 228
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_160
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 228
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_161
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 228
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_162
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 204
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_163
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 204
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_164
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 204
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_165
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 204
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_166
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 204
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_167
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 204
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_168
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 204
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_169
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 205
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_170
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 205
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_171
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 205
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_172
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 205
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_173
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 205
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_174
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 205
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_175
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 205
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_176
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 205
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_177
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 205
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_178
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 205
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_179
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 205
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_180
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 205
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_181
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 205
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_182
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 205
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_183
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 205
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_184
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 205
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_185
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 205
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_186
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 205
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_187
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 204
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_188
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 204
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_189
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 204
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_190
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 204
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_191
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 204
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_192
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 204
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_193
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 204
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_194
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 204
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_195
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 204
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_196
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 204
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_197
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 204
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_198
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 204
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_199
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 204
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_200
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 204
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_201
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 204
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_202
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 181
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_203
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 181
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_204
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 181
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_205
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 181
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_206
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 181
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_207
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 181
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_208
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 181
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_209
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 181
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_210
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 181
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_211
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 181
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_212
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 181
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_213
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 181
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_214
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 181
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_215
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 181
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_216
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 181
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_217
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 181
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_218
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 181
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_219
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 180
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_220
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 180
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_221
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 180
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_222
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 180
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_223
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 180
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_224
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 180
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_225
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 180
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_226
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 179
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_227
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 179
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_228
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 179
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_229
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 179
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_230
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 179
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_231
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 179
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_232
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 179
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_233
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 179
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_234
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 179
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_235
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 179
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_236
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 179
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_237
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 179
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_238
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 179
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_239
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 179
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_240
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 179
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_241
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 179
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_242
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 179
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_243
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 179
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_244
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 156
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_245
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 156
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_246
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 156
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_247
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 156
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_248
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 156
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_249
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 156
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_250
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 156
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_251
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 156
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_252
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 156
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_253
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 156
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_254
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 156
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_255
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 156
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_256
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 156
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_257
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 156
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_258
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 156
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_259
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 156
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_260
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 156
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_261
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 156
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_262
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 156
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_263
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 156
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_264
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 156
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_265
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 156
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_266
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 156
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_267
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 156
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_268
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 156
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_269
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 156
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_270
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 156
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_271
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 156
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_272
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 156
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_273
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 156
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_274
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 156
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_275
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 156
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_276
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 156
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_277
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 156
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_278
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 156
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_279
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 156
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_280
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 156
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_281
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 156
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_282
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 156
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_283
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 156
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_284
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 156
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_285
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 133
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_286
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 133
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_287
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 133
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_288
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 133
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_289
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 133
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_290
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 133
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_291
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 133
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_292
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 133
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_293
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 133
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_294
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 133
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_295
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 133
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_296
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 133
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_297
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 133
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_298
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 133
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_299
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 133
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_300
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 133
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_301
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 133
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_302
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 133
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_303
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 133
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_304
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 133
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_305
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 133
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_306
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 133
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_307
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 133
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_308
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 133
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_309
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 133
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_310
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 133
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_311
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 133
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_312
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 133
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_313
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 132
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_314
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 132
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_315
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 132
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_316
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 132
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_317
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 132
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_318
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 132
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_319
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 132
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_320
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 132
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_321
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 132
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_322
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 132
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_323
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 132
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_324
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 132
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_325
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 109
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_326
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 109
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_327
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 109
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_328
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 109
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_329
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 109
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_330
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 109
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_331
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 109
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_332
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 109
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_333
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 109
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_334
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 109
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_335
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 109
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_336
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 109
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_337
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 109
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_338
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 109
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_339
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 109
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_340
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 109
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_341
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 109
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_342
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 109
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_343
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 109
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_344
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 109
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_345
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 109
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_346
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 109
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_347
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 109
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_348
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 109
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_349
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 109
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_350
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 109
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_351
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 109
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_352
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 109
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_353
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 109
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_354
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 109
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_355
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 109
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_356
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 109
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_357
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 109
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_358
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 109
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_359
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 109
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_360
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 109
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_361
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 109
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_362
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 109
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_363
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 109
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_364
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 109
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_365
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 86
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_366
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 86
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_367
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 86
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_368
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 86
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_369
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 86
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_370
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 86
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_371
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 86
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_372
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 86
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_373
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 86
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_374
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 86
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_375
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 86
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_376
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 86
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_377
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 86
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_378
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 86
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_379
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 85
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_380
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 85
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_381
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 85
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_382
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 85
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_383
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 85
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_384
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 85
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_385
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 85
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_386
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 85
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_387
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 85
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_388
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 85
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_389
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 85
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_390
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 85
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_391
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 85
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_392
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 85
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_393
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 85
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_394
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 85
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_395
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 85
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_396
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 85
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_397
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 85
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_398
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 85
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_399
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 85
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_400
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 85
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_401
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 85
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_402
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 85
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_403
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 85
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_404
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 85
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_405
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 85
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_406
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 85
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_407
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 63
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_408
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 63
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_409
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 63
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_410
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 63
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_411
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 63
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_412
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 63
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_413
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 63
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_414
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 63
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_415
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 63
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_416
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 63
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_417
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 63
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_418
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 63
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_419
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 63
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_420
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 63
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_421
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 63
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_422
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 63
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_423
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 63
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_424
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 63
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_425
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 63
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_426
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 63
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_427
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 63
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_428
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 63
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_429
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 63
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_430
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 63
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_431
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 63
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_432
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 63
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_433
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 63
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_434
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 63
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_435
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 63
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_436
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 63
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_437
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 63
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_438
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 63
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_439
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 63
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_440
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 63
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_441
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 63
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_442
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 63
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_443
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 63
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_458
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 46
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_464
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 46
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_481
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 46
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_482
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 46
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_483
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 46
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_484
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 46
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_525
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 33
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_529
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 33
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_663
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 7
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_680
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 7
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: npcs_687
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 7
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -9,6 +9,7 @@ public class Loader : MonoBehaviour
 {
 	public GameObject gameManager;
     public GameObject user;
+	public GameObject npcListener;
 
 	void Awake () 
 	{
@@ -16,5 +17,7 @@ public class Loader : MonoBehaviour
 			Instantiate (gameManager, Vector3.zero, Quaternion.identity);
         if (User.Instance == null)
             Instantiate(user, Vector3.zero, Quaternion.identity);
+		if (NPCListener.Instance == null)
+			Instantiate(npcListener, Vector3.zero, Quaternion.identity);
     }
 }

@@ -57,7 +57,14 @@ public class QuestBuilderXML
 
 		string questDoneMessage = quest.Element ("QuestDoneMessage").Value;
 
-		newQuest = new Quest (identifier, name, description, unlocked, p1, p2, r1,questDoneMessage);
+		XElement preConditionsToLock = quest.Element ("PreConditionsToLock");
+		List<IPreCondition> p3 = new List<IPreCondition> ();
+		foreach (XElement element in preConditionsToLock.Elements()) {
+			int index = Int32.Parse (element.Attribute ("identifier").Value);
+			p1.Add (GameManager.Instance.preConditionManager.getPreConditions()[index]);
+		}
+
+		newQuest = new Quest (identifier, name, description, unlocked, p1, p2, r1,questDoneMessage, p3);
 	
 		return newQuest;
 	}
