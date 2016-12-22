@@ -47,6 +47,8 @@
 		<PreConditionsToUnlock>
 			<PreCondition identifier="3"/>
 		</PreConditionsToUnlock>
+		<PreConditionsToLock>
+		</PreConditionsToLock>
 		<PreConditionsToDone>
 			<PreCondition identifier="2"/>
 		</PreConditionsToDone>
