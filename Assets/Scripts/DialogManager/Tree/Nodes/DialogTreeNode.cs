@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 /// <summary>
 /// Developed by: Higor (hcmb)
@@ -20,6 +21,16 @@ public class DialogTreeNode : ScriptableObject
 	public List<int> PreconditionIds
 	{
 		get { return preconditionIds; }
+	}
+
+	[SerializeField]
+	List<int> lockconditionIds;
+	/// <summary>
+	/// The list of the Precondition ID's that the user must satisfie in order to reach this node.
+	/// </summary>
+	public List<int> LockconditionIds
+	{
+		get { return lockconditionIds; }
 	}
 
 	[SerializeField]
@@ -67,8 +78,11 @@ public class DialogTreeNode : ScriptableObject
     /// </summary>
     public bool IsLeaf
     {
-        get { return Children.Count == 0; }
+        get { return AvaiableChildren == 0; }
     }
+
+	public string speaker;
+	public bool broadcaster;
 
     /// <summary>
     /// The number of reachable and avaiable nodes from the current one.
@@ -83,8 +97,9 @@ public class DialogTreeNode : ScriptableObject
                 if (node.IsAvaiable())
                 {
                     avaiable++;
-                }
+				}
             }
+
             return avaiable;
         }
     }
@@ -127,6 +142,13 @@ public class DialogTreeNode : ScriptableObject
 				return false;	
 		}
 
+		foreach(int id in LockconditionIds)
+		{
+			if (GameManager.Instance.preConditionManager.getPreCondition (id).checkIfMatches (user))
+				return false;	
+		}
+		
+
 		return true;
 	}
 
@@ -141,5 +163,17 @@ public class DialogTreeNode : ScriptableObject
 		{
 			user.AddItem(GameManager.Instance.itemManager.GetItem(id));
 		}
+
+		if (broadcaster) {
+			GameObject player = GameObject.Find (speaker);
+			if (player != null) {
+				IBroadcaster broad = player.GetComponent<IBroadcaster> ();
+				if (broad != null) {
+					broad.Broad ();
+				}
+
+			}
+		}
+
 	}
 }

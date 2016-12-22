@@ -39,22 +39,15 @@ public class DialogManager : MonoBehaviour
     public bool Speak(DialogTree dialog, Speaker speaker)
     {
         if (IsSpeaking && dialog.Priority <= curDialog.Priority)
-        return false; 
+        	return false; 
 
-        ClearDialogBox();
-        StartConversation(dialog, speaker);
-        return true;
+		WaitUntilItEnds ();
+		return StartConversation (dialog, speaker) != 0f;
     }
 
-    /// <summary>
-    /// Erase the messages and fade out the GUI. Blocks the method that calls it until it's
-    /// done and it's safe for progressing.
-    /// </summary>
-    /// <returns></returns>
-    IEnumerator ClearDialogBox()
-    {
-        yield return new WaitForSeconds(EndConversation());
-    }
+	IEnumerator WaitUntilItEnds(){
+		yield return new WaitForSeconds (EndConversation ());
+	}
 
     /// <summary>
     /// Adds a letter from curMessage to typedMessage every letterPause seconds.
@@ -153,13 +146,17 @@ public class DialogManager : MonoBehaviour
         {
             IsSpeaking = true;
             textTime = 0f;
-
+		
             curDialog = dialog;
             curSpeaker = speaker;
-            curDialog.Start();
+			curDialog.Start();
+		
+			curDialog.Head.speaker = speaker.gameObject.name;
+			curDialog.Execute ();
             curMessage = curDialog.Head.Message;
             typedMessage = "";
             StartCoroutine(TypeText());
+	
             SetResponses(curDialog.Head);
             SelectResponse(0);
 
@@ -169,7 +166,7 @@ public class DialogManager : MonoBehaviour
             StartCoroutine(GUIFade(fadeStart, fadeEnd, fadeLenght));
             return (fadeStart - fadeEnd) / (1f / fadeLenght);
         }
-        return 0;
+        return 0f;
     }
 
     /// <summary>
@@ -178,6 +175,7 @@ public class DialogManager : MonoBehaviour
     /// <returns>The time it will take to fully end the conversation.</returns>
     float EndConversation()
     {
+		curDialog.Execute ();
         curSpeaker.EndConversation(curDialog.Head);
         IsSpeaking = false;
         curDialog = null;
@@ -197,6 +195,7 @@ public class DialogManager : MonoBehaviour
     /// </summary>
     void Type()
     {
+		curDialog.Execute ();
         curDialog.GoToChild(selectedResponse);
         curMessage = curDialog.Head.Message;
         typedMessage = "";
@@ -210,8 +209,9 @@ public class DialogManager : MonoBehaviour
     /// <param name="">A DialogTreeNode, containing all it's children nodes, each having a specific response to be reached.</param>
     void SetResponses(DialogTreeNode node)
     {
+		
         avaiableResponses = node.AvaiableChildren;
-
+	
         int resp = 0;
         for(int i = 0; i < node.Children.Count; i++)
         {
@@ -223,6 +223,7 @@ public class DialogManager : MonoBehaviour
             responses[i].text = "";
 
         selectedResponse = 0;
+
         SelectResponse(selectedResponse);
     }
 
@@ -236,6 +237,7 @@ public class DialogManager : MonoBehaviour
             responses[i].color = normalResponseColor;
 
         selectedResponse = response;
-        responses[selectedResponse].color = selectedResponseColor;
+
+		responses[selectedResponse].color = selectedResponseColor;
     }
 }

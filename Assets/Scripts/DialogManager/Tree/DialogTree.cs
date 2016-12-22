@@ -36,11 +36,15 @@ public class DialogTree : ScriptableObject
     /// <summary>
     /// Set's the head of the tree back to it's original position.
     /// </summary>
-    public void Start()
+	public void Start()
     {
         head = root;
-        head.Execute();
+       
     }
+
+	public void Execute(){
+		head.Execute();
+	}
 
     /// <summary>
     /// Go down a level in the tree for one of it's childs.
@@ -50,8 +54,9 @@ public class DialogTree : ScriptableObject
     {
         if(head.FetchAvaiable(response) != null)
         {
-            head = head.FetchAvaiable(response);
-            head.Execute();
+			DialogTreeNode target = head.FetchAvaiable (response);
+			target.speaker = head.speaker;
+			head = target;
         }
     }
 }

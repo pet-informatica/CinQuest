@@ -1,4 +1,5 @@
 ﻿using System;
+using UnityEngine;
 
 /// <summary>
 /// Developed by: Peao (rngs);
@@ -15,9 +16,11 @@ public class GenericPreCondition : IPreCondition {
 		this.identifier = identifier;
 		this.name = name;
 		this.itemIdentifier = itemIdentifier;
-	}
+	}                             
+
 
 	public bool checkIfMatches(User userProfile){
+		Debug.Log (userProfile.Items);
 		foreach (GenericItem i in userProfile.Items) {
 			if (i.identifier.Equals(this.itemIdentifier))
 				return true;

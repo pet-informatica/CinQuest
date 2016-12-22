@@ -60,6 +60,15 @@ public class Quest
         get { return preconditionsToUnlock; }
     }
 
+	List<IPreCondition> preconditionsToLock;
+	/// <summary>
+	/// The preconditions required for this quest to become locked.
+	/// </summary>
+	public List<IPreCondition> PreconditionsToLock
+	{
+		get { return preconditionsToLock; }
+	}
+
     List<IPreCondition> preconditionsToDone;
     /// <summary>
     /// The preconditions required for this quest be done.
@@ -100,7 +109,7 @@ public class Quest
     /// <param name="preconditionsToDone">A list of IPrecondition the user must match in order to finish this quest.</param>
     /// <param name="rewards">A list o GenericItem the user will be rewarded when finishing this quest.</param>
 	/// <param name="questDoneMessage">Gets the message that should be displayed when you finalize a quest.</param>
-	public Quest (int identifier, string name, string description, bool unlocked, List<IPreCondition> preconditionsToUnlock, List<IPreCondition> preconditionsToDone, List<GenericItem> rewards, string questDoneMessage)
+	public Quest (int identifier, string name, string description, bool unlocked, List<IPreCondition> preconditionsToUnlock, List<IPreCondition> preconditionsToDone, List<GenericItem> rewards, string questDoneMessage, List<IPreCondition> preconditionsToLock)
 	{
 		this.identifier = identifier;
 		this.name = name;
@@ -111,6 +120,7 @@ public class Quest
 		this.preconditionsToDone = preconditionsToDone;
 		this.rewards = rewards;
 		this.questDoneMessage = questDoneMessage;
+		this.preconditionsToLock = preconditionsToLock;
 	}
 
     /// <summary>
@@ -129,7 +139,9 @@ public class Quest
 	/// </summary>
 	/// <param name="currentUserProfile">Current user profile for checking the preconditions to unlock the quest.</param>
 	public bool Activate(User currentUserProfile){
-		if (this.CheckPreConditionsStatus (currentUserProfile, preconditionsToUnlock)) {
+		if (this.CheckPreConditionsStatus (currentUserProfile, preconditionsToUnlock) &&
+			!this.CheckLockConditionStatus(currentUserProfile, PreconditionsToLock)) 
+		{
 			this.unlocked = true;
 			return true;
 		}
@@ -168,10 +180,26 @@ public class Quest
         {
 			if (!p.checkIfMatches(currentUserProfile))
             {
-                UnityEngine.Debug.Log("player got not ");
                 return false;
             }
 		}
 		return true;
-	}		
+	}	
+
+	// <summary>
+	/// Checks the lock conditions status.
+	/// </summary>
+	/// <returns><c>true</c>, if a lock conditions status was checked, <c>false</c> otherwise.</returns>
+	/// <param name=currentUserProfile">Current user profile.</param>
+	/// <param name="preConditions">Pre conditions.</param>/
+	private bool CheckLockConditionStatus(User currentUserProfile, List<IPreCondition> lockConditions){
+		foreach (IPreCondition p in lockConditions)
+		{
+			if (p.checkIfMatches(currentUserProfile))
+			{
+				return true;
+			}
+		}
+		return false;
+	}
 }
