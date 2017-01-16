@@ -56,6 +56,7 @@ public class User  : MonoBehaviour
 		quests = new Dictionary<int,Quest> ();
         items = new List<GenericItem>();
         LoadQuestsFromManager();
+
 	}
 
 	private void LoadUserDataFromFile(){
