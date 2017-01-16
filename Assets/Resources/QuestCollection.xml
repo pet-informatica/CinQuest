@@ -39,4 +39,23 @@
 		<QuestDoneMessage>	Parabéns, agora você tem um login e é verdadeiramente um aluno do CIn! Cuidado para não deixar sua conta logada nos computadores, e nem o seu email aberto!</QuestDoneMessage>
 	</Quest>
 
+	<Quest>
+		<Identifier>2</Identifier>
+		<Name>Solicitar Crachá</Name>
+		<Description>Todo aluno do CIn precisa fazer seu crachá para poder entrar e sair do Centro. Nessa Quest você aprenderá a solicitar seu crachá!</Description>
+		<Unlocked>false</Unlocked>
+		<PreConditionsToUnlock>
+			<PreCondition identifier="3"/>
+		</PreConditionsToUnlock>
+		<PreConditionsToLock>
+		</PreConditionsToLock>
+		<PreConditionsToDone>
+			<PreCondition identifier="2"/>
+		</PreConditionsToDone>
+		<Rewards>
+			<Reward identifier="1"/>
+		</Rewards>
+		<QuestDoneMessage>Parabéns, agora você tem um crachá e é verdadeiramente um aluno do CIn! Nada de ficar pedindo pra seu Edson abrir para você! Lembre-se de cuidar bem dele... May the crachá be with you!</QuestDoneMessage>
+	</Quest>
+
 </QuestCollection>

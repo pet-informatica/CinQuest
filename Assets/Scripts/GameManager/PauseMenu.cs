@@ -18,22 +18,26 @@ public class PauseMenu : MonoBehaviour {
 	public GameObject controlCanvas;
 	public GameObject feedbackCanvas;
 	private Stack<GameObject> allCanvas;
+	private MenuStatus menuStatus;
 
 	static PauseMenu instance;
 
 	void Start() {
 		instance = this;
-
+		menuStatus = GameManager.Instance.menuStatus;
 		allCanvas = new Stack<GameObject>();
 		allCanvas.Push(pauseCanvas);
 	}
 
 	void Update () {
-		if (Input.GetButtonDown ("Pause")) {
+		if (Input.GetButtonDown ("Pause") && !menuStatus.openProblem("Pause")) {
 			if (pauseCanvas.activeSelf) {
 				allCanvas.Pop ().SetActive (false);
+				if(allCanvas.Count == 1)
+					menuStatus.close ("Pause");
 			} else {
 				pauseCanvas.SetActive (true);
+				menuStatus.open ("Pause");
 				allCanvas.Push (pauseCanvas);
 			}
 		}
@@ -57,6 +61,7 @@ public class PauseMenu : MonoBehaviour {
 	}
 
 	public void openFeedback(){
+		menuStatus.open ("Feedback");
 		feedbackCanvas.SetActive (true);
 		allCanvas.Push (feedbackCanvas);
 	}
