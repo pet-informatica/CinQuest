@@ -26,6 +26,7 @@ public class Map : MonoBehaviour
     Text descriptionText;
 
     bool objectHovered;
+	bool active;
 
     /// <summary>
     /// Returns true if the global map is alredy opened.
@@ -82,6 +83,8 @@ public class Map : MonoBehaviour
     /// </summary>
     void ClampPosition()
     {
+		if (!active)
+			return;
         float twidth = (contentRect.rect.width) / 2.0f;
         float theight = (contentRect.rect.height) / 2.0f;
         twidth *= minZoom;
@@ -101,6 +104,8 @@ public class Map : MonoBehaviour
     /// </summary>
     void Scroll()
     {
+		if (!active)
+			return;
         float scroll = Input.GetAxis("Mouse ScrollWheel") * zoomSpeed * Time.deltaTime * 0.001f;
 
         float x = contentRect.localScale.x;
@@ -131,12 +136,20 @@ public class Map : MonoBehaviour
 	void ChangeStage(string hash)
 	{
 		HideDescription ();
-		if (activeStage != null)
+		if (activeStage != null) {
 			activeStage.SetActive (false);
-		activeStage = model.FindStage (hash).stage;
-		activeStage.SetActive (true);
-		contentRect = activeStage.GetComponent<RectTransform>();
-		title.text = model.FindStage (hash).title;
+			active = false;
+		}
+		if (model.FindStage (hash) != null) {
+			activeStage = model.FindStage (hash).stage;
+			activeStage.SetActive (true);
+			contentRect = activeStage.GetComponent<RectTransform> ();
+			title.text = model.FindStage (hash).title;
+			active = true;
+		} else {
+			active = false;
+		}
+
 	}
 
 	/// <summary>
@@ -158,6 +171,7 @@ public class Map : MonoBehaviour
         {
             IsOpen = false;
             UI.SetActive(false);
+			active = false;
             if(Minimap.Instance != null)
                 Minimap.Instance.Open();
         }
@@ -180,6 +194,9 @@ public class Map : MonoBehaviour
     /// <param name="eventData">The eventData associated with unity UI EventSystem</param>
     public void OnDrag(BaseEventData eventData)
     {
+		if (!active)
+			return;
+		
         var pointerData = eventData as PointerEventData;
 
         if (pointerData == null) { return; }
@@ -197,6 +214,8 @@ public class Map : MonoBehaviour
     /// <param name="eventData">The eventData associated with unity UI EventSystem</param>
     public void ShowDescription(BaseEventData eventData)
     {
+		if (!active)
+			return;
         var pointerData = eventData as PointerEventData;
         string hovered = pointerData.pointerEnter.name;
         description.SetActive(true);
@@ -209,6 +228,8 @@ public class Map : MonoBehaviour
     /// </summary>
     public void UpdateDescription()
     {
+		if (!active)
+			return;
         Vector2 p = descriptionRect.position;
         p = Input.mousePosition;
         p.y += 25f;
