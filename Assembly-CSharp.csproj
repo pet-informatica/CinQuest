@@ -92,6 +92,7 @@
      <Compile Include="Assets\Scripts\NPCs\IBroadcaster.cs" />
      <Compile Include="Assets\Scripts\NPCs\NPCListener.cs" />
      <Compile Include="Assets\Scripts\NPCs\NPCMover.cs" />
+     <Compile Include="Assets\Scripts\NPCs\NPCMoverAuto.cs" />
      <Compile Include="Assets\Scripts\NPCs\Quest1\Quest1NPCFreshman.cs" />
      <Compile Include="Assets\Scripts\NPCs\Quest1\Quest1NPCGatekeeper.cs" />
      <Compile Include="Assets\Scripts\NPCs\Quest1\Quest1NPCHelpdesk.cs" />
