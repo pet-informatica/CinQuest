@@ -64,6 +64,7 @@ public class SceneNamer : MonoBehaviour
         /* CCEN */
         ui.Add("CCEN", "CCEN");
 		ui.Add("CCENUpstairs", "CCEN - 1º Andar");
+		ui.Add("SecGrad", "SecGrad");
     }
 
     /// <summary>
