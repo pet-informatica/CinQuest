@@ -63,6 +63,7 @@
      <Compile Include="Assets\Scripts\GameManager\CameraUnfollower.cs" />
      <Compile Include="Assets\Scripts\GameManager\Feedback.cs" />
      <Compile Include="Assets\Scripts\GameManager\GameManager.cs" />
+     <Compile Include="Assets\Scripts\GameManager\GameStateMachine.cs" />
      <Compile Include="Assets\Scripts\GameManager\Loader.cs" />
      <Compile Include="Assets\Scripts\GameManager\PauseMenu.cs" />
      <Compile Include="Assets\Scripts\GameManager\PlayerSpawn.cs" />

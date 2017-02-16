@@ -26,7 +26,7 @@ public class TicketGate : MonoBehaviour {
     bool PlayerHasIDCard()
     {
 		User currentUser = User.Instance;
-		IPreCondition checkCracha = GameManager.Instance.preConditionManager.getPreCondition (1);
+		IPreCondition checkCracha = GameManager.Instance.preConditionManager.getPreCondition (6);
 		return checkCracha.checkIfMatches (currentUser);
     }
 
