@@ -14,8 +14,8 @@ public class Quest1NPCHelpdesk : MonoBehaviour, IBroadcaster
 		if (state == EState.WaitingPlayer) {
 			Quest1NPCFreshman freshman = GameObject.Find ("Quest1NPCFreshman").GetComponent<Quest1NPCFreshman> ();
 			freshman.ChangeState ();
-			NPCListener.Instance.Disable ("Quest1CinParkingFreshmen");
-			NPCListener.Instance.Disable ("Quest1CCENFreshmen");
+			NPCListener.Instance.Disable ("Quest1CinParkingFreshmenCCEN");
+			NPCListener.Instance.Disable ("Quest1NPCFreshman");
 		}
 		state++;
 	}
