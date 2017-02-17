@@ -65,6 +65,7 @@ public class SceneNamer : MonoBehaviour
         ui.Add("CCEN", "CCEN");
 		ui.Add("CCENUpstairs", "CCEN - 2º Andar");
 		ui.Add("SecGrad", "SecGrad");
+		ui.Add("Library", "Biblioteca");
     }
 
     /// <summary>
@@ -76,6 +77,6 @@ public class SceneNamer : MonoBehaviour
     {
         if (ui.ContainsKey(scene))
             return ui[scene];
-        return "";
+        return scene;
     }
 }
