@@ -13,9 +13,15 @@ public class MinimapArrow : MonoBehaviour
             anim = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
     }
 
+	void TrackPlayer(){
+		if(GameObject.FindGameObjectWithTag("Player") != null)
+			anim = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
+	}
+
 	void OnEnable()
 	{
 		SceneManager.sceneLoaded += OnLevelFinishedLoading;
+		TrackPlayer ();
 	}
 
 	void OnDisable()
@@ -25,8 +31,7 @@ public class MinimapArrow : MonoBehaviour
 
 	void OnLevelFinishedLoading(Scene scene, LoadSceneMode mode)
 	{
-		if(GameObject.FindGameObjectWithTag("Player") != null)
-			anim = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
+		TrackPlayer ();
 	}
 
     void UpdateSensorPosition()
