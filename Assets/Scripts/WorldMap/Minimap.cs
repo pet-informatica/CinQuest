@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 /// <summary>
 /// The minimap class
@@ -53,9 +54,13 @@ public class Minimap : MonoBehaviour {
 		SceneManager.sceneLoaded -= OnLevelFinishedLoading;
 	}
 
+	IEnumerator wait(){
+		yield return new WaitForSeconds (0.5f);
+		UpdateTitle ();
+	}
 	void OnLevelFinishedLoading(Scene scene, LoadSceneMode mode)
 	{
-		UpdateTitle();
+		if(gameObject.activeSelf) StartCoroutine (wait ());
 	}
 
     void UpdateTitle()

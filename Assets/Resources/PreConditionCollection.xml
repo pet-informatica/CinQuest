@@ -3,4 +3,7 @@
   <PreCondition identifier="2" name="quest1-gatekeeper-speak-1" itemIdentifier="2"/>
   <PreCondition identifier="3" name="quest1-freshman-speak-2" itemIdentifier="3"/>
   <PreCondition identifier="4" name="got-login" itemIdentifier="4"/>
+  <PreCondition identifier="5" name="quest2-PC-sendEmailBadge" itemIdentifier="5"/>
+  <PreCondition identifier="6" name="quest2-helpdesck-getBadge" itemIdentifier="6"/>
+  <PreCondition identifier="7" name="quest1-helpdesktalk" itemIdentifier="7"/>
 </PreConditionCollection>

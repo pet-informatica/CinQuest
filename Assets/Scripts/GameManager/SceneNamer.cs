@@ -63,6 +63,8 @@ public class SceneNamer : MonoBehaviour
         ui.Add("CinParking", "Estacionamento");
         /* CCEN */
         ui.Add("CCEN", "CCEN");
+		ui.Add("CCENUpstairs", "CCEN - 2º Andar");
+		ui.Add("SecGrad", "SecGrad");
     }
 
     /// <summary>

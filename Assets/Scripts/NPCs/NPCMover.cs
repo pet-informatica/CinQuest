@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 
 /// <summary>
-/// Helper class that can move an NPC with the Move script attached.
+/// Helper class that can move an NPC using waypoint system to build a path
 /// Developed by: hcmb
 /// </summary>
 public class NPCMover : Move 
