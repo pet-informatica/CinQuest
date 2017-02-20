@@ -47,6 +47,7 @@ public class Minimap : MonoBehaviour {
 	void OnEnable()
 	{
 		SceneManager.sceneLoaded += OnLevelFinishedLoading;
+		UpdateTitle ();
 	}
 
 	void OnDisable()
@@ -54,13 +55,9 @@ public class Minimap : MonoBehaviour {
 		SceneManager.sceneLoaded -= OnLevelFinishedLoading;
 	}
 
-	IEnumerator wait(){
-		yield return new WaitForSeconds (0.5f);
-		UpdateTitle ();
-	}
 	void OnLevelFinishedLoading(Scene scene, LoadSceneMode mode)
 	{
-		if(gameObject.activeSelf) StartCoroutine (wait ());
+		UpdateTitle ();
 	}
 
     void UpdateTitle()

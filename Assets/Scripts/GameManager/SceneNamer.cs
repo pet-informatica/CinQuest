@@ -49,10 +49,13 @@ public class SceneNamer : MonoBehaviour
         ui.Add("ResearchLab_2", "Laboratório de Pesquisa");
         ui.Add("BathroomF_1", "Banheiro Feminino");
         ui.Add("BathroomF_2", "Banheiro Feminino");
+		ui.Add("BathroomF_3", "Banheiro Feminino");
         ui.Add("BathroomM_1", "Banheiro Masculino");
         ui.Add("BathroomM_2", "Banheiro Masculino");
+		ui.Add("BathroomM_3", "Banheiro Masculino");
         ui.Add("Clasroom_1", "Sala de Aula");
         ui.Add("Clasroom_2", "Sala de Aula");
+		ui.Add("Clasroom_3", "Sala de Aula");
         ui.Add("LivingRoom", "Sala de Convivência");
         ui.Add("Anfitheater", "Anfiteatro");
         ui.Add("Pet", "PET");
@@ -65,6 +68,9 @@ public class SceneNamer : MonoBehaviour
         ui.Add("CCEN", "CCEN");
 		ui.Add("CCENUpstairs", "CCEN - 2º Andar");
 		ui.Add("SecGrad", "SecGrad");
+		ui.Add("Library", "Biblioteca");
+		/* AREA 2 */
+		ui.Add("Area2Path", "Caminho para Área 2");
     }
 
     /// <summary>
@@ -76,6 +82,6 @@ public class SceneNamer : MonoBehaviour
     {
         if (ui.ContainsKey(scene))
             return ui[scene];
-        return "";
+        return scene;
     }
 }

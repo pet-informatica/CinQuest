@@ -26,9 +26,17 @@ public class CameraController : MonoBehaviour
             player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
+	void TrackPlayer(){
+		followingPlayerX = true;
+		followingPlayerY = true;
+		if(GameObject.FindGameObjectWithTag("Player") != null)
+			player = GameObject.FindGameObjectWithTag("Player").transform;
+	}
+		
 	void OnEnable()
 	{
 		SceneManager.sceneLoaded += OnLevelFinishedLoading;
+		TrackPlayer ();
 	}
 
 	void OnDisable()
@@ -38,10 +46,7 @@ public class CameraController : MonoBehaviour
 
 	void OnLevelFinishedLoading(Scene scene, LoadSceneMode mode)
 	{
-		followingPlayerX = true;
-		followingPlayerY = true;
-		if(GameObject.FindGameObjectWithTag("Player") != null)
-			player = GameObject.FindGameObjectWithTag("Player").transform;
+		TrackPlayer ();
 	}
 	
 	void Update ()
