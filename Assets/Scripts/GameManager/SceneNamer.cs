@@ -69,6 +69,8 @@ public class SceneNamer : MonoBehaviour
 		ui.Add("CCENUpstairs", "CCEN - 2º Andar");
 		ui.Add("SecGrad", "SecGrad");
 		ui.Add("Library", "Biblioteca");
+		/* AREA 2 */
+		ui.Add("Area2Path", "Caminho para Área 2");
     }
 
     /// <summary>
