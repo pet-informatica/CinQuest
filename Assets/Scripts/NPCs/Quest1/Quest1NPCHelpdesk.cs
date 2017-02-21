@@ -3,23 +3,21 @@ using System.Collections;
 
 public class Quest1NPCHelpdesk : MonoBehaviour, IBroadcaster 
 {
-	enum EState{
-		WaitingPlayer,
-		QuestEnd
-	}
-
-	EState state;
-
-	void ChangeState(){
-		if (state == EState.WaitingPlayer) {
+	void ChangeState()
+	{
+		if (GameStateMachine.Instance.Quest1Helpdesk == Quest1Helpdesk.WaitingPlayer) 
+		{
 			Quest1NPCFreshman freshman = GameObject.Find ("Quest1NPCFreshman").GetComponent<Quest1NPCFreshman> ();
 			freshman.ChangeState ();
-			NPCListener.Instance.Disable ("Quest1Freshmen");
+			NPCListener.Instance.DisableInstantly ("Quest1CinExitBlock");
+			NPCListener.Instance.Disable ("Quest1CinParkingFreshmenCCEN");
+			NPCListener.Instance.Disable ("Quest1NPCFreshman");
 		}
-		state++;
+		GameStateMachine.Instance.Quest1Helpdesk++;
 	}
 
-	public void Broad(){
+	public void Broad()
+	{
 		ChangeState ();
 	}
 }

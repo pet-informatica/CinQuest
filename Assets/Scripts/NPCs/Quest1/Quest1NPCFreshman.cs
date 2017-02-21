@@ -1,38 +1,34 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Quest1NPCFreshman : MonoBehaviour, IBroadcaster {
-
-	public enum EState{
-		AtGate,
-		WaitingGatekeeper,
-		WaitingPlayer,
-		GoingForHelpdesk,
-		AtHelpdesk,
-		QuestEnd
-	}
-		
+public class Quest1NPCFreshman : MonoBehaviour, IBroadcaster 
+{
 	public GameObject[] paths;
 	InterativeSpeaker speaker;
 	NPCMover mover;
-	EState state;
 	int currentDialog;
 	int currentPath;
 
-	void Start () {
-		state = EState.AtGate;
+	void Start () 
+	{
 		mover = GetComponent < NPCMover> ();
 		speaker = GetComponent<InterativeSpeaker> ();
 	}
 
-	void Update () {
-		if (state == EState.WaitingPlayer) {
-			if (speaker.Speak ()) {
+	void Update () 
+	{
+		
+		if (GameStateMachine.Instance.Quest1Freshman == Quest1Freshman.WaitingPlayer) 
+		{
+			if (speaker.Speak ()) 
+			{
 				ChangeState ();
 			}
-				//ChangeState ();
-		} else if (state == EState.GoingForHelpdesk) {
-			if (!mover.isMoving ()) {
+		} 
+		else if (GameStateMachine.Instance.Quest1Freshman == Quest1Freshman.GoingForHelpdesk) 
+		{
+			if (!mover.isMoving ()) 
+			{
 				ChangeState ();
 			}
 		}
@@ -41,14 +37,16 @@ public class Quest1NPCFreshman : MonoBehaviour, IBroadcaster {
 	/// <summary>
 	/// Called by a broadcaster like the dialog tree node.
 	/// </summary>
-	public void Broad(){
+	public void Broad()
+	{
 		ChangeState ();
 	}
 
 	/// <summary>
 	/// Moves to current target path in current state.
 	/// </summary>
-	void MoveToPath(){
+	void MoveToPath()
+	{
 		mover.GoForTargetWaypoint (paths [currentPath]);
 		currentPath++;
 	}
@@ -56,36 +54,50 @@ public class Quest1NPCFreshman : MonoBehaviour, IBroadcaster {
 	/// <summary>
 	/// Stops every movement
 	/// </summary>
-	void Halt(){
+	void Halt()
+	{
 		mover.CancelPath ();
 	}
 
 	/// <summary>
 	/// Speaks the next dialog in the list latter when interacting with player.
 	/// </summary>
-	void NextDialog(){
+	void NextDialog()
+	{
 		speaker.defaultDialogIndex++;
 	}
 
 	/// <summary>
 	/// Advances the NPC to the next state in it's list, calling a method in the process.
 	/// </summary>
-	public void ChangeState(){
-		if (state == EState.AtGate) {
+	public void ChangeState()
+	{
+		if (GameStateMachine.Instance.Quest1Freshman == Quest1Freshman.AtGate) 
+		{
 			MoveToPath ();
 			NextDialog ();
-		} else if (state == EState.WaitingGatekeeper) {
+		} 
+		else if (GameStateMachine.Instance.Quest1Freshman == Quest1Freshman.WaitingGatekeeper)
+		{
 			Halt ();
 			NextDialog ();
-		} else if (state == EState.WaitingPlayer) {
+		} 
+		else if (GameStateMachine.Instance.Quest1Freshman == Quest1Freshman.WaitingPlayer) 
+		{
 			MoveToPath ();
-		} else if (state == EState.GoingForHelpdesk) {
+		} 
+		else if (GameStateMachine.Instance.Quest1Freshman == Quest1Freshman.GoingForHelpdesk) 
+		{
 			NextDialog ();
-		} else if (state == EState.AtHelpdesk) {
+		} 
+		else if (GameStateMachine.Instance.Quest1Freshman == Quest1Freshman.AtHelpdesk) 
+		{
 			NextDialog ();
-		} else if (state == EState.QuestEnd) {
+		} 
+		else if (GameStateMachine.Instance.Quest1Freshman == Quest1Freshman.QuestEnd)
+		{
 			MoveToPath ();
 		}
-		state++;
+		GameStateMachine.Instance.Quest1Freshman++;
 	}
 }

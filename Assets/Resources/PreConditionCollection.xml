@@ -5,5 +5,6 @@
   <PreCondition identifier="4" name="got-login" itemIdentifier="4"/>
   <PreCondition identifier="5" name="quest2-PC-sendEmailBadge" itemIdentifier="5"/>
   <PreCondition identifier="6" name="quest2-helpdesck-getBadge" itemIdentifier="6"/>
-  <PreCondition identifier="7" name="quest2-haveBadge" itemIdentifier="7"/>
+  <PreCondition identifier="7" name="quest1-helpdesktalk" itemIdentifier="7"/>
+  <PreCondition identifier="8" name="quest2-haveBadge" itemIdentifier="8"/>
 </PreConditionCollection>
