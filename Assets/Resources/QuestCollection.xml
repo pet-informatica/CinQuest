@@ -53,7 +53,7 @@
 			<PreCondition identifier="6"/>
 		</PreConditionsToDone>
 		<Rewards>
-			<Reward identifier="7"/>
+			<Reward identifier="8"/>
 		</Rewards>
 		<QuestDoneMessage>Parabéns, agora você tem um crachá e é verdadeiramente um aluno do CIn! Nada de ficar pedindo pra seu Edson abrir para você! Lembre-se de cuidar bem dele... May the crachá be with you!</QuestDoneMessage>
 	</Quest>
