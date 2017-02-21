@@ -57,8 +57,6 @@ public class User  : MonoBehaviour
 		quests = new Dictionary<int,Quest> ();
         items = new List<GenericItem>();
         LoadQuestsFromManager();
-		User user = User.Instance;
-		user.AddItem(GameManager.Instance.itemManager.GetItem(4));
 	}
 
 	private void LoadUserDataFromFile(){
