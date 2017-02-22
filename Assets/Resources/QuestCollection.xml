@@ -45,15 +45,15 @@
 		<Description>Todo aluno do CIn precisa fazer seu crachá para poder entrar e sair do Centro. Nessa Quest você aprenderá a solicitar seu crachá!</Description>
 		<Unlocked>false</Unlocked>
 		<PreConditionsToUnlock>
-			<PreCondition identifier="3"/>
+			<PreCondition identifier="4"/>
 		</PreConditionsToUnlock>
 		<PreConditionsToLock>
 		</PreConditionsToLock>
 		<PreConditionsToDone>
-			<PreCondition identifier="2"/>
+			<PreCondition identifier="6"/>
 		</PreConditionsToDone>
 		<Rewards>
-			<Reward identifier="1"/>
+			<Reward identifier="8"/>
 		</Rewards>
 		<QuestDoneMessage>Parabéns, agora você tem um crachá e é verdadeiramente um aluno do CIn! Nada de ficar pedindo pra seu Edson abrir para você! Lembre-se de cuidar bem dele... May the crachá be with you!</QuestDoneMessage>
 	</Quest>
