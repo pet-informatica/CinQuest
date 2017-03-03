@@ -58,4 +58,21 @@
 		<QuestDoneMessage>Parabéns, agora você tem um crachá e é verdadeiramente um aluno do CIn! Nada de ficar pedindo pra seu Edson abrir para você! Lembre-se de cuidar bem dele... May the crachá be with you!</QuestDoneMessage>
 	</Quest>
 
+	<Quest>
+		<Identifier>5</Identifier>
+		<Name>Comer, comer!</Name>
+		<Description>O que todo aluno do CIn faz no intervalo entre as aulas? Recupera as suas forças! E a Área II é o point mais comum para conseguir um belo hamburguer, ou um cafézinho! Se você conseguir enfrentar a fila... </Description>
+		<Unlocked>false</Unlocked>
+		<PreConditionsToUnlock>
+		</PreConditionsToUnlock>
+		<PreConditionsToLock>
+		</PreConditionsToLock>
+		<PreConditionsToDone>
+			<PreCondition identifier="2"/>
+		</PreConditionsToDone>
+		<Rewards>
+			<Reward identifier="1"/>
+		</Rewards>
+	</Quest>
+
 </QuestCollection>
