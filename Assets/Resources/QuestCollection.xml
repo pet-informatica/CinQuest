@@ -58,4 +58,23 @@
 		<QuestDoneMessage>Parabéns, agora você tem um crachá e é verdadeiramente um aluno do CIn! Nada de ficar pedindo pra seu Edson abrir para você! Lembre-se de cuidar bem dele... May the crachá be with you!</QuestDoneMessage>
 	</Quest>
 
+	<Quest>
+		<Identifier>4</Identifier>
+		<Name>É bom pegar o livro de Álgebra.</Name>
+		<Description>Vá a biblioteca após a aula de Ágebra Linear para buscar o livro recomendado.</Description>
+		<Unlocked>false</Unlocked>
+		<PreConditionsToUnlock>
+			<PreCondition identifier="9"/>
+		</PreConditionsToUnlock>
+		<PreConditionsToLock>
+		</PreConditionsToLock>
+		<PreConditionsToDone>
+			<PreCondition identifier="13"/>
+		</PreConditionsToDone>
+		<Rewards>
+			<Reward identifier="13"/>
+		</Rewards>
+		<QuestDoneMessage>Parabéns, com o livro de Ágebra Linear em mão, é hora de estudar para tirar uma nota boa.</QuestDoneMessage>
+	</Quest>
+
 </QuestCollection>
