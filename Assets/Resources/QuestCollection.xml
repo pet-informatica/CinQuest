@@ -17,6 +17,7 @@
 		<Rewards>
 			<Reward identifier="1"/>
 		</Rewards>
+		<QuestDoneMessage></QuestDoneMessage>
 	</Quest>
 
 	-->
@@ -73,6 +74,7 @@
 		<Rewards>
 			<Reward identifier="1"/>
 		</Rewards>
+		<QuestDoneMessage>	Parabéns! Agora que você sabe onde conseguir alimento, já pode explorar o mundo. Quem sabe que aventuras você vai encontrar por aí? </QuestDoneMessage>
 	</Quest>
 
 </QuestCollection>
