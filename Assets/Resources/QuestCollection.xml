@@ -43,7 +43,7 @@
 	<Quest>
 		<Identifier>2</Identifier>
 		<Name>Solicitar Crachá</Name>
-		<Description>Todo aluno do CIn precisa fazer seu crachá para poder entrar e sair do Centro. Nessa Quest você aprenderá a solicitar seu crachá!</Description>
+		<Description>Todo aluno do CIn precisa fazer seu crachá para poder entrar e sair do Centro. Nessa Quest você aprenderá a solicitar seu crachá! Acesse algum computador com seu login/senha para solicitar o crachá!</Description>
 		<Unlocked>false</Unlocked>
 		<PreConditionsToUnlock>
 			<PreCondition identifier="4"/>
@@ -62,7 +62,7 @@
 	<Quest>
 		<Identifier>3</Identifier>
 		<Name>Assistir uma aula</Name>
-		<Description>Suas aulas começaram! É hora de descobrir onde é a sala de aula!</Description>
+		<Description>Suas aulas começaram! É hora de descobrir onde é a sala de aula da sua primeira aula! Aulas normalmente serão no CCEN, CIn ou Área II.</Description>
 		<Unlocked>false</Unlocked>
 		<PreConditionsToUnlock>
 		</PreConditionsToUnlock>
