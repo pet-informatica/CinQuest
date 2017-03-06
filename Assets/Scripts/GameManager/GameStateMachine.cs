@@ -31,6 +31,11 @@ public enum Quest5Queue{
 	WaitingPlayer
 }
 
+public enum Quest3Teacher{
+	WaitingPlayer
+}
+
+
 /// <summary>
 /// This class controls a huge list of states for all the npcs that acts based on it's current state in the game.
 /// Since the states must survive between scenes, they are all stored here, in a singleton that isn't destroyed on load.
@@ -53,6 +58,8 @@ public class GameStateMachine : MonoBehaviour
 	public Quest1SecGrad Quest1SecGrad { get ; set; }
 	public Quest5InfoGirl Quest5InfoGirl { get; set; }
 	public Quest5Queue Quest5Queue { get; set; }
+	public Quest3Teacher Quest3Teacher { get; set; }
+
 
 	void Awake(){
 		if (instance == null) {

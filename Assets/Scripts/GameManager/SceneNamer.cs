@@ -56,6 +56,7 @@ public class SceneNamer : MonoBehaviour
         ui.Add("Clasroom_1", "Sala de Aula");
         ui.Add("Clasroom_2", "Sala de Aula");
 		ui.Add("Clasroom_3", "Sala de Aula");
+		ui.Add("Clasroom_3_class", "Sala de Aula");
         ui.Add("LivingRoom", "Sala de Convivência");
         ui.Add("Anfitheater", "Anfiteatro");
         ui.Add("Pet", "PET");

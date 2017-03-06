@@ -60,6 +60,23 @@
 	</Quest>
 
 	<Quest>
+		<Identifier>3</Identifier>
+		<Name>Assistir uma aula</Name>
+		<Description>Suas aulas começaram! É hora de descobrir onde é a sala de aula!</Description>
+		<Unlocked>false</Unlocked>
+		<PreConditionsToUnlock>
+		</PreConditionsToUnlock>
+		<PreConditionsToLock>
+		</PreConditionsToLock>
+		<PreConditionsToDone>
+		</PreConditionsToDone>
+		<Rewards>
+			<Reward identifier="9"/>
+		</Rewards>
+		<QuestDoneMessage>Parabéns! Agora você já sabe onde serão as suas aulas de matemática! Boa parte das aulas serão nesta mesma sala!</QuestDoneMessage>
+	</Quest>
+
+	<Quest>
 		<Identifier>4</Identifier>
 		<Name>É bom pegar o livro de Álgebra.</Name>
 		<Description>Vá a biblioteca após a aula de Ágebra Linear para buscar o livro recomendado.</Description>
@@ -70,7 +87,6 @@
 		<PreConditionsToLock>
 		</PreConditionsToLock>
 		<PreConditionsToDone>
-			<PreCondition identifier="13"/>
 		</PreConditionsToDone>
 		<Rewards>
 			<Reward identifier="13"/>

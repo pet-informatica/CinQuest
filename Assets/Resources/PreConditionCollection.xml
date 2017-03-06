@@ -12,4 +12,5 @@
   <PreCondition identifier="11" name="quest4-libregister" itemIdentifier="11"/>
   <PreCondition identifier="12" name="quest4-alglinear" itemIdentifier="12"/>
   <PreCondition identifier="13" name="quest4-done" itemIdentifier="13"/>
+  <PreCondition identifier="14" name="quest3-started" itemIdentifier="14"/>
 </PreConditionCollection>
