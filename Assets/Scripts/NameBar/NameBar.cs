@@ -6,7 +6,7 @@ using System.Collections;
 
 public class NameBar : MonoBehaviour {
 	public GameObject NameBarUI;
-	Text name;
+	Text pName;
 
 	public NameBar ()
 	{
@@ -23,12 +23,12 @@ public class NameBar : MonoBehaviour {
 	}
 
 	void Start () {
-		name = GetComponentInChildren<Text>();
+		pName = GetComponentInChildren<Text>();
 		string playerName = GameManager.Instance.gameData.PlayerName;
-		if (playerName != null || !playerName.Equals ("")) {
-			name.text = playerName;
+		if (!String.IsNullOrEmpty(playerName)) {
+			pName.text = playerName;
 		} else {
-			name.text = "No name!";
+			pName.text = "peaonunes™";
 		}
 	}
 }
