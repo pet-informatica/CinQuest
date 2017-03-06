@@ -100,6 +100,7 @@
      <Compile Include="Assets\Scripts\NPCs\Quest1\Quest1NPCSecGrad.cs" />
      <Compile Include="Assets\Scripts\NPCs\Quest5\Quest5NPCInfoGirl.cs" />
      <Compile Include="Assets\Scripts\NPCs\Quest5\Quest5NPCQueue.cs" />
+     <Compile Include="Assets\Scripts\NameBar\NameBar.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerFront.cs" />
      <Compile Include="Assets\Scripts\PreConditions\GenericPreCondition.cs" />
