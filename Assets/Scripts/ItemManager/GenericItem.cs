@@ -4,9 +4,9 @@
 /// Developed by: Peao (rngs);
 /// Represents a GenericItem, possible extensions could be an Item, NotShowableItem, Achievement...
 /// </summary>
-public class GenericItem
+public class GenericItem : ScriptableObject
 {
-	public int identifier { get; set; }
+	public int identifier;
 
 	public GenericItem(int identifier){
 		this.identifier = identifier;

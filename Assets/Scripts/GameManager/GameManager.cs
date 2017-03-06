@@ -50,6 +50,7 @@ public class GameManager : MonoBehaviour
 
 
     /* UI Control */
+	public List<GenericItem> items;
     public List<string> disableChildrenInScene;
     public List<GameObject> childrenObjects;
     QuestUI questUI;
@@ -148,9 +149,9 @@ public class GameManager : MonoBehaviour
 	/// <summary>
 	/// This method will be erased when the item system is done
 	/// </summary>
-	private void FakeItensLoad(){
-		for (int i = 0; i < 50; ++i) {
-			this.itemManager.AddItem (new GenericItem (i));
+	private void LoadItems(){
+		for (int i = 0; i < items.Count; ++i) {
+			this.itemManager.AddItem (items[i]);
 		}
 	}
 
@@ -164,7 +165,7 @@ public class GameManager : MonoBehaviour
         this.itemManager = new ItemManager(RepositoriesFactory.createItemRepository(this.gameConfiguration.databaseType));
         this.itemManager.LoadItemsFromAssets();
 
-		FakeItensLoad ();
+		LoadItems ();
 
         // TODO: LOAD GAME PRECONDITIONS
         this.preConditionManager = new PreConditionManager(RepositoriesFactory.createPreConditionRepository(this.gameConfiguration.databaseType));

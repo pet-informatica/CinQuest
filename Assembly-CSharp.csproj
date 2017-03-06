@@ -49,6 +49,7 @@
      <Compile Include="Assets\Scripts\Board Text Manager\BoardTextManager.cs" />
      <Compile Include="Assets\Scripts\Choose Character\CharacterChooserManager.cs" />
      <Compile Include="Assets\Scripts\Choose Character\CharacterSlot.cs" />
+     <Compile Include="Assets\Scripts\DialogManager\AutoSpeaker.cs" />
      <Compile Include="Assets\Scripts\DialogManager\DialogManager.cs" />
      <Compile Include="Assets\Scripts\DialogManager\EDialogPriority.cs" />
      <Compile Include="Assets\Scripts\DialogManager\InterativeSpeaker.cs" />
@@ -72,15 +73,15 @@
      <Compile Include="Assets\Scripts\GameManager\ScreenFader.cs" />
      <Compile Include="Assets\Scripts\InteractiveObjects\Teleporter.cs" />
      <Compile Include="Assets\Scripts\InteractiveObjects\TicketGate.cs" />
-     <Compile Include="Assets\Scripts\Inventory\InventoryItem.cs" />
-     <Compile Include="Assets\Scripts\Inventory\InventoryManager.cs" />
-     <Compile Include="Assets\Scripts\Inventory\InventorySlot.cs" />
      <Compile Include="Assets\Scripts\ItemManager\GenericItem.cs" />
+     <Compile Include="Assets\Scripts\ItemManager\InventoryUI.cs" />
      <Compile Include="Assets\Scripts\ItemManager\Item.cs" />
      <Compile Include="Assets\Scripts\ItemManager\ItemManager.cs" />
+     <Compile Include="Assets\Scripts\ItemManager\ItemUI.cs" />
      <Compile Include="Assets\Scripts\ItemManager\NotShowableItem.cs" />
      <Compile Include="Assets\Scripts\ItemManager\Repository\GenericItemRepository.cs" />
      <Compile Include="Assets\Scripts\ItemManager\Repository\IGenericItemRepository.cs" />
+     <Compile Include="Assets\Scripts\ItemManager\Slot.cs" />
      <Compile Include="Assets\Scripts\LookAtCharacter.cs" />
      <Compile Include="Assets\Scripts\Maps\CinParking\Car.cs" />
      <Compile Include="Assets\Scripts\Maps\CinParking\CarSensor.cs" />
@@ -98,6 +99,8 @@
      <Compile Include="Assets\Scripts\NPCs\Quest1\Quest1NPCGatekeeper.cs" />
      <Compile Include="Assets\Scripts\NPCs\Quest1\Quest1NPCHelpdesk.cs" />
      <Compile Include="Assets\Scripts\NPCs\Quest1\Quest1NPCSecGrad.cs" />
+     <Compile Include="Assets\Scripts\NPCs\Quest3\Quest3NPCTeacher.cs" />
+     <Compile Include="Assets\Scripts\NPCs\Quest3\Quest3SceneChanger.cs" />
      <Compile Include="Assets\Scripts\NPCs\Quest5\Quest5NPCInfoGirl.cs" />
      <Compile Include="Assets\Scripts\NPCs\Quest5\Quest5NPCQueue.cs" />
      <Compile Include="Assets\Scripts\NameBar\NameBar.cs" />

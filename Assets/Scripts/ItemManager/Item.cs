@@ -1,14 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[CreateAssetMenu]
 public class Item : GenericItem {
 
+	public Sprite sprite;
     public string title;
     public string description;
 
-    public Item(int identifier, string name, string description) : base(identifier)
+    public Item(int identifier, Sprite sprite, string title, string description) : base(identifier)
     {
-        this.title = name;
+		this.sprite = sprite;
+		this.title = title;
         this.description = description;
     }
 }
