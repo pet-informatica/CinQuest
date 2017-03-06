@@ -60,19 +60,38 @@
 	</Quest>
 
 	<Quest>
-		<Identifier>5</Identifier>
-		<Name>Comer, comer!</Name>
-		<Description>O que todo aluno do CIn faz no intervalo entre as aulas? Recupera as suas forças! E a Área II é o point mais comum para conseguir um belo hamburguer, ou um cafézinho! Se você conseguir enfrentar a fila... </Description>
+		<Identifier>4</Identifier>
+		<Name>É bom pegar o livro de Álgebra.</Name>
+		<Description>Vá a biblioteca após a aula de Ágebra Linear para buscar o livro recomendado.</Description>
 		<Unlocked>false</Unlocked>
 		<PreConditionsToUnlock>
+			<PreCondition identifier="9"/>
 		</PreConditionsToUnlock>
 		<PreConditionsToLock>
 		</PreConditionsToLock>
 		<PreConditionsToDone>
+			<PreCondition identifier="13"/>
 		</PreConditionsToDone>
 		<Rewards>
+			<Reward identifier="13"/>
 		</Rewards>
-		<QuestDoneMessage>	Parabéns! Agora que você sabe onde conseguir alimento, já pode explorar o mundo. Quem sabe que aventuras você vai encontrar por aí? </QuestDoneMessage>
+		<QuestDoneMessage>Parabéns, com o livro de Ágebra Linear em mão, é hora de estudar para tirar uma nota boa.</QuestDoneMessage>
 	</Quest>
-
+   
+  <Quest>
+    <Identifier>5</Identifier>
+    <Name>Comer, comer!</Name>
+    <Description>O que todo aluno do CIn faz no intervalo entre as aulas? Recupera as suas forças! E a Área II é o point mais comum para conseguir um belo hamburguer, ou um cafézinho! Se você conseguir enfrentar a fila... </Description>
+    <Unlocked>false</Unlocked>
+    <PreConditionsToUnlock>
+    </PreConditionsToUnlock>
+    <PreConditionsToLock>
+    </PreConditionsToLock>
+    <PreConditionsToDone>
+    </PreConditionsToDone>
+    <Rewards>
+    </Rewards>
+    <QuestDoneMessage>	Parabéns! Agora que você sabe onde conseguir alimento, já pode explorar o mundo. Quem sabe que aventuras você vai encontrar por aí? </QuestDoneMessage>
+  </Quest>
+   
 </QuestCollection>

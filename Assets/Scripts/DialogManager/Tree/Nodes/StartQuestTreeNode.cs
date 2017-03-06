@@ -34,6 +34,7 @@ public class StartQuestTreeNode : DialogTreeNode
 			
         User user = User.Instance;
         Quest quest = user.GetQuest(QuestID);
+		quest.Activate (user);
         if (quest != null && quest.Unlocked && !quest.Done)
         {
 			
