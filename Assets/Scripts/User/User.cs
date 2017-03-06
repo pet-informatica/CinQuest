@@ -48,7 +48,7 @@ public class User  : MonoBehaviour
 		else if (instance != this)
 			Destroy (gameObject);
 		DontDestroyOnLoad (gameObject);
-		AddItem (new GenericItem (9));
+		//AddItem (new GenericItem (9));
 
 	}
 
