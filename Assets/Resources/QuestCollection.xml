@@ -17,6 +17,7 @@
 		<Rewards>
 			<Reward identifier="1"/>
 		</Rewards>
+		<QuestDoneMessage></QuestDoneMessage>
 	</Quest>
 
 	-->
@@ -76,5 +77,21 @@
 		</Rewards>
 		<QuestDoneMessage>Parabéns, com o livro de Ágebra Linear em mão, é hora de estudar para tirar uma nota boa.</QuestDoneMessage>
 	</Quest>
-
+   
+  <Quest>
+    <Identifier>5</Identifier>
+    <Name>Comer, comer!</Name>
+    <Description>O que todo aluno do CIn faz no intervalo entre as aulas? Recupera as suas forças! E a Área II é o point mais comum para conseguir um belo hamburguer, ou um cafézinho! Se você conseguir enfrentar a fila... </Description>
+    <Unlocked>false</Unlocked>
+    <PreConditionsToUnlock>
+    </PreConditionsToUnlock>
+    <PreConditionsToLock>
+    </PreConditionsToLock>
+    <PreConditionsToDone>
+    </PreConditionsToDone>
+    <Rewards>
+    </Rewards>
+    <QuestDoneMessage>	Parabéns! Agora que você sabe onde conseguir alimento, já pode explorar o mundo. Quem sabe que aventuras você vai encontrar por aí? </QuestDoneMessage>
+  </Quest>
+   
 </QuestCollection>
