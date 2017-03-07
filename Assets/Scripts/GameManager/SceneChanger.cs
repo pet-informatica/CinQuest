@@ -27,6 +27,7 @@ public class SceneChanger : MonoBehaviour
         *Please see the PlayerSpawn script for more information.
 		
 	 */
+	public static bool globalLock = false;
 	public string changeFX = "DoorSlam";
 	public float changeTime = 1.2f;
 	public string destinyScene = "";
@@ -55,12 +56,13 @@ public class SceneChanger : MonoBehaviour
 
     public void Change()
     {
-        StartCoroutine(ChangeScene());
+		if(!locked && !globalLock)
+       		StartCoroutine(ChangeScene());
     }
 
 	void OnTriggerEnter2D(Collider2D collider)
 	{
-        if (!locked && collider.tag == "Player")
+        if (collider.tag == "Player")
             Change();
 	}
 }

@@ -9,7 +9,7 @@ public class Quest1NPCHelpdesk : MonoBehaviour, IBroadcaster
 		{
 			Quest1NPCFreshman freshman = GameObject.Find ("Quest1NPCFreshman").GetComponent<Quest1NPCFreshman> ();
 			freshman.ChangeState ();
-			NPCListener.Instance.DisableInstantly ("Quest1CinExitBlock");
+			SceneChanger.globalLock = false;
 			NPCListener.Instance.Disable ("Quest1CinParkingFreshmenCCEN");
 			NPCListener.Instance.Disable ("Quest1NPCFreshman");
 		}

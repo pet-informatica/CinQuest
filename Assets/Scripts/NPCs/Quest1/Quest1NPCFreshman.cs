@@ -74,6 +74,7 @@ public class Quest1NPCFreshman : MonoBehaviour, IBroadcaster
 	{
 		if (GameStateMachine.Instance.Quest1Freshman == Quest1Freshman.AtGate) 
 		{
+			SceneChanger.globalLock = true;
 			MoveToPath ();
 			NextDialog ();
 		} 
