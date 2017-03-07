@@ -4,7 +4,6 @@ using UnityEngine.UI;
 
 public class DialogManager : MonoBehaviour
 {
-    public AudioClip sound;
     public Text[] responses;
     public Color selectedResponseColor;
     public Color normalResponseColor;
@@ -22,6 +21,7 @@ public class DialogManager : MonoBehaviour
     Speaker curSpeaker;
     DialogTree curDialog;
     string curMessage;
+	string selectFX;
     string typedMessage;
 
     /// <summary>
@@ -57,8 +57,6 @@ public class DialogManager : MonoBehaviour
         foreach (char letter in curMessage.ToCharArray())
         {
             typedMessage += letter;
-            if (sound)
-                GetComponent<AudioSource>().PlayOneShot(sound);
             yield return new WaitForSeconds(letterPause);
         }
     }
@@ -150,9 +148,9 @@ public class DialogManager : MonoBehaviour
             curDialog = dialog;
             curSpeaker = speaker;
 			curDialog.Start();
-		
 			curDialog.Head.speaker = speaker.gameObject.name;
 			curDialog.Execute ();
+			selectFX = curDialog.Head.SelectFX;
             curMessage = curDialog.Head.Message;
             typedMessage = "";
             StartCoroutine(TypeText());
@@ -197,6 +195,7 @@ public class DialogManager : MonoBehaviour
     {
 		curDialog.Execute ();
         curDialog.GoToChild(selectedResponse);
+		selectFX = curDialog.Head.SelectFX;
         curMessage = curDialog.Head.Message;
         typedMessage = "";
         SetResponses(curDialog.Head);
@@ -239,5 +238,7 @@ public class DialogManager : MonoBehaviour
         selectedResponse = response;
 
 		responses[selectedResponse].color = selectedResponseColor;
+
+		MusicPlayer.Instance.PlayFX (selectFX);
     }
 }

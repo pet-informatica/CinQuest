@@ -27,7 +27,8 @@ public class SceneChanger : MonoBehaviour
         *Please see the PlayerSpawn script for more information.
 		
 	 */
-
+	public string changeFX = "DoorSlam";
+	public float changeTime = 1.2f;
 	public string destinyScene = "";
     public string specificName = "";
 	public bool locked = false;
@@ -39,7 +40,7 @@ public class SceneChanger : MonoBehaviour
 	IEnumerator ChangeScene()
 	{
         ScreenFader fader = GameObject.FindGameObjectWithTag("GameManager").GetComponent<ScreenFader>();
-		yield return new WaitForSeconds (fader.BeginFade(1, 1.2f));
+		yield return new WaitForSeconds (fader.BeginFade(1, changeTime));
 
         string sceneName = SceneManager.GetActiveScene().name;
        
@@ -47,6 +48,8 @@ public class SceneChanger : MonoBehaviour
             sceneName = specificName;
 
 		PlayerSpawn.SetTarget(sceneName);
+		MusicPlayer.Instance.ChangeSong (destinyScene, changeTime); 
+		MusicPlayer.Instance.PlayFX (changeFX); 
 		SceneManager.LoadScene (destinyScene);
 	}
 

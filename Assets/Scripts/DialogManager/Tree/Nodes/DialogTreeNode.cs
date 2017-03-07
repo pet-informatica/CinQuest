@@ -14,6 +14,16 @@ using UnityEngine.EventSystems;
 public class DialogTreeNode : ScriptableObject
 {
 	[SerializeField]
+	string selectFX = "ButtonHovered";
+	/// <summary>
+	/// The sound played when selecting this node.
+	/// </summary>
+	public string SelectFX 
+	{
+		get { return selectFX; }
+	}
+
+	[SerializeField]
 	List<int> preconditionIds;
 	/// <summary>
 	/// The list of the Precondition ID's that the user must satisfie in order to reach this node.

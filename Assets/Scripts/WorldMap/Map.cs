@@ -65,6 +65,8 @@ public class Map : MonoBehaviour
 
     void Update()
     {
+		//TURNED OFF UNTIL FURTHER DEVELOPMENT
+		/*
         if (Input.GetButtonDown("Map"))
         {
             if (IsOpen) Close();
@@ -76,6 +78,7 @@ public class Map : MonoBehaviour
 
         if (objectHovered)
             UpdateDescription();
+        */
     }
 
     /// <summary>

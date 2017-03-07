@@ -11,15 +11,26 @@ using System.Collections.Generic;
 [Serializable]
 public class EndQuestTreeNode : DialogTreeNode
 {
+	
     [SerializeField]
     int questId;
     /// <summary>
-    /// The list of the reward item ID's that the user will win after reaching this node
+    /// The quest ID for ending.
     /// </summary>
     public int QuestID
     {
         get { return questId; }
     }
+
+	[SerializeField]
+	string doneFX = "QuestCompleted";
+	/// <summary>
+	/// The sound FX played when ending quest.
+	/// </summary>
+	public string DoneFX
+	{
+		get { return doneFX; }
+	}
 
     /// <summary>
     /// When the node is reached, gives a list of rewards for the player
@@ -33,6 +44,7 @@ public class EndQuestTreeNode : DialogTreeNode
         {
             quest.Finish(user);
 			AlertBox.Instance.OpenWindow (GameConstants.QUEST_COMPLETED, quest.QuestDoneMessage);
+			MusicPlayer.Instance.PlayFX (doneFX);
             GameManager.Instance.UpdateQuestUI();
         }
     }
