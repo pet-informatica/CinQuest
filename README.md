@@ -1,6 +1,4 @@
 ![alt text](https://pet-informatica.github.io/cinquest/images/cinquest-noback.png "Logo")
-
-CinQuest
 ========
 
 A game to help freshers to understand how the Centre of Informatics (CIn) works e what you can do there. It's a gamification of the current Survival Manual also created by the PET-Informática. Each step of the Manual will be transformed into quests of the game. Here is the original [Survival Manual](http://www.cin.ufpe.br/~pet/wiki/index.php/Manual_de_Sobrevivência_do_CIn) available only in Portuguese.
