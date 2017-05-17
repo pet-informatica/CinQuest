@@ -7,7 +7,7 @@ A game to help freshers to understand how the Centre of Informatics (CIn) works 
 
 The main objective of the project is to provide a minimal infrastructure for the development of the game and then make it Open Source so the community may be able to collaborate. This way we can offer an opportunity to learn a different platform, encouraging the collaboration and development of a project that the whole CIn community can participate.
 
-Official website: http://wwww.pet-informatica.github.io/cinquest
+Official website: http://pet-informatica.github.io/cinquest
 
 
 BUILD
