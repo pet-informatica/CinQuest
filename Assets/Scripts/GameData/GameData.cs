@@ -1,5 +1,8 @@
 ﻿using System;
 
+/// <summary>
+/// Information on the player name
+/// </summary>
 [Serializable]
 public class GameData
 {

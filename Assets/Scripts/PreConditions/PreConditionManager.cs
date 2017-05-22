@@ -36,6 +36,11 @@ public class PreConditionManager
 		return this._preConditionRepository.preConditions;
 	}
 
+	/// <summary>
+	/// Loads the preconditions from xml file.
+	/// </summary>
+	/// <returns><c>true</c>, if preconditions from file was loaded, <c>false</c> otherwise.</returns>
+	/// <param name="preConditionCollectionFilePath">Precondition file path.</param>
 	public bool loadPreConditionsFromFile(string preConditionCollectionFilePath){
 		this.tryLoadPreConditions (preConditionCollectionFilePath);
 

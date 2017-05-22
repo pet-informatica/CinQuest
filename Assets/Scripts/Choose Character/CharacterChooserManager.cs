@@ -2,6 +2,9 @@
 using System.Collections;
 using UnityEngine.UI;
 
+/// <summary>
+/// Character chooser manager.
+/// </summary>
 public class CharacterChooserManager : MonoBehaviour {
 
 	SceneChanger sceneChanger;
@@ -106,6 +109,9 @@ public class CharacterChooserManager : MonoBehaviour {
 		}
 	}
 
+	/// <summary>
+	/// Starts the game with the nickname provide when choose the character.
+	/// </summary>
 	public void StartGame() {
 		GameManager.Instance.gameData.PlayerName = nickname.GetComponent<Text> ().text;
 		GameManager.Instance.SaveGame ();

@@ -1,8 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// Quest1 NPC helpdesk situation.
+/// </summary>
 public class Quest1NPCHelpdesk : MonoBehaviour, IBroadcaster 
 {
+	/// <summary>
+	/// Changes the state of NPC Helpdesk during the quest.
+	/// </summary>
 	void ChangeState()
 	{
 		if (GameStateMachine.Instance.Quest1Helpdesk == Quest1Helpdesk.WaitingPlayer) 
@@ -16,6 +22,9 @@ public class Quest1NPCHelpdesk : MonoBehaviour, IBroadcaster
 		GameStateMachine.Instance.Quest1Helpdesk++;
 	}
 
+	/// <summary>
+	/// Called by a broadcaster like the dialog tree node.
+	/// </summary>
 	public void Broad()
 	{
 		ChangeState ();

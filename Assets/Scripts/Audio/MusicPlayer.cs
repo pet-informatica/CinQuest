@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using System.Collections;
 
+/// <summary>
+/// Music player.
+/// </summary>
 public class MusicPlayer : MonoBehaviour {
 
 	[System.Serializable]
@@ -60,16 +63,25 @@ public class MusicPlayer : MonoBehaviour {
 			soundFX.Add (fx.name, fx.audio);
 	}
 
+	/// <summary>
+	/// Plaies the F.
+	/// </summary>
+	/// <param name="name">Name.</param>
 	public void PlayFX(string name){
 		if (soundFX.ContainsKey (name))
 			player.PlayOneShot (soundFX [name]);
 	}
 
+	/// <summary>
+	/// Changes the song.
+	/// </summary>
+	/// <param name="scene">Scene.</param>
+	/// <param name="time">Time.</param>
 	public void ChangeSong(string scene, float time){
 		if(sceneSong.ContainsKey(scene) && currentSong != scene)
 			StartCoroutine (Change (scene, time));
 	}
-
+		
 	IEnumerator Change(string scene, float time){
 		volumeDirection = -1;
 		volumeTime = time;
