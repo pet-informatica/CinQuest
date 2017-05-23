@@ -2,20 +2,19 @@
 using System.Collections;
 using System.Collections.Generic;
 
+/// <summary>
+/// This classe is reponsible for spawning objects with the Move script attached to it.
+/// It spawns a mover, and them make it moves for a targetWaypoint, point by point according to the
+///	path that is made by it's previous waypoints. *See Waypoint class for more info.
+///
+///	How to use it: Put it into a gameobject and fill the objects list with what you want to spawn.
+///	Then, you just have to create a path connecting waypoints previous variables and drag the last waypoint, the target, to
+///	the targetWaypoint variable. That's where the mover's will go once spawned, following the path you made.
+/// 
+/// Developed by: Higor
+/// </summary>
 public class MoverSpawner : MonoBehaviour
 {
-    /*
-        Developed by: Higor
-
-        Description: This classe is reponsible for spawning objects with the Move script attached to it.
-        It spawns a mover, and them make it moves for a targetWaypoint, point by point according to the
-        path that is made by it's previous waypoints. *See Waypoint class for more info.
-
-        How to use it: Put it into a gameobject and fill the objects list with what you want to spawn.
-        Then, you just have to create a path connecting waypoints previous variables and drag the last waypoint, the target, to
-        the targetWaypoint variable. That's where the mover's will go once spawned, following the path you made.
-    */
-
     public List<GameObject> objects;
     public int spawnEverySeconds = 10;
     public GameObject targetWaypoint;
@@ -39,6 +38,10 @@ public class MoverSpawner : MonoBehaviour
             Spawn();
 	}
 
+	/// <summary>
+	/// Set a path by backtracking waypoints and adds it to a move script
+	/// </summary>
+	/// <param name="move">Move.</param>
     protected void GoForTargetWaypoint(Move move)
     {
         List<Vector2> path = new List<Vector2>();
@@ -54,6 +57,9 @@ public class MoverSpawner : MonoBehaviour
             move.addPoint(path[i]);
     }
 
+	/// <summary>
+	/// Spawns a random mover object and moves it to it's target waypoint
+	/// </summary>
     protected virtual void Spawn()
     {
         int r = Random.Range(0, objects.Count);

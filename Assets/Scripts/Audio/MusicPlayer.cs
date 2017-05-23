@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using System.Collections;
 
+/// <summary>
+/// Manages all the sound fx in the game.
+/// </summary>
 public class MusicPlayer : MonoBehaviour {
 
 	[System.Serializable]
@@ -47,6 +50,9 @@ public class MusicPlayer : MonoBehaviour {
 		DontDestroyOnLoad (this.gameObject);
 	}
 
+	/// <summary>
+	/// Gets the list of sounds of songs from the inspector and creates a hash table from it
+	/// </summary>
 	void LoadPlayer(){
 		instance = this;
 		volumeDirection = 1;
@@ -60,16 +66,30 @@ public class MusicPlayer : MonoBehaviour {
 			soundFX.Add (fx.name, fx.audio);
 	}
 
+	/// <summary>
+	/// Play an effect one shot
+	/// </summary>
+	/// <param name="name">the fx id</param>
 	public void PlayFX(string name){
 		if (soundFX.ContainsKey (name))
 			player.PlayOneShot (soundFX [name]);
 	}
 
+	/// <summary>
+	/// Changes the song with a fade effect
+	/// </summary>
+	/// <param name="scene">song id</param>
+	/// <param name="time">fade time</param>
 	public void ChangeSong(string scene, float time){
 		if(sceneSong.ContainsKey(scene) && currentSong != scene)
 			StartCoroutine (Change (scene, time));
 	}
 
+	/// <summary>
+	/// Change the background song with a fade effect
+	/// </summary>
+	/// <param name="scene">new song id</param>
+	/// <param name="time">fade time</param>
 	IEnumerator Change(string scene, float time){
 		volumeDirection = -1;
 		volumeTime = time;

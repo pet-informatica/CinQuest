@@ -2,6 +2,9 @@
 using UnityEngine;
 using System.Collections.Generic;
 
+/// <summary>
+/// Represent an user instance. Has a nick, a list of quests, and a list of items.
+/// </summary>
 public class User  : MonoBehaviour 
 {
     static User instance = null;
@@ -51,6 +54,9 @@ public class User  : MonoBehaviour
 
 	}
 
+	/// <summary>
+	/// Instantiates a new user instance and load it's quests
+	/// </summary>
 	private void LoadNewUser (){
 		instance = this;
 		nick = "peaonunes";
@@ -63,6 +69,9 @@ public class User  : MonoBehaviour
 		//TODO: Deserialize user data.
 	}
 
+	/// <summary>
+	/// Get the list os quests from the game manager
+	/// </summary>
     private void LoadQuestsFromManager()
     {
         QuestManager manager = GameManager.Instance.questManager;
@@ -72,6 +81,11 @@ public class User  : MonoBehaviour
         }
     }
 
+	/// <summary>
+	/// Get a quest based on it's id
+	/// </summary>
+	/// <returns>The quest. Null if couldn't find it.</returns>
+	/// <param name="id">The quest id.</param>
     public Quest GetQuest(int id)
     {
         if (quests.ContainsKey(id))
@@ -79,8 +93,11 @@ public class User  : MonoBehaviour
         return null;
     }
 
+	/// <summary>
+	/// Adds and generic item to players list of items
+	/// </summary>
+	/// <param name="newItem">The generic item to add.</param>
 	public void AddItem(GenericItem newItem){
-		//TODO: Synchronize the inventory too. This will depend on Lucas activite right now. We should update it later.
 		this.items.Add(newItem);
     }
 }

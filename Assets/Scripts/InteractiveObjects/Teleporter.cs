@@ -3,8 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 
 /// <summary>
+/// Can move an gameobject for a target destination calling fade in/out effects
 /// Developed by: Higor (hcmb)
-/// Telepor
 /// </summary>
 public class Teleporter : MonoBehaviour
 {

@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// Automatically moves a Move script to it's deadend in start method
+/// </summary>
 public class Mover : MonoBehaviour
 {
     [HideInInspector]

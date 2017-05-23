@@ -2,17 +2,12 @@
 using UnityEngine.SceneManagement;
 using System.Collections;
 
+/// <summary>
+/// Controls the camera, tracking the player.
+/// Desenvolvido por: Higor
+/// </summary>
 public class CameraController : MonoBehaviour
 {
-    /*
-        Desenvolvido por: Higor
-        Este script tem o controle sobre o movimento da câmera, fazendo com que
-        ela siga o PC de forma suave. Caso 'followingPlayer' seja setado para falso,
-        a camera para de seguir o jogador. Isso geralmente acontecerá quando o
-        jogador chegar aos limites dos mapas, sendo necessário parar a câmera para
-        que ele não consiga ver fora destes limites.
-    */
-
     public bool followingPlayerX;
     public bool followingPlayerY;
     public float followSpeed = 7.5f;
@@ -26,6 +21,9 @@ public class CameraController : MonoBehaviour
             player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
+	/// <summary>
+	/// Sets the player transform to track, and tracking flags to true
+	/// </summary>
 	void TrackPlayer(){
 		followingPlayerX = true;
 		followingPlayerY = true;
@@ -48,7 +46,7 @@ public class CameraController : MonoBehaviour
 	{
 		TrackPlayer ();
 	}
-	
+
 	void Update ()
     {
         if(player != null)

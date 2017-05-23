@@ -2,6 +2,9 @@
 using UnityEngine.SceneManagement;
 using System.Collections;
 
+/// <summary>
+/// Tracks the player animator to rotate an arrow in the minimap according to the updated player moving direction
+/// </summary>
 public class MinimapArrow : MonoBehaviour
 {
 
@@ -9,10 +12,12 @@ public class MinimapArrow : MonoBehaviour
 
     void Awake()
     {
-        if (GameObject.FindGameObjectWithTag("Player") != null)
-            anim = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
+		TrackPlayer ();
     }
 
+	/// <summary>
+	/// Get the player animator
+	/// </summary>
 	void TrackPlayer(){
 		if(GameObject.FindGameObjectWithTag("Player") != null)
 			anim = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
@@ -34,6 +39,9 @@ public class MinimapArrow : MonoBehaviour
 		TrackPlayer ();
 	}
 
+	/// <summary>
+	/// Checks the animator horizontal/vertical speed to discover the player facing direction and rotates the arrow accordingly
+	/// </summary>
     void UpdateSensorPosition()
     {
         if (anim == null)

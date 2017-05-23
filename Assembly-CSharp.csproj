@@ -46,6 +46,9 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\AlertBox\AlertBox.cs" />
+     <Compile Include="Assets\Scripts\Audio\ButtonSound.cs" />
+     <Compile Include="Assets\Scripts\Audio\FXRepeater.cs" />
+     <Compile Include="Assets\Scripts\Audio\MusicPlayer.cs" />
      <Compile Include="Assets\Scripts\Board Text Manager\BoardTextManager.cs" />
      <Compile Include="Assets\Scripts\Choose Character\CharacterChooserManager.cs" />
      <Compile Include="Assets\Scripts\Choose Character\CharacterSlot.cs" />
