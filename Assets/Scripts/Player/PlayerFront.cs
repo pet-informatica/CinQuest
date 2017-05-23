@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// Position of the player front.
+/// </summary>
 public class PlayerFront : MonoBehaviour {
 
     Animator anim;
@@ -9,6 +12,9 @@ public class PlayerFront : MonoBehaviour {
         anim = GetComponentInParent<Animator>();
 	}
 
+	/// <summary>
+	/// Updates the sensor position.
+	/// </summary>
     void UpdateSensorPosition()
     {
         if (anim.GetFloat("VerticalSpeed") > 0.1f)

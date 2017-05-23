@@ -2,6 +2,9 @@
 using System.Collections;
 using UnityEngine.UI;
 
+/// <summary>
+/// Manages the dialog system.
+/// </summary>
 public class DialogManager : MonoBehaviour
 {
     public Text[] responses;

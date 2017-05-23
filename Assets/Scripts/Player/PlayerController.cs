@@ -32,6 +32,13 @@ public class PlayerController : MonoBehaviour
         dialog = GameObject.FindGameObjectWithTag("DialogBox").GetComponent<DialogManager>();
     }
 
+	/// <summary>
+	/// Check if the player is on a dialog and set player speed to walk velocity.
+	/// Check if the run button is held down to set the run speed.
+	/// If the player is on a dialog or the game is pause, set the speed to 0.
+	/// Check if the player is held down any moving button.
+	/// Calculates the player velocity base on the information obtained in the checks
+	/// </summary>
 	void Update ()
     {
         if (dialog.IsSpeaking) InDialog = true;

@@ -2,12 +2,11 @@
 using System.Collections;
 using UnityEngine.UI;
 
+/// <summary>
+/// Controls the board text actions
+/// </summary>
 public class BoardTextManager : MonoBehaviour {
-    /*
-        Developed by: Lucas (lss5)
-        Description:
-        How to use it:
-        */
+
     public Texture2D textBox;
     public TextAsset theText;
     public int line1;
@@ -17,13 +16,15 @@ public class BoardTextManager : MonoBehaviour {
     public GUIStyle style2;
     private bool activated;
 
-	// Use this for initialization
+
 	void Start () {
         textLines = theText.text.Split('\n');
         activated = false;
 	}
-	
-	//
+
+	/// <summary>
+	/// Board's text appaers when is allowers 
+	/// </summary>
 	void OnGUI () {
         if(activated)
         {
@@ -36,6 +37,10 @@ public class BoardTextManager : MonoBehaviour {
 	    
 	}
 
+	/// <summary>
+	/// Board's text is activated when the player is on the colision arear of the board
+	/// </summary>
+	/// <param name="other">Other.</param>
     void OnTriggerEnter2D(Collider2D other)
     {
 		if(other.name == "Player")
@@ -44,6 +49,10 @@ public class BoardTextManager : MonoBehaviour {
         }
     }
 
+	/// <summary>
+	/// Board's text is disabled when the player left on the colision arear of the board
+	/// </summary>
+	/// <param name="other">Other.</param>
     void OnTriggerExit2D(Collider2D other)
     {
         if (other.name == "Player")

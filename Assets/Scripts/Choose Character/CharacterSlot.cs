@@ -11,7 +11,7 @@ public class CharacterSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
 	public GameObject current;
 
 	/// <summary>
-	/// Raises the pointer enter event.
+	/// Shows the current slot where the mouse is pointed
 	/// </summary>
 	/// <param name="eventData">Event data.</param>
 	public void OnPointerEnter (PointerEventData eventData)
@@ -21,7 +21,7 @@ public class CharacterSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
 	}
 		
 	/// <summary>
-	/// Close the cahracter slot.
+	/// Misses the slot where the mouse was pointed to earlier
 	/// </summary>
 	/// <param name="eventData">Event data.</param>
 	public void OnPointerExit (PointerEventData eventData)
@@ -30,7 +30,7 @@ public class CharacterSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
 	}
 		
 	/// <summary>
-	/// Raises the pointer click event.
+	/// Shows the select slot where the mouse clicked and storage the character
 	/// </summary>
 	/// <param name="eventData">Event data.</param>
 	public void OnPointerClick (PointerEventData eventData)
