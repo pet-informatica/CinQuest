@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// Quest1 NPC freshman situation.
+/// </summary>
 public class Quest1NPCFreshman : MonoBehaviour, IBroadcaster 
 {
 	public GameObject[] paths;

@@ -3,7 +3,7 @@ using UnityEngine;
 
 /// <summary>
 /// Developed by: Peao (rngs);
-/// Generic pre condition.
+/// Generic precondition.
 /// </summary>
 public class GenericPreCondition : IPreCondition {
 
@@ -18,7 +18,11 @@ public class GenericPreCondition : IPreCondition {
 		this.itemIdentifier = itemIdentifier;
 	}                             
 
-
+	/// <summary>
+	/// Checks if the player did that precondition.
+	/// </summary>
+	/// <returns><c>true</c>, if matches was checked, <c>false</c> otherwise.</returns>
+	/// <param name="userProfile">User profile.</param>
 	public bool checkIfMatches(User userProfile){
 		foreach (GenericItem i in userProfile.Items) {
 			if (i.identifier.Equals(this.itemIdentifier))

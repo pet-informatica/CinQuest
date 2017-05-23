@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 
+/// <summary>
+/// Quest1 NPC Gatekeeper situation.
+/// </summary>
 public class Quest1NPCGatekeeper : Gatekeeper, IBroadcaster 
 {
 	public  GameObject freshman;
