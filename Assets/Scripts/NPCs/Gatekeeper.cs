@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// This NPC is responsible for teleporting the player on the ticket gates.
+/// </summary>
 public class Gatekeeper : InterativeSpeaker
 {
     public Transform origin;

@@ -2,6 +2,9 @@
 using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 
+/// <summary>
+/// Used for enabling/disabling npc dynamically through the quests.
+/// </summary>
 public class NPCListener : MonoBehaviour {
 
 	static NPCListener instance = null;

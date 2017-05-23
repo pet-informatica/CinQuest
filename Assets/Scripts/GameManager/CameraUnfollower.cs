@@ -1,18 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// 
+/// This script is resposible for not allowing camera to get out of bounds of the map by calling
+/// 'unfollowPlayer()' on it. It must be attached to a gameobject with a collider2D on it,
+///  and unfollow will be called on collider2d trigger. 
+/// 
+/// Desenvolvido por: Higor
+/// </summary>
 public class CameraUnfollower : MonoBehaviour
 {
-    /*
-        Desenvolvido por: Higor
-        Este script é responsável por impedir que a camera siga o jogador dando
-        'unfollowPlayer()' nela. Ele deve ser colocado em um GameObject junto com um
-        Collider2D, e é quando o jogador entrar dentro da área deste collider que o script
-        dará unfollow na camera. Isto ocorrerá frequentemente quando, por exemplo, o jogador
-        chegar aos limites do cenário, sendo necessário travar a câmera para que ele não
-        possa ver fora destes limites.
-    */
-
     CameraController cameraController;
     public bool unfollowX;
     public bool unfollowY;
@@ -22,6 +20,10 @@ public class CameraUnfollower : MonoBehaviour
         cameraController = Camera.main.GetComponent<CameraController>();
 	}
 
+	/// <summary>
+	/// Checks if player is colliding with the object in the corner of the map and unfollowCamera if so
+	/// </summary>
+	/// <param name="col">The player collider.</param>
     void OnTriggerStay2D(Collider2D col)
     {
         if(col.tag == "Player")
@@ -31,6 +33,10 @@ public class CameraUnfollower : MonoBehaviour
         }
     }
 
+	/// <summary>
+	/// Checks if player was colliding with the object in the corner of the map and stop unfollowingCamera if so
+	/// </summary>
+	/// <param name="col">The player collider</param>
     void OnTriggerExit2D(Collider2D col)
     {
         if (col.tag == "Player")

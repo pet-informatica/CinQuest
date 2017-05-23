@@ -1,12 +1,9 @@
 ﻿using System;
 
-/*
- *  Developed by: Peao (rngs);
- * 
- * 	In futhers works we can extend this.
- * 
- * */
-
+/// <summary>
+/// In futhers works we can extend this.
+/// Developed by: Peao (rngs);
+/// </summary>
 public enum EDatabaseStorageType
 {
 	XML,

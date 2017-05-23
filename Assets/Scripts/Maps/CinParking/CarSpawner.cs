@@ -2,27 +2,24 @@
 using System.Collections;
 using System.Collections.Generic;
 
+/// <summary>
+/// This scripts randomly generates cars and assing a path for it to move on. The newly generated car
+///	can either choose to PARK, in this case, gowing for a waypoint tagged as parking spot and staying there until
+///	the CarSpawner chooses to UNPARK it, or it can simply rush fowards to a waypoint tagged as deadend, where it will
+///	be out of the screen and destroyed.
+///
+///	How to use it: Put it into a gameobject and place the gameobject where you want the cars to spawn. In order for that
+///	to work, you need to build a complete parking architecture, where you must have:
+///
+/// 1. Waypoints tagged as ParkingSpot, those are the spots where car's can park.
+///	2. Waypoints tagged as Waypoint, the points where the cars can travel before reaching a ParkingSpot.
+///	3. At least one Waypoint tagged as DeadEnd, the one place the car will be destroyed, if it choses so.
+///	4. You must connect every Previous variable from the waypoints in order to created a valid PATH for the
+///	car to travel through.
+/// Developed by: Higor
+/// </summary>
 public class CarSpawner : MoverSpawner
 {
-    /*
-        Developed by: Higor
-
-        Description: This scripts randomly generates cars and assing a path for it to move on. The newly generated car
-        can either choose to PARK, in this case, gowing for a waypoint tagged as parking spot and staying there until
-        the CarSpawner chooses to UNPARK it, or it can simply rush fowards to a waypoint tagged as deadend, where it will
-        be out of the screen and destroyed.
-
-        How to use it: Put it into a gameobject and place the gameobject where you want the cars to spawn. In order for that
-        to work, you need to build a complete parking architecture, where you must have:
-
-        1. Waypoints tagged as ParkingSpot, those are the spots where car's can park.
-        2. Waypoints tagged as Waypoint, the points where the cars can travel before reaching a ParkingSpot.
-        3. At least one Waypoint tagged as DeadEnd, the one place the car will be destroyed, if it choses so.
-        4. You must connect every Previous variable from the waypoints in order to created a valid PATH for the
-        car to travel through.
-
-    */
-
     public int maxCars = 15;
     public float carSpeed = 300f;
     public bool carsCanPark = false;
@@ -65,6 +62,9 @@ public class CarSpawner : MoverSpawner
         return unparkTime >= unpark;
     }
 
+	/// <summary>
+	/// Chooses a random parked car to unpark and moves it to the spawners dead end
+	/// </summary>
     void UnparkCar()
     {
         GameObject[] cars = GameObject.FindGameObjectsWithTag("Car");
@@ -111,6 +111,9 @@ public class CarSpawner : MoverSpawner
         }
     }
     
+	/// <summary>
+	/// Spawns a random car and moves it to it's path, that can be either a parking path, or straight to it's dead end.
+	/// </summary>
     protected override void Spawn()
     {
         int rand = Random.Range(0, objects.Count);
@@ -140,6 +143,10 @@ public class CarSpawner : MoverSpawner
         spawnTime = 0;
     }
 
+	/// <summary>
+	/// Picks a random avaiable parking spot and traces a path for it
+	/// </summary>
+	/// <param name="move">Move.</param>
     void GoForParking(Move move)
     {
         GameObject[] parkingSpots = GameObject.FindGameObjectsWithTag("ParkingSpot");
