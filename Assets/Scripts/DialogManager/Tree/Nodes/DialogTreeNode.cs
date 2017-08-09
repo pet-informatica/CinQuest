@@ -167,6 +167,8 @@ public class DialogTreeNode : ScriptableObject
 	/// </summary>
 	public virtual void Execute()
 	{
+		if (!IsAvaiable ())
+			return;
 		User user = User.Instance;
 
 		foreach(int id in RewardIds)

@@ -48,6 +48,8 @@ public class StartQuestTreeNode : DialogTreeNode
     /// </summary>
     public override void Execute()
     {
+		if (!IsAvaiable ())
+			return;
 		base.Execute ();
         User user = User.Instance;
         Quest quest = user.GetQuest(QuestID);

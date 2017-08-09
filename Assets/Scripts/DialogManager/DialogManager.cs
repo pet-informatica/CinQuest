@@ -151,6 +151,10 @@ public class DialogManager : MonoBehaviour
             curDialog = dialog;
             curSpeaker = speaker;
 			curDialog.Start();
+			if (!curDialog.Head.IsAvaiable ()) {
+				EndConversation ();
+				return 0f;
+			}
 			curDialog.Head.speaker = speaker.gameObject.name;
 			curDialog.Execute ();
 			selectFX = curDialog.Head.SelectFX;
@@ -176,7 +180,6 @@ public class DialogManager : MonoBehaviour
     /// <returns>The time it will take to fully end the conversation.</returns>
     float EndConversation()
     {
-		curDialog.Execute ();
         curSpeaker.EndConversation(curDialog.Head);
         IsSpeaking = false;
         curDialog = null;
