@@ -180,6 +180,7 @@ public class DialogManager : MonoBehaviour
     /// <returns>The time it will take to fully end the conversation.</returns>
     float EndConversation()
     {
+		curDialog.Execute ();
         curSpeaker.EndConversation(curDialog.Head);
         IsSpeaking = false;
         curDialog = null;
